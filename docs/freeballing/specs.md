@@ -4,15 +4,15 @@
 - **Target OS**: Android 7.0+ (API Level 24+ typical Godot export floor); Windows x86_64
 - **Engine**: Godot 4.7 (Mobile / Vulkan Mobile export)
 - **Package ID**: `com.rykersoft.freeballing`
-- **versionCode / versionName**: `19` / `1.0.18`
+- **versionCode / versionName**: `20` / `1.0.19`
 - **Architectures**: Android `armeabi-v7a`, `arm64-v8a`; Windows `x86_64`
-- **Windows packaging**: Portable Godot release EXE with embedded PCK; file/product version `1.0.18.0`
+- **Windows packaging**: Portable Godot release EXE with embedded PCK; file/product version `1.0.19.0`
 - **Android release signer SHA-256**: `AEC0A0690D2D2F288739D41FBF089F776FE5BEE6385033383A4BC1132BF0587E`
 
 ## Architecture
 - **Scenes / scripts**: GDScript game board, shooter, pegs, UI home/editor overlays
 - **Home UI**: Platform-split lobbies — `MobileHomeScreen` / `DesktopHomeScreen` with `AccurateLevelPreview` (SubViewport + non-playing `GameBoard`); desktop uses nav + level browser + preview + stats columns
-- **Branding**: Shared transparent supplied SVG `ArcadeBrand` with layered cyan-and-magenta outlined lettering, composed over a dedicated `MobileTitleBackdrop` motion stage shared by portrait and desktop. Fast ribbons, print-head sweeps, rails, and orbiting dots remain confined to the responsive title region.
+- **Branding**: Shared transparent supplied SVG `ArcadeBrand` with layered cyan-and-magenta outlined lettering on both responsive home layouts. There is no logo-specific motion layer; the wordmark sits directly over the shared editor `HOME` ambient preset.
 - **Physics**: GodotPhysics2D (ported feel from the Matter.js web client); energy-neutral anti-loop redirects; no scripted soft-bounce boosts on fixed pegs
 - **Scoring**: Central fixed-value `ScoringRules` table; bumper hits accumulate across every multiball in one shot, pay 50 per hit, heat from hit 5, and overload at hit 10 for a 500 bonus; bonus pegs are points-only; capped per-ball gutter payout; isolated multiball run totals. Level-specific gutter multipliers and well colors refresh the five physical capture areas whenever a board loads.
 - **Bumper lifecycle**: One shared per-shot hit dictionary drives heat from hit 5 and critical sparks; overloaded bumper nodes and spin-group colliders are temporarily disabled, then materialize in a staggered sparkle sweep after the complete shot including multiballs
@@ -36,4 +36,4 @@
 ## Network
 - `INTERNET` and `ACCESS_NETWORK_STATE` enabled for leaderboards and community levels
 - Offline play uses bundled level JSON under `data/levels`
-- Firebase App Check is staged in observation mode and is not enforced in v1.0.18, allowing telemetry review before a later enforcement rollout
+- Firebase App Check is staged in observation mode and is not enforced in v1.0.19, allowing telemetry review before a later enforcement rollout

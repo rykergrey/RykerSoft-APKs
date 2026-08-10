@@ -1,5 +1,11 @@
 # Updates
 
+## v1.0.19
+
+- Removed the separate animated title backdrop from both responsive home layouts so the supplied FreeBall.ing logo no longer has distracting red, blue, and pink shapes sweeping behind it
+- Replaced the home screen's custom procedural background variation with the level editor's shared `HOME` preset: mixed placed shapes, bounce walls, and the same slide, spin, and scale motion used by authored level backgrounds
+- Centralized the `HOME` composition in the ambient-background component so the lobby and editor cannot drift into different implementations
+
 ## v1.0.18
 
 - Replaced the shared mobile and desktop title with the supplied cyan-and-magenta layered FreeBall.ing SVG and enlarged the desktop title stage to give the new artwork room to breathe
