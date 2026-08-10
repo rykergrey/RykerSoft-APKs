@@ -1,5 +1,13 @@
 # Updates
 
+## v1.0.18
+
+- Replaced the shared mobile and desktop title with the supplied cyan-and-magenta layered FreeBall.ing SVG and enlarged the desktop title stage to give the new artwork room to breathe
+- Made the portrait title stage responsive, keeping a compact height on short phones while expanding it on taller displays without pushing Shuffle beneath the bottom dock
+- Removed the temporary 100-board generated curated library, its generator, visual test, taxonomy groups, and merge path; the bundled campaign now returns to the 13 established boards and connected campaign data remains authoritative
+- Deferred roaming-bonus peg morphing until after the active physics query finishes, preventing collision-shape rebuild errors during peg contact callbacks
+- Preserved optional Google sign-in, private account identity, unique one-to-five-letter public usernames, authenticated server-owned cloud writes, and full guest/offline play
+
 ## v1.0.17
 
 - Fixed per-level, weekly, and all-time leaderboards so each stored score displays its corresponding player label across current `username` records and legacy `playerName`, three-letter `initials`, `player`, and `name` records

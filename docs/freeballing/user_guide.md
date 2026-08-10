@@ -15,7 +15,7 @@ Launch balls down a pegboard, seek high-value routes, and design your own boards
 ## 1. Getting started
 
 - On Android, install FreeBall.ing from the RykerSoft Application Manager or sideload the signed hub APK. On Windows, download the official x86_64 EXE release and run it directly; no separate PCK is required.
-- Open the app in portrait mode. The transparent SVG title sits over its own compact animated neon stage of ribbons, rails, print-head sweeps, and orbiting dots, while the main lobby shows an unobstructed, accurate preview of the selected board; tap the **i** button for level details and local rankings.
+- Open the app in portrait mode. The supplied cyan-and-magenta SVG title sits over a responsive animated neon stage of ribbons, rails, print-head sweeps, and orbiting dots, while the main lobby shows an unobstructed, accurate preview of the selected board; tap the **i** button for level details and local rankings.
 - Each category and level selector shows one readable choice. Drag it horizontally or use the left/right arrows to cycle, then tap **Play** to start the selected board (120-second match timer).
 - On Android, the bottom dock provides Levels, Community, Play, Editor information, and Player Profile. The editor button presents the desktop feature tour; level creation itself is desktop-only.
 - On a wide desktop window, the home screen uses a four-column arcade lobby: menu/categories, level list, board preview, and stats.

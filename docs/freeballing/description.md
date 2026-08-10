@@ -14,7 +14,6 @@ A physics puzzle arcade game in the spirit of Pachinko and Peggle: launch balls,
 - **Smooth aiming under impact** — Launcher pacing stays wall-clock steady during hit-stop, uses render-frame movement without physics double-interpolation on mobile, and retains a lightweight flight-arc preview.
 - **Local player profile** — A dedicated portrait badge opens matches played, best score, top scores, and most-played maps from device history.
 - **Level editor** — Place, stamp, select, style, animate, and configure boards with centered grid presets, stable formation previews, full undo/redo history, material chips, and versioned foreground motion profiles. Desktop uses focused dual-rail inspectors and integrated Tap / Stamp / Select tools.
-- **Curated campaign library** — Thirteen established boards plus 100 bundled, hand-authored boards across ten design collections remain available offline. When connected, the cloud campaign stays authoritative for matching IDs while bundled-only boards remain visible.
 - **Custom gutter economies** — Authored one-to-three-times payouts and per-well colors stay synchronized with the physical capture areas, score calculation, static board art, and capture feedback.
 - **Campaign + custom levels** — Bundled levels and the editor remain available to guests; authenticated players can publish Firebase-backed community boards.
 - **Optional Google identity** — Android and Windows players may sign in with Google and claim a unique one-to-five-letter public username. Google email, account name, avatar, and provider details are never used as public game identity.
@@ -22,7 +21,7 @@ A physics puzzle arcade game in the spirit of Pachinko and Peggle: launch balls,
 - **Identity-safe leaderboards** — Per-level, weekly, and all-time rankings remain anonymously readable. Legacy three-letter initials and current one-to-five-letter public usernames stay attached to their corresponding stored scores, while new cloud submissions are authorized by Firebase Authentication and attributed by the server-owned public username.
 - **Material audio** — Standard phrase tones, bumper one-shots, armored builds, and randomized multiplier hits, with stereo panning by hit position.
 - **Smooth presentation** — Native-resolution mobile CanvasItems, full effects, antialiasing, interpolated 60–120 Hz pacing, localized peg/shadow redraws, efficient trails, and bounded collision effects preserve the satisfying physics presentation on phones and desktop.
-- **Trapper Keeper–inspired arcade look** — Dark playfield, paper/ink UI, immersive portrait mobile layout, opaque color-accurate board previews, and a cream, cyan, violet, and hot-pink ribbon logo whose transparent surroundings leave the shared animated lobby visible.
+- **Color-splashed 1990s arcade look** — Dark playfield, paper/ink UI, immersive portrait mobile layout, opaque color-accurate board previews, and a supplied cyan-and-magenta layered wordmark whose transparent surroundings leave the shared animated lobby visible.
 
 ## Platforms
 - **Android** — Godot 4.7 release APK for the RykerSoft hub (`com.rykersoft.freeballing`)
