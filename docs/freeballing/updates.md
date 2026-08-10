@@ -1,5 +1,18 @@
 # Updates
 
+## v1.0.16
+
+- Added optional Google sign-in on Android and Windows and a unique public username system using the familiar letter-card input, expanded from fixed three-letter initials to one through five letters
+- Added a Windows system-browser sign-in flow using a dedicated desktop OAuth client, localhost callback, PKCE and CSRF state validation; desktop session credentials remain memory-only and are cleared when the game closes
+- Added full guest play: campaign, local scores, custom-level creation, settings, and offline play work without an account; cloud score submission, voting, and community publishing require sign-in and a claimed username
+- Secured Firebase writes behind authenticated callable functions, atomic username reservations, server-derived ownership/attribution, private identity records, rate limits, and read-only public Firestore rules
+- Kept Google account details private: public profiles expose only the chosen game username, never email, Google name, avatar, provider data, or tokens
+- Added an experimental launcher recovery: an upward-returning ball can overlap the visible launcher, be captured without consuming another ball slot, and be aimed and fired again
+- Added a wide, force-free tractor-beam telegraph with launcher tracking, capture feedback, exponential anticipation slow motion, and a restrained camera push that makes near misses exciting without steering the ball
+- Smoothed mobile launcher presentation by separating render-frame movement from physics interpolation and adding a subtle directional motion echo
+- Rebalanced bumper overloads to heat from hit 5 and overload at hit 10, with hit totals shared across multiballs from the same shot
+- Added a staggered materialization effect when overloaded bumpers return after the complete shot
+
 ## v1.0.15
 
 - Removed the separate drifting red, blue, and pink title panels from the mobile home hero
