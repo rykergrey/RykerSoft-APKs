@@ -4,17 +4,17 @@
 - **Target OS**: Android 7.0+ (API Level 24+ typical Godot export floor); Windows x86_64
 - **Engine**: Godot 4.7 (Mobile / Vulkan Mobile export)
 - **Package ID**: `com.rykersoft.freeballing`
-- **versionCode / versionName**: `17` / `1.0.16`
+- **versionCode / versionName**: `18` / `1.0.17`
 - **Architectures**: Android `armeabi-v7a`, `arm64-v8a`; Windows `x86_64`
-- **Windows packaging**: Portable Godot release EXE with embedded PCK; file/product version `1.0.16.0`
+- **Windows packaging**: Portable Godot release EXE with embedded PCK; file/product version `1.0.17.0`
 - **Android release signer SHA-256**: `AEC0A0690D2D2F288739D41FBF089F776FE5BEE6385033383A4BC1132BF0587E`
 
 ## Architecture
 - **Scenes / scripts**: GDScript game board, shooter, pegs, UI home/editor overlays
 - **Home UI**: Platform-split lobbies — `MobileHomeScreen` / `DesktopHomeScreen` with `AccurateLevelPreview` (SubViewport + non-playing `GameBoard`); desktop uses nav + level browser + preview + stats columns
-- **Branding**: Shared transparent SVG `ArcadeBrand` with outlined custom glyphs, restrained skewed ribbons, layered hard shadows, and a responsive `TextureRect` used by portrait and desktop; the mobile hero adds no separate title-specific geometry
+- **Branding**: Shared transparent SVG `ArcadeBrand` with outlined custom glyphs and layered hard shadows, composed over a dedicated `MobileTitleBackdrop` motion stage shared by portrait and desktop. Fast ribbons, print-head sweeps, rails, and orbiting dots remain confined to the title region.
 - **Physics**: GodotPhysics2D (ported feel from the Matter.js web client); energy-neutral anti-loop redirects; no scripted soft-bounce boosts on fixed pegs
-- **Scoring**: Central fixed-value `ScoringRules` table; bumper hits accumulate across every multiball in one shot, pay 50 per hit, heat from hit 5, and overload at hit 10 for a 500 bonus; bonus pegs are points-only; capped per-ball gutter payout; isolated multiball run totals
+- **Scoring**: Central fixed-value `ScoringRules` table; bumper hits accumulate across every multiball in one shot, pay 50 per hit, heat from hit 5, and overload at hit 10 for a 500 bonus; bonus pegs are points-only; capped per-ball gutter payout; isolated multiball run totals. Level-specific gutter multipliers and well colors refresh the five physical capture areas whenever a board loads.
 - **Bumper lifecycle**: One shared per-shot hit dictionary drives heat from hit 5 and critical sparks; overloaded bumper nodes and spin-group colliders are temporarily disabled, then materialize in a staggered sparkle sweep after the complete shot including multiballs
 - **Aiming**: Wall-clock launcher presentation; collision-free trajectory overlay; per-frame pointer sampling while charging
 - **Launcher recovery**: A 190 px observation field reacts only to upward-returning live balls and applies no force; capture uses exact visible hub/barrel overlap, parks the same `Ball` instance, and relaunches without decrementing the session ball count. A convex proximity curve eases gameplay toward a 0.34 time scale and adds at most 18% camera zoom.
@@ -28,11 +28,12 @@
 - **Authentication**: Optional Google sign-in uses a Godot v2 Android plug-in with Android Credential Manager on Android, plus a dedicated Desktop OAuth client with a system-browser PKCE loopback flow on Windows. Both paths exchange Google identity for Firebase Authentication and expose only the Firebase UID and ID token to gameplay code; Google email, name, avatar, provider tokens, and OAuth client secrets are never published or persisted by the game.
 - **Windows session security**: The desktop Firebase refresh token remains in memory for in-session ID-token renewal and is cleared at sign-out or process exit. Windows players sign in again after restarting the game rather than storing a bearer credential on disk.
 - **Public identity**: Unique uppercase A–Z usernames are one to five letters, atomically reserved in Firestore, and may change once every 30 days. Retained reservations prevent old names from being claimed by another UID.
-- **Persistence**: Local saves keep customs, preferences, profile stats, and local player labels separate from the authenticated public username; Firestore REST supplies anonymous reads for levels, scores, community maps, and public profiles.
+- **Persistence**: Local saves keep customs, preferences, profile stats, and normalized one-to-five-letter local player labels separate from the authenticated public username. Leaderboard reads resolve `username`, `playerName`, legacy `initials`, `player`, or `name` fields without detaching a label from its score. Firestore REST supplies anonymous reads for levels, scores, community maps, and public profiles.
+- **Bundled campaign data**: `_manifest.json` contains 13 established boards plus 100 generated curated boards across ten ordered taxonomy collections. `_curated_manifest.json` preserves the bundled-only subset; remote summaries replace matching IDs while bundled-only entries remain available online and offline.
 - **Backend**: Firebase project `freeballing-59589`; callable Node.js 22 functions verify Firebase Auth, derive owner UID and username server-side, validate and rate-limit writes, and transact scores, votes, levels, and username claims. Firestore client writes are denied; public documents contain no private Google identity.
 - **Guest policy**: Guests retain all gameplay, editor, local-save, settings, and offline features. Cloud score submission, community voting, community publishing, and cloud deletion require an authenticated account; score/publishing also require a public username.
 
 ## Network
 - `INTERNET` and `ACCESS_NETWORK_STATE` enabled for leaderboards and community levels
 - Offline play uses bundled level JSON under `data/levels`
-- Firebase App Check is staged in observation mode and is not enforced in v1.0.16, allowing telemetry review before a later enforcement rollout
+- Firebase App Check is staged in observation mode and is not enforced in v1.0.17, allowing telemetry review before a later enforcement rollout

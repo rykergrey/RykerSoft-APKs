@@ -1,5 +1,15 @@
 # Updates
 
+## v1.0.17
+
+- Fixed per-level, weekly, and all-time leaderboards so each stored score displays its corresponding player label across current `username` records and legacy `playerName`, three-letter `initials`, `player`, and `name` records
+- Normalized local player labels to the supported one-to-five-letter format while preserving existing three-letter score history and keeping authenticated public usernames separate from Google identity
+- Added a deterministic 100-board curated campaign library across ten design collections, complete with bundled manifests, taxonomy metadata, full audiovisual level settings, motion, custom gutters, and a synchronized level-design catalog
+- Added a game-specific Level Design Handbook covering scoring, fixed well geometry, materials, motion, visual composition, Rube Goldberg sequencing, testing, safe JSON editing, and pre-publish checks
+- Kept bundled-only curated boards available online and offline by merging them with the remote campaign manifest while allowing cloud records to remain authoritative for matching level IDs
+- Fixed authored gutter metadata so custom one-to-three-times payouts and per-well colors refresh the physical capture areas, score correctly, and drive matching board and capture effects after every level load
+- Added a dedicated animated neon title stage on mobile and desktop with faster ribbons, rails, print-head sweeps, and orbiting dots
+
 ## v1.0.16
 
 - Added optional Google sign-in on Android and Windows and a unique public username system using the familiar letter-card input, expanded from fixed three-letter initials to one through five letters
