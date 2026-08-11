@@ -4,9 +4,9 @@
 - **Target OS**: Android 7.0+ (API Level 24+ typical Godot export floor); Windows x86_64
 - **Engine**: Godot 4.7 (Mobile / Vulkan Mobile export)
 - **Package ID**: `com.rykersoft.freeballing`
-- **versionCode / versionName**: `24` / `1.0.23`
+- **versionCode / versionName**: `25` / `1.0.24`
 - **Architectures**: Android `armeabi-v7a`, `arm64-v8a`; Windows `x86_64`
-- **Windows packaging**: Portable Godot release EXE with embedded PCK; file/product version `1.0.23.0`
+- **Windows packaging**: Portable Godot release EXE with embedded PCK; file/product version `1.0.24.0`
 - **Android release signer SHA-1**: `80BD2A1BBC461F86B50F6C569692A6C7BE010F54`
 - **Android release signer SHA-256**: `AEC0A0690D2D2F288739D41FBF089F776FE5BEE6385033383A4BC1132BF0587E`
 
@@ -22,8 +22,8 @@
 - **Motion**: `MotionUtils` + versioned `objectMotions` on `LevelData` for foreground peg slide/wobble/spin/scale profiles, including shared-pivot grouped orbit motion and non-destructive live editor preview
 - **Editor**: Portrait bottom dock retained; wide desktop uses independently scoped dual inspector rails, transient Ctrl/Command-add and Alt-remove selection, integrated Tap / Stamp / Select tools, stable scroll and numeric-field state, centered 10/15/20/30/40 px grids, stable formation previews, and lossless full-model undo/redo history
 - **Android navigation**: The system Back request is handled in-app: Home toggles an exit confirmation and gameplay opens one guarded pause overlay
-- **Audio**: Material sample banks (standard / bumper / armored / multi) plus BGM; stereo pan by hit X
-- **Performance**: `PlatformPerformance` renders mobile CanvasItems at native resolution with full trails/particles/AA, keeps gameplay physics at 60 Hz with interpolation, and paces rendering to the detected display refresh rate up to 120 FPS. The render-animated launcher opts out of physics interpolation to avoid double-sampling, with a faint two-echo motion smear at speed. Retained peg faces and shadows are chunked; ball trails use a simplified ring history; CPU particles compact live entries linearly; collision-audio clusters are fixed-size.
+- **Audio**: Material sample banks (standard / bumper / armored / multi) plus BGM; stereo pan by hit X. Immediate UI and gameplay sounds use preloaded fixed-size players, trimmed uncompressed one-shots, per-frame start budgets, and impact cooldowns. Android preloads music asynchronously, keeps one looping MP3 decoder active, and omits the desktop collision-bus reverb.
+- **Performance**: `PlatformPerformance` renders mobile CanvasItems at native resolution, keeps gameplay physics at 60 Hz with interpolation, and caps Android presentation at a deterministic 60 FPS. Mobile starts in `BALANCED_60` and enters `SAFE_60` only after sustained slow-frame pressure; the tiers bound trail history, particle density, ambient shapes, collision decoration, arc detail, refraction, and antialiasing while desktop retains the authored `FULL` presentation. The render-animated launcher opts out of physics interpolation to avoid double-sampling. Grouped motion sampling reuses dictionaries; ball trails and CPU particles use bounded pools and linear compaction.
 - **Username input**: Five reusable letter cards support one-to-five-letter A–Z names through blank cards. Physical `InputEventScreenTouch` / `InputEventScreenDrag` routing ignores emulated duplicates, uses unscaled screen deltas, magnetic 180 px steps, and velocity-based one-to-five-letter flicks.
 - **Haptics**: Android `VIBRATE` permission plus 24 ms default-amplitude pulses for collision feedback and every held-drag or timed-flick username transition
 - **Authentication**: Optional Google sign-in uses a Godot v2 Android plug-in with Android Credential Manager on Android, plus a dedicated Desktop OAuth client with a system-browser PKCE loopback flow on Windows. Both paths exchange Google identity for Firebase Authentication and expose only the Firebase UID and ID token to gameplay code; Google email, name, avatar, provider tokens, and OAuth client secrets are never published or persisted by the game.
@@ -37,4 +37,4 @@
 ## Network
 - `INTERNET` and `ACCESS_NETWORK_STATE` enabled for leaderboards and community levels
 - Offline play uses bundled level JSON under `data/levels`
-- Firebase App Check is staged in observation mode and is not enforced in v1.0.23, allowing telemetry review before a later enforcement rollout
+- Firebase App Check is staged in observation mode and is not enforced in v1.0.24, allowing telemetry review before a later enforcement rollout

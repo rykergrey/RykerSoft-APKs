@@ -1,5 +1,13 @@
 # Updates
 
+## v1.0.24
+
+- Stabilized Android presentation at a consistent 60 FPS target with balanced and safe quality tiers that adapt only after sustained frame pressure, while preserving the full authored desktop presentation
+- Reduced mobile rendering cost across ball trails, particles, ambient shapes, collision effects, score stickers, trajectory previews, wall ripples, and grouped-object motion without changing gameplay physics or scoring
+- Rebuilt immediate UI and gameplay feedback around preloaded sample pools, trimmed uncompressed one-shots, collision throttling, and background music preloading so taps, launches, impacts, and special shots respond without runtime synthesis or input-frame loading
+- Reduced Android audio and package overhead by using a single looping background-music stream, disabling mobile-only reverb work, trimming silence from effects, compressing native libraries, baking shaders, and excluding development-only resources from exports
+- Maintained optional Google sign-in, private account identity, unique one-to-five-letter public usernames, authenticated server-owned cloud writes, and complete guest/offline play
+
 ## v1.0.23
 
 - Made every level-selector board preview play its authored foreground piece motion, rotating components, launcher presentation, and moving shadows while keeping gameplay inactive

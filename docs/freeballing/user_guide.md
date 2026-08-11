@@ -70,6 +70,7 @@ Launch balls down a pegboard, seek high-value routes, and design your own boards
 
 - Peg hits use material-specific samples: standard phrase tones, bumper one-shots, armored triad builds, and randomized multiplier clips.
 - Hit and gutter sounds pan left/right with where they happen on the board.
+- Android targets a steady 60 FPS and automatically reduces decorative trails, particles, and ambient motion only after sustained frame pressure; gameplay physics, scoring, and controls remain unchanged.
 - Use the home Settings / music controls to mute or enable background music.
 - Themes and save data persist on device between sessions.
 

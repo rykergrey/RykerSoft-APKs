@@ -19,7 +19,7 @@ A physics puzzle arcade game in the spirit of Pachinko and Peggle: launch balls,
 - **Guest-friendly play** — No username is required for campaign play, local scores, level creation, settings, or offline use. Guests simply cannot submit cloud scores, vote, or publish community levels.
 - **Identity-safe leaderboards** — Per-level, weekly, and all-time rankings remain anonymously readable. Legacy three-letter initials and current one-to-five-letter public usernames stay attached to their corresponding stored scores, while new cloud submissions are authorized by Firebase Authentication and attributed by the server-owned public username.
 - **Material audio** — Standard phrase tones, bumper one-shots, armored builds, and randomized multiplier hits, with stereo panning by hit position.
-- **Smooth presentation** — Native-resolution mobile CanvasItems, mipmapped SVG logo sampling, full effects, antialiasing, interpolated 60–120 Hz pacing, size-aware peg shadows, localized redraws, efficient trails, and bounded collision effects preserve the satisfying physics presentation on phones and desktop.
+- **Smooth presentation** — Native-resolution mobile CanvasItems, mipmapped SVG logo sampling, interpolated 60 FPS gameplay, adaptive mobile effect budgets, size-aware peg shadows, localized redraws, efficient trails, and bounded collision/audio feedback preserve the satisfying physics presentation while desktop retains the full authored look.
 - **Color-splashed 1990s arcade look** — Dark playfield, paper/ink UI, immersive portrait mobile layout, opaque color-accurate board previews, and a supplied cyan-and-magenta layered wordmark whose transparent surroundings leave the shared animated lobby visible.
 
 ## Platforms
