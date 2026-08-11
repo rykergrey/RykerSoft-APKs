@@ -1,5 +1,12 @@
 # Updates
 
+## v1.0.23
+
+- Made every level-selector board preview play its authored foreground piece motion, rotating components, launcher presentation, and moving shadows while keeping gameplay inactive
+- Rendered each selected level's own ambient background animation inside its preview instead of leaving the board frozen over the generic home field
+- Added focused regression coverage proving that both foreground and background preview animation advance without spawning gameplay
+- Maintained optional Google sign-in, private account identity, unique one-to-five-letter public usernames, authenticated server-owned cloud writes, and complete guest/offline play
+
 ## v1.0.22
 
 - Replaced the complete bundled and cloud campaign with eleven newly authored boards: The Cage, Diamond Mine, Nebula Drift, Galton Board, Honeycomb Haven, Orbital Decay, Plinko Master, Golden Pyramid, Super Collider, Triforce, and Whirlpool

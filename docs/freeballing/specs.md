@@ -4,15 +4,15 @@
 - **Target OS**: Android 7.0+ (API Level 24+ typical Godot export floor); Windows x86_64
 - **Engine**: Godot 4.7 (Mobile / Vulkan Mobile export)
 - **Package ID**: `com.rykersoft.freeballing`
-- **versionCode / versionName**: `23` / `1.0.22`
+- **versionCode / versionName**: `24` / `1.0.23`
 - **Architectures**: Android `armeabi-v7a`, `arm64-v8a`; Windows `x86_64`
-- **Windows packaging**: Portable Godot release EXE with embedded PCK; file/product version `1.0.22.0`
+- **Windows packaging**: Portable Godot release EXE with embedded PCK; file/product version `1.0.23.0`
 - **Android release signer SHA-1**: `80BD2A1BBC461F86B50F6C569692A6C7BE010F54`
 - **Android release signer SHA-256**: `AEC0A0690D2D2F288739D41FBF089F776FE5BEE6385033383A4BC1132BF0587E`
 
 ## Architecture
 - **Scenes / scripts**: GDScript game board, shooter, pegs, UI home/editor overlays
-- **Home UI**: Platform-split lobbies — `MobileHomeScreen` / `DesktopHomeScreen` with `AccurateLevelPreview` (SubViewport + non-playing `GameBoard`); desktop uses nav + level browser + preview + stats columns
+- **Home UI**: Platform-split lobbies — `MobileHomeScreen` / `DesktopHomeScreen` with `AccurateLevelPreview` (always-updating SubViewport + non-playing `GameBoard` and the selected level's isolated `AmbientBackground`); authored foreground, launcher, shadow, and background animation remains live in previews while gameplay stays inactive; desktop uses nav + level browser + preview + stats columns
 - **Branding**: Shared transparent supplied SVG `ArcadeBrand` with layered cyan-and-magenta outlined lettering on both responsive home layouts. The imported SVG generates mipmaps and uses mipmapped linear filtering at display size. There is no logo-specific motion layer; the wordmark sits directly over the shared editor `HOME` ambient preset.
 - **Physics**: GodotPhysics2D (ported feel from the Matter.js web client); energy-neutral anti-loop redirects; no scripted soft-bounce boosts on fixed pegs
 - **Scoring**: Central fixed-value `ScoringRules` table; bumper hits accumulate across every multiball in one shot, pay 50 per hit, heat from hit 5, and overload at hit 10 for a 500 bonus; bonus pegs are points-only; capped per-ball gutter payout; isolated multiball run totals. Level-specific gutter multipliers and well colors refresh the five physical capture areas whenever a board loads.
@@ -37,4 +37,4 @@
 ## Network
 - `INTERNET` and `ACCESS_NETWORK_STATE` enabled for leaderboards and community levels
 - Offline play uses bundled level JSON under `data/levels`
-- Firebase App Check is staged in observation mode and is not enforced in v1.0.22, allowing telemetry review before a later enforcement rollout
+- Firebase App Check is staged in observation mode and is not enforced in v1.0.23, allowing telemetry review before a later enforcement rollout
