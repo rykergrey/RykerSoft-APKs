@@ -19,6 +19,7 @@ Launch balls down a pegboard, seek high-value routes, and design your own boards
 - Each category and level selector shows one readable choice. Drag it horizontally or use the left/right arrows to cycle, then tap **Play** to start the selected board (120-second match timer).
 - On Android, the bottom dock provides Levels, Community, Play, Editor information, and Player Profile. The editor button presents the desktop feature tour; level creation itself is desktop-only.
 - On a wide desktop window, the home screen uses a four-column arcade lobby: menu/categories, level list, board preview, and stats.
+- On Android, the system **Back** button opens the pause menu during a match. From Home it opens an **Exit FreeBall.ing?** confirmation; press Back again or choose **Keep playing** to dismiss it.
 - The bottom-right profile badge opens local matches, best score, and most-played levels — tap a linked level to open it.
 - You may play as a guest without choosing a username. On Android, open **Player Profile**; on Windows, open **Online Profile**. Use **Sign in with Google** only if you want to submit cloud scores, vote, or publish levels.
 - After a match, **Play Again** starts a clean Player 1 game on the same board and preserves the selected time limit.
@@ -55,11 +56,12 @@ Launch balls down a pegboard, seek high-value routes, and design your own boards
 
 - The full level editor is available on desktop. From the desktop home, open the Editor panel or remix a level to open the editor dock.
 - On Android, tapping Editor or an editor action opens a themed overview of its peg placement, materials, animation, audio, physics, testing, remixing, and publishing features without launching editor code.
-- On a wide desktop window, dual inspector rails stay open over the canvas tools. The Create rail combines **Tap**, **Stamp**, and **Select**; an active selection can be restyled directly without leaving Create.
+- On a wide desktop window, independently scoped dual inspector rails stay open over the canvas tools. The Create rail combines **Tap**, **Stamp**, and **Select**; an active foreground selection remains intact while you tune the background rail.
 - Desktop grid presets are 10, 15, 20, 30, and 40 pixels. The grid stays centered on the board and automatically contrasts with the chosen background. Stamp previews show exactly which in-bounds pieces will be committed.
 - Use **Ctrl+Z** / **Ctrl+Y** (or **Ctrl+Shift+Z**) to undo and redo complete editor states, including foreground and background selections, motion, audio, gutters, and level metadata.
-- On desktop, Ctrl-click or Ctrl-marquee adds pieces to the selection; Alt-click or Alt-marquee subtracts them. Rotation and scale fields accept precise mouse-wheel adjustments without resetting the inspector scroll position.
-- Animate pegs with versioned foreground motion (slide, wobble, spin, scale) that previews live in the editor.
+- On desktop, Ctrl/Command-click or marquee adds pieces to the selection; Alt-click or marquee subtracts them. Plain selection replaces the current set. Numeric motion fields update continuously without rebuilding the field or resetting inspector scroll position.
+- Animate pegs with versioned foreground motion (slide, wobble, spin, scale) that previews live while selected. Use **PREVIEW** to pause at the authored pose before dragging transform handles.
+- **SPIN EACH** rotates every selected peg in place. **ORBIT GROUP** groups compatible selections and revolves the formation around one shared pivot; mixed motion profiles are left untouched instead of being overwritten.
 - Follow the funnel rule: never trap the ball with solid geometry that has no bottom exit.
 - Keep the center high-value slot reachable; save customs locally as a guest, or sign in and claim a username before sharing through Community.
 

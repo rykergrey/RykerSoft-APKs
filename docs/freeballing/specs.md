@@ -4,23 +4,24 @@
 - **Target OS**: Android 7.0+ (API Level 24+ typical Godot export floor); Windows x86_64
 - **Engine**: Godot 4.7 (Mobile / Vulkan Mobile export)
 - **Package ID**: `com.rykersoft.freeballing`
-- **versionCode / versionName**: `20` / `1.0.19`
+- **versionCode / versionName**: `21` / `1.0.20`
 - **Architectures**: Android `armeabi-v7a`, `arm64-v8a`; Windows `x86_64`
-- **Windows packaging**: Portable Godot release EXE with embedded PCK; file/product version `1.0.19.0`
+- **Windows packaging**: Portable Godot release EXE with embedded PCK; file/product version `1.0.20.0`
 - **Android release signer SHA-256**: `AEC0A0690D2D2F288739D41FBF089F776FE5BEE6385033383A4BC1132BF0587E`
 
 ## Architecture
 - **Scenes / scripts**: GDScript game board, shooter, pegs, UI home/editor overlays
 - **Home UI**: Platform-split lobbies — `MobileHomeScreen` / `DesktopHomeScreen` with `AccurateLevelPreview` (SubViewport + non-playing `GameBoard`); desktop uses nav + level browser + preview + stats columns
-- **Branding**: Shared transparent supplied SVG `ArcadeBrand` with layered cyan-and-magenta outlined lettering on both responsive home layouts. There is no logo-specific motion layer; the wordmark sits directly over the shared editor `HOME` ambient preset.
+- **Branding**: Shared transparent supplied SVG `ArcadeBrand` with layered cyan-and-magenta outlined lettering on both responsive home layouts. The imported SVG generates mipmaps and uses mipmapped linear filtering at display size. There is no logo-specific motion layer; the wordmark sits directly over the shared editor `HOME` ambient preset.
 - **Physics**: GodotPhysics2D (ported feel from the Matter.js web client); energy-neutral anti-loop redirects; no scripted soft-bounce boosts on fixed pegs
 - **Scoring**: Central fixed-value `ScoringRules` table; bumper hits accumulate across every multiball in one shot, pay 50 per hit, heat from hit 5, and overload at hit 10 for a 500 bonus; bonus pegs are points-only; capped per-ball gutter payout; isolated multiball run totals. Level-specific gutter multipliers and well colors refresh the five physical capture areas whenever a board loads.
 - **Bumper lifecycle**: One shared per-shot hit dictionary drives heat from hit 5 and critical sparks; overloaded bumper nodes and spin-group colliders are temporarily disabled, then materialize in a staggered sparkle sweep after the complete shot including multiballs
 - **Aiming**: Wall-clock launcher presentation; collision-free trajectory overlay; per-frame pointer sampling while charging
 - **Launcher recovery**: A 190 px observation field reacts only to upward-returning live balls and applies no force; capture uses exact visible hub/barrel overlap, parks the same `Ball` instance, and relaunches without decrementing the session ball count. A convex proximity curve eases gameplay toward a 0.34 time scale and adds at most 18% camera zoom.
 - **Hit-stop**: Short real-time freeze that restores gameplay pace immediately when its budget expires
-- **Motion**: `MotionUtils` + versioned `objectMotions` on `LevelData` for foreground peg slide/wobble/spin/scale profiles
-- **Editor**: Portrait bottom dock retained; wide desktop uses dual inspector rails, integrated Tap / Stamp / Select tools, centered 10/15/20/30/40 px grids, stable formation previews, and lossless full-model undo/redo history
+- **Motion**: `MotionUtils` + versioned `objectMotions` on `LevelData` for foreground peg slide/wobble/spin/scale profiles, including shared-pivot grouped orbit motion and non-destructive live editor preview
+- **Editor**: Portrait bottom dock retained; wide desktop uses independently scoped dual inspector rails, transient Ctrl/Command-add and Alt-remove selection, integrated Tap / Stamp / Select tools, stable scroll and numeric-field state, centered 10/15/20/30/40 px grids, stable formation previews, and lossless full-model undo/redo history
+- **Android navigation**: The system Back request is handled in-app: Home toggles an exit confirmation and gameplay opens one guarded pause overlay
 - **Audio**: Material sample banks (standard / bumper / armored / multi) plus BGM; stereo pan by hit X
 - **Performance**: `PlatformPerformance` renders mobile CanvasItems at native resolution with full trails/particles/AA, keeps gameplay physics at 60 Hz with interpolation, and paces rendering to the detected display refresh rate up to 120 FPS. The render-animated launcher opts out of physics interpolation to avoid double-sampling, with a faint two-echo motion smear at speed. Retained peg faces and shadows are chunked; ball trails use a simplified ring history; CPU particles compact live entries linearly; collision-audio clusters are fixed-size.
 - **Username input**: Five reusable letter cards support one-to-five-letter A–Z names through blank cards. Physical `InputEventScreenTouch` / `InputEventScreenDrag` routing ignores emulated duplicates, uses unscaled screen deltas, magnetic 180 px steps, and velocity-based one-to-five-letter flicks.
@@ -36,4 +37,4 @@
 ## Network
 - `INTERNET` and `ACCESS_NETWORK_STATE` enabled for leaderboards and community levels
 - Offline play uses bundled level JSON under `data/levels`
-- Firebase App Check is staged in observation mode and is not enforced in v1.0.19, allowing telemetry review before a later enforcement rollout
+- Firebase App Check is staged in observation mode and is not enforced in v1.0.20, allowing telemetry review before a later enforcement rollout

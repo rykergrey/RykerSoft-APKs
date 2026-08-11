@@ -1,5 +1,14 @@
 # Updates
 
+## v1.0.20
+
+- Smoothed the supplied SVG logo at responsive desktop and mobile sizes by generating mipmaps and using mipmapped linear filtering, eliminating the jagged diagonal edges caused by shrinking one imported raster level
+- Added native Android Back behavior: Back opens the pause menu during a match, shows a focused exit confirmation from Home, and never stacks duplicate pause overlays
+- Refined the wide desktop editor with independently scoped foreground/background rails, conventional Ctrl/Command-add and Alt-remove selection, wider responsive inspectors, stable scrolling, and uninterrupted numeric motion editing
+- Added live selected-motion preview with a dedicated pause control, clearly separated Spin Each from Orbit Group, and made grouped orbit authoring preserve one shared pivot without mutating authored peg transforms during preview
+- Pulled undersized-peg shadows proportionally closer to their silhouettes while keeping the established cast length for normal and large pieces
+- Preserved optional Google sign-in, private account identity, unique one-to-five-letter public usernames, authenticated server-owned cloud writes, and complete guest/offline play
+
 ## v1.0.19
 
 - Removed the separate animated title backdrop from both responsive home layouts so the supplied FreeBall.ing logo no longer has distracting red, blue, and pink shapes sweeping behind it
