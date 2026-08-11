@@ -37,7 +37,6 @@ Launch balls down a pegboard, seek high-value routes, and design your own boards
 ## 3. Ball mechanics
 
 - **Standard launch** — Normal bounce with fixed peg values. Charge near full for a stronger launch speed.
-- **Launcher recovery** — If a live ball bounces upward near the launcher, the barrel turns toward it and projects a visual tractor beam. Close attempts ease into anticipation slow motion and a small camera zoom, but the beam never pulls or steers the ball. A ball that physically overlaps the visible hub or barrel is captured; aim and release to fire that same ball again without spending another ball.
 - **Perfect Shot** — Release inside the gold timing window to fire a straight Perfect Beam. It destroys armor in one pass and earns 1.25× normal peg value.
 - A Perfect Shot advances the five-shot streak only if it destroys at least one eligible peg. Any non-perfect launch or empty beam resets the streak. Five successful Perfect Shots in a row award a one-time 5,000-point bonus that gutters cannot multiply.
 - Bonus and multiball pegs receive the same 1.25x Perfect Beam premium as other eligible targets; a destroyed multiball peg still releases another live ball.
@@ -56,10 +55,12 @@ Launch balls down a pegboard, seek high-value routes, and design your own boards
 
 - The full level editor is available on desktop. From the desktop home, open the Editor panel or remix a level to open the editor dock.
 - On Android, tapping Editor or an editor action opens a themed overview of its peg placement, materials, animation, audio, physics, testing, remixing, and publishing features without launching editor code.
-- On a wide desktop window, independently scoped dual inspector rails stay open over the canvas tools. The Create rail combines **Tap**, **Stamp**, and **Select**; an active foreground selection remains intact while you tune the background rail.
+- On a wide desktop window, compact independently scoped inspector rails keep foreground tools on the left and background tools on the right while maximizing the board canvas. Foreground **Create**, **Select**, **Material**, and **Motion** workspaces are separate, so placement tools never compete with object properties. Background **Create**, **Select**, **Look**, and **Motion** follow the same model.
 - Desktop grid presets are 10, 15, 20, 30, and 40 pixels. The grid stays centered on the board and automatically contrasts with the chosen background. Stamp previews show exactly which in-bounds pieces will be committed.
 - Use **Ctrl+Z** / **Ctrl+Y** (or **Ctrl+Shift+Z**) to undo and redo complete editor states, including foreground and background selections, motion, audio, gutters, and level metadata.
 - On desktop, Ctrl/Command-click or marquee adds pieces to the selection; Alt-click or marquee subtracts them. Plain selection replaces the current set. Numeric motion fields update continuously without rebuilding the field or resetting inspector scroll position.
+- The foreground Select inspector exposes exact X/Y position, rotation, scale, radius, width, height, durability hits, custom color, and pitch note. Background selection exposes exact transform, color, opacity, stroke, outline/fill, soft, glow, dash, and bold styling.
+- Use **Look** to edit the board palette and each well's 1×–3× payout. **Audio** assigns both the level music set and material/event voices. **Level** edits metadata, board scale, roaming bonus, phase-wall behavior, import/export, saving, and publishing.
 - Animate pegs with versioned foreground motion (slide, wobble, spin, scale) that previews live while selected. Use **PREVIEW** to pause at the authored pose before dragging transform handles.
 - **SPIN EACH** rotates every selected peg in place. **ORBIT GROUP** groups compatible selections and revolves the formation around one shared pivot; mixed motion profiles are left untouched instead of being overwritten.
 - Follow the funnel rule: never trap the ball with solid geometry that has no bottom exit.

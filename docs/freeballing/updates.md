@@ -1,5 +1,12 @@
 # Updates
 
+## v1.0.21
+
+- Removed Launcher Ball Recall in full, including launcher recapture and relaunch behavior, tractor-beam presentation, recovery slow motion, camera shifting, and its related animation and regression-test paths
+- Rebuilt the wide desktop editor as a dense professional workspace with a 48 px command bar, narrower foreground/background rails, dedicated Create/Select/Material/Motion and Create/Select/Look/Motion workspaces, exact object inspectors, level music and gutter authoring, conventional Ctrl/Command-add and Alt-remove selection, stable scrolling, and uninterrupted numeric editing
+- Added live selected-motion preview with a dedicated pause control, clearly separated Spin Each from Orbit Group, and preserved a shared group pivot without mutating authored peg transforms during preview
+- Maintained optional Google sign-in, private account identity, unique one-to-five-letter public usernames, authenticated server-owned cloud writes, and complete guest/offline play
+
 ## v1.0.20
 
 - Smoothed the supplied SVG logo at responsive desktop and mobile sizes by generating mipmaps and using mipmapped linear filtering, eliminating the jagged diagonal edges caused by shrinking one imported raster level
@@ -40,8 +47,6 @@
 - Added full guest play: campaign, local scores, custom-level creation, settings, and offline play work without an account; cloud score submission, voting, and community publishing require sign-in and a claimed username
 - Secured Firebase writes behind authenticated callable functions, atomic username reservations, server-derived ownership/attribution, private identity records, rate limits, and read-only public Firestore rules
 - Kept Google account details private: public profiles expose only the chosen game username, never email, Google name, avatar, provider data, or tokens
-- Added an experimental launcher recovery: an upward-returning ball can overlap the visible launcher, be captured without consuming another ball slot, and be aimed and fired again
-- Added a wide, force-free tractor-beam telegraph with launcher tracking, capture feedback, exponential anticipation slow motion, and a restrained camera push that makes near misses exciting without steering the ball
 - Smoothed mobile launcher presentation by separating render-frame movement from physics interpolation and adding a subtle directional motion echo
 - Rebalanced bumper overloads to heat from hit 5 and overload at hit 10, with hit totals shared across multiballs from the same shot
 - Added a staggered materialization effect when overloaded bumpers return after the complete shot
@@ -85,7 +90,7 @@
 
 ## v1.0.11
 
-- Desktop editor Create now combines Tap, Stamp, and Select in one focused tool row, with selection-aware material and shape editing
+- Desktop editor Create now keeps compact Place and Stamp tools separate from the dedicated Select inspector, with selection-aware material, shape, geometry, gameplay, note, and appearance editing
 - Added full-model editor undo/redo, preserving foreground/background selections, level metadata, audio configuration, motion, gutters, and future-compatible fields
 - Added centered 10/15/20/30/40 px grid presets with adaptive contrast, stable stamp previews, edge clipping, and preview-to-commit parity
 - Improved desktop palette selection, transform-wheel editing, modifier selection, marquee feedback, layered shadows, and joined-piece outlines
