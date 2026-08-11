@@ -43,7 +43,7 @@ Launch balls down a pegboard, seek high-value routes, and design your own boards
 
 ## 4. Levels & rankings
 
-- **Campaign** — Bundled levels with favorites and complexity filters.
+- **Campaign** — Eleven bundled boards with favorites and complexity filters; the same campaign is mirrored online and remains playable offline.
 - **Community** — Online boards when connected, plus local customs.
 - **Rankings** — Per-level, weekly, and all-time standings from the shared Firebase leaderboard. Existing three-letter initials and current one-to-five-letter usernames remain attached to the score that originally stored them.
 - **Public username** — After Google sign-in on Android or Windows, claim a unique one-to-five-letter A–Z name. Leaderboards and community maps show only that chosen name, not your Google name or email.

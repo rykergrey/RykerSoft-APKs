@@ -1,5 +1,12 @@
 # Updates
 
+## v1.0.22
+
+- Replaced the complete bundled and cloud campaign with eleven newly authored boards: The Cage, Diamond Mine, Nebula Drift, Galton Board, Honeycomb Haven, Orbital Decay, Plinko Master, Golden Pyramid, Super Collider, Triforce, and Whirlpool
+- Removed Checkmate and Sands of Time from the campaign, and normalized every new board title so no `Remix` suffix appears in the level browser
+- Preserved stable campaign IDs, curated categories, offline availability, audiovisual settings, motion data, custom gutters, and exact cloud/bundled parity for the replacement boards
+- Maintained optional Google sign-in, private account identity, unique one-to-five-letter public usernames, authenticated server-owned cloud writes, and complete guest/offline play
+
 ## v1.0.21
 
 - Removed Launcher Ball Recall in full, including launcher recapture and relaunch behavior, tractor-beam presentation, recovery slow motion, camera shifting, and its related animation and regression-test paths

@@ -4,9 +4,9 @@
 - **Target OS**: Android 7.0+ (API Level 24+ typical Godot export floor); Windows x86_64
 - **Engine**: Godot 4.7 (Mobile / Vulkan Mobile export)
 - **Package ID**: `com.rykersoft.freeballing`
-- **versionCode / versionName**: `22` / `1.0.21`
+- **versionCode / versionName**: `23` / `1.0.22`
 - **Architectures**: Android `armeabi-v7a`, `arm64-v8a`; Windows `x86_64`
-- **Windows packaging**: Portable Godot release EXE with embedded PCK; file/product version `1.0.21.0`
+- **Windows packaging**: Portable Godot release EXE with embedded PCK; file/product version `1.0.22.0`
 - **Android release signer SHA-1**: `80BD2A1BBC461F86B50F6C569692A6C7BE010F54`
 - **Android release signer SHA-256**: `AEC0A0690D2D2F288739D41FBF089F776FE5BEE6385033383A4BC1132BF0587E`
 
@@ -30,11 +30,11 @@
 - **Windows session security**: The desktop Firebase refresh token remains in memory for in-session ID-token renewal and is cleared at sign-out or process exit. Windows players sign in again after restarting the game rather than storing a bearer credential on disk.
 - **Public identity**: Unique uppercase A–Z usernames are one to five letters, atomically reserved in Firestore, and may change once every 30 days. Retained reservations prevent old names from being claimed by another UID.
 - **Persistence**: Local saves keep customs, preferences, profile stats, and normalized one-to-five-letter local player labels separate from the authenticated public username. Leaderboard reads resolve `username`, `playerName`, legacy `initials`, `player`, or `name` fields without detaching a label from its score. Firestore REST supplies anonymous reads for levels, scores, community maps, and public profiles.
-- **Bundled campaign data**: `_manifest.json` contains the 13 established boards, all available offline; connected campaign data may replace matching bundled IDs.
+- **Bundled campaign data**: `_manifest.json` contains the 11 replacement boards, all available offline; the production Firestore campaign mirrors the same IDs and content so connected and offline play remain consistent.
 - **Backend**: Firebase project `freeballing-59589`; callable Node.js 22 functions verify Firebase Auth, derive owner UID and username server-side, validate and rate-limit writes, and transact scores, votes, levels, and username claims. Firestore client writes are denied; public documents contain no private Google identity.
 - **Guest policy**: Guests retain all gameplay, editor, local-save, settings, and offline features. Cloud score submission, community voting, community publishing, and cloud deletion require an authenticated account; score/publishing also require a public username.
 
 ## Network
 - `INTERNET` and `ACCESS_NETWORK_STATE` enabled for leaderboards and community levels
 - Offline play uses bundled level JSON under `data/levels`
-- Firebase App Check is staged in observation mode and is not enforced in v1.0.21, allowing telemetry review before a later enforcement rollout
+- Firebase App Check is staged in observation mode and is not enforced in v1.0.22, allowing telemetry review before a later enforcement rollout
