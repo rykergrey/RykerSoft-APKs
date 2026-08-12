@@ -75,6 +75,7 @@ Long-press **Record** to configure pre-roll length, pre-roll click, or disable o
 3. Paint, select, and edit notes on the grid.
 4. Use the left touchpads: **ZOOM**, **SCROLL**, **NUDGE**, **SELECT**, **EDIT SELECTED**.
 5. Side tabs include **CTRL** (snap, note length, clip region, selection tools), **CHORDS**, **MOD** (automation), and **FILTER**.
+6. Place the playhead with the overview or ruler, then press **Play** to start from that exact arrangement position.
 
 ### Editing tips
 
@@ -85,7 +86,7 @@ Long-press **Record** to configure pre-roll length, pre-roll click, or disable o
 
 ## 7. Overview strip (playhead scrubber)
 
-Above the piano-roll grid is a **bird's-eye overview** of the whole arrangement:
+Across the full width above the ROLL control panel and piano-roll grid is a **bird's-eye overview** of the whole arrangement:
 
 - The blue box is the current viewable area (viewport lens).
 - **Tap** anywhere on the strip to place the playhead at that arrangement position.

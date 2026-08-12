@@ -1,5 +1,11 @@
 # Synthing Updates
 
+## v1.0.12
+
+- Use the arrangement overview across the complete ROLL width above both the control panel and piano-roll grid
+- Place the playhead more precisely with the wider bird's-eye timeline
+- Start ROLL playback at the exact placed playhead, including later arrangement positions that previously wrapped through a stale short clip length
+
 ## v1.0.11
 
 - Record non-destructively by default, preserving earlier notes and replacing only an exact same-synth, same-pitch start
