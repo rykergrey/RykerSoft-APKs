@@ -1,5 +1,13 @@
 # Updates
 
+## v1.0.25
+
+- Optimized dense animated boards universally by batching compatible peg motion, eliminating unchanged redraw and collider work, and keeping editor previews aligned with gameplay motion
+- Added Android-aware motion diagnostics to the level editor so future levels report their actual runtime motion-body, moving-peg, background, and shadow cost before release
+- Reworked moving peg shadows as retained transforms and automatically disables costly peg-shadow layers on dense Android boards while preserving crisp peg faces and the inexpensive ball shadow
+- Restored every authored sound-effect asset and exact playback pitch, removed substituted wall-hit notes, and removed all vibration and haptic feedback
+- Maintained the fixed 60 FPS Android target, responsive pooled audio, optional Google sign-in, private account identity, unique public usernames, authenticated cloud writes, and complete guest/offline play
+
 ## v1.0.24
 
 - Stabilized Android presentation at a consistent 60 FPS target with balanced and safe quality tiers that adapt only after sustained frame pressure, while preserving the full authored desktop presentation
@@ -102,7 +110,6 @@
 - Rebuilt mobile initials entry around physical touch events so Android no longer double-processes emulated mouse movement
 - Greatly reduced initials sensitivity with 180-screen-pixel letter spacing and stronger magnetic resistance during slow drags
 - Added velocity-based upward/downward flicks that cycle one to five letters, with a strict five-transition cap per gesture
-- Added distinct 24 ms Android haptic pulses for held-drag and timed flick letter transitions
 - Kept mobile board previews opaque so authored level colors remain accurate instead of dimming through the translucent lobby shell
 - Rebuilt the portrait level selectors as one-choice carousels with full Android drag events, readable long names, and larger unclipped arrows
 - Removed the preview identity plate and helper tooltips, while making the on-demand info glass more transparent
@@ -116,7 +123,7 @@
 - Added full-model editor undo/redo, preserving foreground/background selections, level metadata, audio configuration, motion, gutters, and future-compatible fields
 - Added centered 10/15/20/30/40 px grid presets with adaptive contrast, stable stamp previews, edge clipping, and preview-to-commit parity
 - Improved desktop palette selection, transform-wheel editing, modifier selection, marquee feedback, layered shadows, and joined-piece outlines
-- Improved initials entry on touch with deliberate letter thresholds, magnetic slow-drag feedback, fast-scroll release, and per-step haptics
+- Improved initials entry on touch with deliberate letter thresholds, magnetic slow-drag feedback, and fast-scroll release
 - Play Again now starts a clean Player 1 match while preserving the selected time limit
 - Reduced collision-storm frame spikes with chunked peg/shadow redraws, visual-only hit scaling, compacted CPU particles, simplified ring-buffer trails, and bounded collision audio clustering
 
