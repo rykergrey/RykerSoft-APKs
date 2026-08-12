@@ -1,5 +1,12 @@
 # Updates
 
+## v1.0.26
+
+- Fixed Windows Google sign-in by moving the browser exchange to Firebase's authorized localhost flow, avoiding the desktop OAuth client's secret-required token endpoint without shipping a client secret
+- Made every SOLID shape start its three-second escape timer on sustained contact, so arches, rotated pieces, side contacts, and concave pockets flash and ghost instead of trapping a ball indefinitely
+- Kept complete peg silhouettes inside the authored rails across placement, stamps, duplication, paste, transforms, import, save, preview, and gameplay, while cleaning invalid legacy relationships safely
+- Confined level animation and final-ball camera tracking to the yellow cabinet frame on desktop, portrait, zoomed, and rotated views
+
 ## v1.0.25
 
 - Optimized dense animated boards universally by batching compatible peg motion, eliminating unchanged redraw and collider work, and keeping editor previews aligned with gameplay motion

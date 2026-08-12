@@ -63,7 +63,7 @@ Launch balls down a pegboard, seek high-value routes, and design your own boards
 - Use **Look** to edit the board palette and each well's 1×–3× payout. **Audio** assigns both the level music set and material/event voices. **Level** edits metadata, board scale, roaming bonus, phase-wall behavior, import/export, saving, and publishing.
 - Animate pegs with versioned foreground motion (slide, wobble, spin, scale) that previews live while selected. Use **PREVIEW** to pause at the authored pose before dragging transform handles.
 - **SPIN EACH** rotates every selected peg in place. **ORBIT GROUP** groups compatible selections and revolves the formation around one shared pivot; mixed motion profiles are left untouched instead of being overwritten.
-- Follow the funnel rule: never trap the ball with solid geometry that has no bottom exit.
+- Follow the funnel rule: avoid solid geometry with no bottom exit. As a gameplay safety net, a ball that remains against any SOLID shape for three seconds heats the piece, flashes it, and temporarily ghosts its collision so the ball can escape.
 - Keep the center high-value slot reachable; save customs locally as a guest, or sign in and claim a username before sharing through Community.
 
 ## 6. Audio & settings
