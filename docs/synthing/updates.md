@@ -1,5 +1,14 @@
 # Synthing Updates
 
+## v1.0.11
+
+- Record non-destructively by default, preserving earlier notes and replacing only an exact same-synth, same-pitch start
+- Punch in beyond a short clip without wrapping onto measure 1; the timeline expands automatically to hold the new take
+- Capture held and newly played notes reliably through pre-roll and at the punch-in boundary
+- Long-press Record to configure pre-roll, pre-roll click, and optional overlap punch mode
+- Tap or drag the arrangement overview to position the playhead; use two fingers to scrub by measure
+- Use the full-width arrangement overview above Synth A/B on PLAY without switching to ROLL
+
 ## v1.0.10
 
 - Record armed Synth A/B performances directly into the active project without requiring a legacy launcher slot

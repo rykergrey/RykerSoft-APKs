@@ -10,7 +10,7 @@ Synthing is an Android music sketchpad for chords, melodies, arrangements, and d
 - [4. Recording](#4-recording)
 - [5. Synth design](#5-synth-design)
 - [6. Piano roll (ROLL)](#6-piano-roll-roll)
-- [7. Overview strip (viewport navigator)](#7-overview-strip-viewport-navigator)
+- [7. Overview strip (playhead scrubber)](#7-overview-strip-playhead-scrubber)
 - [8. Clips and export](#8-clips-and-export)
 - [9. Undo, settings, and saving](#9-undo-settings-and-saving)
 
@@ -54,11 +54,11 @@ Arrangement loop markers (IN / OUT) apply to the whole project timeline.
 2. Arm **Record** in the transport bar.
 3. Optionally open **ROLL** and tap or drag the timeline ruler to place the playhead at the exact punch-in position.
 4. Optionally enable **Loop** and set arrangement IN/OUT.
-5. Press **Play**. Pre-roll (if enabled in settings) counts in before the selected punch-in position.
-6. Play on the armed synths. Recording writes directly into the active project; overdub can stack new takes and live notes appear in the roll.
+5. Press **Play**. Pre-roll (if enabled in settings) counts in before the selected punch-in position and held notes are captured on the punch-in boundary.
+6. Play on the armed synths. Overdub is enabled by default: recording adds to the active project and preserves earlier notes, replacing only a same-synth/same-pitch note at the exact same start position.
 7. Press **Stop** once to end recording and keep the playhead at that position. Press **Stop** again to return to arrangement IN/start. Long-press **Stop** for panic (silence all voices).
 
-Use the Play-tab header **mini-map** to scrub the playhead for punch-in recording.
+Long-press **Record** to configure pre-roll length, pre-roll click, or disable overdub for explicit overlap punch mode. Use the full-width arrangement overview above Synth A/B to position the playhead without leaving PLAY.
 
 ## 5. Synth design
 
@@ -83,14 +83,15 @@ Use the Play-tab header **mini-map** to scrub the playhead for punch-in recordin
 - Create **Slide** (portamento) or **Legato** note links from the selection tools.
 - Draw automation in the **MOD** side panel.
 
-## 7. Overview strip (viewport navigator)
+## 7. Overview strip (playhead scrubber)
 
 Above the piano-roll grid is a **bird's-eye overview** of the whole arrangement:
 
 - The blue box is the current viewable area (viewport lens).
-- **Tap** anywhere on the strip to jump the piano roll to that region.
-- **Drag** on the strip to scrub the viewport across the arrangement.
-- This moves the view only — it does **not** place the playhead.
+- **Tap** anywhere on the strip to place the playhead at that arrangement position.
+- **Drag with one finger** to scrub the playhead continuously.
+- **Drag with two fingers** to scrub while snapping the playhead to each measure.
+- The same overview is always available above both synth panels on **PLAY**.
 
 ## 8. Clips and export
 
