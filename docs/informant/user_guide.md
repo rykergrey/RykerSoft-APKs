@@ -20,14 +20,15 @@ Research workspace for YouTube videos, articles, and Reddit posts — organized 
 1. Open INFORMANT and create a project (or open an existing one).
 2. Paste one or more YouTube, article, or Reddit URLs.
 3. On Android, you can also share a link into INFORMANT from another app.
-4. Transcripts, metadata, and comments work out of the box. For AI chat and AI actions, unlock INFORMANT in the RykerSoft App Manager and continue with the same Google account under **Settings → RykerSoft AI unlock** (see section 9), or enter your own keys in **Settings → Keys**.
+4. Provider-backed features require keys entered under **Settings → Keys**, or administrator-granted INFORMANT Pro access followed by the same Google account under **Settings → RykerSoft AI unlock** (see section 9). Notes, bookmarks, local save/import, and System/Piper TTS do not require provider access.
 
 ## 2. Working with a video
 
 1. Tap a video card to open expanded view.
 2. Use the tabs (Info, Comments, Transcript, Notes, Bookmarks, Chat, AI actions).
 3. Tap a transcript line or a timestamp citation to seek the player.
-4. Add bookmarks while watching; jump back from the Bookmarks tab later.
+4. Tap the permanent **Bookmark** action beside Share, Copy, and Export while watching. INFORMANT uses the complete transcript sentence nearest the playback position as the default title.
+5. Edit a bookmark's title with **Edit**, or tap its bookmark/timestamp control to open the exact fractional-second timestamp editor. Jump back from the Bookmarks tab later.
 
 ## 3. Picture-in-Picture while working
 
@@ -90,30 +91,30 @@ Tab scripts (when playing the whole tab from the start):
 - **Chat** — “You said…” / “Assistant said…”
 - **Transcript, article, notes, AI tabs** — cleaned plain text of the tab
 
-Configure voices, Piper downloads, and ElevenLabs models under **Settings → TTS**. Each provider has a **Preview** button. System TTS uses Android’s voices on mobile and the browser speech engine on desktop. Piper downloads a neural voice once, then works offline. ElevenLabs needs an API key (Settings → TTS / Keys, or hub unlock when available).
+Configure voices, Piper downloads, and ElevenLabs models under **Settings → TTS**. Each provider has a **Preview** button. System TTS uses Android’s voices on mobile and the browser speech engine on desktop. Piper downloads a neural voice once, then works offline. ElevenLabs uses your locally stored key or the package key loaded for an entitled RykerSoft session.
 
 ## PRO Features
 
-Items marked * require a RykerSoft pro unlock in App Manager, followed by Google sign-in to the same RykerSoft account inside this app.
+Items marked * require administrator-granted RykerSoft Pro access for INFORMANT, followed by Google sign-in to the same RykerSoft account inside this app.
 
 * **AI chat** — Ask questions about the current item or selected project items
 * **AI actions** — Run built-in or custom analysis prompts on your material
-* **Hub key sync** — Gemini / Groq (and ElevenLabs when provided) after unlock + sign-in
+* **Family-and-friends provider access** — INFORMANT loads its package-scoped Gemini, YouTube, transcript, and ElevenLabs keys after verifying the signed-in UID's exact app entitlement
 
-Everything else (transcripts, metadata, comments, notes, bookmarks, System/Piper TTS, save/import) works without unlock.
+Manual BYOK remains available without Pro. Notes, bookmarks, System/Piper TTS, and save/import work without provider access.
 
 ## 9. RykerSoft pro unlock
 
-1. In the **RykerSoft App Manager**, continue with Google.
-2. Open INFORMANT's page and use **PRO ACCESS INFO** to confirm the account the administrator should authorize.
-3. After the administrator enables `com.rykersoft.informant` for that account's Firebase UID, install and open INFORMANT, go to **Settings → RykerSoft AI unlock**, and tap **Continue with Google** using the **same** Google account.
-4. Provider access syncs automatically and pro features become available. Use **Refresh keys** if they do not appear right away.
+1. In the **RykerSoft App Manager**, continue with Google so the administrator can identify the correct hub UID.
+2. Ask the RykerSoft administrator to grant `com.rykersoft.informant` on that UID. Only the administrator can change entitlements.
+3. Install and open INFORMANT, go to **Settings → RykerSoft AI unlock**, and tap **Continue with Google** using the **same** Google account.
+4. INFORMANT verifies the exact package entitlement and loads the package's provider keys for that signed-in session. Use **Refresh access** if a new grant is not visible yet.
 
 If you already have a password-based RykerSoft account, expand **Legacy password account migration**, sign in to that existing account, then tap **Link Google**. Linking preserves the original Firebase UID, entitlement data, and provider access. The migration panel also offers password reset; it cannot create a new password account. If Google is already attached to a different RykerSoft account, INFORMANT stops and asks you to use that account or contact support rather than choosing a data owner silently.
 
 Notes:
-- Pro access is the package entitlement on your Firebase UID; no reusable family code is required.
-- Keys you enter manually in **Settings → Keys** take priority over synced keys.
+- INFORMANT and App Manager never ask users for a reusable family unlock code. Entitlements are administrator-granted against the authenticated hub UID.
+- Keys you enter manually in **Settings → Keys** take priority and remain local. RykerSoft Pro package keys stay in process memory and are cleared on sign-out.
 - Passwords and API keys start hidden. Use the in-field eye button to reveal or hide each value without losing focus or selection.
 
 ## 10. Settings
@@ -122,5 +123,5 @@ Notes:
 - Custom AI actions and model list
 - External search engines for highlighted text
 - **TTS** — default engine, System / Piper / ElevenLabs voice settings, Preview per provider
-- **Keys** — optional manual API keys (Gemini, YouTube Data, transcript, Webshare, ElevenLabs)
-- **RykerSoft AI unlock** — Google sign-in, legacy account linking/recovery, sign-out, and synced-key refresh
+- **Keys** — optional local BYOK values (Gemini, YouTube Data, transcript, Webshare, ElevenLabs)
+- **RykerSoft AI unlock** — Google sign-in, legacy account linking/recovery, sign-out, and entitlement refresh

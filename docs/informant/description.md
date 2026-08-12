@@ -5,7 +5,7 @@ Local workspace for researching YouTube videos, articles, and Reddit posts. Orga
 - Import YouTube, article, and Reddit URLs (single links or mixed batches)
 - Android share-target: share a link into INFORMANT to start or fill a project
 - Per-item tabs for notes, bookmarks, transcripts, comments, chat, and custom AI actions
-- Quote bookmarks in articles/Reddit; timestamp bookmarks on videos with jump-to
+- Quote bookmarks in articles/Reddit; a permanent video bookmark action uses the nearest complete transcript sentence as its editable title and keeps the exact timestamp editable
 - Fetch and search YouTube captions; click a line to seek the player
 - Clickable timestamp citations in chat and AI outputs (jump back into the video)
 - Pull YouTube or Reddit comment threads, search/filter, and favorite comments
@@ -28,15 +28,15 @@ Open a card for tabs that match the content type:
 Built-in AI actions include summary, analysis, key takeaways, and lists. You can add your own. Outputs can include mind maps when relevant.
 
 ## PRO Features
-Items marked * require a RykerSoft pro unlock in App Manager, followed by Google sign-in to the same RykerSoft account inside this app.
+Items marked * require administrator-granted RykerSoft Pro access for this package, followed by Google sign-in to the same RykerSoft account inside this app.
 
 * **AI chat** — Ask questions about the current video, article, or selected project items
 * **AI actions** — Run summary, analysis, key takeaways, custom prompts, and related tools
-* **Synced provider keys** — Gemini / Groq (and ElevenLabs when provided) pulled from the hub after unlock
+* **Family-and-friends Pro access** — After an administrator grants INFORMANT to a specific RykerSoft UID, the app loads its package-scoped Gemini, YouTube, transcript, and ElevenLabs keys for that signed-in session
 
 ## Platforms
 - **Android** — Capacitor build; IndexedDB on device; native share import; System TTS via Android TextToSpeech
 - **Desktop** — Windows portable / local server; projects as JSON; artifacts in SQLite (`informant.db`)
 
 ## Requirements
-Transcripts, metadata, comments, notes, bookmarks, portable project exchange, and System/Piper TTS work without cloud AI. AI chat and AI actions require the RykerSoft pro unlock (unlock in App Manager, then use the same Google account under Settings → RykerSoft AI unlock) or your own keys in Settings. Legacy password users can sign in through the migration panel and link Google without changing their Firebase UID or entitlement data. ElevenLabs TTS needs an ElevenLabs key (Settings → TTS / Keys, or hub unlock when provided).
+Notes, bookmarks, portable project exchange, and System/Piper TTS need no provider account. Public users bring their own provider keys. Family and friends receive Pro only after an administrator grants `com.rykersoft.informant` to their authenticated RykerSoft UID; INFORMANT then loads only that package's keys into memory for the signed-in session. No reusable unlock code or global family role is used. Legacy password users can link Google without changing their Firebase UID or entitlement data.

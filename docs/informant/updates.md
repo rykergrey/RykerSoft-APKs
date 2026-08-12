@@ -1,5 +1,16 @@
 # Release notes
 
+## v1.3.1
+- Add a permanent bookmark action beside Share, Copy, and Export beneath the video player
+- Generate each bookmark's default title from the complete transcript sentence nearest the exact playback timestamp
+- Let users edit bookmark titles normally or open the bookmark/timestamp control to fine-tune fractional-second timing
+- Preserve AI results more reliably when saving generated content into a new or existing custom tab
+- Make public access BYOK while granting family-and-friends Pro by authenticated RykerSoft UID and exact package entitlement
+- Load only INFORMANT's package-scoped provider keys into memory for an entitled session; clear them on sign-out and never embed them in distributable artifacts
+- Keep the Pro access path on Firebase Auth + Firestore so it works on Spark without a Cloud Functions/Blaze dependency
+- Remove bundled YouTube, transcript, Webshare, and other provider credentials from distributable client/server assets
+- Route packaged Windows Google sign-in through a temporary loopback helper in the system browser while retaining context isolation, sandboxing, and web security
+
 ## v1.3.0
 - Export full projects as RykerSoft Portable Project JSON with normalized resources, typed tabs, resumable chat history, analyses, and INFORMANT restoration extensions
 - Import the portable format back into INFORMANT while preserving notes, bookmarks, transcripts, comments, chats, analyses, playback, and tab layout
