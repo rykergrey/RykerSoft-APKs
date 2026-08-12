@@ -50,11 +50,13 @@ Arrangement loop markers (IN / OUT) apply to the whole project timeline.
 
 ## 4. Recording
 
-1. Arm **Record** in the transport bar.
-2. Optionally enable **Loop** and set arrangement IN/OUT.
-3. Press **Play**. Pre-roll (if enabled in settings) counts in before capture.
-4. Play on armed synths. Overdub can stack new takes; live notes appear in the roll while recording.
-5. Press **Stop** to end. Long-press **Stop** for panic (silence all voices).
+1. Arm Synth A, Synth B, or both from the **PLAY** tab.
+2. Arm **Record** in the transport bar.
+3. Optionally open **ROLL** and tap or drag the timeline ruler to place the playhead at the exact punch-in position.
+4. Optionally enable **Loop** and set arrangement IN/OUT.
+5. Press **Play**. Pre-roll (if enabled in settings) counts in before the selected punch-in position.
+6. Play on the armed synths. Recording writes directly into the active project; overdub can stack new takes and live notes appear in the roll.
+7. Press **Stop** once to end recording and keep the playhead at that position. Press **Stop** again to return to arrangement IN/start. Long-press **Stop** for panic (silence all voices).
 
 Use the Play-tab header **mini-map** to scrub the playhead for punch-in recording.
 

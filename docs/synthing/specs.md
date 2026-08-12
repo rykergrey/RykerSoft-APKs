@@ -7,7 +7,7 @@
 | Product name | Synthing |
 | Package / applicationId | `com.rykersoft.synthing` |
 | Namespace | `com.rykersoft.synthing` |
-| Latest version | 1.0.9 (versionCode 10) |
+| Latest version | 1.0.10 (versionCode 11) |
 
 ## Platform requirements
 

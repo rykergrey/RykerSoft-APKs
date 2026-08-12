@@ -1,5 +1,12 @@
 # Synthing Updates
 
+## v1.0.10
+
+- Record armed Synth A/B performances directly into the active project without requiring a legacy launcher slot
+- Place the piano-roll playhead anywhere in the arrangement and begin recording from that exact punch-in point
+- Count pre-roll before the selected punch-in point so held notes begin at the intended timeline position
+- Press Stop once to stop in place, then press Stop again to return to arrangement IN/start
+
 ## v1.0.9
 
 - Automatically save piano-roll and continuous-arrangement notes directly with the project, even when no section is selected

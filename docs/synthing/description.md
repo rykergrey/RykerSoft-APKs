@@ -10,7 +10,7 @@ Synthing is an Android music sketchpad with a continuous arrangement timeline, d
 - Piano-roll editor with touchpads, snap/quantize, automation lanes, and note links
 - Content-fitted bird's-eye overview strip for fast timeline navigation (viewport lens; tap/drag moves the view, not the playhead)
 - Play-tab header mini-map for playhead scrubbing and punch-in recording
-- Overdub recording with pre-roll, live note display, and dynamic synth arming
+- DAW-style recording from any piano-roll playhead position, with pre-roll, live note display, dynamic synth arming, and two-stage Stop/return-to-start behavior
 - Project manager with sections, clip launcher slots, templates, and JSON import/export
 - Reliable background auto-save for arrangement and piano-roll notes, chord/arp assignments, note filters, Synth A/B parameters, and Play/Synth/Roll workspace state
 - Crash-safe atomic project and synth files with a final save flush when the app pauses
