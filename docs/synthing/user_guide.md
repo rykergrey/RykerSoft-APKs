@@ -89,10 +89,10 @@ Long-press **Record** to configure pre-roll length, pre-roll click, or disable o
 Across the full width above the ROLL control panel and piano-roll grid is a **bird's-eye overview** of the whole arrangement:
 
 - The blue box is the current viewable area (viewport lens).
-- **Tap** anywhere on the strip to place the playhead at that arrangement position.
-- **Drag with one finger** to scrub the playhead continuously.
-- **Drag with two fingers** to scrub while snapping the playhead to each measure.
-- The same overview is always available above both synth panels on **PLAY**.
+- **Tap and release** anywhere on the strip to place the playhead at that absolute arrangement position.
+- **Drag with one finger** to scrub relative to the current playhead. The playhead moves by the drag distance and does not jump to where your finger first touched.
+- **Drag with two fingers** to scrub relatively while snapping the playhead to each measure.
+- The same overview is always available above both synth panels on **PLAY**. Pressing **Play** starts from the position selected there.
 
 ## 8. Clips and export
 

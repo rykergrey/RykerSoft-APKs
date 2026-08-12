@@ -1,5 +1,12 @@
 # Synthing Updates
 
+## v1.0.13
+
+- Tap and release either arrangement overview to place the playhead at an absolute position
+- Drag either overview to scrub relative to the current playhead without jumping to the finger-down position
+- Keep two-finger scrubbing snapped by measure
+- Start playback from the selected overview position on both PLAY and ROLL
+
 ## v1.0.12
 
 - Use the arrangement overview across the complete ROLL width above both the control panel and piano-roll grid
