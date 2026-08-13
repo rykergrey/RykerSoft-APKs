@@ -1,5 +1,13 @@
 # Release notes
 
+## v2.2.0
+- Added a responsive interface foundation with reusable dialogs, improved mobile navigation and creation flows, clearer error recovery, and refreshed installable-app assets
+- Expanded safe card, category, batch, context-menu, and Tab Manager actions with capability checks, confirmations, and more predictable save behavior
+- Improved media workflows with stronger ownership handling, linked-audio playback modes, local video transcription support, FFmpeg runtime checks, and more reliable exports
+- Reworked Windows packaging and Google authentication with a localhost callback flow, navigation restrictions, clean build output, and Electron 43 support
+- Kept RykerSoft package-entitled provider credentials isolated in memory while preserving device-local bring-your-own-key access
+- Hardened Android permissions, microphone routing, share imports, downloads, and Firebase Google authentication for the release-signed package
+
 ## v2.1.0
 - Fixed signed-in image durability: image/audio/video saves requested for cloud storage now fail visibly instead of silently leaving device-only `idb://` references, and recoverable legacy media is migrated to Firebase Storage
 - Added adaptive JSON/ZIP project import with a preview/content picker, native SuperThink.ing archives, loose-file ZIPs, and RykerSoft portable-project v1 support

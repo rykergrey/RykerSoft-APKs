@@ -21,7 +21,7 @@ SuperThink.ing is a multimodal knowledge workspace built around cards and tabs (
 * AI chat and tab editing — chat with card context and apply assistant-proposed edits.
 * AI media and transcription — generate media, run OCR, transcribe speech, and create TTS audio.
 
-PRO provider access is assigned by the RykerSoft administrator to this package and the user's Firebase UID. Continue with that same Google account under **Settings → RykerSoft AI unlock**. Editing, organizing, songs, diagrams, media storage, import/export, and sync remain available without PRO. Advanced users may instead supply their own Gemini, Groq, OpenAI, or ElevenLabs keys in Settings.
+PRO provider access is granted by the RykerSoft administrator for this exact app package. Sign into RykerSoft App Manager first, then continue with the same Google account under **Settings → RykerSoft AI unlock**. Editing, organizing, songs, diagrams, media storage, import/export, and sync remain available without PRO. Advanced users may instead supply their own Gemini, Groq, OpenAI, or ElevenLabs keys in Settings.
 
 ## Platforms
 

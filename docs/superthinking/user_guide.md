@@ -21,7 +21,7 @@ A multimodal knowledge workspace built around cards and tabs — write, chat, tr
 1. Open SuperThink.ing. **Guest mode** works immediately — everything stays on your device.
 2. Optionally continue with Google to sync cards, actions, templates, and Firebase Storage media across devices. An empty cloud vault offers to migrate your guest cards.
 3. Create a card, add tabs (text, chat, image, audio, video), and start working.
-4. For PRO provider access, ask the RykerSoft administrator to enable SuperThink.ing for your account and continue with the same Google account under **Settings → RykerSoft AI unlock**, or enter your own keys in Settings.
+4. For PRO provider access, unlock SuperThink.ing in RykerSoft App Manager and continue with the same Google account under **Settings → RykerSoft AI unlock**, or enter your own keys in Settings.
 
 ## 2. Cards, tabs & the vault
 
@@ -86,12 +86,12 @@ A multimodal knowledge workspace built around cards and tabs — write, chat, tr
 Editing, organizing, songs, diagrams, media storage, import/export, and vault sync work without PRO. Provider-backed operations need a RykerSoft entitlement or your own provider keys.
 
 1. In **RykerSoft App Manager**, continue with your Google account.
-2. Open SuperThink.ing's page and use **PRO ACCESS INFO** to confirm the account the RykerSoft administrator should authorize.
-3. After the administrator enables `com.rykersoft.superthinking` for that account's Firebase UID, go to **Settings → RykerSoft AI unlock** in SuperThink.ing and continue with the **same Google account**.
-4. Provider access syncs automatically. Use **Refresh keys** if PRO features do not appear right away.
+2. Ask the RykerSoft administrator to grant PRO access to SuperThink.ing for that account. Grants are account-bound and apply only to this app package.
+3. In SuperThink.ing, go to **Settings → RykerSoft AI unlock** and continue with the **same Google account**.
+4. Provider access loads after the app verifies the grant. Use **Refresh keys** if PRO features do not become available right away.
 
 Notes:
-- Pro access is the package entitlement on your Firebase UID; no reusable family code is required.
+- There is no reusable family code. Only the administrator can grant or revoke this app's entitlement for a signed-in account.
 - RykerSoft entitlement sign-in is separate from the SuperThink.ing app-data account that syncs your vault, even when both use the same Google identity.
 - Existing password accounts can use the legacy migration panel, reset the password if necessary, and then link Google without changing the existing UID or cloud data.
 - Keys entered manually in Settings take priority over synced keys.
