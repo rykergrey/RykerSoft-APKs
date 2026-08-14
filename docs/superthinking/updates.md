@@ -1,5 +1,9 @@
 # Release notes
 
+## v2.2.1
+- Fixed the Windows startup splash so the bundled SuperThink.ing artwork fills the launch window instead of appearing as a blank white panel
+- Kept the main Windows window hidden until Chromium has painted its first frame, eliminating the blank transition into the app
+
 ## v2.2.0
 - Added a responsive interface foundation with reusable dialogs, improved mobile navigation and creation flows, clearer error recovery, and refreshed installable-app assets
 - Expanded safe card, category, batch, context-menu, and Tab Manager actions with capability checks, confirmations, and more predictable save behavior
