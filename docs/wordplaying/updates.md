@@ -1,5 +1,20 @@
 # Updates
 
+## v1.3.0
+
+### Word Grid & Trusted Live Play
+
+- Added Word Grid, a new modifier where players tap two tiles to swap them and build as many valid straight horizontal and vertical words as possible before time expires
+- Word Grid replaces swipe-to-submit play with a rewarding top-left-to-bottom-right results sequence that reveals and scores each completed word with length-aware sounds and effects
+- Word Grid supports Letter Boost, Letter Values, and Color Bonus scoring while excluding movement, path, and live-match modifiers that conflict with tile arranging
+- Rebuilt Live Match as a trusted Firebase v2 flow: callable functions now own room creation, joining, configuration, readiness, starts, word claims, finalization, rematches, and departures
+- Live rounds use a deterministic board fingerprint and a server deadline; every submitted word, tile path, dictionary entry, score, and First Claim result is validated on the server
+- Live results, winners, presence, and room expiry are server-owned, and every participant must use a registered account with a reserved public player name
+- Rebuilt Daily Boards and community competition as an isolated trusted V2 flow: the server reserves boards before reveal, enforces deadlines and expiry, recalculates paths or final Word Grid arrangements, writes immutable rankings, and creates challenge/series summaries without trusting client scores or names
+- Compatible signed-in solo rounds can be transparently reserved as publishable drafts; offline/local fallback remains playable but cannot be posted after its board has been revealed
+- Public player-name rules now reject reserved/service and obvious abusive variants, preserve case-insensitive uniqueness, and make client-side renaming unavailable so abandoned reservations cannot be reassigned
+- Retired the legacy Colyseus/VPS path and Android cleartext and mixed-content allowances; maintained remote traffic now uses secure Firebase and dictionary HTTPS endpoints
+
 ## v1.2.1 — Reliable Finishes & Safer Accounts
 
 - Fixed a timer-expiry race that could leave Android on the TIME'S UP transition when a letter was selected as the match ended

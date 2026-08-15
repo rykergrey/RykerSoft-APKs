@@ -4,8 +4,8 @@ Boggle-style word game for Android with solo play, local pass-and-play, communit
 
 ## Key Features
 - **Classic boards**: 4×4 or 5×5 dice grids with TWL06 dictionary validation (min 3 letters; Q expands to QU).
-- **Modifiers & presets**: Strict modes, Gravity, Blind Mode, Combo Meter, Reroll, First Claim, Sabotage, and more — plus Classic / Gravity Well / Ghost Grid / Zenith of Chaos presets.
-- **Community challenges**: Post a finished board or direct-link best-of-three series; track per-board and combined standings, match leaderboards, and word lists. A registered account and write-once attempt protect competitive results.
+- **Modifiers & presets**: Strict modes, Gravity, Blind Mode, Combo Meter, Reroll, First Claim, Sabotage, and Word Grid's tile-swapping arrangement puzzle — plus Classic / Gravity Well / Ghost Grid / Zenith of Chaos presets.
+- **Community challenges**: Start a compatible signed-in solo round to reserve a trusted publishable board, then post its validated result or a direct-link best-of-three series. Firebase recalculates scores and owns immutable per-board and combined standings; offline/local-only boards cannot be published after reveal.
 - **Local pass & play**: Hand the device around with shared seeds, initials tumbler, and colored local players.
 - **Live multiplayer**: Host or join a 4-character room code; lobby ready → countdown → simultaneous play with result reconciliation.
 - **Seasons & leaderboards**: Today / This Week boards, season recaps, and lifetime profile stats via Firebase.

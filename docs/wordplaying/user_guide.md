@@ -29,14 +29,17 @@ Find words on a letter grid before time runs out — alone, pass-and-play, or ag
 ## 2. Match setup & modifiers
 
 - Select **Start New Match** to open **Match Options**, then choose **4×4** or **5×5**, timer length, and sound on/off.
-- Enable modifiers (Gravity, Blind Mode, Combo Meter, Reroll, First Claim, and others) or pick a preset such as Classic or Zenith of Chaos.
+- Enable modifiers (Gravity, Blind Mode, Combo Meter, Reroll, First Claim, Color Bonus, and others) or pick a preset such as Classic or Zenith of Chaos.
+- **Color Bonus** adds three each of red, yellow, and blue tiles on 4×4 boards, or four each on 5×5 boards. A word using three tiles of one color earns +25% (at least 1 point), while four earns +50% (at least 2); different qualifying colors stack additively.
+- **Word Grid** changes the objective: tap one tile and then any destination tile to swap them. There is no swipe-to-submit play. When time expires, every valid contiguous word of three or more tiles is scored left-to-right across rows and top-to-bottom down columns, with an ordered board reveal. Word Grid can be combined with Letter Boost, Letter Values, and Color Bonus; opposing modifiers are disabled while it is active.
 - **Saved Modes** opens expanded. After changing any default match option, use **Save Mode** beside **Start Match** to name and save the setup.
 - Load or share saved modes, import them from an image, or randomize a loadout.
 - Open **About** for rules and modifier descriptions; **Changelog** for release notes.
 
 ## 3. Community challenges
 
-- After a solo game, sign in and post the board as a community challenge.
+- Sign in before starting a compatible solo game if you may want to post it. WordPlay.ing transparently reserves an eligible trusted draft before revealing the tiles; only that pre-reserved result can become a public challenge or best-of-three series.
+- If the trusted draft cannot be reserved (for example, while offline), solo play still starts locally, but that completed board cannot be published afterward.
 - A registered account is required before a community challenge board is shown.
 - On the Matches tab, open **Playable** challenges for this week. Opening the board secures your one competitive attempt to that account.
 - Your first result is recorded automatically. You may retry the board afterward for practice, but practice results never replace the competitive score or affect standings.
@@ -61,9 +64,11 @@ Find words on a letter grid before time runs out — alone, pass-and-play, or ag
 - Select **Login**, choose **Continue with Google**, then create a separate public player name to use Daily Boards, Daily Missions, cloud scores, and community challenges.
 - WordPlay.ing never publishes your Google name, Gmail address, email local-part, or provider profile. Only the player name you explicitly choose appears in leaderboards and multiplayer.
 - Player names are 3–20 characters, are reserved case-insensitively, and may contain letters, numbers, spaces, periods, underscores, and hyphens.
+- Reserved service names and abusive names are rejected. Player names are choose-once in the app; RykerSoft administrators handle moderation or account-recovery corrections against the same Firebase UID so a name cannot be reassigned by another client.
 - While signed in, Wordbook entries, career totals, personal bests, Daily Mission progress, awards, and unlocked tile themes are stored with the account and load on other devices.
 - Guest mode works for ordinary solo and local play without competitive cloud features.
 - A competitive attempt remains bound to the account that started it. Switching accounts during a round does not transfer or reset the attempt.
+- Public Daily, challenge, and leaderboard scores are recalculated by Firebase from the reserved board and submitted tile paths (or a Word Grid final arrangement); the app cannot write ranked scores directly.
 - Browse **Today** and **This Week** leaderboards; open the season report for the previous week’s wrap-up.
 
 ### Migrating an older username account
@@ -84,7 +89,7 @@ Find words on a letter grid before time runs out — alone, pass-and-play, or ag
 - Sign in, then select **Daily Board** to play the same deterministic board and ruleset as everyone else that day.
 - The board stays hidden until Firebase secures the day’s one competitive attempt to your account.
 - Your first result is recorded automatically, including a zero score. Logging out, clearing local data, switching devices, or signing into another account does not create another ranked attempt.
-- Later attempts are clearly marked practice and cannot change the leaderboard, Daily Missions, streak, or competitive rewards.
+- Later attempts are clearly marked practice and cannot replace the trusted Daily leaderboard result; the app also excludes them from Daily Missions and streak progress.
 - Complete the three rotating Daily Missions on the secured run and play on consecutive days to build a Daily Board streak.
 - From eligible static-board results, retry the same letters and review high-value missed words.
 
