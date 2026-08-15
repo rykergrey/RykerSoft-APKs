@@ -1,5 +1,12 @@
 # Updates
 
+## v1.0.28
+
+- Deployed server-authoritative UTC weekly scoreboard backend functions (`getWeeklyLeaderboard`, `getWeeklyRankings`) and enriched score submission receipts to Firebase
+- Activated Firestore composite indexes for highscores collection-group queries
+- Resolved weekly window metadata validation errors on score submission and scoreboard rendering
+- Maintained the professional desktop creative suite, 60 FPS Android target, pooled audio, optional Google sign-in, private account identity, unique public usernames, authenticated cloud writes, and complete guest/offline play
+
 ## v1.0.27
 
 - Overhauled the desktop level editor into a professional creative suite with dedicated Foreground and Background personas, contextual top bar, and right Studio docks for Color, Swatches, Layers, Motion, Quick Select, and Appearance

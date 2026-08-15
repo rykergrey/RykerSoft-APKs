@@ -4,9 +4,9 @@
 - **Target OS**: Android 7.0+ (API Level 24+ typical Godot export floor); Windows x86_64
 - **Engine**: Godot 4.7 (Mobile / Vulkan Mobile export)
 - **Package ID**: `com.rykersoft.freeballing`
-- **versionCode / versionName**: `28` / `1.0.27`
+- **versionCode / versionName**: `29` / `1.0.28`
 - **Architectures**: Android `armeabi-v7a`, `arm64-v8a`; Windows `x86_64`
-- **Windows packaging**: Portable Godot release EXE with embedded PCK; file/product version `1.0.27.0`
+- **Windows packaging**: Portable Godot release EXE with embedded PCK; file/product version `1.0.28.0`
 - **Android release signer SHA-1**: `80BD2A1BBC461F86B50F6C569692A6C7BE010F54`
 - **Android release signer SHA-256**: `AEC0A0690D2D2F288739D41FBF089F776FE5BEE6385033383A4BC1132BF0587E`
 
