@@ -1,5 +1,14 @@
 # Updates
 
+## v1.0.27
+
+- Overhauled the desktop level editor into a professional creative suite with dedicated Foreground and Background personas, contextual top bar, and right Studio docks for Color, Swatches, Layers, Motion, Quick Select, and Appearance
+- Added deterministic flow path placement tools with live spacing adjusters, axis locks, and chain limits for precise peg creation
+- Enhanced the Layers studio with real-time layer search, filtering, and paging for dense boards
+- Added continuous numeric editing with coalesced undo/redo history and live selected-motion previewing
+- Strengthened weekly scoreboard revalidation against authoritative server time windows with graceful offline caching and lifecycle-safe UI rendering
+- Maintained the fixed 60 FPS Android target, responsive pooled audio, optional Google sign-in, private account identity, unique public usernames, authenticated cloud writes, and complete guest/offline play
+
 ## v1.0.26
 
 - Fixed Windows Google sign-in by moving the browser exchange to Firebase's authorized localhost flow, avoiding the desktop OAuth client's secret-required token endpoint without shipping a client secret

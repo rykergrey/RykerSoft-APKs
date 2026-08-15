@@ -4,9 +4,9 @@
 - **Target OS**: Android 7.0+ (API Level 24+ typical Godot export floor); Windows x86_64
 - **Engine**: Godot 4.7 (Mobile / Vulkan Mobile export)
 - **Package ID**: `com.rykersoft.freeballing`
-- **versionCode / versionName**: `27` / `1.0.26`
+- **versionCode / versionName**: `28` / `1.0.27`
 - **Architectures**: Android `armeabi-v7a`, `arm64-v8a`; Windows `x86_64`
-- **Windows packaging**: Portable Godot release EXE with embedded PCK; file/product version `1.0.26.0`
+- **Windows packaging**: Portable Godot release EXE with embedded PCK; file/product version `1.0.27.0`
 - **Android release signer SHA-1**: `80BD2A1BBC461F86B50F6C569692A6C7BE010F54`
 - **Android release signer SHA-256**: `AEC0A0690D2D2F288739D41FBF089F776FE5BEE6385033383A4BC1132BF0587E`
 
@@ -20,7 +20,7 @@
 - **Aiming**: Wall-clock launcher presentation; collision-free trajectory overlay; per-frame pointer sampling while charging
 - **Hit-stop**: Short real-time freeze that restores gameplay pace immediately when its budget expires
 - **Motion**: `MotionUtils` + versioned `objectMotions` on `LevelData` for foreground peg slide/wobble/spin/scale profiles, including shared-pivot grouped orbit motion and non-destructive live editor preview
-- **Editor**: Portrait bottom dock retained; wide desktop uses independently scoped dual inspector rails, transient Ctrl/Command-add and Alt-remove selection, integrated Tap / Stamp / Select tools, stable scroll and numeric-field state, centered 10/15/20/30/40 px grids, stable formation previews, full-silhouette rail containment, and lossless full-model undo/redo history
+- **Editor**: Portrait bottom dock retained; wide desktop uses a professional studio shell with slim left tool rail, top persona bar (Foreground / Background), contextual property bar, and right Studio dock (Color, Swatches, Layers with real-time search and paging, Motion, Quick Select, Appearance). Features flow path deterministic spacing and axis locks, continuous numeric editing with coalesced undo/redo, centered 10/15/20/30/40 px grids, stable formation previews, full-silhouette rail containment, and lossless full-model undo/redo history
 - **Android navigation**: The system Back request is handled in-app: Home toggles an exit confirmation and gameplay opens one guarded pause overlay
 - **Audio**: Material sample banks (standard / bumper / armored / multi) plus BGM; stereo pan by hit X. Authored sample imports, file choices, and pitches remain unchanged; fixed-size pools and per-frame voice budgets never retune or replace those sounds. Wall hits and generic non-scale feedback events stay silent because they have no dedicated authored samples. Android preloads music asynchronously, keeps one looping MP3 decoder active, and omits the desktop collision-bus reverb.
 - **Performance**: `PlatformPerformance` renders mobile CanvasItems at native resolution, keeps gameplay physics at 60 Hz with interpolation, and caps Android presentation at a deterministic 60 FPS. Mobile starts in `BALANCED_60` and enters `SAFE_60` only after sustained slow-frame pressure; the tiers bound trail history, particle density, ambient shapes, collision decoration, arc detail, refraction, and antialiasing while desktop retains the authored `FULL` presentation. The render-animated launcher opts out of physics interpolation to avoid double-sampling. Grouped motion sampling reuses dictionaries; ball trails and CPU particles use bounded pools and linear compaction.

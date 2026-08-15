@@ -55,14 +55,14 @@ Launch balls down a pegboard, seek high-value routes, and design your own boards
 
 - The full level editor is available on desktop. From the desktop home, open the Editor panel or remix a level to open the editor dock.
 - On Android, tapping Editor or an editor action opens a themed overview of its peg placement, materials, animation, audio, physics, testing, remixing, and publishing features without launching editor code.
-- On a wide desktop window, compact independently scoped inspector rails keep foreground tools on the left and background tools on the right while maximizing the board canvas. Foreground **Create**, **Select**, **Material**, and **Motion** workspaces are separate, so placement tools never compete with object properties. Background **Create**, **Select**, **Look**, and **Motion** follow the same model.
-- Desktop grid presets are 10, 15, 20, 30, and 40 pixels. The grid stays centered on the board and automatically contrasts with the chosen background. Stamp previews show exactly which in-bounds pieces will be committed.
-- Use **Ctrl+Z** / **Ctrl+Y** (or **Ctrl+Shift+Z**) to undo and redo complete editor states, including foreground and background selections, motion, audio, gutters, and level metadata.
-- On desktop, Ctrl/Command-click or marquee adds pieces to the selection; Alt-click or marquee subtracts them. Plain selection replaces the current set. Numeric motion fields update continuously without rebuilding the field or resetting inspector scroll position.
-- The foreground Select inspector exposes exact X/Y position, rotation, scale, radius, width, height, durability hits, custom color, and pitch note. Background selection exposes exact transform, color, opacity, stroke, outline/fill, soft, glow, dash, and bold styling.
-- Use **Look** to edit the board palette and each well's 1×–3× payout. **Audio** assigns both the level music set and material/event voices. **Level** edits metadata, board scale, roaming bonus, phase-wall behavior, import/export, saving, and publishing.
-- Animate pegs with versioned foreground motion (slide, wobble, spin, scale) that previews live while selected. Use **PREVIEW** to pause at the authored pose before dragging transform handles.
-- **SPIN EACH** rotates every selected peg in place. **ORBIT GROUP** groups compatible selections and revolves the formation around one shared pivot; mixed motion profiles are left untouched instead of being overwritten.
+- On a wide desktop window, the editor functions as a professional creative suite: a slim tool rail on the left, a top persona switcher (**Foreground** / **Background**), a contextual parameter bar, and a dedicated right **Studio** dock (**Color**, **Swatches**, **Layers**, **Motion**, **Quick Select**, and **Appearance**).
+- **Tool rail & personas** — Switch between Foreground (pegs, bumpers, structures) and Background (ambient art, shapes, decorative layers). Each persona keeps independent tool state, layer organization, and inspector properties.
+- **Placement & flow paths** — Tap to place single pegs or drag along flow paths. The flow path tool ensures deterministic spacing, automatic orientation alignment, and axis snapping (hold Shift).
+- **Layers studio** — Search layers in real time, toggle visibility/locking, reorder depths, and page through large boards smoothly.
+- **Grids & snapping** — Centered grid presets: 10, 15, 20, 30, and 40 pixels with automatic contrast against dark or light backdrops. Stamp previews show exactly which in-bounds pieces will be committed.
+- **History & precision editing** — **Ctrl+Z** / **Ctrl+Y** (or **Ctrl+Shift+Z**) provides full undo/redo history with coalesced numeric modifications. Numeric fields allow direct typing and continuous scrubbing without losing focus.
+- **Motion studio** — Animate pieces with versioned foreground motion (slide, wobble, spin, scale) that previews live while selected. **SPIN EACH** rotates pieces individually; **ORBIT GROUP** revolves the group around a shared pivot.
+- **Look, Audio & Gutter economics** — Customize board palettes, 1×–3× gutter payouts and well colors, level background music sets, and event sound pitches.
 - Follow the funnel rule: avoid solid geometry with no bottom exit. As a gameplay safety net, a ball that remains against any SOLID shape for three seconds heats the piece, flashes it, and temporarily ghosts its collision so the ball can escape.
 - Keep the center high-value slot reachable; save customs locally as a guest, or sign in and claim a username before sharing through Community.
 
