@@ -1,5 +1,35 @@
 # Updates
 
+## v1.3.3 — Firebase Production Activation & Scoring Parity
+
+### Firebase Infrastructure & Live Competition
+- Activated all 16 Firebase Cloud Functions on Google Cloud (`wordplaying-5eec3`) for server-authoritative scoring, anti-cheat attempt reservations, draft sealing, and community challenge publishing
+- Verified live real-time multiplayer room creation, joining, heartbeat, word submission, and round completion
+- Automated weekly leaderboard winner finalization and crown distribution to `weekWinnersV2`
+- Enforced strict Firestore security rules and composite indexes across all competitive and progression collections
+
+## v1.3.2 — Today's Board Polish & Instant Gameplay
+
+### Today's Board Enhancements
+- Renamed primary action button to **Today's Board** for clean, immediate recognition
+- Removed "one ranked try" and attempt restriction labels for a frictionless experience
+- Removed the onboarding tutorial wizard from the daily board function so players launch directly into the active game
+- Added robust local/offline fallback to ensure Today's Board always starts instantly without `internal` popups or connection delays
+
+## v1.3.1 — Match Options Redesign & Mode Image Sharing
+
+
+### Match Options Screen Redesign
+- Reorganized Match Options with Featured Modes and Saved Modes side-by-side above General Settings for quick mode selection
+- Set default collapsible state: General Settings expanded by default; Featured Modes, Saved Modes, and Modifiers collapsed by default
+- Added **Word Grid Deluxe** featured mode: 5×5 grid, 2-minute timer with Word Grid, Color Bonus, and Letter Values
+- Upgraded Saved Custom Modes sharing to export and import standard PNG image cards with embedded metadata (`tEXt` chunk with CRC32 and pixel fallback)
+
+### Daily Board & Post-Game Flow
+- Added post-match action to save current modifier combinations directly to Saved Modes from the results screen
+- Verified deterministic Pacific Time midnight Daily Board resets and match preview overlays
+- Streamlined practice retries vs competitive first-attempt scoring
+
 ## v1.3.0
 
 ### Word Grid & Trusted Live Play

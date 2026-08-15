@@ -86,12 +86,13 @@ Find words on a letter grid before time runs out — alone, pass-and-play, or ag
 
 ## 8. Daily Board & practice
 
-- Sign in, then select **Daily Board** to play the same deterministic board and ruleset as everyone else that day.
-- The board stays hidden until Firebase secures the day’s one competitive attempt to your account.
-- Your first result is recorded automatically, including a zero score. Logging out, clearing local data, switching devices, or signing into another account does not create another ranked attempt.
-- Later attempts are clearly marked practice and cannot replace the trusted Daily leaderboard result; the app also excludes them from Daily Missions and streak progress.
-- Complete the three rotating Daily Missions on the secured run and play on consecutive days to build a Daily Board streak.
+- Select **Today's Board** on the main menu to play the same deterministic board and ruleset as everyone else worldwide that day.
+- The board resets at midnight Pacific Time (PST/PDT) every day with a fresh grid and a unique set of compatible modifiers.
+- When signed in with an account, competitive Daily leaderboard results and missions are recorded.
+- Later attempts on the board can be replayed freely for practice.
+- Complete rotating Daily Missions and play on consecutive days to build a Daily Board streak.
 - From eligible static-board results, retry the same letters and review high-value missed words.
+
 
 ## 9. Wordbook, awards & progression
 
