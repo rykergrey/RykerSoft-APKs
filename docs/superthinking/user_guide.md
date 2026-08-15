@@ -71,7 +71,7 @@ A multimodal knowledge workspace built around cards and tabs — write, chat, tr
 
 - **Images**: upload or capture, crop, send to other tabs, download/share.
 * **Image OCR**: extract text from an image through a configured provider.
-- **Audio**: record with configurable quality and device routing, trim on the waveform, export MP3/WAV, and play through the global player.
+- **Audio**: record with configurable quality and device routing, trim on the waveform, export MP3/WAV, and play through the global player. On narrow screens, previous/play/next controls share the seek row to keep every action accessible. While recording, that same track becomes a live green input-level meter and returns to seek mode when recording stops.
 - **Video**: upload files or add YouTube/URL entries.
 * **Transcription**: transcribe audio and video through Groq Whisper, OpenAI Whisper, or Gemini; YouTube captions use a multimodal fallback when needed.
 - **Linked audio**: attach audio regions to lyrics or notes with inline playback controls, queue, repeat, and auto-scroll.

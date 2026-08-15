@@ -3,7 +3,7 @@
 ## Package
 - **App name:** SuperThink.ing
 - **Android package ID:** `com.rykersoft.superthinking`
-- **Current version:** 2.2.0 (versionCode 123)
+- **Current version:** 2.2.2 (versionCode 125)
 
 ## Platforms
 | Platform | Stack | Storage |
@@ -16,6 +16,7 @@
 - **minSdk:** 24, **targetSdk / compileSdk:** 36
 - Release builds signed via `android/keystore.properties` (gitignored)
 - Native plugins: Firebase Authentication (Google), MicrophoneRouting (mic/Bluetooth routing), DownloadSaver (public Downloads), share-target import
+- The native microphone plugin reports live input amplitude during recording; web and desktop builds use the Web Audio analyser fallback
 
 ## Accounts & sync
 - **Guest mode**: cards and prefs in local storage, media in IndexedDB — no account needed

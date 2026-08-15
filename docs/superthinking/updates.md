@@ -1,5 +1,10 @@
 # Release notes
 
+## v2.2.2
+- Redesigned the audio player for narrow mobile screens, placing previous, play/pause, next, and the seek bar together in a compact playback row so secondary actions no longer get clipped
+- Turned the seek track into a live green input-level meter while recording, then restored normal seeking as soon as recording stops
+- Added native Android microphone-level reporting with a browser-compatible analyser fallback for responsive recording feedback across supported devices
+
 ## v2.2.1
 - Fixed the Windows startup splash so the bundled SuperThink.ing artwork fills the launch window instead of appearing as a blank white panel
 - Kept the main Windows window hidden until Chromium has painted its first frame, eliminating the blank transition into the app

@@ -9,7 +9,7 @@ SuperThink.ing is a multimodal knowledge workspace built around cards and tabs (
 - **Diagrams**: Markmap mind maps and Mermaid diagrams with SVG/PNG export
 * **Chat provider operations**: per-tab model, temperature, system prompt, and history; context references; tab-edit proposals with Apply/Undo; TTS replies into audio tabs
 * **AI actions**: built-in library (summarize, mind map, OCR, web research, image/video generation, TTS presets, code refactor) plus a custom Action Builder/Editor with favorites and categories
-- **Media**: image upload/camera/crop; audio recording with waveform trim and MP3/WAV export (FFmpeg); video upload and YouTube entries
+- **Media**: image upload/camera/crop; responsive audio playback, live green recording-level feedback, waveform trim, and MP3/WAV export (FFmpeg); video upload and YouTube entries
 * **Provider-backed media tools**: OCR, transcription, generation, and TTS through Gemini, Groq, OpenAI, or ElevenLabs
 - **Linked audio**: link audio regions into lyrics or notes with inline playback, queues, repeat, and auto-scroll
 - **Import/export/share**: adaptive JSON/ZIP project import with content selection, RykerSoft portable-project support, card and batch ZIP export, Android share-intent import, and a native Downloads saver
