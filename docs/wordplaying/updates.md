@@ -1,5 +1,13 @@
 # Updates
 
+## v1.3.7 — Daily Boards Hub & Competitive Fair Play
+
+### Daily Boards Hub & Daily Progression
+- Added **Daily Boards Hub** modal featuring 5 curated daily challenges every day (Daily Classic, Word Grid Deluxe, Gravity Well, and two rotating modifier setups)
+- Progress tracking showing daily board completion count directly on the main menu button
+- Standings & score reveal lock: leaderboard ranks remain obscured until the player completes their ranked attempt for the active board
+- Server-authoritative daily configuration resolution on Google Cloud Functions ensuring deterministic validation across all daily boards
+
 ## v1.3.6 — Modifier Parity & Deterministic Simulation Engine
 
 ### Competitive Modifier Parity
