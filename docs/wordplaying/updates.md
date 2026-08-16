@@ -1,5 +1,13 @@
 # Updates
 
+## v1.3.8 — Match Updates Reliability & Modal Error Boundaries
+
+### Match Updates & Feed Polish
+- Filtered out self-activity and unplayed creator challenges from the match updates notifications feed
+- Added dedicated React Suspense and ErrorBoundary guards around dynamic modal lazy loads to prevent crash propagation
+- Preserved challenge last-viewed timestamps in local storage to prevent duplicate match notification popups
+- Extended server-side competitive attempt validation to seamlessly accept daily board identifiers
+
 ## v1.3.7 — Daily Boards Hub & Competitive Fair Play
 
 ### Daily Boards Hub & Daily Progression
