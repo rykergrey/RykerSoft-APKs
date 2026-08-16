@@ -1,5 +1,12 @@
 # Updates
 
+## v1.3.6 — Modifier Parity & Deterministic Simulation Engine
+
+### Competitive Modifier Parity
+- Full client and Cloud Functions server-authoritative parity across all active gameplay modifiers: **Gravity**, **Reroll**, **Full Reroll**, **Hide & Seek**, and **Tap Out**
+- Deterministic column-based gravity spawning and board advancement logic ensuring identical score calculations across live matches and competitive community challenges
+- Added comprehensive parity verification test suites in `scripts/verify-gravity-parity.ts` and `scripts/verify-modifiers-parity.ts`
+
 ## v1.3.5 — Career Progression & Expanded Milestones System
 
 ### Expanded Career & Achievement Tracking
@@ -39,7 +46,7 @@
 
 ### Match Options Screen Redesign
 - Reorganized Match Options with Featured Modes and Saved Modes side-by-side above General Settings for quick mode selection
-- Set default collapsible state: General Settings expanded by default; Featured Modes, Saved Modes, and Modifiers collapsed by default
+- Match Options layout: General Settings and Modifiers are permanently visible; Featured Modes and Saved Modes are collapsible
 - Added **Word Grid Deluxe** featured mode: 5×5 grid, 2-minute timer with Word Grid, Color Bonus, and Letter Values
 - Upgraded Saved Custom Modes sharing to export and import standard PNG image cards with embedded metadata (`tEXt` chunk with CRC32 and pixel fallback)
 
