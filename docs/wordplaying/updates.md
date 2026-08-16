@@ -1,5 +1,18 @@
 # Updates
 
+## v1.3.4 — Wordbook Definitions, Color Bonus Themes & Match Prep Polish
+
+### Wordbook Interactive Definitions
+- Added live dictionary definition lookups directly inside the collected Wordbook: tap any collected word to view its definition, part of speech, and letter count in a dedicated definition card
+- Enhanced word sorting, searching, and length breakdown chips across collected vocabulary
+
+### Color Bonus Theme Refinements
+- Rebuilt bonus color styling (red, blue, yellow) across all four visual tile themes (Classic, Ember, Aurora, Royal) with custom gradient depth, contrast borders, and radiant highlights
+- Removed redundant corner badges in favor of full-tile theme-integrated color treatments
+
+### Smooth Match Preparation
+- Added an animated preparing-match transition overlay during server board reservations and rule setups to prevent screen flickering or home menu drops
+
 ## v1.3.3 — Firebase Production Activation & Scoring Parity
 
 ### Firebase Infrastructure & Live Competition
