@@ -1,9 +1,14 @@
 # Updates
 
-## v1.3.4 — Wordbook Definitions, Color Bonus Themes & Match Prep Polish
+## v1.3.5 — Career Progression & Expanded Milestones System
 
-### Wordbook Interactive Definitions
-- Added live dictionary definition lookups directly inside the collected Wordbook: tap any collected word to view its definition, part of speech, and letter count in a dedicated definition card
+### Expanded Career & Achievement Tracking
+- Expanded career statistics tracking across games, letters formed, high-scoring words, long-word feats (7+ and 8+ letters), clean sweeps, modifier mastery, and multiplayer/live matches
+- Reorganized the Awards system into 5 distinct categories: Milestones, Skill & Feats, Streaks, Modes & Modifiers, and Multiplayer
+- Streamlined progression storage to lightweight cloud summaries and idempotent per-match receipts
+
+## v1.3.4 — Color Bonus Themes & Match Prep Polish
+
 - Enhanced word sorting, searching, and length breakdown chips across collected vocabulary
 
 ### Color Bonus Theme Refinements
@@ -70,13 +75,13 @@
 
 ## v1.2.0 — Your Game, Everywhere
 
-- Signed-in Wordbook entries, career totals, personal bests, Daily Mission progress, awards, and tile-theme unlocks now follow the player across devices
+- Signed-in career totals, personal bests, Daily Mission progress, awards, and tile-theme unlocks now follow the player across devices
 - Completed solo, community, Daily Board, and live multiplayer rounds use per-match receipts so progression is recorded only once
 - Match Options now focuses on grid size, duration, multiplayer, featured modes, modifiers, and saved modes
 - Tile themes, effects volume, haptics, reduced motion, high contrast, and large letters moved into a dedicated Player Settings screen
 - Today’s Board and Start New Match now share the primary action row, with Settings beside Login or Logout
 - Saved Modes opens expanded, and a contextual Save Mode action appears beside Start Match for non-default setups
-- Firestore rules now isolate progression summaries, Wordbook entries, and immutable match receipts to their owning registered account
+- Firestore rules now isolate progression summaries and immutable match receipts to their owning registered account
 
 ## v1.1.1 — Fair Play & Competitive Integrity
 
@@ -96,7 +101,7 @@
 - A deterministic Daily Board with a comparable skill leaderboard and practice runs
 - Rotating daily goals plus current/best Daily Board streaks
 - Career totals, nine achievements, and three unlockable tile themes
-- A persistent, searchable Wordbook with collection insights and award progress
+- Career tracking with milestones, achievements, and award progress
 - Effects-volume, haptics, reduced-motion, high-contrast, and large-letter preferences
 - A guided first-round tutorial, keyboard tile play, live announcements, and accessible dialogs
 - Direct challenge links and asynchronous best-of-three series with combined standings

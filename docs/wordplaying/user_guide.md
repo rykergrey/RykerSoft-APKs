@@ -12,7 +12,7 @@ Find words on a letter grid before time runs out — alone, pass-and-play, or ag
 - [6. Accounts, seasons & leaderboards](#6-accounts-seasons--leaderboards)
 - [7. Audio Lab & word gallery](#7-audio-lab--word-gallery)
 - [8. Daily Board & practice](#8-daily-board--practice)
-- [9. Wordbook, awards & progression](#9-wordbook-awards--progression)
+- [9. Awards & progression](#9-awards--progression)
 - [10. Comfort & accessibility](#10-comfort--accessibility)
 - [11. Windows desktop](#11-windows-desktop)
 
@@ -65,7 +65,7 @@ Find words on a letter grid before time runs out — alone, pass-and-play, or ag
 - WordPlay.ing never publishes your Google name, Gmail address, email local-part, or provider profile. Only the player name you explicitly choose appears in leaderboards and multiplayer.
 - Player names are 3–20 characters, are reserved case-insensitively, and may contain letters, numbers, spaces, periods, underscores, and hyphens.
 - Reserved service names and abusive names are rejected. Player names are choose-once in the app; RykerSoft administrators handle moderation or account-recovery corrections against the same Firebase UID so a name cannot be reassigned by another client.
-- While signed in, Wordbook entries, career totals, personal bests, Daily Mission progress, awards, and unlocked tile themes are stored with the account and load on other devices.
+- While signed in, career totals, personal bests, Daily Mission progress, awards, and unlocked tile themes are stored with the account and load on other devices.
 - Guest mode works for ordinary solo and local play without competitive cloud features.
 - A competitive attempt remains bound to the account that started it. Switching accounts during a round does not transfer or reset the attempt.
 - Public Daily, challenge, and leaderboard scores are recalculated by Firebase from the reserved board and submitted tile paths (or a Word Grid final arrangement); the app cannot write ranked scores directly.
@@ -75,7 +75,7 @@ Find words on a letter grid before time runs out — alone, pass-and-play, or ag
 
 - On the account screen, select **I have an older username account** and enter the existing WordPlay.ing username and password.
 - After the legacy account is authenticated, select **Link Google and continue** and choose the Google account that should own future sign-ins.
-- Linking happens while the original Firebase user is active, so its UID, Wordbook, progression, awards, and competitive history remain attached to the same account.
+- Linking happens while the original Firebase user is active, so its UID, progression, awards, and competitive history remain attached to the same account.
 - If Google is already connected to a different WordPlay.ing account, the app stops without merging or overwriting data. Use the matching Google account or contact support before attempting a merge.
 - The migration password remains hidden by default. Use the in-field **Show password** or **Hide password** button when needed.
 
@@ -94,13 +94,12 @@ Find words on a letter grid before time runs out — alone, pass-and-play, or ag
 - From eligible static-board results, retry the same letters and review high-value missed words.
 
 
-## 9. Wordbook, awards & progression
+## 9. Awards & progression
 
-- Every word found in a completed signed-in round is recorded in the account’s **My Wordbook** and synchronized through Firebase.
-- Open the book icon from the menu to search collected words and review collection totals.
-- The **Awards** tab tracks nine achievements. Career totals, Daily Board streaks, and personal bests update as you play.
-- Completed matches use a unique receipt, so retrying a result upload does not duplicate career or Wordbook progress.
-- Completing achievements unlocks additional tile themes, which can be selected in **Settings**.
+- Career stats and achievements advance for all completed matches when signed in, keeping your progress synced across devices.
+- The **Awards** tab on the home screen tracks over 50 achievements with category filters: Milestones, Skill & Feats, Streaks, Modes & Modifiers, and Multiplayer. Career score, total matches, and Daily Board streaks update automatically.
+- Completed matches use unique Firestore receipts, preventing duplicated career stats.
+- Completing key achievements unlocks additional tile themes (Ember, Aurora, Royal), which can be selected in **Settings**.
 
 ## 10. Comfort & accessibility
 

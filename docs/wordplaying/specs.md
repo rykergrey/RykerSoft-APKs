@@ -6,14 +6,14 @@
 - **Web**: Modern Chromium-, Firefox-, or WebKit-based browser
 - **compileSdk / targetSdk**: 36
 - **Package ID**: `com.rykersoft.wordplaying`
-- **Release version**: 1.3.4 (version code 10)
+- **Release version**: 1.3.5 (version code 11)
 - **Shell**: Capacitor 8 (WebView) wrapping a Vite + React 19 TypeScript app
 
 
 ## Architecture
 - **UI**: React components for board, overlays, modals, multiplayer lobby
 - **Game engine**: Client-side PRNG boards, adjacency rules, TWL06 DAWG dictionary
-- **Backend**: Firebase Google Authentication + Firestore; trusted callable functions own Live Match v2 and public competitive attempts, boards, deadlines, validation, scores, challenges, seasons, and expiry. Firestore rules separately isolate public player-name reservations and each account's private progression / Wordbook data.
+- **Backend**: Firebase Google Authentication + Firestore; trusted callable functions own Live Match v2 and public competitive attempts, boards, deadlines, validation, scores, challenges, seasons, and expiry. Firestore rules separately isolate public player-name reservations and each account's private progression data.
 - **Audio**: Web Audio API synth / step sequencer
 - **Definitions**: Free Dictionary API (`api.dictionaryapi.dev`)
 - **Optional desktop**: Electron + electron-builder
