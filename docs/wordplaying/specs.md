@@ -6,7 +6,7 @@
 - **Web**: Modern Chromium-, Firefox-, or WebKit-based browser
 - **compileSdk / targetSdk**: 36
 - **Package ID**: `com.rykersoft.wordplaying`
-- **Release version**: 1.3.8 (version code 14)
+- **Release version**: 1.3.9 (version code 15)
 - **Shell**: Capacitor 8 (WebView) wrapping a Vite + React 19 TypeScript app
 
 

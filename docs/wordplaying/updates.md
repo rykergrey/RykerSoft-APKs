@@ -1,5 +1,12 @@
 # Updates
 
+## v1.3.9 — Electron Custom Protocol & Auth Concurrency Hardening
+
+### Desktop & Authentication Modernization
+- Migrated Electron production assets from a local HTTP loopback server to a high-performance custom `app://wordplaying` protocol handler
+- Hardened Firebase auth initialization with `authStateReady()` and deduplicated anonymous session provisioning concurrency
+- Added graceful offline fallback for public player profile retrieval during active user sessions
+
 ## v1.3.8 — Match Updates Reliability & Modal Error Boundaries
 
 ### Match Updates & Feed Polish
