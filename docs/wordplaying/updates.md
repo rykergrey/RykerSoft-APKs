@@ -1,5 +1,123 @@
 # Updates
 
+## v1.3.20
+
+Career Leaderboards, Daily Fair-Play Standings & Gravity Integrity
+
+### Public Career Leaderboards & Player Profiles
+- Added a **Career** leaderboard scope beside season boards, ranking lifetime high score, longest word, best word score, words found, career score, matches, and weeks at #1
+- Tapping a ranked player opens a public career profile with awards, mode records, and modifier bests — using only the chosen player name, never Google or email identity
+- Trusted Cloud Functions now write lifetime career totals and per-mode records when a competitive attempt is sealed, so clients cannot forge public career stats
+
+### Daily Board Fair-Play Standings
+- Daily Board Hub now shows a Monday–Sunday week strip so you can jump to any board in the current competitive week
+- Other players’ names, ranks, and scores stay hidden until you submit that day’s board, so standings cannot spoil an unplayed Daily
+- Match word lists remain readable only after you have played the same match
+
+### Gravity Spawn Integrity
+- Gravity now assigns replacement-tile IDs exactly once per submitted word, even under React Strict Mode or a second pointer-up during the settle animation
+- Gravity timeouts are cleared on new match, retry, and unmount so leftover settle timers cannot skip spawn IDs or lock the board
+
+## v1.3.19 — Immersive Fullscreen Display & Multiplayer Modifier Integrity
+
+### Android Immersive Fullscreen Mode
+- Configured Android edge-to-edge system bars controller hiding navigation and status bars with transient swipe gesture support
+- Added display cutout short edges mode for full screen expansion across display notches and hole-punch cameras
+- Updated application and splash launch window themes to force seamless fullscreen rendering
+
+### Multiplayer Modifier Isolation & Fallback Integrity
+- Isolated multiplayer-exclusive modifiers (such as Turf War) with dedicated cleanup on switching to Solo mode
+- Cleaned up real-time live match modifiers and multiplayer toggles in Match Settings to prevent invalid state persistences
+- Added comprehensive unit and assertion tests ensuring solo modifier normalization and fallback behavior
+
+## v1.3.18 — Turf War Dynamic Territory Replay & Shot Clock Enhancements
+
+### Turf War Post-Game Territory Replay & Stats
+- Introduced dynamic, animated territory grid replay on the Game Over screen revealing final tile ownership sequentially with player color bevels
+- Added an interactive territory control proportion bar showcasing live percentage breakdown during tally progression
+- Upgraded the final territory standings leaderboard with real-time tile tallies and dominance percentages
+
+### Shot Clock & Turn Synchronization
+- Synchronized Turf War turn timer directly with the remaining match clock to prevent overrunning the match limit
+- Added pulsing critical turn time indicators and an active player-colored shot clock progress bar in the game header
+- Enhanced tile depth, active bevel shadows, and active state transitions across standard and multiplayer boards
+
+## v1.3.17 — Swipe Selection Mechanic, Turf War Polish & Competitive Enhancements
+
+### Swipe Tile Selection & Motion Mechanics
+- Introduced smooth touch and pointer drag/swipe word selection across the game board for rapid, fluid word formation
+- Added responsive haptic feedback and dynamic melody synthesis while swiping across adjacent letter tiles
+- Implemented automatic pointer release handling and touch cancellation resilience
+
+### Turf War & Local Multiplayer Polish
+- Enhanced Turn-based Local Multiplayer Turf War mode with real-time territory ownership tracking and tile conquest animations
+- Added sub-word tile stealing mechanics with dedicated duplicate warning audio chimes
+- Streamlined turn transitions, Game Over territory breakdown, and score summary visualizations
+
+### Word Grid & Engine Refinements
+- Optimized Word Grid swap interactions and word placement validation
+- Enhanced game engine state synchronization and verification test suites
+
+## v1.3.16 — Settings Modal Modifier Controls & UI Layout Streamlining
+
+### Settings & Modifier Controls Polish
+- Redesigned the Match Options & Settings modal layout with a streamlined 2-column Grid Size and Duration picker
+- Embedded the Modifier Randomizer directly into the Modifiers section header alongside a new quick **"Deselect All"** action button
+- Refined the modifier randomizer algorithm to guarantee valid, compatible modifier sets with responsive audio feedback
+- Updated the "Bounty Hunter" preset configuration and descriptions
+
+## v1.3.15 — Word Hunt Micro-Animations & Career Progression Integrity
+
+### Gameplay Polish & Visual FX
+- Added dynamic `@keyframes bountyPopBurst` particle burst micro-animations for discovered words in Bounty Hunt mode
+- Enhanced ticker status chips with real-time score indicators, strike-through styling, and smooth completion transitions
+
+### Progression & Competitive Fairness
+- Gated word discovery, length, clean run, and long-word career achievements during pre-filled Bounty Hunt mode to maintain competitive achievement integrity
+- Updated Bounty Hunt modifier rules and descriptive documentation
+
+## v1.3.14 — Word Hunt Mode, Daily Board Hub Redesign & Android Back Navigation
+
+### Word Hunt Gameplay Mode & Board Solver
+- Introduced **Word Hunt** (Reverse Word Search) mode with deterministic target word discovery and score-ranked bounties
+- Enhanced board solver and word validation with real-time target word bounty tracking
+- Added parity verification suite for Word Hunt mode in `scripts/verify-word-hunt.ts`
+
+### UI & UX Modernization
+- Redesigned **Daily Boards Hub** modal with streamlined challenge cards, intuitive milestone indicators, and adaptive layouts
+- Consolidated **Settings** and **Player Settings** into a unified, tabbed settings modal
+- Refined **Enabled Modifiers** groupings in Match Options and Multiplayer Lobby for instant modifier visual hierarchy
+- Updated selected tile background colors and active letter themes
+
+### Android Platform Navigation
+- Integrated native Android hardware/gesture back button handling via `@capacitor/app` with exit confirmation modal
+
+## v1.3.13 — Local Pass & Play UI Polish & Responsive Overlays
+
+### Game Overlay & Local Multiplayer Polish
+- Overhauled the Pass & Play turn handover and player ready overlay with responsive font scaling, optimized stat chips, and adaptive vertical padding
+- Added scroll container boundaries ensuring all match rules, modifiers, and start action buttons remain accessible across smaller mobile screens and landscape orientations
+
+## v1.3.12 — Word Grid Rapid Swapping & Responsiveness
+
+### Word Grid Gameplay Polish
+- Removed the swap animation input lock in Word Grid mode to enable fluid, high-speed consecutive tile swapping without interaction delays
+- Enabled active candidate tile highlight feedback during swap animations in Word Grid for instant visual tracking
+
+## v1.3.11 — Daily Board Activity & Standings Resilience
+
+### Daily Board Hub & UI Polish
+- Hardened Daily Boards modal rendering with comprehensive type checks and null safety guards across player counts, contender lists, score summaries, and standings leaderboards
+- Ensured smooth, error-free display of daily board activities when attempting unplayed or low-traffic daily challenges
+- Preserved responsive layout across desktop and mobile layouts during live daily updates
+
+## v1.3.10 — Competitive Config Hash Validation Fix
+
+### Server-Side Competitive Integrity
+- Fixed config hash validation in Cloud Functions to accept both raw and canonicalized competitive configurations, resolving intermittent daily board validation failures
+- Updated competitive attempt verification to gracefully handle legacy stored attempts with pre-canonicalization config hashes
+- Extended parity test suite with raw vs canonical config hash cross-validation assertions
+
 ## v1.3.9 — Electron Custom Protocol & Auth Concurrency Hardening
 
 ### Desktop & Authentication Modernization

@@ -69,7 +69,8 @@ Find words on a letter grid before time runs out — alone, pass-and-play, or ag
 - Guest mode works for ordinary solo and local play without competitive cloud features.
 - A competitive attempt remains bound to the account that started it. Switching accounts during a round does not transfer or reset the attempt.
 - Public Daily, challenge, and leaderboard scores are recalculated by Firebase from the reserved board and submitted tile paths (or a Word Grid final arrangement); the app cannot write ranked scores directly.
-- Browse **Today** and **This Week** leaderboards; open the season report for the previous week’s wrap-up.
+- Browse **Today** and **This Week** season leaderboards, or switch to **Career** for lifetime high score, longest word, best word score, words found, career score, matches, and weeks at #1.
+- Tap a ranked player to open their public career profile (chosen player name, awards, and mode records). WordPlay.ing never shows Google or email identity there.
 
 ### Migrating an older username account
 
@@ -88,10 +89,13 @@ Find words on a letter grid before time runs out — alone, pass-and-play, or ag
 
 - Select **Today's Board** on the main menu to play the same deterministic board and ruleset as everyone else worldwide that day.
 - The board resets at midnight Pacific Time (PST/PDT) every day with a fresh grid and a unique set of compatible modifiers.
+- Use the Monday–Sunday week strip to open any Daily Board in the current competitive week. Future days stay locked.
+- Other players’ names, ranks, and scores stay hidden until you submit that day’s board, so standings cannot spoil an unplayed Daily.
 - When signed in with an account, competitive Daily leaderboard results and missions are recorded.
 - Later attempts on the board can be replayed freely for practice.
 - Complete rotating Daily Missions and play on consecutive days to build a Daily Board streak.
 - From eligible static-board results, retry the same letters and review high-value missed words.
+- After you have played a board, tap a player in the standings to open their public career profile.
 
 
 ## 9. Awards & progression
