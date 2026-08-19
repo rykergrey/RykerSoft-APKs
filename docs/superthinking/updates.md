@@ -1,5 +1,10 @@
 # Release notes
 
+## v2.2.3
+- Open signed-in vaults from a local snapshot immediately, so notes and recordings are available without waiting on a network
+- Restore the last account on this device even when Firebase Auth is offline, instead of hanging on an endless Loading screen
+- Keep edits and media on the device first, then sync to Firestore in the background when the connection returns
+
 ## v2.2.2
 - Redesigned the audio player for narrow mobile screens, placing previous, play/pause, next, and the seek bar together in a compact playback row so secondary actions no longer get clipped
 - Turned the seek track into a live green input-level meter while recording, then restored normal seeking as soon as recording stops

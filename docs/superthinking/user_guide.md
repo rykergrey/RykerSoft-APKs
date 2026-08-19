@@ -20,8 +20,9 @@ A multimodal knowledge workspace built around cards and tabs — write, chat, tr
 
 1. Open SuperThink.ing. **Guest mode** works immediately — everything stays on your device.
 2. Optionally continue with Google to sync cards, actions, templates, and Firebase Storage media across devices. An empty cloud vault offers to migrate your guest cards.
-3. Create a card, add tabs (text, chat, image, audio, video), and start working.
-4. For PRO provider access, unlock SuperThink.ing in RykerSoft App Manager and continue with the same Google account under **Settings → RykerSoft AI unlock**, or enter your own keys in Settings.
+3. After that first signed-in load, later opens show your vault from this device right away. Cloud sync continues in the background, and notes or recordings still work if you are offline. The header can show **Offline — changes stay on this device** until the connection returns.
+4. Create a card, add tabs (text, chat, image, audio, video), and start working.
+5. For PRO provider access, unlock SuperThink.ing in RykerSoft App Manager and continue with the same Google account under **Settings → RykerSoft AI unlock**, or enter your own keys in Settings.
 
 ## 2. Cards, tabs & the vault
 
@@ -75,7 +76,7 @@ A multimodal knowledge workspace built around cards and tabs — write, chat, tr
 - **Video**: upload files or add YouTube/URL entries.
 * **Transcription**: transcribe audio and video through Groq Whisper, OpenAI Whisper, or Gemini; YouTube captions use a multimodal fallback when needed.
 - **Linked audio**: attach audio regions to lyrics or notes with inline playback controls, queue, repeat, and auto-scroll.
-- When signed in, newly saved media is uploaded to Firebase Storage before its cloud record is accepted. A visible error means the upload was not durable; retry while online rather than relying on a device-only preview.
+- When signed in and online, newly saved media is uploaded to Firebase Storage before its cloud record is accepted. Offline, recordings and images stay on this device and upload when the account can sync again.
 
 ## PRO Features
 

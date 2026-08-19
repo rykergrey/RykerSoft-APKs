@@ -3,12 +3,12 @@
 ## Package
 - **App name:** SuperThink.ing
 - **Android package ID:** `com.rykersoft.superthinking`
-- **Current version:** 2.2.2 (versionCode 125)
+- **Current version:** 2.2.3 (versionCode 126)
 
 ## Platforms
 | Platform | Stack | Storage |
 |---|---|---|
-| Android | Capacitor + WebView | localStorage + IndexedDB (guest) / Firestore + Firebase Storage (signed in) |
+| Android | Capacitor + WebView | local vault IndexedDB + Firestore persistence; guest uses localStorage/IndexedDB |
 | Web | Vite + React | Same as above |
 | Windows | Capacitor Community Electron portable | Same web bundle |
 
@@ -20,7 +20,7 @@
 
 ## Accounts & sync
 - **Guest mode**: cards and prefs in local storage, media in IndexedDB — no account needed
-- **Signed-in mode**: Google-first authentication against the app-data Firebase project syncs cards/actions/templates via Firestore and media via Firebase Storage; empty cloud vaults can migrate guest cards on sign-in
+- **Signed-in mode**: Google-first authentication against the app-data Firebase project. After the first successful load, cards open from a local IndexedDB vault; Firestore and Firebase Storage sync in the background. Offline reopen uses the cached account and local vault instead of waiting on the network. Empty cloud vaults can migrate guest cards on sign-in.
 - **Legacy migration**: existing email/password users can sign in through the migration panel, reset their password, and link Google without changing their Firebase UID
 
 ## AI providers
@@ -34,6 +34,7 @@
 ## Architecture notes
 - `App.tsx` — orchestration and platform hooks; `hooks/` — cards, actions, execution, dictation, audio
 - `services/` — AI providers, Firebase, media, export, transcription, song tools
+- `services/localVault.ts` — device-local card snapshot used for immediate reopen and offline edits
 - `services/rykersoftHub.ts` — second Firebase app (`rykersoft-hub`) for entitlements + provider keys
 - FFmpeg WASM for audio export and local video → audio extraction
 

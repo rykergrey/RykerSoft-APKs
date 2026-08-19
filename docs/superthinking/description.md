@@ -13,7 +13,7 @@ SuperThink.ing is a multimodal knowledge workspace built around cards and tabs (
 * **Provider-backed media tools**: OCR, transcription, generation, and TTS through Gemini, Groq, OpenAI, or ElevenLabs
 - **Linked audio**: link audio regions into lyrics or notes with inline playback, queues, repeat, and auto-scroll
 - **Import/export/share**: adaptive JSON/ZIP project import with content selection, RykerSoft portable-project support, card and batch ZIP export, Android share-intent import, and a native Downloads saver
-- **Guest mode** (local-only) or **signed-in mode** with realtime Firestore sync and Firebase Storage media
+- **Guest mode** (local-only) or **signed-in mode** with a local vault for instant reopen plus background Firestore/Firebase Storage sync, including offline notes and recordings
 
 ## PRO Features
 
