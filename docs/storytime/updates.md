@@ -10,4 +10,3 @@
 - Replace packaged Windows Firebase OAuth code exchange with the temporary localhost Firebase browser helper
 - Preserve optional personal provider-key overrides and existing local data
 - Preserve app-owned Firebase online rooms, private UID authorization, and user-chosen public game names
-

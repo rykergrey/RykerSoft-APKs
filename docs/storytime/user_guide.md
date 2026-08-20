@@ -93,4 +93,3 @@ Do not enter a shared RykerSoft key manually. Remove personal keys before sharin
 App Firebase identity, hub Pro identity, public room name, and Google Drive authorization are separate. Signing out of one does not intentionally publish or merge another identity.
 
 When offline, local work remains available. Pro operations fail closed when entitlement cannot be confirmed or a provider credential is missing. If Google sign-in, account linking, or room recovery reports a conflict, do not create a replacement identity to overwrite data; preserve local exports and resolve the existing account first.
-

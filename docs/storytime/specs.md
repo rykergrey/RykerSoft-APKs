@@ -61,4 +61,3 @@ Firebase UIDs are project-scoped. Storytime never treats app-project and hub-pro
 - Windows NSIS installer and portable x86-64 executable
 - Public artifacts and documentation in `rykergrey/RykerSoft-APKs`
 - Registry activation in `rykergrey/RykerSoft` occurs only after artifacts, capability state, and screenshots are verified
-

@@ -32,4 +32,3 @@ Personal provider keys remain an optional device-local override. They are not re
 - Android 7.0 or later (`minSdk 24`)
 - Windows 10/11 x86-64 through the packaged Electron application
 - Canonical package: `com.superstorycraft.ing`
-
