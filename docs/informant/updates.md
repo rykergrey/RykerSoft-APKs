@@ -1,5 +1,16 @@
 # Release notes
 
+## v1.4.0
+- Add Model now opens a provider picker with authenticated Gemini/OpenAI catalog refresh, search, and manual model-ID entry
+- Models can be assigned centrally to chat, app functions, and every built-in or custom action
+- OpenAI BYOK and RykerSoft Pro-session keys now work across model discovery, desktop AI routes, and native Android AI calls
+
+## v1.3.2
+- Consolidate transcript configuration into a single YouTube Transcript API Key field and remove redundant Webshare Proxy Key settings
+- Route mobile transcript retrieval through native Capacitor HTTP to eliminate browser CORS/preflight failures
+- Enable seamless key fallbacks across desktop and mobile environments
+- Optimize desktop transcript routing through the local backend proxy
+
 ## v1.3.1
 - Add a permanent bookmark action beside Share, Copy, and Export beneath the video player
 - Generate each bookmark's default title from the complete transcript sentence nearest the exact playback timestamp

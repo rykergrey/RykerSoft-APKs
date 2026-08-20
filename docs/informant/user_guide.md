@@ -99,7 +99,7 @@ Items marked * require administrator-granted RykerSoft Pro access for INFORMANT,
 
 * **AI chat** — Ask questions about the current item or selected project items
 * **AI actions** — Run built-in or custom analysis prompts on your material
-* **Family-and-friends provider access** — INFORMANT loads its package-scoped Gemini, YouTube, transcript, and ElevenLabs keys after verifying the signed-in UID's exact app entitlement
+* **Family-and-friends provider access** — INFORMANT loads its package-scoped Gemini, OpenAI, YouTube, transcript, Webshare, and ElevenLabs keys after verifying the signed-in UID's exact app entitlement
 
 Manual BYOK remains available without Pro. Notes, bookmarks, System/Piper TTS, and save/import work without provider access.
 
@@ -120,8 +120,8 @@ Notes:
 ## 10. Settings
 
 - Dark mode, resume-at-furthest-bookmark, and default tabs
-- Custom AI actions and model list
+- **Models** — add Gemini or OpenAI models by retrieving the provider's current account-visible catalog or entering a model ID manually; assign defaults for chat, app functions, and each built-in/custom action
 - External search engines for highlighted text
 - **TTS** — default engine, System / Piper / ElevenLabs voice settings, Preview per provider
-- **Keys** — optional local BYOK values (Gemini, YouTube Data, transcript, Webshare, ElevenLabs)
+- **Keys** — optional local BYOK values (Gemini, OpenAI, YouTube Data, YouTube Transcript, ElevenLabs)
 - **RykerSoft AI unlock** — Google sign-in, legacy account linking/recovery, sign-out, and entitlement refresh

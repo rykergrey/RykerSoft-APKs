@@ -18,6 +18,7 @@ Local workspace for researching YouTube videos, articles, and Reddit posts. Orga
 - Save a single video/article as its own INFORMANT JSON (pick which tabs to include) and import it into any other project
 - On Android, Save opens the system Downloads / Save As dialog; Share remains available for Drive or messaging
 - External search from highlighted text (Perplexity, Google, ChatGPT, and more)
+- Provider-aware AI model management: retrieve the current Gemini or OpenAI catalog, add models by ID, and assign models to chat, app functions, and every built-in/custom action
 
 ## Content & tools
 Open a card for tabs that match the content type:
@@ -32,7 +33,7 @@ Items marked * require administrator-granted RykerSoft Pro access for this packa
 
 * **AI chat** — Ask questions about the current video, article, or selected project items
 * **AI actions** — Run summary, analysis, key takeaways, custom prompts, and related tools
-* **Family-and-friends Pro access** — After an administrator grants INFORMANT to a specific RykerSoft UID, the app loads its package-scoped Gemini, YouTube, transcript, and ElevenLabs keys for that signed-in session
+* **Family-and-friends Pro access** — After an administrator grants INFORMANT to a specific RykerSoft UID, the app loads its package-scoped Gemini, OpenAI, YouTube, transcript, Webshare, and ElevenLabs keys for that signed-in session
 
 ## Platforms
 - **Android** — Capacitor build; IndexedDB on device; native share import; System TTS via Android TextToSpeech

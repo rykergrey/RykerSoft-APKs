@@ -3,7 +3,7 @@
 ## Package
 - **App name:** INFORMANT
 - **Android package ID:** `com.rykersoft.informant`
-- **Current version:** 1.3.1 (versionCode 15)
+- **Current version:** 1.4.0 (versionCode 17)
 
 ## Platforms
 | Platform | Stack | Storage |
@@ -15,7 +15,7 @@
 ## Requirements
 - **Android:** minSdk 24, targetSdk/compileSdk 36; release builds need `android/keystore.properties`
 - **Desktop:** Node.js for `npm run dev` / portable builds
-- **Optional APIs:** Gemini, YouTube Data API, YouTube Transcript API, Webshare proxy, ElevenLabs
+- **Optional APIs:** Gemini, OpenAI Responses/Models APIs, YouTube Data API, YouTube Transcript API, ElevenLabs
 - **Pro unlock:** Google authentication uses the named RykerSoft hub Firebase app (`rykersoft-abe84`); Android uses native Credential Manager, web uses Firebase popup auth, and packaged Electron uses a temporary loopback helper in the system browser
 - **Provider access:** Public users bring their own keys. Family-and-friends Pro is an administrator-managed Boolean grant at `users/{hubUid}/entitlements/apps` for the exact package `com.rykersoft.informant`; there is no reusable unlock code or global family role
 - **Provider security:** Manual keys remain local and take priority. An entitled account may read only `providerKeys/com.rykersoft.informant`; those keys are loaded into process memory for the signed-in session, cleared on sign-out, and never embedded in distributable artifacts
@@ -29,6 +29,7 @@
 - Selective project + per-item JSON export stamped with `app: INFORMANT` and `packageId: com.rykersoft.informant`; project exports use `rykersoft.portable-project` version 1 with normalized resources/tabs and lossless INFORMANT extensions
 - Hub identity is Google-first. A migration-only email/password path can link Google to the authenticated legacy Firebase user so the UID and existing entitlements remain intact
 - Provider credentials are absent from renderer, Android, Electron, and server bundles. Hub Firestore rules allow an authenticated user to read only the exact package-key document for which their UID has a true entitlement, and deny client writes and collection listing
+- Gemini and OpenAI model catalogs are retrieved at runtime with the effective BYOK/Pro-session credential; saved models use a provider-qualified identity and assignments cover chat, app-level AI functions, and individual actions
 - All remaining password/API-key fields start hidden and include accessible in-field show/hide controls
 - Android file save via native `FileSave` plugin (`ACTION_CREATE_DOCUMENT`); share via Capacitor Share
 - TTS engines: System (Android TextToSpeech / desktop Web Speech), Piper WASM in a Web Worker (`@diffusionstudio/vits-web`), ElevenLabs (desktop Express proxy / mobile direct)
