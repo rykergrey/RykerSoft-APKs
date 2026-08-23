@@ -1,5 +1,13 @@
 # Updates
 
+## v1.3.22
+
+Release Continuity Repair
+
+- Restore a complete, source-backed release after an unreleased direct-device build advanced the Android version
+- Preserve the trusted Android signer and provide a monotonic update path without removing local app data
+- Rebuild synchronized Android and Windows artifacts from the current stable source
+
 ## v1.3.20
 
 Career Leaderboards, Daily Fair-Play Standings & Gravity Integrity

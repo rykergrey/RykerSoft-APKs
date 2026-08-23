@@ -1,5 +1,11 @@
 # Photocraft.ing Updates
 
+## v1.0.2
+
+- Restore a complete, source-backed release after an unreleased direct-device build advanced the Android version
+- Preserve the trusted Android signer and provide a monotonic update path without removing local app data
+- Rebuild synchronized Android and Windows artifacts from the current stable source
+
 ## v1.0.0
 
 - First RykerSoft hub release (`com.rykersoft.photocrafting`)

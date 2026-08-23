@@ -1,5 +1,10 @@
 # Release notes
 
+## v1.1.3
+- Restore a complete, source-backed release after an unreleased direct-device build advanced the Android version
+- Preserve the trusted Android signer and provide a monotonic update path without removing local app data
+- Rebuild the current stable application bundle and synchronize RykerSoft hub metadata
+
 ## v1.1.1
 - Add-from-library (staging tray and Library magic search) now uses each item’s library-defined unit (pcs, g, srv, etc.) instead of adjectives from the phrase (e.g. “three whole eggs” → 3 pcs)
 - Library tab keeps search text, scroll position, and expanded groups when you switch to the staging tray and back

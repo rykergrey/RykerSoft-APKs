@@ -1,5 +1,10 @@
 # Release notes
 
+## v2.2.5
+- Restore a complete, source-backed release after an unreleased direct-device build advanced the Android version
+- Preserve the trusted Android signer and provide a monotonic update path without removing local app data
+- Rebuild synchronized Android and Windows artifacts from the current stable source
+
 ## v2.2.3
 - Open signed-in vaults from a local snapshot immediately, so notes and recordings are available without waiting on a network
 - Restore the last account on this device even when Firebase Auth is offline, instead of hanging on an endless Loading screen

@@ -1,5 +1,10 @@
 # Release notes
 
+## v1.4.2
+- Restore a complete, source-backed release after an unreleased direct-device build advanced the Android version
+- Preserve the trusted Android signer and provide a monotonic update path without removing local app data
+- Rebuild synchronized Android and Windows artifacts from the current stable source
+
 ## v1.4.0
 - Add Model now opens a provider picker with authenticated Gemini/OpenAI catalog refresh, search, and manual model-ID entry
 - Models can be assigned centrally to chat, app functions, and every built-in or custom action
