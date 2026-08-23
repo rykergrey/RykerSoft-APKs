@@ -19,11 +19,11 @@ Install Hyperscribe Mobile through its Android entry in RykerSoft. Grant microph
 
 ## Inbox and recording
 
-Use Inbox for recordings, transcripts, saved text, files, and images. Tap the central record control to create a voice note, or drag upward to add clipboard text, open a blank text editor, choose another recording profile, or import existing audio. Imported audio is saved without automatic transcription; transcribe it on demand from its Inbox controls. Recording can continue through a visible foreground notification. Android Sharesheet imports remain supported, and saved items can be edited, tagged, searched, played, copied, shared, or deleted.
+Use Inbox for recordings, transcripts, saved text, files, and images. Tap the central record control to create a voice note, or drag upward to add clipboard text, import a text document, open a blank text editor, choose another recording profile, or import existing audio. Imported audio is saved without automatic transcription; transcribe it on demand from its Inbox controls. Recording can continue through a visible foreground notification. Android Sharesheet imports remain supported, and saved items can be edited, tagged, searched, played, copied, shared, or deleted. Automatic tag rules also apply when multiple selected text items or transcripts are copied into one combined Inbox item.
 
 ## Actions and chat
 
-Actions transform selected text or Inbox content. Hyperscribe supports AI, Python, template, snippet, search, persona, TTS, and combo actions, including ordered Before, Combine, Main, and After stages. Chat keeps persistent threads and supports streaming, stop, edit/regenerate, fork, search, Personas, action context, and review-before-commit action-library proposals.
+Actions transform text or Inbox content. When one or more Inbox text items or recording transcripts are selected, the Actions page preserves and uses that selection. With no Inbox selection, an action reads the current clipboard instead. Successful text transformations replace the clipboard contents and are saved to the Inbox; snippets copy their own content and do not require an input item. Hyperscribe supports AI, Python, template, snippet, search, persona, TTS, and combo actions, including ordered Before, Combine, Main, and After stages. Chat keeps persistent threads and supports streaming, stop, edit/regenerate, fork, search, Personas, action context, and review-before-commit action-library proposals.
 
 ## Text to speech
 
@@ -47,7 +47,7 @@ Modern Android does not allow continuous background clipboard monitoring, silent
 
 ## PRO Features
 
-Hyperscribe Mobile v2.1.2 offers optional RykerSoft Pro Access for personal family use.
+Hyperscribe Mobile v2.1.3 offers optional RykerSoft Pro Access for personal family use.
 
 - * Family provider access — sign in with Google in Settings. If the RykerSoft administrator granted `com.rykersoft.hyperscribemobile`, configured Gemini, OpenAI, Groq, and ElevenLabs family providers become available without saving their values on the device.
 - Personal keys remain supported and take priority.

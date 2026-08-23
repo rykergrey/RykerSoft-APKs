@@ -1,5 +1,12 @@
 # Hyperscribe Mobile updates
 
+## v2.1.3
+
+- Anchor Inbox and Actions item menus beside their right-side three-dot buttons.
+- Run actions against selected Inbox text or transcripts, falling back to the clipboard when nothing is selected; copy text results back to the clipboard and allow snippets to run without an input item.
+- Move text-document import from the Inbox toolbar into the recording button's drag-up creation menu.
+- Apply automatic tag rules to combined-copy Inbox entries.
+
 ## v2.1.2
 
 - Make the central voice-recording control the main entry point for adding Inbox content.
