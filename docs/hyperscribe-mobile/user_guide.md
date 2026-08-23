@@ -31,7 +31,7 @@ Choose Piper for downloaded on-device voices, the Android system speech engine o
 
 ## Provider keys and privacy
 
-Cloud features require the user's own provider credentials. Open Settings, add only the keys you need, and use the Show/Hide control when reviewing a secret field. Android encrypts saved credentials with a non-exportable Keystore-backed key. Credentials are excluded from backups, diagnostics, source repositories, and released artifacts. Content is sent to a provider only when the user invokes that provider-backed operation.
+Cloud features require either personal provider credentials or optional RykerSoft Pro Access. In Settings, sign in with Google to check the exact Hyperscribe Mobile entitlement, or add only the personal keys you need. Personal keys take priority and Android encrypts them with a non-exportable Keystore-backed key. Entitled family values stay in memory only and clear on sign-out, revocation, or access failure. Credentials are excluded from backups, diagnostics, source repositories, and released artifacts. Content is sent to a provider only when the user invokes that provider-backed operation.
 
 ## Sharing and interoperability
 
@@ -47,7 +47,7 @@ Modern Android does not allow continuous background clipboard monitoring, silent
 
 ## PRO Features
 
-Hyperscribe v2.1.0 has no RykerSoft Pro-only features. Cloud operations use bring-your-own provider credentials. Free and local workflows do not require a RykerSoft account.
+Hyperscribe Mobile v2.1.0 offers optional RykerSoft Pro Access for personal family use. Sign in with Google in Settings; if the RykerSoft administrator has granted `com.rykersoft.hyperscribemobile`, configured Gemini, OpenAI, Groq, and ElevenLabs family providers become available without saving their values on the device. Personal keys remain supported and take priority. Free and local workflows do not require an account, entitlement, or provider key.
 
 ## Support
 

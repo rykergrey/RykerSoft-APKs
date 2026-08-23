@@ -13,7 +13,9 @@
 
 ## Providers
 
-Gemini, Groq, OpenAI, and ElevenLabs are optional bring-your-own-key providers. Piper and Android system speech provide local/device alternatives where available. No provider credential is bundled.
+Gemini, Groq, OpenAI, and ElevenLabs support both personal bring-your-own keys and optional RykerSoft Pro Access. Personal keys are encrypted through Android Keystore and take priority. An entitled Google account can read only the package-scoped family fields declared for `com.rykersoft.hyperscribemobile`; those values remain in process memory and clear when access is lost. Piper and Android system speech provide local/device alternatives where available. No provider credential is bundled.
+
+RykerSoft Pro authorization uses Firebase Authentication and the exact Boolean grant at `users/{uid}/entitlements/apps`. Free features continue when signed out, unentitled, revoked, or temporarily unable to verify access.
 
 ## Distribution
 
