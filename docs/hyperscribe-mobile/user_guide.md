@@ -19,7 +19,7 @@ Install Hyperscribe Mobile through its Android entry in RykerSoft. Grant microph
 
 ## Inbox and recording
 
-Use Inbox for recordings, transcripts, saved text, files, and images. Tap the record control to create a voice note, or drag upward to choose a recording profile. Recording can continue through a visible foreground notification. Import existing audio through the document picker or Android Sharesheet, then transcribe, edit, tag, search, play, copy, share, or delete it.
+Use Inbox for recordings, transcripts, saved text, files, and images. Tap the central record control to create a voice note, or drag upward to add clipboard text, open a blank text editor, choose another recording profile, or import existing audio. Imported audio is saved without automatic transcription; transcribe it on demand from its Inbox controls. Recording can continue through a visible foreground notification. Android Sharesheet imports remain supported, and saved items can be edited, tagged, searched, played, copied, shared, or deleted.
 
 ## Actions and chat
 
@@ -47,7 +47,7 @@ Modern Android does not allow continuous background clipboard monitoring, silent
 
 ## PRO Features
 
-Hyperscribe Mobile v2.1.1 offers optional RykerSoft Pro Access for personal family use.
+Hyperscribe Mobile v2.1.2 offers optional RykerSoft Pro Access for personal family use.
 
 - * Family provider access — sign in with Google in Settings. If the RykerSoft administrator granted `com.rykersoft.hyperscribemobile`, configured Gemini, OpenAI, Groq, and ElevenLabs family providers become available without saving their values on the device.
 - Personal keys remain supported and take priority.

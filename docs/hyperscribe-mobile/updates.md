@@ -1,5 +1,11 @@
 # Hyperscribe Mobile updates
 
+## v2.1.2
+
+- Make the central voice-recording control the main entry point for adding Inbox content.
+- Move clipboard text, blank text entry, and audio-file import into the recording button's drag-up menu, freeing space in the Inbox toolbar.
+- Save imported audio without transcribing it automatically; transcription remains available on demand.
+
 ## v2.1.1
 
 - Fix RykerSoft Pro entitlement reads for the literal dotted package key `com.rykersoft.hyperscribemobile`.
