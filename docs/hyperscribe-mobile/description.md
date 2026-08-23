@@ -18,7 +18,7 @@ Hyperscribe Mobile is a local-first voice, text, action, chat, and speech worksp
 
 ## PRO Features
 
-Hyperscribe Mobile v2.1.3 supports optional RykerSoft Pro Access for trusted family members.
+Hyperscribe Mobile v2.1.4 supports optional RykerSoft Pro Access for trusted family members.
 
 - * Family provider access — after Google sign-in, the exact Hyperscribe Mobile package entitlement can supply configured Gemini, OpenAI, Groq, and ElevenLabs credentials in memory.
 - Personal bring-your-own keys remain supported and take priority.

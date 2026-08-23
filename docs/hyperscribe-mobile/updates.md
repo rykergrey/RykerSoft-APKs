@@ -1,5 +1,11 @@
 # Hyperscribe Mobile updates
 
+## v2.1.4
+
+- Restore all Android action execution by fixing the dynamic-variable initializer that prevented snippets, LLM actions, TTS, search, and pipelines from running.
+- Confirm action input uses selected Inbox text or transcripts and falls back to the clipboard when nothing is selected.
+- Replace manual action-provider, speech-model, voice, LLM-model, and thinking-level entry with catalog-backed selectors throughout the action editors.
+
 ## v2.1.3
 
 - Anchor Inbox and Actions item menus beside their right-side three-dot buttons.
