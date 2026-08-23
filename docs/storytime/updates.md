@@ -1,5 +1,11 @@
 # Storytime Updates
 
+## v1.0.2
+
+- Restore a complete, source-backed release after an unreleased direct-device build advanced the Android version
+- Recover and verify the original Android release signer so existing installations update in place
+- Rebuild synchronized Android and Windows artifacts from the current stable source
+
 ## v1.0.0
 
 - First RykerSoft Application Manager release for Android and Windows
