@@ -3,7 +3,7 @@
 ## Android
 
 - Package: `com.rykersoft.hyperscribemobile`
-- Version: `2.1.0` (code 1)
+- Version: `2.1.1` (code 2)
 - Minimum Android: 10 / API 29
 - Target Android: API 36
 - Architectures: arm64-v8a and x86_64

@@ -1,5 +1,10 @@
 # Hyperscribe Mobile updates
 
+## v2.1.1
+
+- Fix RykerSoft Pro entitlement reads for the literal dotted package key `com.rykersoft.hyperscribemobile`.
+- Verify that an administrator grant activates only Hyperscribe Mobile while personal keys remain the preferred source when configured.
+
 ## v2.1.0
 
 - First standalone RykerSoft release for Hyperscribe Mobile.

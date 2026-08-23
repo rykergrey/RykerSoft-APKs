@@ -47,7 +47,11 @@ Modern Android does not allow continuous background clipboard monitoring, silent
 
 ## PRO Features
 
-Hyperscribe Mobile v2.1.0 offers optional RykerSoft Pro Access for personal family use. Sign in with Google in Settings; if the RykerSoft administrator has granted `com.rykersoft.hyperscribemobile`, configured Gemini, OpenAI, Groq, and ElevenLabs family providers become available without saving their values on the device. Personal keys remain supported and take priority. Free and local workflows do not require an account, entitlement, or provider key.
+Hyperscribe Mobile v2.1.1 offers optional RykerSoft Pro Access for personal family use.
+
+- * Family provider access — sign in with Google in Settings. If the RykerSoft administrator granted `com.rykersoft.hyperscribemobile`, configured Gemini, OpenAI, Groq, and ElevenLabs family providers become available without saving their values on the device.
+- Personal keys remain supported and take priority.
+- Free and local workflows do not require an account, entitlement, or provider key.
 
 ## Support
 
