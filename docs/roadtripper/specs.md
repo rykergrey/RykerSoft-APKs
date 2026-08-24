@@ -2,8 +2,8 @@
 
 ## Release
 
-- Version: 1.0.0
-- Android version code: 1
+- Version: 1.1.0
+- Android version code: 2
 - Package: `com.rykersoft.roadtripper`
 - Minimum Android API: 24
 - Target Android API: 36
@@ -36,5 +36,12 @@
 ## Connectivity behavior
 
 - Offline: downloaded trips, stops, comments, search, route progress, status, priority, and saved research.
-- Queued offline: trip progress, stop edits, and comments.
-- Online only: fresh provider searches, route calculation, traffic, initial trip download, and Sheets synchronization.
+- Queued offline: trip progress, stop creation/editing/deletion, and comment creation/deletion.
+- Online only: route-aware discovery, comparison grounding, fresh provider searches, route calculation, traffic, videos, research, initial trip download, sharing/joining, and Sheets synchronization.
+
+## Website parity
+
+- Android includes Discover, the trip assistant, full stop editing and profiles, advanced route-window filters, route recalculation, bulk enrichment, Sheets mirroring, and collaboration workflows.
+- Native drive mode continuously projects GPS coordinates onto the saved route and can deliver approach notifications.
+- Android hands the selected trip to Google Maps in navigation mode from the current location, through up to three upcoming planned stops in route order, and on to the final destination; route-aware search and calculations remain in-app.
+- See `android-web-parity.md` for the complete audited capability matrix.
