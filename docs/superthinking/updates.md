@@ -1,5 +1,10 @@
 # Release notes
 
+## v2.2.6
+- Removed email/password authentication, password reset, and account-linking controls from both SuperThink.ing vault sync and RykerSoft PRO access; Google is now the only account provider
+- Fixed stale offline sessions so Settings reports an offline vault accurately, can reconnect with Google, and can end the cached session without clearing app storage
+- Keep Android audio-tab recordings active with a microphone foreground service when the app is backgrounded or the screen turns off, and reconnect the interface to an active recording when it returns
+
 ## v2.2.5
 - Restore a complete, source-backed release after an unreleased direct-device build advanced the Android version
 - Preserve the trusted Android signer and provide a monotonic update path without removing local app data
@@ -31,7 +36,7 @@
 - Fixed signed-in image durability: image/audio/video saves requested for cloud storage now fail visibly instead of silently leaving device-only `idb://` references, and recoverable legacy media is migrated to Firebase Storage
 - Added adaptive JSON/ZIP project import with a preview/content picker, native SuperThink.ing archives, loose-file ZIPs, and RykerSoft portable-project v1 support
 - Added import actions throughout empty vault, card, mobile, and kanban creation surfaces; kanban navigation now expands the active card consistently
-- Made Google the default sign-in for both SuperThink.ing cloud sync and RykerSoft PRO access, with explicit legacy password recovery/linking that preserves existing Firebase UIDs
+- Introduced Google sign-in for both SuperThink.ing cloud sync and RykerSoft PRO access
 - Registered the release-signed Android app in both Firebase projects and added native Google authentication support
 - Hub provider keys now remain in memory only and are stripped from app preferences/Firestore; all password and API-key fields have accessible show/hide controls
 

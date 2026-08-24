@@ -72,7 +72,7 @@ A multimodal knowledge workspace built around cards and tabs — write, chat, tr
 
 - **Images**: upload or capture, crop, send to other tabs, download/share.
 * **Image OCR**: extract text from an image through a configured provider.
-- **Audio**: record with configurable quality and device routing, trim on the waveform, export MP3/WAV, and play through the global player. On narrow screens, previous/play/next controls share the seek row to keep every action accessible. While recording, that same track becomes a live green input-level meter and returns to seek mode when recording stops.
+- **Audio**: record with configurable quality and device routing, trim on the waveform, export MP3/WAV, and play through the global player. On narrow screens, previous/play/next controls share the seek row to keep every action accessible. While recording, that same track becomes a live green input-level meter and returns to seek mode when recording stops. On Android, an explicitly started recording continues with a visible system notification while the app is backgrounded or the screen is off, and the recording controls reconnect when you return.
 - **Video**: upload files or add YouTube/URL entries.
 * **Transcription**: transcribe audio and video through Groq Whisper, OpenAI Whisper, or Gemini; YouTube captions use a multimodal fallback when needed.
 - **Linked audio**: attach audio regions to lyrics or notes with inline playback controls, queue, repeat, and auto-scroll.
@@ -94,7 +94,8 @@ Editing, organizing, songs, diagrams, media storage, import/export, and vault sy
 Notes:
 - There is no reusable family code. Only the administrator can grant or revoke this app's entitlement for a signed-in account.
 - RykerSoft entitlement sign-in is separate from the SuperThink.ing app-data account that syncs your vault, even when both use the same Google identity.
-- Existing password accounts can use the legacy migration panel, reset the password if necessary, and then link Google without changing the existing UID or cloud data.
+- Both account sign-ins use Google only; email/password sign-in, password reset, and account-linking controls are not offered.
+- If Settings shows **Offline vault**, use **Continue with Google** to restore cloud sync. Ending the offline session removes only the cached account selection, not the local vault snapshot.
 - Keys entered manually in Settings take priority over synced keys.
 - Hub-supplied provider keys are used only in memory and are not copied into app preferences or the app-data database.
 

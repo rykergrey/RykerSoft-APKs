@@ -3,7 +3,7 @@
 ## Package
 - **App name:** SuperThink.ing
 - **Android package ID:** `com.rykersoft.superthinking`
-- **Current version:** 2.2.3 (versionCode 126)
+- **Current version:** 2.2.6 (versionCode 129)
 
 ## Platforms
 | Platform | Stack | Storage |
@@ -15,13 +15,13 @@
 ## Android
 - **minSdk:** 24, **targetSdk / compileSdk:** 36
 - Release builds signed via `android/keystore.properties` (gitignored)
-- Native plugins: Firebase Authentication (Google), MicrophoneRouting (mic/Bluetooth routing), DownloadSaver (public Downloads), share-target import
+- Native plugins: Firebase Authentication (Google), MicrophoneRouting (mic/Bluetooth routing and reconnectable foreground recording), DownloadSaver (public Downloads), share-target import
 - The native microphone plugin reports live input amplitude during recording; web and desktop builds use the Web Audio analyser fallback
 
 ## Accounts & sync
 - **Guest mode**: cards and prefs in local storage, media in IndexedDB — no account needed
-- **Signed-in mode**: Google-first authentication against the app-data Firebase project. After the first successful load, cards open from a local IndexedDB vault; Firestore and Firebase Storage sync in the background. Offline reopen uses the cached account and local vault instead of waiting on the network. Empty cloud vaults can migrate guest cards on sign-in.
-- **Legacy migration**: existing email/password users can sign in through the migration panel, reset their password, and link Google without changing their Firebase UID
+- **Signed-in mode**: Google-only authentication against the app-data Firebase project. After the first successful load, cards open from a local IndexedDB vault; Firestore and Firebase Storage sync in the background. Offline reopen uses the cached account and local vault instead of waiting on the network. Empty cloud vaults can migrate guest cards on sign-in.
+- **Offline recovery**: a cached offline vault is identified as offline rather than cloud-synced and can reconnect with Google or end its local session without clearing app storage
 
 ## AI providers
 - **Gemini** — text actions, chat, Tab Manager AI, image/video generation, OCR, dictation fallback
