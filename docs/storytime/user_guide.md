@@ -52,7 +52,11 @@ Optional assistance buttons marked with `*` remain disabled until provider acces
 
 Online Anonymous Author and Pass the Pen use Google sign-in in Storytime's app Firebase project. Choose a public game name yourself; Storytime never publishes your Google name, email, picture, or hub entitlement.
 
-Story Party guests may join and vote without provider access. The host creates the AI-assisted story and therefore needs Pro or a personal writing-provider key. Room codes and room data expire according to the online-room policy documented in the app.
+Story Party guests choose **Director** or **Listener** before marking themselves ready. Directors vote privately on each choice. Listeners see the story and choices but do not vote and never hold up the ballot. The host remains a director and creates each AI-assisted scene once, so hosting requires Pro or a personal writing-provider key.
+
+For a road trip, have the phone connected to the car stereo join as a Listener. In the live room, select **Use this phone as car speaker**. That phone alone prepares and plays each new section in order. It keeps a short renewable room lease, caches audio locally, and publishes only playlist progress to the room. If it disconnects, another listener can take over after the lease expires. Use **Pause playlist**, **Resume playlist**, or **Retry this section** when needed.
+
+The speaker phone uses its own narration provider, API access, and local voice presets. No API keys or audio files are written to the multiplayer room. Room codes and room data expire according to the online-room policy documented in the app.
 
 ## Stories and Imports
 
@@ -63,6 +67,8 @@ Saved stories remain on the device and can be opened for reading without a provi
 Device Native TTS, Piper, and local IndexTTS do not require a cloud API key. Gemini Voice, OpenAI Speech, and ElevenLabs are provider-backed Pro features and appear with `*` in feature guidance.
 
 Generated audio can consume substantial storage. Settings lets you choose whether all retained audio is included in Drive synchronization.
+
+Road-trip speaker audio is cached on the selected speaker device so reconnecting that same phone does not needlessly regenerate completed clips. Other phones receive text and playback progress, not duplicate audio requests.
 
 ## Google Drive Sync
 

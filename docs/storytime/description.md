@@ -7,7 +7,8 @@ Storytime is a local-first writing studio and social storytelling game for Andro
 - Character, location, item, and voice-preset library
 - Story import, export, reading, local saves, and undo history
 - Anonymous Author and Pass the Pen in pass-and-play or online rooms
-- Joining an online Story Party as a voting guest
+- Joining an online Story Party as a voting director or listen-only passenger
+- Road-trip narration with one listener phone acting as the shared car speaker
 - Device-native, Piper, and local IndexTTS narration
 - Private Google Drive backup and restore
 - User-chosen public room names that remain separate from private Google identity
@@ -20,7 +21,7 @@ The standard experience does not require a Gemini, OpenAI, Kimi, or ElevenLabs A
 - * Interactive story generation — write new scenes, dialogue, choices, endings, and rerolls.
 - * Creative revision — rewrite passages and enhance characters or player submissions.
 - * Generated artwork — create portraits, expressions, scenes, and comic-style images.
-- * Story Party hosting — host an AI-created adventure while guests vote privately.
+- * Story Party hosting — host an AI-created adventure while directors vote privately and listeners follow along.
 - * Cloud narration — use Gemini Voice, OpenAI Speech, or ElevenLabs when the matching provider is configured.
 
 `*` items require administrator-granted RykerSoft Pro access followed by Google sign-in to the same RykerSoft account inside Storytime. For trusted family and friends, Storytime retrieves only its package-scoped provider record at runtime and keeps those credentials in memory; users do not need to create or manage API keys.

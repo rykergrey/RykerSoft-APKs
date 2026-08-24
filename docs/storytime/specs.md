@@ -3,7 +3,7 @@
 ## Application
 
 - Package: `com.superstorycraft.ing`
-- Release: `1.0.0` (`versionCode 1`)
+- Release: `1.1.0` (`versionCode 4`)
 - UI: React 19, TypeScript, Vite, and Tailwind CSS
 - Android: Capacitor 8 with native Java bridges
 - Windows: Electron 40, NSIS installer, and portable x86-64 executable
@@ -21,6 +21,7 @@
 - App-owned Firebase project: `superstorycrafting`
   - Google authentication for online rooms
   - Ephemeral room, membership, response, and public-state documents
+  - Director/listener roles and a short-lived single-speaker lease with a bounded playlist cursor
   - Public room names chosen by the player and separated from email/profile identity
 - RykerSoft hub project: `rykersoft-abe84`
   - Named Firebase app: `rykersoft-hub`
@@ -52,6 +53,7 @@ Firebase UIDs are project-scoped. Storytime never treats app-project and hub-pro
 - Electron context isolation, sandboxing, navigation restrictions, and a narrow preload bridge remain enabled.
 - No OAuth client secret, service-account credential, provider key, entitlement-writing authority, or reusable family code is packaged.
 - Online-room public data excludes email, Firebase UID presentation, tokens, provider keys, and entitlement state.
+- Road-trip audio files remain in the active speaker's local cache; Firestore carries only story text, lease state, and playlist progress.
 - Personal keys are masked by default with accessible show/hide controls and may be removed independently.
 - Android backups are disabled at the application manifest level.
 

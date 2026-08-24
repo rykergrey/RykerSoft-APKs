@@ -1,5 +1,14 @@
 # Storytime Updates
 
+## v1.1.0
+
+- Add Director and Listener roles to online Story Party rooms
+- Let one listener phone become the leased car speaker for the whole room
+- Queue narration section by section, cache audio on the speaker device, and share playlist progress without duplicating TTS requests
+- Automatically release or recover the speaker role after disconnects, with pause, resume, and retry controls
+- Keep listeners synchronized with story text and choices without requiring them to vote or delaying the directors
+- Harden Firestore rules so listeners cannot submit choice ballots and only the current listener lease can publish playback progress
+
 ## v1.0.2
 
 - Restore a complete, source-backed release after an unreleased direct-device build advanced the Android version
