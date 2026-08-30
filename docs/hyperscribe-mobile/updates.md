@@ -1,5 +1,13 @@
 # Hyperscribe Mobile updates
 
+## v2.2.0
+
+- Add opt-in Firebase synchronization for the shared tag catalog, selected Inbox items, chat threads, and full/category/tag-filtered action libraries.
+- Add automatic offline tag rules, durable assignment evidence and manual-removal suppression, action tagging, and compact tag-management controls.
+- Separate Hyperscribe user-data Firebase from the named RykerSoft hub connection used for package-scoped Pro entitlements and in-memory provider access.
+- Standardize debug and release signing custody and Google authentication on the current canonical certificates.
+- Add configurable recording profiles, PCM quality and input-gain controls, plus current search and action-library interoperability improvements.
+
 ## v2.1.4
 
 - Restore all Android action execution by fixing the dynamic-variable initializer that prevented snippets, LLM actions, TTS, search, and pipelines from running.

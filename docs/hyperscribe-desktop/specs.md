@@ -2,12 +2,12 @@
 
 ## Windows
 
-- Version: `2.1.0`
+- Version: `2.2.0`
 - Runtime: Python 3.12, PySide6, packaged as a portable PyInstaller executable
 - Data location: `%USERPROFILE%\.hyperscribe-desktop\`
 - Architecture: Windows x86-64
 - Package ID used by RykerSoft: `com.rykersoft.hyperscribedesktop`
-- Code signing: the v2.1.0 executable is not Authenticode-signed
+- Code signing: the v2.2.0 executable is not Authenticode-signed
 
 ## Providers
 

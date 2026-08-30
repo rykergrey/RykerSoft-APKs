@@ -19,7 +19,7 @@ Open the Hyperscribe Desktop entry in RykerSoft and download the portable Window
 
 ## Inbox and capture
 
-Use Inbox for recordings, transcripts, clipboard captures, saved text, files, and images. Record a voice note or import existing audio, then transcribe, edit, tag, search, play, copy, export, or delete it.
+Use Inbox for Audio and Text items. The New button opens the split Markdown/editor preview for a blank Text item. Audio rows keep their recording and attached transcript; when that transcript enters the text workflow, its linked Text row can coexist beside the Audio row in All. Text source badges distinguish Manual, Clipboard, Voice transcript, Action, and other origins without creating more item types. Reminders, pins, search, and tag filters compose with both types. Offline keyword, exact-phrase, and guarded regular-expression rules automatically tag new Inbox content.
 
 ## Actions and chat
 
@@ -47,7 +47,7 @@ Hyperscribe Desktop and the separately listed Hyperscribe Mobile application use
 
 ## PRO Features
 
-Hyperscribe v2.1.0 has no RykerSoft Pro-only features. Cloud operations use bring-your-own provider credentials. Free and local workflows do not require a RykerSoft account.
+Hyperscribe v2.2.0 has no RykerSoft Pro-only features. Cloud operations use bring-your-own provider credentials. Free and local workflows do not require a RykerSoft account.
 
 ## Support
 

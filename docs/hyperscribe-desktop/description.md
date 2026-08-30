@@ -18,7 +18,7 @@ Hyperscribe Desktop is a local-first voice, text, action, chat, and speech works
 
 ## PRO Features
 
-Hyperscribe Desktop v2.1.0 does not gate features behind RykerSoft Pro access. Cloud features use bring-your-own provider credentials, while recording, organization, local actions, and local TTS remain usable without a RykerSoft account.
+Hyperscribe Desktop v2.2.0 does not gate features behind RykerSoft Pro access. Cloud features use bring-your-own provider credentials, while recording, organization, local actions, and local TTS remain usable without a RykerSoft account.
 
 ## Privacy
 
