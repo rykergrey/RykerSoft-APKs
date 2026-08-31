@@ -1,5 +1,10 @@
 # Release notes
 
+## v2.2.7
+- Fix RykerSoft Pro Google sign-in on Android by requesting the ID token with the RykerSoft Hub web client ID
+- Keep the SuperThink.ing data-vault Google account on its independent Firebase project
+- Preserve the existing release signing identity, Firebase UID, and package-scoped Pro entitlement lookup
+
 ## v2.2.6
 - Removed email/password authentication, password reset, and account-linking controls from both SuperThink.ing vault sync and RykerSoft PRO access; Google is now the only account provider
 - Fixed stale offline sessions so Settings reports an offline vault accurately, can reconnect with Google, and can end the cached session without clearing app storage

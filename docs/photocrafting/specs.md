@@ -4,8 +4,8 @@
 |-------|-------|
 | Package ID | `com.rykersoft.photocrafting` |
 | Display name | Photocraft.ing |
-| versionName | 1.0.0 |
-| versionCode | 2 |
+| versionName | 1.0.3 |
+| versionCode | 5 |
 | minSdk | 24 |
 | targetSdk / compileSdk | 36 |
 | Platforms | Android (Capacitor 8), Windows (Electron) |

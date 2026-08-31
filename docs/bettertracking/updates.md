@@ -1,5 +1,10 @@
 # Release notes
 
+## v1.1.4
+- Restore **Continue with Google** in Profile settings and remove obsolete password/create-account controls
+- Bundle the canonical RykerSoft Hub Firebase configuration so release builds no longer depend on an unpublished local environment file
+- Use Android Credential Manager with the Hub web client ID, preserving the existing release signing identity and Pro entitlements
+
 ## v1.1.3
 - Restore a complete, source-backed release after an unreleased direct-device build advanced the Android version
 - Preserve the trusted Android signer and provide a monotonic update path without removing local app data

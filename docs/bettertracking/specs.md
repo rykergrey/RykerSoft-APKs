@@ -3,7 +3,7 @@
 ## Package
 - **App name:** bettertracking
 - **Android package ID:** `com.rykersoft.bettertracking`
-- **Current version:** 1.1.1 (versionCode 5)
+- **Current version:** 1.1.4 (versionCode 8)
 
 ## Platforms
 | Platform | Stack | Storage |

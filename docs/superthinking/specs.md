@@ -3,7 +3,7 @@
 ## Package
 - **App name:** SuperThink.ing
 - **Android package ID:** `com.rykersoft.superthinking`
-- **Current version:** 2.2.6 (versionCode 129)
+- **Current version:** 2.2.7 (versionCode 130)
 
 ## Platforms
 | Platform | Stack | Storage |
