@@ -1,5 +1,13 @@
 # Hyperscribe Mobile updates
 
+## v2.4.0
+
+- Simplify the Inbox toolbar by removing duplicate labeling and redundant add, pin, and reminder-filter controls; custom capture modes now live in the central recording button's drag-up menu.
+- Make Pin and Reminder built-in behavior tags. Existing pins migrate automatically, scheduled items receive Reminder automatically, and both remain available for ordinary assignment, filtering, saved views, and workflows.
+- Show and edit assigned tags directly beneath every Inbox text or transcript editor. Type a name to reuse an existing tag or create a new one without leaving the editor.
+- Improve large-Inbox scrolling with bounded card previews, indexed tag lookup, compact tag summaries, constant-time selection checks, and typed Compose row reuse while retaining full text in the editor.
+- Repair RykerSoft Pro Google sign-in configuration so the canonical Hyperscribe OAuth client can be used with the Hub entitlement service.
+
 ## v2.3.0
 
 - Add a tag-first organization system with custom saved Inbox views, reusable capture modes that preapply tags, and automatic tag workflows such as archiving completed non-journal items.
