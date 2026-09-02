@@ -19,15 +19,15 @@ Install Hyperscribe Mobile through its Android entry in RykerSoft. Grant microph
 
 ## Inbox and recording
 
-Use Inbox for recordings, transcripts, saved text, files, and images. Tap the central record control to create a voice note, or drag upward to add clipboard text, import a text document, open a blank text editor, choose another recording profile, or import existing audio. Imported audio is saved without automatic transcription; transcribe it on demand from its Inbox controls. Recording can continue through a visible foreground notification. Android Sharesheet imports remain supported, and saved items can be edited, tagged, searched, played, copied, shared, or deleted. Automatic tag rules also apply when multiple selected text items or transcripts are copied into one combined Inbox item.
+Use Inbox for recordings, transcripts, saved text, files, and images. Content has no forced Note, Journal, Task, or Voice Memo type: add any combination of tags as its purpose evolves. Tap text to edit it, use Copy for a quick copy, sort by added or copied time, and select several items to copy, tag, archive, run through an action, or add to Chat. Create saved tag-driven views such as Journal or Family + Urgent, capture modes such as Work Reminder that preapply tags in the standard editor, and workflows such as auto-archiving Complete items that do not also have Journal. Tagged, pinned, and archived content is retained beyond disposable clipboard history. Tap the central record control to create a voice note, or drag upward to add clipboard text, import a text document, open a blank text editor, choose another recording profile, or import existing audio.
 
 ## Actions and chat
 
-Actions transform text or Inbox content. When one or more Inbox text items or recording transcripts are selected, the Actions page preserves and uses that selection. With no Inbox selection, an action reads the current clipboard instead. Successful text transformations replace the clipboard contents and are saved to the Inbox; snippets copy their own content and do not require an input item. Hyperscribe supports AI, Python, template, snippet, search, persona, TTS, and combo actions, including ordered Before, Combine, Main, and After stages. Action editors provide selectors for LLM models, thinking levels, speech providers, voices, and speech models, using the provider catalogs configured in Settings. Chat keeps persistent threads and supports streaming, stop, edit/regenerate, fork, search, Personas, action context, and review-before-commit action-library proposals.
+Actions transform text or Inbox content. When one or more Inbox text items or recording transcripts are selected, the Actions page preserves and uses that selection. With no Inbox selection, an action reads the current clipboard instead. Successful text transformations replace the clipboard contents and are saved to the Inbox; snippets copy their own content and do not require an input item. Hyperscribe supports AI, Python, template, snippet, search, persona, TTS, and combo actions, including ordered Before, Combine, Main, and After stages. Chat keeps persistent threads, accepts one or several selected Inbox items as temporary question context, supports action stacks, and provides streaming, generation cancellation, edit/regenerate, fork, search, Personas, action context, and review-before-commit action proposals. Android posts a completion notification when the relevant Chat thread is not actively visible.
 
 ## Text to speech
 
-Choose Piper for downloaded on-device voices, the Android system speech engine on mobile, or a configured Gemini or ElevenLabs provider. Long text is divided into ordered sections so playback can begin while later sections are prepared.
+Choose Piper for downloaded on-device voices, the Android system speech engine on mobile, or a configured Gemini or ElevenLabs provider. Long text is divided into ordered sections so playback can begin while later sections are prepared. Paragraph mode treats bullet and numbered-list items as separate speech segments.
 
 ## Provider keys and privacy
 
@@ -47,7 +47,7 @@ Modern Android does not allow continuous background clipboard monitoring, silent
 
 ## PRO Features
 
-Hyperscribe Mobile v2.2.0 offers optional RykerSoft Pro Access for personal family use.
+Hyperscribe Mobile v2.3.0 offers optional RykerSoft Pro Access for personal family use.
 
 - * Family provider access — sign in with Google in Settings. If the RykerSoft administrator granted `com.rykersoft.hyperscribemobile`, configured Gemini, OpenAI, Groq, and ElevenLabs family providers become available without saving their values on the device.
 - Personal keys remain supported and take priority.

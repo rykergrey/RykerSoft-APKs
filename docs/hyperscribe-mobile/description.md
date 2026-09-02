@@ -4,9 +4,9 @@ Hyperscribe Mobile is a local-first voice, text, action, chat, and speech worksp
 
 ## Features
 
-- Record, import, transcribe, edit, tag, search, share, and back up voice and text items.
+- Record, import, transcribe, edit, tag, search, archive, share, and back up voice and text items. Build tag-defined views, capture modes, and automatic organization workflows without assigning rigid content types.
 - Build AI, Python, template, snippet, search, persona, TTS, and combo actions. Run them against selected Inbox content or the clipboard, with text results copied back to the clipboard.
-- Keep persistent chat threads with streaming, editing, regeneration, action context, and TTS.
+- Keep persistent chat threads with streaming, cancellation, multi-item Inbox context, action stacks, completion notifications, editing, regeneration, action context, and TTS.
 - Use Piper or system TTS locally, or configure Gemini and ElevenLabs speech.
 - Use personal provider credentials protected by Android Keystore or optional Google-account-bound RykerSoft Pro Access.
 - Move action libraries to or from Hyperscribe Desktop using compatible JSON exports.
@@ -18,7 +18,7 @@ Hyperscribe Mobile is a local-first voice, text, action, chat, and speech worksp
 
 ## PRO Features
 
-Hyperscribe Mobile v2.2.0 supports optional RykerSoft Pro Access for trusted family members.
+Hyperscribe Mobile v2.3.0 supports optional RykerSoft Pro Access for trusted family members.
 
 - * Family provider access — after Google sign-in, the exact Hyperscribe Mobile package entitlement can supply configured Gemini, OpenAI, Groq, and ElevenLabs credentials in memory.
 - Personal bring-your-own keys remain supported and take priority.
