@@ -12,7 +12,7 @@ bettertracking is a full journal + library system, not a simple calorie counter.
 * **Quick Log**: free text and/or a photo → AI-estimated macros, refine with feedback
 - **Adaptive nutrition engine**: Mifflin–St Jeor BMR, weight-trend adaptation after ~14 days, conservative 0.8× trust on exercise burn, manual overrides
 - **Optional Energy Bank** that carries surplus/deficit across days with lookback, recovery, and pacing controls
-* **AI assistant & coaching**: tool-using chat (navigate, query logs, create/update items, set reminders), Health Coach Analysis for day/week/month, background monthly reports
+- **AI assistant & coaching**: tool-using chat (navigate, query logs, create/update items, set reminders), plus local day/week/month Health Coach prompts that open in the user's selected chatbot (Perplexity by default)
 * **AI Architect**: describe an item (optionally with images) and let the model draft the library entry
 * **Speech-to-text** via Groq Whisper (default) or OpenAI Whisper, plus on-device voice capture on Android
 - **Alerts & reminders**: per-item schedules (daily/weekly/monthly/etc.), wake/sleep alarms, Capacitor local notifications with reboot rescheduling
@@ -21,7 +21,7 @@ bettertracking is a full journal + library system, not a simple calorie counter.
 
 ## PRO Features
 
-Items marked * require an administrator-granted entitlement for `com.rykersoft.bettertracking`, followed by sign-in to the same RykerSoft account inside the app under **Profile → API Keys → RykerSoft AI unlock**. All tracking, journaling, library, and reminder features work without Pro access. You can also supply your own Gemini/Groq/OpenAI keys manually.
+Items marked * require an administrator-granted entitlement for `com.rykersoft.bettertracking`, followed by sign-in to the same RykerSoft account inside the app under **Profile → API Keys → RykerSoft AI unlock**. Health Coach prompts use the user's selected external chatbot and do not consume BetterTracking API credits. All tracking, journaling, library, and reminder features work without Pro access. You can also supply your own Gemini/Groq/OpenAI keys manually.
 
 ## Platforms
 

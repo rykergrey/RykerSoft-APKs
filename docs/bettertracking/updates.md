@@ -1,5 +1,11 @@
 # Release notes
 
+## v1.1.5
+- Replace app-funded day/week/month Health Coach generation with portable prompts for the user's own chatbot
+- Default to Perplexity, with ChatGPT, Google Gemini, and copy-to-any-chatbot options
+- Remove automatic background monthly AI reports while preserving access to previously saved reports
+- Include chronological logs, notes, nutrients, custom values, recipe portions, targets, and adaptive context in each coaching prompt
+
 ## v1.1.4
 - Restore **Continue with Google** in Profile settings and remove obsolete password/create-account controls
 - Bundle the canonical RykerSoft Hub Firebase configuration so release builds no longer depend on an unpublished local environment file

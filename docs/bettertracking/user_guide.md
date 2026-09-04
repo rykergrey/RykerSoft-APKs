@@ -62,7 +62,7 @@ Holistic tracking for food, supplements, exercise, measurements, lifestyle, and 
 - Chat streams replies with markdown and item cards; conversations persist to your account.
 - The assistant can use tools: navigate the app, query your library and logs, create or update items, adjust your profile, set reminders, and propose batch updates.
 - Attach day logs or a saved analysis by calendar date as chat context.
-- **Health Coach Analysis** generates a day/week/month report; regenerate anytime or download as Markdown. Monthly reports can generate in the background.
+- **Health Coach Analysis** builds a detailed day/week/month prompt locally from your profile, targets, notes, and logs. Choose Perplexity (default), ChatGPT, Google Gemini, or copy it into any chatbot. Long prompts are copied for manual paste when direct prefill is unreliable; previously saved reports remain readable.
 - Voice input works in chat (Groq or OpenAI Whisper).
 
 ## 7. Alerts & reminders
@@ -74,7 +74,7 @@ Holistic tracking for food, supplements, exercise, measurements, lifestyle, and 
 
 ## PRO Features
 
-Items marked *—Quick Log, AI Architect, chat, Coach Analysis, and voice transcription—require Pro access. All tracking, journaling, library, and reminder features work without it.
+Items marked *—Quick Log, AI Architect, chat, and voice transcription—require Pro access. Coach Analysis builds a prompt locally and uses the user's selected external chatbot account. All tracking, journaling, library, and reminder features work without Pro access.
 
 1. In the **RykerSoft App Manager**, sign in to your RykerSoft account with Google.
 2. Open bettertracking's page and use **PRO ACCESS INFO** to confirm the account the administrator should authorize.

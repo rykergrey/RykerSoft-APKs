@@ -3,7 +3,7 @@
 ## Package
 - **App name:** bettertracking
 - **Android package ID:** `com.rykersoft.bettertracking`
-- **Current version:** 1.1.4 (versionCode 8)
+- **Current version:** 1.1.5 (versionCode 9)
 
 ## Platforms
 | Platform | Stack | Storage |
@@ -23,7 +23,7 @@
 - Realtime listeners with IndexedDB offline persistence
 
 ## AI providers
-- **Gemini** — Quick Log, AI Architect, nutrition/burn estimates, Health Coach Analysis, tool-using chat
+- **Gemini** — Quick Log, AI Architect, nutrition/burn estimates, and tool-using chat. Health Coach Analysis builds a local portable prompt for the user's external chatbot instead of calling Gemini.
 - **Groq Whisper** (default) / **OpenAI Whisper** — speech-to-text
 - Keys come from the RykerSoft hub Firebase (`rykersoft-abe84`) after unlock + hub sign-in (Profile → API Keys), or can be entered manually
 
