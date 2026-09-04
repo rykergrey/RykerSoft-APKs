@@ -1,5 +1,15 @@
 # Release notes
 
+## v2.2.8
+- Added Ctrl+1 through Ctrl+9 shortcuts for jumping directly to visible tabs in the active card
+- Side panels now collapse automatically when the app window enters a compact width
+- Navigation dropdowns remain available as icon controls at narrow widths, and cloud save status is now icon-only
+- Remember in-session scroll positions independently for text previews, text editors, and chat tabs when switching tabs or panes
+- Added Linux as a first-class Electron target with native Wayland behavior, an Omarchy/Arch pacman package, a portable AppImage, XDG-aware build output, and complete desktop launcher metadata
+- Added a stable `com.rykersoft.superthinking` Wayland app ID / X11 class for Hyprland launcher matching and xdg-desktop-portal permissions without custom window rules
+- Added secure desktop permission handling, standard native menus, single-instance focus behavior, and Wayland-safe window restoration
+- Added a reproducible Node.js 24 LTS mise environment and repaired the web/Electron TypeScript verification paths
+
 ## v2.2.7
 - Fix RykerSoft Pro Google sign-in on Android by requesting the ID token with the RykerSoft Hub web client ID
 - Keep the SuperThink.ing data-vault Google account on its independent Firebase project

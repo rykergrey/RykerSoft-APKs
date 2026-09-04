@@ -28,3 +28,4 @@ PRO provider access is granted by the RykerSoft administrator for this exact app
 - **Android** — Capacitor APK via the RykerSoft hub (`com.rykersoft.superthinking`)
 - **Web** — Vite + React
 - **Windows** — Capacitor Electron portable build
+- **Linux** — native Wayland/X11 Electron build with AppImage and Arch/pacman packages

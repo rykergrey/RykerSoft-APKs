@@ -44,7 +44,7 @@ A multimodal knowledge workspace built around cards and tabs — write, chat, tr
 ## 4. Song & music tools
 
 - Write songs in fenced `song` blocks with chord tokens, section headers, and stage directions.
-- Show/hide chords, transpose ±1 semitone, and use `{option1|option2}` variation syntax with colors.
+- Show/hide chords, transpose ±1 semitone, and keep lyric alternatives with `{main version|alternate version}`. Alternatives may contain chords, for example `{this is a [Fm]version|this is a second [C#m]version}`. In Preview, the dotted violet lyric/chord is clickable: choose a version to move it to the main (first) position without deleting the others.
 - The section jumper dock navigates between song sections; preview auto-scroll works like a teleprompter with speed control.
 - HTML exports include section navigation, a metronome, section looping, transpose, and audio playback controls.
 

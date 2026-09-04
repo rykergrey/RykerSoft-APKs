@@ -3,7 +3,7 @@
 ## Package
 - **App name:** SuperThink.ing
 - **Android package ID:** `com.rykersoft.superthinking`
-- **Current version:** 2.2.7 (versionCode 130)
+- **Current version:** 2.2.8 (versionCode 131)
 
 ## Platforms
 | Platform | Stack | Storage |
@@ -11,11 +11,12 @@
 | Android | Capacitor + WebView | local vault IndexedDB + Firestore persistence; guest uses localStorage/IndexedDB |
 | Web | Vite + React | Same as above |
 | Windows | Capacitor Community Electron portable | Same web bundle |
+| Linux | Capacitor Community Electron; native Wayland/X11; AppImage + pacman | Same web bundle |
 
 ## Android
 - **minSdk:** 24, **targetSdk / compileSdk:** 36
 - Release builds signed via `android/keystore.properties` (gitignored)
-- Native plugins: Firebase Authentication (Google), MicrophoneRouting (mic/Bluetooth routing and reconnectable foreground recording), DownloadSaver (public Downloads), share-target import
+- Native plugins: Firebase Authentication (data-vault Google), Credential Manager (RykerSoft Pro Google), MicrophoneRouting (mic/Bluetooth routing and reconnectable foreground recording), DownloadSaver (public Downloads), share-target import
 - The native microphone plugin reports live input amplitude during recording; web and desktop builds use the Web Audio analyser fallback
 
 ## Accounts & sync
@@ -40,4 +41,6 @@
 
 ## Distribution
 - RykerSoft hub installs the signed APK from this repo's GitHub Releases
+- Windows releases use the portable Electron target
+- Linux releases provide an AppImage plus a native Arch/pacman package; the Wayland/desktop identity is `com.rykersoft.superthinking`
 - Hub gallery screenshots live in `rykergrey/RykerSoft` → `screenshots/superthinking/`
