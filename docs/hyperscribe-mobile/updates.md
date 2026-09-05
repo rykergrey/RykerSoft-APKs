@@ -1,5 +1,15 @@
 # Hyperscribe Mobile updates
 
+## v2.4.2
+
+- Add automatic transcription replacement rules with one canonical result and unlimited spelling or phrase variants.
+- Apply replacements before transcript storage, clipboard delivery, Chat routing, tagging, and automatic actions, with retry-safe background processing.
+- Support dynamic date and time tokens, per-rule enable controls, and portable backup and restore.
+
+## v2.4.1
+
+- Integrate attached Inbox context into Chat as a compact badged control beside the action stack, with an ordered dialog for reviewing and removing items without crowding the composer.
+
 ## v2.4.0
 
 - Simplify the Inbox toolbar by removing duplicate labeling and redundant add, pin, and reminder-filter controls; custom capture modes now live in the central recording button's drag-up menu.
