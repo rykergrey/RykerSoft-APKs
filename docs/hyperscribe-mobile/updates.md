@@ -1,5 +1,14 @@
 # Hyperscribe Mobile updates
 
+## v2.5.0
+
+- Add Markdown-editor recording controls with a fixed right-side record/stop button and separate cancel action, plus automatic tag-panel collapse while the keyboard is visible.
+- Add multi-image Inbox import, multi-image OCR insertion, and image attachments on editable text without OCR.
+- Make recording profiles editable and extensible, with custom sample rate, channels, encoding, bitrate, retention, noise suppression, echo cancellation, and automatic gain control.
+- Add per-profile audio retention and per-tag text/audio retention overrides. The most protective matching tag policy wins, pinned content remains protected, and the Inbox shows expiry status and can sort by retention date.
+- Integrate attached Inbox context into Chat as a compact badged control beside the action stack, with an ordered dialog for reviewing and removing items without crowding the composer.
+- Improve cross-device sync with case-insensitive tag identity, cloud-to-local tag aliasing, clearer item counts, and explicit per-item Inbox sync controls.
+
 ## v2.4.2
 
 - Add automatic transcription replacement rules with one canonical result and unlimited spelling or phrase variants.

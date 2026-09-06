@@ -19,7 +19,11 @@ Install Hyperscribe Mobile through its Android entry in RykerSoft. Grant microph
 
 ## Inbox and recording
 
-Use Inbox for recordings, transcripts, saved text, files, and images. Content has no forced Note, Journal, Task, or Voice Memo type: add any combination of tags as its purpose evolves. Tap text to edit it, use Copy for a quick copy, sort by added or copied time, and select several items to copy, tag, archive, run through an action, or add to Chat. The editor always shows assigned tags beneath the text; remove a chip or type a name to reuse or create a tag. Create saved tag-driven views such as Journal or Family + Urgent, capture modes such as Work Reminder that preapply tags in the standard editor, and workflows such as auto-archiving Complete items that do not also have Journal. Pin and Reminder are ordinary behavior tags: scheduled items receive Reminder automatically, while both tags can also be assigned manually and used in filters or saved views. Tagged and archived content is retained beyond disposable clipboard history. Tap the central record control to create a voice note, or drag upward to add clipboard text, import a text document, open a blank text editor, choose a custom capture mode or another recording profile, or import existing audio.
+Use Inbox for recordings, transcripts, saved text, files, and images. Content has no forced Note, Journal, Task, or Voice Memo type: add any combination of tags as its purpose evolves. Tap text to edit it, use Copy for a quick copy, sort by added, copied, or retention date, and select several items to copy, tag, archive, run through an action, or add to Chat. Items approaching expiry show a retention indicator. The editor shows assigned tags beneath the text while the keyboard is closed; remove a chip or type a name to reuse or create a tag. Create saved tag-driven views such as Journal or Family + Urgent, capture modes such as Work Reminder that preapply tags in the standard editor, and workflows such as auto-archiving Complete items that do not also have Journal. Pin and Reminder are ordinary behavior tags: scheduled items receive Reminder automatically, while both tags can also be assigned manually and used in filters or saved views. Tags can override the default text and audio retention periods; the longest matching tag policy applies, and pinned content remains protected.
+
+Tap the central record control to create a voice note, or drag upward to add clipboard text, import a text document, import one or several images as one Inbox item, open a blank text editor, choose a custom capture mode or another recording profile, or import existing audio. In the Markdown editor, use the image menu to extract text from one or more images or attach them without OCR. Use the microphone at the right edge of the toolbar to record and insert dictated text; the adjacent cancel control abandons that capture. The tag controls collapse while the on-screen keyboard is visible so the editor retains usable height.
+
+In Settings, edit the built-in recording profiles or add custom profiles. Each profile can set its name, sample rate, mono/stereo mode, encoding, Opus bitrate, audio retention, noise suppression, echo cancellation, and automatic gain control.
 
 ## Actions and chat
 
@@ -49,7 +53,7 @@ Modern Android does not allow continuous background clipboard monitoring, silent
 
 ## PRO Features
 
-Hyperscribe Mobile v2.4.2 offers optional RykerSoft Pro Access for personal family use.
+Hyperscribe Mobile v2.5.0 offers optional RykerSoft Pro Access for personal family use.
 
 - * Family provider access — sign in with Google in Settings. If the RykerSoft administrator granted `com.rykersoft.hyperscribemobile`, configured Gemini, OpenAI, Groq, and ElevenLabs family providers become available without saving their values on the device.
 - Personal keys remain supported and take priority.
