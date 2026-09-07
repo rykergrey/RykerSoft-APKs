@@ -1,5 +1,20 @@
 # Hyperscribe Mobile updates
 
+## v2.6.0
+
+- Add powerful saved Inbox views with nested tag rules, retention windows, media filters, full date headings, and navigation shortcuts.
+- Preserve combined-copy notes and expose ordered Inbox input across Actions, Custom, and Chat.
+- Add explicit Chat attachment review, audio transcription/image text extraction choices, and local media snapshots.
+- Add responsive TTS section navigation, an upward playlist, cached replay, and safe saved-playlist regeneration.
+- Improve Settings search and draft preservation, capture history, and compound attachments.
+- Preserve v2.5.1 recording-profile tags and compact editor controls. Upgrade database schema 9 to 10 without replacing the deployed schema-9 migration.
+
+## v2.5.1
+
+- Give recording profiles customizable Inbox tags, defaulting to the profile name, and automatically tag newly captured recordings for profile-based filtering.
+- Reclaim Markdown editor space above the keyboard with compact save controls, hidden tag controls, toolbar-based image attachment management, swipeable image previews, and recording controls that appear only when relevant.
+- Keep the central recording control compact with frequently used actions and provide a scrollable **All options…** sheet for every recording profile, capture mode, and import method.
+
 ## v2.5.0
 
 - Add Markdown-editor recording controls with a fixed right-side record/stop button and separate cancel action, plus automatic tag-panel collapse while the keyboard is visible.
