@@ -3,7 +3,7 @@
 ## Package
 - **App name:** SuperThink.ing
 - **Android package ID:** `com.rykersoft.superthinking`
-- **Current version:** 2.2.8 (versionCode 131)
+- **Current version:** 2.2.9 (versionCode 132)
 
 ## Platforms
 | Platform | Stack | Storage |
@@ -20,6 +20,7 @@
 - The native microphone plugin reports live input amplitude during recording; web and desktop builds use the Web Audio analyser fallback
 
 ## Accounts & sync
+- Android Pro sign-in uses the web OAuth client bundled by the app's Google Services configuration. RykerSoft's Google provider must safelist that external client; the resulting Firebase session and Pro entitlement checks remain in the RykerSoft Hub project.
 - **Guest mode**: cards and prefs in local storage, media in IndexedDB — no account needed
 - **Signed-in mode**: Google-only authentication against the app-data Firebase project. After the first successful load, cards open from a local IndexedDB vault; Firestore and Firebase Storage sync in the background. Offline reopen uses the cached account and local vault instead of waiting on the network. Empty cloud vaults can migrate guest cards on sign-in.
 - **Offline recovery**: a cached offline vault is identified as offline rather than cloud-synced and can reconnect with Google or end its local session without clearing app storage

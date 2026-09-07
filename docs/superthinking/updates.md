@@ -1,5 +1,10 @@
 # Release notes
 
+## v2.2.9
+- Fix Android RykerSoft Pro Google sign-in error 28444 by using the OAuth client paired with the app's package and signing certificate, already safelisted by the Hub.
+- Show the underlying Google credential error when sign-in fails.
+- Preserve separate vault and Pro sessions, existing account identities, and package-scoped Pro access.
+
 ## v2.2.8
 - Added Ctrl+1 through Ctrl+9 shortcuts for jumping directly to visible tabs in the active card
 - Side panels now collapse automatically when the app window enters a compact width
