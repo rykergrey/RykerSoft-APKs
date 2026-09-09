@@ -25,3 +25,4 @@ A physics puzzle arcade game in the spirit of Pachinko and Peggle: launch balls,
 ## Platforms
 - **Android** — Godot 4.7 release APK for the RykerSoft hub (`com.rykersoft.freeballing`)
 - **Windows** — Native x86_64 Godot export with game data embedded in one portable EXE
+- **Linux** — Native x86_64 AppImage or portable archive, with full guest/offline play and editing

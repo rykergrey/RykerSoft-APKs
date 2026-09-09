@@ -1,5 +1,20 @@
 # Updates
 
+## v1.0.29 — mobile and desktop experience update
+
+- Freeze physics and preserve shots during Pause; add Escape, focus-loss pause, overlay-first Android Back, and responsive Home state restoration
+- Add optional untimed practice, keyboard aim/charge, and a collapsible desktop controls reminder
+- Replace mobile Editor navigation with More; add thumbnail browsing, search of loaded boards, favorites, recent boards, and sorting
+- Give desktop Play and the board priority, with compact navigation and Info/Parts/Scores tabs; move local stats into Player Profile
+- Share music/effects volume, reduced camera motion/flashes, text sizing, and manual quality settings across Home and Pause
+- Improve body/editor font weight, simplify the color scope selector, and keep the studio dock aligned as text expands
+- Page Community summaries in batches of 25 and fetch geometry on selection, with loading/error/retry feedback
+- Add optional Windows DPAPI session persistence and conventional typed username input
+- Add contextual editor inspectors, live parameter previews, numeric controls, and foreground/background color scopes
+- Ship Linux x86_64 AppImage and portable archive builds
+- Extract editor history helpers; add ranked-run plausibility/revision metadata and emulator integration coverage
+- Add isolated regression and fixed-viewport capture tools; see [implementation and release checks](experience_update.md)
+
 ## v1.0.28
 
 - Deployed server-authoritative UTC weekly scoreboard backend functions (`getWeeklyLeaderboard`, `getWeeklyRankings`) and enriched score submission receipts to Firebase
