@@ -1,5 +1,14 @@
 # Release notes
 
+## v1.2.0
+- Personalized nutrition chat retrieves current intake, goals, preferences and library foods on demand
+- Optional Auto / Off / On web research with cited sources
+- Nutrition reports without AI: nutrient filters, food rankings, consumption patterns, charts and CSV export
+- Text and image library drafts with evidence labels and reliable reviewed changes
+- Explicit nutrient minimums, maximums, ranges, favorites and food exclusions
+- Bounded chat context, improved historical nutrition calculations and safer serving conversions
+- Windows x64 portable and Linux x64 AppImage / Debian builds
+
 ## v1.1.5
 - Replace app-funded day/week/month Health Coach generation with portable prompts for the user's own chatbot
 - Default to Perplexity, with ChatGPT, Google Gemini, and copy-to-any-chatbot options

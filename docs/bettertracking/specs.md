@@ -3,7 +3,7 @@
 ## Package
 - **App name:** bettertracking
 - **Android package ID:** `com.rykersoft.bettertracking`
-- **Current version:** 1.1.5 (versionCode 9)
+- **Current version:** 1.2.0 (versionCode 10)
 
 ## Platforms
 | Platform | Stack | Storage |
@@ -36,3 +36,8 @@
 ## Distribution
 - RykerSoft hub installs the signed APK from this repo's GitHub Releases
 - Hub gallery screenshots live in `rykergrey/RykerSoft` → `screenshots/bettertracking/`
+
+## Desktop distribution
+- Windows x64 portable EXE
+- Linux x64 AppImage and Debian package
+- Public artifacts and SHA-256 checksums published together for each release
