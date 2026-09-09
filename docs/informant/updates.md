@@ -1,5 +1,11 @@
 # Release notes
 
+## v1.4.3
+- Stop reopening old shared links on ordinary launches and Android resume; new Android shares and manual imports remain available
+- Restore the active project, expanded video, selected tab, and reading position after reopening
+- Preserve the existing Android signing identity and local app data during updates
+
+
 ## v1.4.2
 - Restore a complete, source-backed release after an unreleased direct-device build advanced the Android version
 - Preserve the trusted Android signer and provide a monotonic update path without removing local app data
