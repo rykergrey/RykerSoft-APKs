@@ -3,7 +3,9 @@
 Turn a premise, joke, or reference image into a comic, then shape the result panel by panel. Bold lettering, halftone backgrounds, and expressive art styles make the workbench feel like a comic studio.
 
 ## Features
-- Browse saved sessions on your device.
+- Available on Android, Windows, and Linux.
+- Search, sort, and rename saved sessions on your device.
+- Recover autosaved drafts and deleted panels, comics, or sessions.
 - Edit caption text and fonts by hand.
 - Duplicate, reorder, and remove panels.
 - Share artwork, captioned panels, and comic strips.

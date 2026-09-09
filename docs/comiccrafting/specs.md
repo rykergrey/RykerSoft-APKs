@@ -1,13 +1,15 @@
 # ComicCraft.ing specifications
 
 - Android package: `com.rykersoft.comiccrafting`
-- Initial release: 1.0.0, version code 1
+- Current release: 1.1.0, Android version code 2
+- Windows x64 portable executable; Linux x64 AppImage and portable tar.gz archive
+- Desktop runtime: Electron 44.3.0, sandboxed renderer, isolated preload, packaged application origin
 - Minimum Android: 7.0 (API 24); target API 36
 - React 19, TypeScript, Vite, Capacitor 8
 - Bundled Tailwind styling and fonts
-- Local IndexedDB comic storage; editable ZIP backup exchange
+- Local IndexedDB comics, drafts, and deletion recovery; editable ZIP backup exchange
 - Android file sharing via the system share sheet
-- Google sign-in through Android Credential Manager and Firebase Auth
+- Google sign-in through Android Credential Manager or the desktop system browser, backed by Firebase Auth
 - Hub project: `rykersoft-abe84`
 - Pro entitlement: exact Boolean field in `users/{uid}/entitlements/apps`
 - Gemini credential delivery: entitlement-scoped `providerKeys/com.rykersoft.comiccrafting`

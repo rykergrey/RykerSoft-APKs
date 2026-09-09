@@ -1,5 +1,15 @@
 # Updates
 
+## 1.1.0 — September 9, 2026
+- New Windows portable and Linux AppImage/archive releases.
+- Idea-first creation with text-based styles and optional fine-tuning.
+- Comic-first workbench, draft autosave, and background work during in-app navigation.
+- Individual artwork retry and safer concurrent caption/image editing.
+- Explicit editing menus, persistent deletion recovery, and Trash.
+- Library search, sorting, session naming, and simpler export choices.
+- Improved mobile layout and accessible editing dialogs.
+- Desktop Google sign-in through the system browser using your RykerSoft account.
+
 ## 1.0.0 — September 7, 2026
 - First signed Android release for RykerSoft.
 - Google sign-in and per-app Pro access for AI creation tools.
