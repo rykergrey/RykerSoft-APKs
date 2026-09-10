@@ -1,5 +1,16 @@
 # Updates
 
+## v1.3.23
+
+Connected Words, Unique Finds, Best Word & One Word Showdown
+
+- Keep the last valid word outlined and start the next word on any of its tiles with Connected Words.
+- Cancel shared words for every finder with Unique Finds in local and online multiplayer.
+- Score only the highest eligible word with Best Word; shared words cancel before the best remaining word is chosen.
+- Add One Word Showdown with private turns, a shared reveal, persistent boards, and round-based match standings.
+- Preserve scoring rules in trusted online results and saved challenges.
+- Publish synchronized Windows portable, Linux AppImage, and Android release packages.
+
 ## v1.3.22
 
 Release Continuity Repair
