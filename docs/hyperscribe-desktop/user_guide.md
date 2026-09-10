@@ -15,7 +15,7 @@
 
 ## Getting started
 
-Open the Hyperscribe Desktop entry in RykerSoft and download the portable Windows executable. Run it directly; application data is kept separately in `%USERPROFILE%\.hyperscribe-desktop\`.
+Open the Hyperscribe Desktop entry in RykerSoft and choose the Windows executable or Linux archive. On Windows, run the executable directly. On Linux, extract the archive and run `HyperscribeDesktop`. Application data is kept separately in your user profile.
 
 ## Inbox and capture
 
@@ -23,7 +23,9 @@ Use Inbox for Audio and Text items. The New button opens the split Markdown/edit
 
 ## Actions and chat
 
-Actions transform selected text or Inbox content. Hyperscribe supports AI, Python, template, snippet, search, persona, TTS, and combo actions, including ordered Before, Combine, Main, and After stages. Chat keeps persistent threads and supports streaming, stop, edit/regenerate, fork, search, Personas, action context, and review-before-commit action-library proposals.
+Actions transform selected text or Inbox content. Hyperscribe supports AI, Python, template, snippet, search, persona, TTS, and combo actions, including ordered Before, Combine, Main, and After stages. Chat keeps persistent threads and supports streaming, stop, edit/regenerate, fork, search, Personas, action and Inbox-item context, and review-before-commit action-library proposals.
+
+In Chat or Actions, the Inbox button opens a dropdown with an **Inbox Items** submenu showing the ten latest entries. Check multiple items, remove selected entries, clear all, or choose **Open Inbox**. In Inbox, select one or more rows and right-click → **Send Items to Actions**. Actions opens with a selection count beside Run; those items replace clipboard input until you press **Clear**.
 
 ## Text to speech
 
@@ -31,7 +33,7 @@ Choose Piper for downloaded local voices, Windows speech where available, or a c
 
 ## Provider keys and privacy
 
-Cloud features require the user's own provider credentials. Open Settings, add only the keys you need, and use the Show/Hide control when reviewing a secret field. Credentials are excluded from backups, diagnostics, source repositories, and released artifacts. Content is sent to a provider only when the user invokes that provider-backed operation.
+Open Settings → API Keys → Connect RykerSoft Pro with Google to use an approved account’s shared provider access. Without Pro, add your own provider keys in the same settings page. Personal keys are preserved when you connect or disconnect Pro. Credentials are excluded from backups, diagnostics, source repositories, and released artifacts. Content is sent to a provider only when the user invokes that provider-backed operation.
 
 ## Clipboard palette
 
@@ -47,7 +49,11 @@ Hyperscribe Desktop and the separately listed Hyperscribe Mobile application use
 
 ## PRO Features
 
-Hyperscribe v2.2.0 has no RykerSoft Pro-only features. Cloud operations use bring-your-own provider credentials. Free and local workflows do not require a RykerSoft account.
+RykerSoft Pro is required for shared provider keys and cross-device sync. Existing Hyperscribe Mobile Pro users have been granted Desktop Pro. Sign in with that same Google account. Existing Sync users should reconnect once to connect their RykerSoft session.
+
+Under Settings → Cross-device Sync, enable sync and choose the content to include: tags, Inbox content, actions, chats, and text replacement rules. Enable **Sync text replacement rules** on your Windows and Linux installations to share rule edits, enabled states, and deletions. Cloud data stays in Hyperscribe’s Firebase project under your account. Recording files and other local file contents are not uploaded by content sync. Android’s existing content sync remains compatible; this release adds replacement-rule sync between desktop installations.
+
+Signing out or losing Pro removes shared provider access and disables cloud sync. Your local content and personal keys remain available.
 
 ## Support
 
