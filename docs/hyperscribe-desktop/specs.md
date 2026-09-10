@@ -2,7 +2,7 @@
 
 ## Desktop
 
-- Version: `2.4.0`
+- Version: `2.4.1`
 - Runtime: Python 3.12, PySide6, packaged as a portable PyInstaller executable
 - Data location: `%USERPROFILE%\.hyperscribe-desktop\`
 - Architecture: Windows and Linux x86-64

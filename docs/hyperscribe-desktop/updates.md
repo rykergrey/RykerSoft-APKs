@@ -1,5 +1,10 @@
 # Hyperscribe Desktop updates
 
+## v2.4.1
+
+- Fix Pro verification after a successful Google login by reusing the Hyperscribe session.
+- Desktop and Mobile now use the same shared provider keys, including future updates.
+
 ## v2.4.0
 
 - Select recent Inbox items from matching Chat and Actions dropdowns, or right-click Inbox items to send them to Actions. Clear the Actions selection to return to clipboard input.

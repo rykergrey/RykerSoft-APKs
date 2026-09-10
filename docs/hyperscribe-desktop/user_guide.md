@@ -49,7 +49,7 @@ Hyperscribe Desktop and the separately listed Hyperscribe Mobile application use
 
 ## PRO Features
 
-RykerSoft Pro is required for shared provider keys and cross-device sync. Existing Hyperscribe Mobile Pro users have been granted Desktop Pro. Sign in with that same Google account. Existing Sync users should reconnect once to connect their RykerSoft session.
+RykerSoft Pro is required for shared provider keys and cross-device sync. Existing Hyperscribe Mobile Pro users have been granted Desktop Pro. Sign in with that same Google account. Existing signed-in users are verified automatically. Desktop and Mobile use one shared Hyperscribe provider-key record; changing those shared keys in RykerSoft applies to both editions.
 
 Under Settings → Cross-device Sync, enable sync and choose the content to include: tags, Inbox content, actions, chats, and text replacement rules. Enable **Sync text replacement rules** on your Windows and Linux installations to share rule edits, enabled states, and deletions. Cloud data stays in Hyperscribe’s Firebase project under your account. Recording files and other local file contents are not uploaded by content sync. Android’s existing content sync remains compatible; this release adds replacement-rule sync between desktop installations.
 
