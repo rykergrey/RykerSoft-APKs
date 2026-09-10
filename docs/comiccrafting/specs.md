@@ -1,7 +1,7 @@
 # ComicCraft.ing specifications
 
 - Android package: `com.rykersoft.comiccrafting`
-- Current release: 1.1.0, Android version code 2
+- Current release: 1.1.1, Android version code 3
 - Windows x64 portable executable; Linux x64 AppImage and portable tar.gz archive
 - Desktop runtime: Electron 44.3.0, sandboxed renderer, isolated preload, packaged application origin
 - Minimum Android: 7.0 (API 24); target API 36

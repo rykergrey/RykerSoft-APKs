@@ -1,5 +1,13 @@
 # Updates
 
+## 1.1.1 — September 10, 2026
+- Fixed clipped menus on narrow screens.
+- Tap images and captions to edit; drag or swipe to browse versions.
+- Caption history preserves wording and fonts, including in editable backups.
+- Dedicated Download menus for panels and comics.
+- Compact header with a session export icon and no routine saved-status bar.
+- Account/Pro access is now at the bottom of Home.
+
 ## 1.1.0 — September 9, 2026
 - New Windows portable and Linux AppImage/archive releases.
 - Idea-first creation with text-based styles and optional fine-tuning.
