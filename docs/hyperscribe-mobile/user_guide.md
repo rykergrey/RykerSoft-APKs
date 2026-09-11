@@ -21,7 +21,7 @@ Install Hyperscribe Mobile through its Android entry in RykerSoft. Grant microph
 
 Use Inbox for recordings, transcripts, saved text, files, and images. Content has no forced Note, Journal, Task, or Voice Memo type: add any combination of tags as its purpose evolves. Tap text to edit it, use Copy for a quick copy, sort by added, copied, or retention date, and select several items to copy, tag, archive, run through an action, or add to Chat. Items approaching expiry show a retention indicator. Create saved tag-driven views such as Journal or Family + Urgent, capture modes such as Work Reminder that preapply tags in the standard editor, and workflows such as auto-archiving Complete items that do not also have Journal. Tags can override the default text and audio retention periods; the longest matching tag policy applies, and pinned content remains protected.
 
-Tap the central record control to create a voice note, or drag upward for a compact set of frequently used creation choices. Choose **All options…** to open the scrollable create-and-import sheet with every recording profile, capture mode, and import method. In the Markdown editor, use the image menu to extract text from one or more images or attach them without OCR. Use the microphone at the right edge of the toolbar to record and insert dictated text; the adjacent cancel control abandons that capture. The tag controls collapse while the on-screen keyboard is visible so the editor retains usable height.
+Tap the central record control to create a voice note, or drag upward for a compact set of frequently used creation choices. Choose **All options…** to open the scrollable create-and-import sheet with every recording profile, capture mode, and import method. In the Markdown editor, use the image menu to extract text from one or more images or attach them without OCR. Use the microphone at the right edge of the toolbar to record and insert dictated text; the adjacent cancel control abandons that capture. The tag row and bottom Cancel/Save buttons hide while the on-screen keyboard is visible, leaving that space to the text input. Hide the keyboard to restore them; the draft and assigned tags are preserved. The Add tag dialog remains usable while typing a tag name.
 
 In Settings, edit the built-in recording profiles or add custom profiles. Each profile can set its name, sample rate, mono/stereo mode, encoding, Opus bitrate, audio retention, noise suppression, echo cancellation, and automatic gain control.
 
@@ -53,7 +53,7 @@ Modern Android does not allow continuous background clipboard monitoring, silent
 
 ## PRO Features
 
-Hyperscribe Mobile v2.6.0 offers optional RykerSoft Pro Access for personal family use.
+Hyperscribe Mobile v2.8.0 offers optional RykerSoft Pro Access for personal family use.
 
 - * Family provider access — sign in with Google in Settings. If the RykerSoft administrator granted `com.rykersoft.hyperscribemobile`, configured Gemini, OpenAI, Groq, and ElevenLabs family providers become available without saving their values on the device.
 - Personal keys remain supported and take priority.
@@ -79,16 +79,29 @@ Settings search can jump to individual controls. Unsaved edits remain while swit
 
 ## Saved Inbox views
 
-The Inbox opens with a horizontally scrollable view strip above the live search
-field. Titles keep their full text. Type in **Filter Inbox** to filter immediately;
-the clear icon removes the query. Recalling a saved view fills this field, so
-editing it replaces the saved search instead of adding a second hidden search.
+The Inbox opens with a horizontally scrollable view strip above the filter toolbar.
+Titles keep their full text. Tap the search icon in that toolbar to expand
+**Filter Inbox** below it; tap again to collapse the field. Typing filters immediately,
+and the clear icon removes the query. Hiding the field keeps the filter applied.
+The toolbar search icon stays colored whenever the field contains text, including
+a search recalled from a saved view. Editing that text replaces the saved search
+instead of adding a second hidden search.
+
+Inbox cards place type/play, copy, and menu controls in their header so previews
+can use the full card width. Retention controls and tags share a wrapping footer.
+Tap a card to open it, long-press to select it, or use its header actions directly.
+Copying gives the card a brief accent-colored outline and animates its change in
+position. With the default newest-copied sort, it moves to the top; other saved
+sort orders still apply. The list keeps your reading position so you can continue
+copying nearby items. Successful Inbox copies do not show an app toast.
 
 Use the type, audio-status, reminder, pin, and tag controls to customize the list.
 Tags can match any, all, or none of the selected tags. The sort menu includes date
 copied, date added, cleanup date, and title, with ascending/descending order. It
 also controls day grouping, pinned items first, and expanding/collapsing groups.
-Tap an individual day heading to expand or collapse it. Advanced filters retain
+Tap an individual day heading to expand or collapse it. Expanding a day smoothly
+aligns its heading with the top of the list, including short groups at the end.
+Advanced filters retain
 archive scope, compound content rules, nested tag rules, and retention windows.
 
 Tap the save icon at the right of the view strip to name and save the current
@@ -98,3 +111,32 @@ long-press it to update, rename, edit, or delete the view. **All** restores the
 standard active Inbox; long-press **All** to reset every query and display setting
 to defaults. **Archive** remains a separate built-in view. Saved views and the last
 selected view persist on this device. Opening a view also scrolls its tab into view.
+
+In the tag manager, tap **+** to open the New tag editor. Save adds the tag and returns to the manager; closing the editor cancels creation and returns to the same manager. Tapping an existing tag opens its editor.
+
+
+## Recording and stop profiles
+
+**Settings → Recording profiles** controls capture quality, codec, channels, audio processing, and retention. Voice Notes uses 16 kHz mono Opus at 32 kbps by default. Music Compact uses 48 kHz stereo Opus at 160 kbps; Music Lossless uses 48 kHz stereo PCM WAV. Stereo falls back to mono when the input cannot provide two channels. Existing edited quality settings are retained. Add your own profiles and choose the default capture profile for ordinary recording starts. An explicit navigation-button shortcut remains an explicit shortcut.
+
+**Settings → Stop recording profiles** defines what happens after audio is saved. The default is Transcribe and copy. Save audio only and Transcribe without copying are also provided. Add and reorder profiles, choose a transcription provider or use the Transcription default, add actions in order, and choose whether to copy the final result. Each action receives the preceding output. Repeated steps are allowed. Image and browser-opening actions require the main app; stop profiles process transcript text and can run speech actions. Automatic transcript/Inbox actions are optional; new custom profiles run only their selected steps unless you enable them. The former Recording button tap setting and existing Auto Action are migrated into stop-profile preferences. Automatic execution is configured inside each action editor’s Automation tab; there is no Auto Action toolbar button. Recording stop profiles still control whether automatic actions are allowed.
+
+Each capture profile can follow the default stop profile or choose another one. For performances, link Music Lossless or Music Compact to Save audio only. During a recording, use the stop menu or the floating button's Recording tab to choose any stop profile for that recording. A normal Stop tap, including the recording notification, uses the capture profile's linked/default workflow. Saving audio only never transcribes or changes the clipboard, even if auto-transcription for imports is on. In-editor dictation retains its dedicated insert-text behavior.
+
+The selected stop plan and provider are stored with the recording. If an action fails, the completed transcript and successful step outputs are retained; clipboard delivery waits until processing finishes. A retry resumes at the unfinished step. A process interruption between an external action response and saving its checkpoint can still repeat that unfinished action. Explicitly retranscribing a completed recording starts a new transcription request rather than rerunning its old stop macro. Provider fallback and text replacements remain in Transcription settings; auto-transcribe there controls imports and older recordings.
+
+## Floating menu customization
+
+**Settings → Floating control** includes Recording, Actions, and Inbox tabs. Use Move up/down to arrange tabs, edit their titles, show or hide them, select the opening tab, remember the last tab, or place the tab bar below the content. Tabs scroll horizontally when they do not all fit. At least one tab remains visible.
+
+Create custom action tabs and explicitly choose and reorder their actions. The built-in Actions tab can show all compatible actions or a selected list. Screenshot actions need the main app and are omitted from the floating action picker. You can also show/hide capture imports and action categories, change the recent Inbox item limit and pinned-item inclusion, and adjust menu width and height within the screen's available space. All capture profiles appear when idle; all stop profiles appear while recording, with Pause/Resume and Cancel. Settings persist and travel in portable backups.
+
+## Action workspace (v2.8)
+
+Drag up or long-press the Custom navigation button to choose any action type. Drag up or long-press Actions to filter the library by type. The full action picker remains available through All actions / manage.
+
+Use the clipboard icon in the Actions toolbar or beside the Custom type selector to choose input. Select Use clipboard, or open Choose Inbox input to search and add captures without leaving the page. Reorder or remove selected captures in that picker. The icon shows how many captures are selected.
+
+In an action editor’s Basics tab, select Action tags or choose New tag. The pencil on a tag edits its name, color, and matching rules. Action tags and Inbox tags are independent; the same name may exist in both. Existing action assignments are preserved as independent copies when upgrading. Search actions by tag name. Manage categories from the Actions options menu and use the color wheel to choose a category color.
+
+Choose Automation → Auto-run in an individual action editor to run it after transcription or for new clipboard items. Automatic execution must also be enabled in the applicable recording stop profile.

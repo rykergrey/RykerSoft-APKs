@@ -1,3 +1,20 @@
+# Hyperscribe Mobile v2.8.0
+
+Hyperscribe Mobile 2.8.0 adds recording workflows and makes the Inbox and action workspace more compact.
+
+- Collapsible Inbox search with an active-filter indicator, wider item previews, animated copy feedback without losing your reading position, and automatic alignment of expanded day groups.
+- More room for the text editor while the keyboard is open; repaired new-tag creation.
+- Voice and music capture profiles, configurable stop profiles, ordered action steps, and recoverable transcript delivery.
+- Configurable floating Recording, Actions, Inbox, and custom action tabs.
+- Every action type in navigation menus, direct action-type filtering, and automatic execution settings in individual action editors.
+- Independent action tags with creation, editing, and assignment; category color picker; compact clipboard/Inbox input picker.
+- Non-destructive database upgrades and backup compatibility for existing tag assignments.
+
+Package: `com.rykersoft.hyperscribemobile` · version code: `19`.
+Android 10 or newer; ARM64 and x86-64. Signed with the existing production certificate for in-place upgrades.
+
+Download `app-release.apk` for installation. `app-release.aab` is the store distribution bundle.
+
 # 2.7.0 — Saved Inbox views
 
 Hyperscribe Mobile 2.7.0 adds fully customizable saved Inbox views.

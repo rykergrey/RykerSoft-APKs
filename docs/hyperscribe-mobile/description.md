@@ -19,7 +19,7 @@ Hyperscribe Mobile is a local-first voice, text, action, chat, and speech worksp
 
 ## PRO Features
 
-Hyperscribe Mobile v2.6.0 supports optional RykerSoft Pro Access for trusted family members.
+Hyperscribe Mobile v2.8.0 supports optional RykerSoft Pro Access for trusted family members.
 
 - * Family provider access — after Google sign-in, the exact Hyperscribe Mobile package entitlement can supply configured Gemini, OpenAI, Groq, and ElevenLabs credentials in memory.
 - Personal bring-your-own keys remain supported and take priority.
@@ -36,3 +36,7 @@ For support, contact heavensounds@gmail.com.
 ## v2.6 workspace improvements
 
 Powerful saved Inbox views combine tags, media, search, and retention windows. Selected input stays visible across Actions, Custom, and Chat; multimodal Chat attachment review makes the included content explicit. Responsive segmented speech now supports Previous/Next and direct playlist navigation. Capture history, date dividers, compact controls, and Settings draft preservation improve everyday use.
+
+## v2.8 recording and action workspace
+
+A compact Inbox offers collapsible search and animated copy feedback. Capture profiles support voice and music; stop profiles can save audio, transcribe, run ordered actions, and copy the final result. Customize floating tabs and action shortcuts. Actions have an independent tag catalog, color-managed categories, and compact clipboard or Inbox input selection.
