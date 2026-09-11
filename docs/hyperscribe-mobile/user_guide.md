@@ -76,3 +76,25 @@ During speech, Previous and Next move between paragraphs or list sections. The p
 Tap a capture's retention summary for policy controls and Contents & history. Previous working-text versions can be restored without changing the source capture. Audio-only expiry preserves available text; recording-profile and tag retention settings remain supported. Kept captures and history-count limits are distinguished from timed cleanup.
 
 Settings search can jump to individual controls. Unsaved edits remain while switching sections or when background catalogs refresh. Save waits for persistence and displays errors instead of dismissing the editor. Interface settings include preview lines, visible tag count, sticky dates, and whether text-only Chat attachments require review.
+
+## Saved Inbox views
+
+The Inbox opens with a horizontally scrollable view strip above the live search
+field. Titles keep their full text. Type in **Filter Inbox** to filter immediately;
+the clear icon removes the query. Recalling a saved view fills this field, so
+editing it replaces the saved search instead of adding a second hidden search.
+
+Use the type, audio-status, reminder, pin, and tag controls to customize the list.
+Tags can match any, all, or none of the selected tags. The sort menu includes date
+copied, date added, cleanup date, and title, with ascending/descending order. It
+also controls day grouping, pinned items first, and expanding/collapsing groups.
+Tap an individual day heading to expand or collapse it. Advanced filters retain
+archive scope, compound content rules, nested tag rules, and retention windows.
+
+Tap the save icon at the right of the view strip to name and save the current
+settings. Search, filters, sorting, and individual group states are captured.
+An asterisk marks unsaved changes. Tap the active tab to recall its saved settings;
+long-press it to update, rename, edit, or delete the view. **All** restores the
+standard active Inbox; long-press **All** to reset every query and display setting
+to defaults. **Archive** remains a separate built-in view. Saved views and the last
+selected view persist on this device. Opening a view also scrolls its tab into view.
