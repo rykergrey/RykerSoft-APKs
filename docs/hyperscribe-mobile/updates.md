@@ -1,3 +1,16 @@
+# Hyperscribe Mobile v2.8.1
+
+Hyperscribe Mobile 2.8.1 improves one-handed floating-menu use.
+
+- Input sits nearest the right-edge button, followed by Actions and Inbox. Short leftward swipes select each tab directly and follow custom tab order.
+- Recording is renamed Input; recording profiles appear above other input shortcuts.
+- Floating Inbox previews use the full width. Long-press for Edit, Pin, or Unpin.
+- Pin changes update the open list immediately, with pinned items first, and stay consistent with recording and Inbox metadata.
+
+Production package: `com.rykersoft.hyperscribemobile`, version code 20. Android 10+; ARM64 and x86-64. Signed with the existing release certificate for in-place updates.
+
+Validation: 262 unit tests and five emulator integration tests passed. Lint: zero errors. Both release artifacts match the production signing certificate. The APK upgraded production 2.8.0 to 2.8.1 and launched successfully on the emulator.
+
 # Hyperscribe Mobile v2.8.0
 
 Hyperscribe Mobile 2.8.0 adds recording workflows and makes the Inbox and action workspace more compact.
