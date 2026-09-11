@@ -1,3 +1,15 @@
+# 2.7.0 — Saved Inbox views
+
+Hyperscribe Mobile 2.7.0 adds fully customizable saved Inbox views.
+
+- Full view titles in a horizontally scrolling tab bar above live search.
+- Compact save icon captures search text, tags and matching modes, item/audio filters, reminders, pins, sorting, and day-group expansion.
+- Recall views instantly, clear or replace their search, and long-press All to restore defaults.
+- Preserves the editor tag-dialog fix, editor attachments/recording, recording profiles, and retention behavior from 2.6.2.
+
+Package: `com.rykersoft.hyperscribemobile` · version code: `16`.
+Signed with the existing production certificate for in-place upgrades.
+
 # Hyperscribe Mobile updates
 
 ## v2.6.0
