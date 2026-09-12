@@ -1,5 +1,20 @@
 # Updates
 
+## v1.3.24
+
+Community Modes, Saved Match Lists & A New Home
+
+- Vote on every completed match's options, discover exact combinations, and name the first upvoted mode.
+- Browse mode records, players, weekly charts, and latest discoveries; inspect any option's description.
+- Save modes privately, organize them into named lists, and filter by Saved or Upvoted.
+- Bring device saves into the same library with explicit account copies, private names, and image sharing/import.
+- Play Daily Boards directly from Matches; scores stay hidden until your own result is submitted.
+- Feature the next unplayed daily when community challenges are caught up, plus return-visit discovery activity.
+- Start configuration with Solo, Pass & Play, Showdown, or Live; keep modifier cards in place and undo replacements.
+- Support diagonal and turning Word Grid paths while preserving tile swaps and locked-word scoring.
+- Sort newest modifiers consistently and count Most used from actual match starts on the device.
+- Ship synchronized Android build 30, Windows portable, and Linux AppImage downloads with the deployed Firebase backend.
+
 ## v1.3.23
 
 Connected Words, Unique Finds, Best Word & One Word Showdown

@@ -45,7 +45,7 @@ when the reveal is skipped. They carry forward into every player's next turn.
 | Reroll | All tiles used by any player reroll once; tile versions persist. |
 | Full Reroll | One deterministic board reroll per round containing a valid word. |
 | Hide & Seek | All used letters stay hidden on the next round's board. |
-| Word Grid | Players rearrange privately. The winner's arrangement carries forward; tied winners rotate which arrangement supplies the next board, without changing the tie result. |
+| Word Grid | Players rearrange privately and select a word through adjacent tiles in any direction, including diagonals and turns. The winner's arrangement carries forward; tied winners rotate which arrangement supplies the next board, without changing the tie result. |
 | Bounty Hunt | Unavailable because it discloses available words. |
 | Turf War | Unavailable because its territory objective needs repeated turns. |
 | Endless, Combo | Unavailable because a turn has a fixed clock and one word. |
