@@ -6,6 +6,7 @@
 - [Inbox and recording](#inbox-and-recording)
 - [Actions and chat](#actions-and-chat)
 - [Text to speech](#text-to-speech)
+- [Floating TTS controls](#floating-tts-controls)
 - [Provider keys and privacy](#provider-keys-and-privacy)
 - [Sharing and interoperability](#sharing-and-interoperability)
 - [Backup and restore](#backup-and-restore)
@@ -148,3 +149,9 @@ Tabs are arranged from the right edge outward: Input, Actions, then Inbox by def
 Input shows recording profiles at the top, followed by clipboard, text, audio, and image imports. While recording it shows stop profiles and recording controls.
 
 In the floating Inbox, tap an item to copy it. Long-press for Edit or Pin/Unpin. Pinned items move to the top immediately; unpinning returns them to normal recent-item order (or removes an older item outside the configured recent limit).
+
+## Floating TTS controls
+
+Enable the floating control in Settings and grant display-over-other-apps access. Run a TTS action, swipe the floating button left and select **TTS**. Playback controls stay above the scrolling segment playlist. Use Play/Pause, Stop, Previous/Next, tap a segment, or seek within the current segment. Close the menu and return to another app to keep listening. Stop cancels queued speech but keeps the current playlist available for replay. Saved speech remains in the Inbox.
+
+The menu now defaults to 380 × 640 dp, constrained to your screen, with compact rows and cyan selection highlights. Change menu size, tab visibility, names, order and placement in Settings → Floating menu.

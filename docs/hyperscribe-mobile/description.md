@@ -4,6 +4,8 @@ Hyperscribe Mobile is a local-first voice, text, action, chat, and speech worksp
 
 ## Features
 
+- Control speech from the floating TTS tab while using other apps: live segment playlist, play/pause, stop, previous/next and seeking in a larger, compact menu.
+
 - Record with built-in or custom profiles, import audio and multi-image items, extract image text, attach images to notes, transcribe, edit, tag, search, archive, share, and back up voice and text items. Build tag-defined views, capture modes, retention policies, and automatic organization workflows without assigning rigid content types.
 - Normalize every completed transcript with configurable replacement rules, including multiple spelling and phrase variants plus dynamic date and time tokens.
 - Build AI, Python, template, snippet, search, persona, TTS, and combo actions. Run them against selected Inbox content or the clipboard, with text results copied back to the clipboard.

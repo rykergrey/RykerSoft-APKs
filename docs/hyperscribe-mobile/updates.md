@@ -1,3 +1,19 @@
+# 2.8.3 — Floating TTS playlist and compact controls
+
+- Add a configurable TTS tab to the floating menu, connected to the same segmented speech player as the main app.
+- Keep play/pause, stop, previous/next, current-segment time and seeking above the scrolling playlist. Tap any segment to play it; generated, waiting, paused and failed states update live.
+- Continue playback when the menu closes or another app is foregrounded. Stop cancels queued speech while retaining the current playlist for replay without regenerating cached sections.
+- Increase the default menu to 380 × 640 dp (clamped to the screen), with compact typography, tighter rows, squared panels and cyan selection accents. Preserve custom menu dimensions and tab preferences.
+
+# 2.8.2 — Compact Inbox and action result tags
+
+- Remove redundant per-card dates and generic recording-type labels from the date-grouped Inbox.
+- Consolidate cleanup and retention information into one compact, clickable hourglass line above each item's user tags.
+- Replace layout-shifting processing banners with an animated, color-cycling **HYPERSCRIBING** state in the fixed app header, including cancellation for supported work.
+- Move saved-view creation into the view strip's three-dot menu and add saved-tab reordering while keeping All fixed at the far left.
+- Let every action assign separate Inbox result tags to generated items, with Inbox-tag creation and retention controls directly in the action editor.
+- Preserve Inbox result tags across local persistence, desktop JSON import/export, chat proposals, custom actions, floating actions, automatic actions, and post-transcription workflows.
+
 # Hyperscribe Mobile v2.8.1
 
 Hyperscribe Mobile 2.8.1 improves one-handed floating-menu use.
