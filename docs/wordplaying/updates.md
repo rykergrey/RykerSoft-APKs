@@ -1,5 +1,23 @@
 # Updates
 
+## v1.3.25 — Daily community rotation and weekly recaps
+
+- Keep Classic available every day and rotate four eligible community mode boards.
+- Freeze each day's lineup for everyone; repeat small pools and use built-in boards when no community modes qualify.
+- Retire modes with zero or negative total votes each Monday while preserving personal saved copies.
+- Show added and retired modes in the weekly recap, including weeks with no submitted matches.
+- Fix Best Word and exact favorite-mode/rival statistics; show total words and longest word from submitted results.
+
+See [Daily community seasons](daily-community-seasons.md) for lifecycle and release details.
+
+### Match activity and player discovery
+
+- Celebrate opponents who submitted a lower score with named defense updates and both scores.
+- Separate awaiting-opponent matches and ties from wins and outranked matches.
+- Require explicit result submission before standings, career progress, and mode records change.
+- Explore opponents' available submitted matches, played combinations, and upvoted modes from their profiles.
+- Preserve private saves and lists; keep used attempts unavailable for replay.
+
 ## v1.3.24
 
 Community Modes, Saved Match Lists & A New Home

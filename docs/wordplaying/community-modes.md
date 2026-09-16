@@ -61,14 +61,14 @@ are excluded. The sound setting is still visible on the result card.
 - `communityModeLibraries/{uid}/modes/{hash}` holds reusable options, saved status,
   list memberships, and a transactionally maintained copy of the player's vote.
 
-`recordCommunityModePlay` reads sealed/submitted competitive attempts or finished
+`recordCommunityModePlay` reads submitted competitive attempts or finished
 live results directly from server-owned documents. Local results are explicitly
 device-reported and never mix with validated records. A recorded-play receipt is
 required by `voteCommunityMode`; transactions prevent duplicate votes and naming
 races. Client writes to these collections are denied. Players need a registered
 account and a public player name to record results or vote.
 
-Recording starts on the completed-result screen, including before discovery, so
+Recording starts after explicit result submission, including before discovery, so
 the discovery match contributes to its profile. Subsequent recorded matches keep
 updating stats without needing another vote. Guests and legacy clients do not
 contribute records. No historical backfill is performed. Local Pass & Play uses
@@ -140,3 +140,8 @@ new play of an already discovered mode increments the original discoverer's
 are in the existing transactions, so delivery retries cannot duplicate activity.
 Home reads one document and keeps its visit baseline locally per account. No new
 index or activity listener is necessary, and counters begin at this rollout.
+
+Player profile discovery and submission gating are described in
+[Player engagement and submission](player-engagement.md).
+
+See [Daily community seasons](daily-community-seasons.md) for daily rotation, weekly retirement, saved-mode preservation, and recap statistics.

@@ -14,7 +14,7 @@ The home screen centers on choosing the next match:
   latest discoveries, Upvoted, Saved, and named private lists. A mode opens Match
   Options for review before play, retaining audio preference and using a fresh
   board. It never imports ranked attempt IDs.
-- **Leaderboards → My standings** holds winning/outranked community matches and
+- **Leaderboards → My standings** holds awaiting-opponent, winning, tied, and outranked submitted community matches and
   the weekly recap. **Rankings** offers Today, This week, and per-board scores for
   days in the current week. **Career** retains lifetime rankings.
 - **Awards** retains achievements, career progress, and streaks.
@@ -49,7 +49,8 @@ rules were deployed to `wordplaying-5eec3` on 2026-09-12; both functions were ve
 ACTIVE and the daily submission lookup index reached READY.
 The public weekly chart query was checked in the real browser. Production had
 zero public modes at rollout, so existing chart data did not need migration.
-The client was built and checked at desktop and 360px phone width; distribution follows the application's normal release process.
+The client was built and checked at desktop and 360px phone width; distribution
+still uses the application's normal release process.
 
 ## Setup and library usability
 
@@ -87,4 +88,9 @@ featured daily, direct preset play, account menu, and returning-player summary.
 
 The usability follow-up was built and checked on 2026-09-12. The three mode
 functions, rules (including private activity), and indexes deployed successfully
-to `wordplaying-5eec3`. Client downloads are published through the WordPlay.ing v1.3.24 release.
+to `wordplaying-5eec3`. The updated client is ready for the normal app release.
+
+See [Player engagement and submission](player-engagement.md) for explicit result
+submission, successful-defense updates, and playable opponent profiles.
+
+See [Daily community seasons](daily-community-seasons.md) for daily rotation, weekly retirement, saved-mode preservation, and recap statistics.
