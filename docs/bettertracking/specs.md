@@ -3,7 +3,7 @@
 ## Package
 - **App name:** bettertracking
 - **Android package ID:** `com.rykersoft.bettertracking`
-- **Current version:** 1.2.0 (versionCode 10)
+- **Current version:** 1.7.0 (versionCode 17)
 
 ## Platforms
 | Platform | Stack | Storage |
@@ -34,7 +34,7 @@
 - Adaptive targets: Mifflin–St Jeor BMR, ~14-day calibration, 0.8× exercise-burn trust factor, optional Energy Bank
 
 ## Distribution
-- RykerSoft hub installs the signed APK from this repo's GitHub Releases
+- RykerSoft hub installs the signed APK from the public RykerSoft-APKs GitHub Releases
 - Hub gallery screenshots live in `rykergrey/RykerSoft` → `screenshots/bettertracking/`
 
 ## Desktop distribution

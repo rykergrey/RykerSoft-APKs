@@ -4,6 +4,7 @@ Holistic tracking for food, supplements, exercise, measurements, lifestyle, and 
 
 ## Table of Contents
 
+- [PRO Features](#pro-features)
 - [1. Getting started](#1-getting-started)
 - [2. The Journal](#2-the-journal)
 - [3. Library & Composer](#3-library--composer)
@@ -14,6 +15,14 @@ Holistic tracking for food, supplements, exercise, measurements, lifestyle, and 
 - [8. RykerSoft AI unlock](#8-rykersoft-ai-unlock)
 - [9. Profile, keys & preferences](#9-profile-keys--preferences)
 - [10. Export & import](#10-export--import)
+
+## PRO Features
+
+Items marked * require app-specific RykerSoft pro access for your signed-in account when using app-provided AI credentials. Sign in with the same RykerSoft account under Profile → API Keys.
+
+* **Library Draft Assistant** — Read food and supplement labels, search exact manufacturer products, and refine partial drafts with photos or typed details
+* **AI chat and Quick Log** — Tool-assisted chat and food analysis
+* **Cloud transcription** — Dictate using configured speech providers
 
 ## 1. Getting started
 
@@ -41,6 +50,18 @@ Holistic tracking for food, supplements, exercise, measurements, lifestyle, and 
 - Tap behavior is configurable: stage the item to the tray or open its details.
 - Your Library search, scroll position, and open groups are kept when you leave for the staging tray and return.
 
+### Add a product from photos
+
+1. Open a new food or supplement item and its **Library draft assistant**.
+2. Use **Take photo** or select up to four images: the package front, Nutrition/Supplement Facts and ingredients. Rotate or crop each image, or choose **Use whole photo**. Keep serving sizes and complete text visible.
+3. Send the photos, with any product name or other details you already know. The assistant reads supported facts, keeps unknown values unknown, and can search for the exact manufacturer product.
+4. Review the compact draft card: serving size, calories, nutrients, suggested category, tags and icon. Expand ingredients or additional nutrients for details. A dash means unknown, and ≈ marks an estimate. Check the missing-information message. Send another photo or type the missing details; a partial ingredients photo is not treated as a complete list. You can also finish later.
+5. Tap **Edit current draft** to review or change the name, manufacturer, description, serving basis, nutrition, ingredients and supplement facts before saving. Package marketing claims are not a facts panel. If a request fails, use **Retry with the same photos and message**.
+
+Tap the **Tags** field to browse all existing tags in a scrollable list. Tap checkboxes to select several, type to filter, or press Enter / **Add** to create a new tag. Use **Done** to close the list. Assistant suggestions reuse existing categories and tags; you can change these and the icon before saving.
+
+Photos stay on the device where they were attached. The current library draft conversation keeps its photos in memory; save the draft before leaving the editor.
+
 ## 4. Staging tray & Quick Log
 
 - Stage several items with quantities, units, and custom values before committing them as logs.
@@ -54,8 +75,16 @@ Holistic tracking for food, supplements, exercise, measurements, lifestyle, and 
 - Daily calorie targets start from Mifflin–St Jeor BMR using your biometrics.
 - After about 14 days of weight history, targets shift from calibrating to **adaptive**, driven by your actual weight trend.
 - Logged exercise burn is trusted at 0.8× to stay conservative. You can override calories, macros, and micros manually.
-- The optional **Energy Bank** carries surplus/deficit across days with configurable window length, recovery days, and pacing.
+- The calorie widget switches between **Today** and the rolling average. Rolling mode shows average intake against the average goal, combined balance, usable-day coverage, and the selected day without adding a separate dashboard section. **Plans & details** opens the what-if planner, maintenance context, and per-day history in a focused modal. The configurable 3–14 day window is a lookback, not a weekly allowance or deadline. Unlogged future days never provide extra calories.
+- Example: 3,000 kcal on Monday against a 2,000 kcal goal, followed by six 2,000 kcal days, totals **15,000 / 14,000 kcal: 1,000 above goal**. Six days 100 kcal below goal would instead leave 400 kcal above goal. Above a weight-loss goal does not necessarily mean above estimated maintenance; the card explains both.
+- **Explore your options** compares keeping the current goal, balancing today, spreading the difference over a chosen number of days (including this day), or entering a custom finishing total. A partial history can be explored immediately and is labeled. For example, yesterday at 3,000 kcal against a 2,000 kcal goal means +1,000 kcal today; finishing today at 1,800 would leave +800. A smaller +300 overage could be offset by a 1,700 kcal day. These are arithmetic previews: suggestions respect the existing calorie floor and already logged intake. A preview never changes the saved goal. Multi-day previews also show an estimated intake for the following days; they assume the baseline stays unchanged and do not treat older days leaving the window as offsets.
+- The tracker is visible unless explicitly disabled. Daily goals stay unchanged by default. In Profile, opt into adjustments to adaptive goals and choose a recovery period and daily limit. Adjustments use balance ÷ recovery days, capped by the selected limit and existing BMR floor. Fixed calorie overrides remain fixed. Adjustments are recalculated daily, with no promised clearance date.
+- Missing food days, unknown calories, unresolved items, and days with excluded entries are omitted from both intake and goal totals. Supplement-only and exercise-only days are not food-log coverage. Partial windows are labeled and support what-if previews, but do not trigger automatic goal adjustments. Even a logged day may have missing meals: review the logs before interpreting a shortfall or using the suggested pace.
+- Historical goals are reconstructed with current profile settings and each day’s available weight and exercise records. Without an earlier weight record, the supplied current weight is the fallback. Past profile versions are not stored. Exercise is counted once in adaptive goals and does not increase fixed goals. An old day leaving the rolling window changes the balance; it does not undo calories already consumed.
+- The **Macros & Nutrients** card can switch between Today and the rolling average. Each bar keeps a visible white goal boundary; rolling mode adds a cyan selected-day marker, cumulative variance, usable-day coverage, and a count of days outside the goal. Protein minimums, nutrient maximums, ranges, and neutral aims are evaluated differently, so adequate protein is not labeled an overage and a low carb/fat aim is not presented as a deficiency. Missing or unresolved nutrition stays out of the average rather than becoming a false zero.
 - In-app **Help** explains the engine, the burn trust factor, and the BMR floor in detail.
+
+For background on sustainable changes and weight management, see [NIDDK’s eating and physical activity guide](https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/eating-physical-activity). The rolling balance describes logged intake; it does not predict an exact change in body weight.
 
 ## 6. AI chat & Health Coach
 
@@ -77,12 +106,12 @@ Holistic tracking for food, supplements, exercise, measurements, lifestyle, and 
 In-app AI features (Quick Log, AI Architect, chat, and cloud voice transcription) require an unlock. Coach Analysis itself does not use a BetterTracking API key; the selected external chatbot uses the user's own account or subscription. All tracking, journaling, library, and reminder features work without an unlock.
 
 1. In the **RykerSoft App Manager**, create or sign in to your RykerSoft account.
-2. Open bettertracking's page in the App Manager, tap **UNLOCK AI FEATURES**, and enter your family unlock code.
+2. Have an administrator grant bettertracking pro access to your RykerSoft account through the App Manager.
 3. In bettertracking, go to **Profile → API Keys** and sign in with the **same** RykerSoft account.
 4. AI keys sync automatically. Use **Refresh keys** if AI features don't light up right away.
 
 Notes:
-- The unlock code is only entered in the App Manager, never inside bettertracking.
+- Pro access is granted per app to your RykerSoft account; no reusable unlock code is required.
 - This RykerSoft sign-in is separate from your bettertracking account (which syncs your data).
 - Keys you enter manually under Profile → API Keys take priority over synced keys.
 
@@ -90,7 +119,7 @@ Notes:
 
 - **Goals & biometrics**: weight goal, body-composition goal (lose / maintain / gain), dietary preferences, and coach context.
 - **Custom targets**: manual calorie/macro/micro overrides and an adaptive-target preview.
-- **Energy Bank settings**: enable/disable, window, recovery, pacing.
+- **Rolling Calorie Balance settings**: show/hide, window, recovery days, daily limit, and opt-in goal adjustment.
 - **API Keys**: RykerSoft AI unlock sign-in, plus optional manual Gemini / Groq / OpenAI keys and model picks.
 - **Transcription provider**: Groq (default) or OpenAI.
 - **Library tap** preference: stage to tray or open details.
@@ -111,3 +140,7 @@ Attach a label or describe a new food, supplement, exercise or other item. Revie
 Profile now supports explicit nutrient aims, minimums, maximums, ranges and excluded foods. Library favorites are different from foods you consume frequently.
 
 For Linux, mark the AppImage executable before launching, or install the Debian package on a compatible Debian/Ubuntu system. Download links are in the app description.
+
+### If a Library Assistant update cannot be displayed
+
+Invalid updates are rejected with a notice in the chat. The existing draft remains available for review. If the editor encounters an unexpected display error, close the assistant panel and choose **Restore previous draft**. The conversation and attached photos remain available, so you can continue with a correction or another photo. **Return to library** closes the unfinished item without saving it. An unexpected app-wide display error shows **Reload application** instead of a blank screen; saved data remains available, but unsaved edits may need to be entered again.
