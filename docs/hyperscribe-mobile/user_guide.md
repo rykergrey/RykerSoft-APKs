@@ -6,7 +6,6 @@
 - [Inbox and recording](#inbox-and-recording)
 - [Actions and chat](#actions-and-chat)
 - [Text to speech](#text-to-speech)
-- [Floating TTS controls](#floating-tts-controls)
 - [Provider keys and privacy](#provider-keys-and-privacy)
 - [Sharing and interoperability](#sharing-and-interoperability)
 - [Backup and restore](#backup-and-restore)
@@ -28,7 +27,7 @@ In Settings, edit the built-in recording profiles or add custom profiles. Each p
 
 ## Actions and chat
 
-Actions transform text or Inbox content. When one or more Inbox text items or recording transcripts are selected, the Actions page preserves and uses that selection. With no Inbox selection, an action reads the current clipboard instead. Successful text transformations replace the clipboard contents and are saved to the Inbox; snippets copy their own content and do not require an input item. Hyperscribe supports AI, Python, template, snippet, search, persona, TTS, and combo actions, including ordered Before, Combine, Main, and After stages. Chat keeps persistent threads, accepts one or several selected Inbox items as temporary question context, supports action stacks, and provides streaming, generation cancellation, edit/regenerate, fork, search, Personas, action context, and review-before-commit action proposals. Android posts a completion notification when the relevant Chat thread is not actively visible.
+Actions transform text or Inbox content. When one or more Inbox text items or recording transcripts are selected, the Actions page preserves and uses that selection. The Actions page shows an editable input panel, initially loaded from the clipboard when no Inbox items are selected. This working copy stays unchanged when actions finish; use Load current clipboard to explicitly replace it. Successful text transformations replace the clipboard contents and are saved to the Inbox; snippets copy their own content and do not require an input item. Hyperscribe supports AI, Python, template, snippet, search, persona, TTS, and combo actions, including ordered Before, Combine, Main, and After stages. Chat keeps persistent threads, accepts one or several selected Inbox items as temporary question context, supports action stacks, and provides streaming, generation cancellation, edit/regenerate, fork, search, Personas, action context, and review-before-commit action proposals. Android posts a completion notification when the relevant Chat thread is not actively visible.
 
 In **Settings → Text replacements**, create a rule with the spelling or phrase you want as its replacement, then add any number of spoken or misspelled variants. For example, a `Crystal` rule can include `Kristal`, `Krystal`, and `my wife`; every completed transcript converts those variants to `Crystal` before it is saved or routed elsewhere. Matching is case-insensitive and uses whole words or phrases. Replacements may also contain `{current_date}`, `{date_stamp}`, `{current_day}`, `{current_month}`, `{current_year}`, `{current_time}`, or `{timestamp}` to insert the current local date or time.
 
@@ -105,13 +104,15 @@ aligns its heading with the top of the list, including short groups at the end.
 Advanced filters retain
 archive scope, compound content rules, nested tag rules, and retention windows.
 
-Tap the save icon at the right of the view strip to name and save the current
+Open the three-dot menu at the right of the view strip and choose **Save current view as new** to name and save the current
 settings. Search, filters, sorting, and individual group states are captured.
 An asterisk marks unsaved changes. Tap the active tab to recall its saved settings;
 long-press it to update, rename, edit, or delete the view. **All** restores the
 standard active Inbox; long-press **All** to reset every query and display setting
 to defaults. **Archive** remains a separate built-in view. Saved views and the last
-selected view persist on this device. Opening a view also scrolls its tab into view.
+selected view persist on this device. Opening a view also scrolls its tab into view. Pull down on the strip or tap its expand arrow to reveal all views in a wrapping, scrollable picker. Selecting a view collapses the picker. Names can include emoji or consist entirely of emoji.
+
+**Text** shows text cards and voice transcripts, without audio cards or generated TTS entries. **Audio** shows recordings and existing standalone speech recordings. Reading a note with its play button or **Speak** saves speech on that note and does not create another Inbox item. The saved voice and audio are reused on replay; changing the note's text invalidates its old rendition. Chat/watch read-aloud and draft previews also avoid creating extra Inbox items.
 
 In the tag manager, tap **+** to open the New tag editor. Save adds the tag and returns to the manager; closing the editor cancels creation and returns to the same manager. Tapping an existing tag opens its editor.
 
@@ -136,7 +137,9 @@ Create custom action tabs and explicitly choose and reorder their actions. The b
 
 Drag up or long-press the Custom navigation button to choose any action type. Drag up or long-press Actions to filter the library by type. The full action picker remains available through All actions / manage.
 
-Use the clipboard icon in the Actions toolbar or beside the Custom type selector to choose input. Select Use clipboard, or open Choose Inbox input to search and add captures without leaving the page. Reorder or remove selected captures in that picker. The icon shows how many captures are selected.
+The Actions input panel stays above the action library. Its floating expand button grows the panel from roughly one quarter to half of the available page; tap again to shrink it. Text scrolls and can be edited without changing the source clipboard or Inbox items. Selecting items in Inbox automatically shows their names and snippets in this panel. Uncheck rows to remove them, use the input picker to add or reorder items, or choose Edit text to import the selected contents into one editable working copy. Changing the selection returns to the item list.
+
+Use Load current clipboard or choose Use clipboard in the input picker to replace the working copy explicitly. The Custom page retains its input picker beside the type selector. When a text action finishes, a brief completion message confirms that its result was saved and copied. Tap the message or View to open that new Inbox item in Preview; switch to Write to edit it. Ignoring the message leaves the current input and action library ready for another action.
 
 In an action editor’s Basics tab, select Action tags or choose New tag. The pencil on a tag edits its name, color, and matching rules. Action tags and Inbox tags are independent; the same name may exist in both. Existing action assignments are preserved as independent copies when upgrading. Search actions by tag name. Manage categories from the Actions options menu and use the color wheel to choose a category color.
 
@@ -150,8 +153,10 @@ Input shows recording profiles at the top, followed by clipboard, text, audio, a
 
 In the floating Inbox, tap an item to copy it. Long-press for Edit or Pin/Unpin. Pinned items move to the top immediately; unpinning returns them to normal recent-item order (or removes an older item outside the configured recent limit).
 
-## Floating TTS controls
+## Shared controls notification (2.9.7)
 
-Enable the floating control in Settings and grant display-over-other-apps access. Run a TTS action, swipe the floating button left and select **TTS**. Playback controls stay above the scrolling segment playlist. Use Play/Pause, Stop, Previous/Next, tap a segment, or seek within the current segment. Close the menu and return to another app to keep listening. Stop cancels queued speech but keeps the current playlist available for replay. Saved speech remains in the Inbox.
+Recording, the floating button, and the Index receiver share one **Hyperscribe controls** notification. Expand it to see current status and action buttons. Tapping the card opens Actions. While recording, shortcuts become Pause/Resume, Stop, and Cancel; your selected shortcuts return afterward.
 
-The menu now defaults to 380 × 640 dp, constrained to your screen, with compact rows and cyan selection highlights. Change menu size, tab visibility, names, order and placement in Settings → Floating menu.
+In Settings, customize up to three notification shortcuts. Enable **Persistent notification controls** to keep the card available even when no service is running. With this option disabled, the card still appears whenever recording, the floating button, or the Index receiver needs it. Stop or disable each feature to remove the card completely. Manage ring imports and its receiver from Settings → Readiness → Set up Index ring & Pebble watch.
+
+Android may separately display its own “displaying over other apps” notice while the floating button is shown. Pebble’s own connection notification is managed by the Pebble app.

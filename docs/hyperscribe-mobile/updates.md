@@ -1,3 +1,66 @@
+# 2.9.7 — One Hyperscribe controls notification
+
+- Combine recording controls, floating button status, and the Index ring receiver into one notification.
+- Keep Pause/Resume, Stop, and Cancel available while recording; restore your shortcuts afterward.
+- Keep the shared card when either service stops and the other remains active. The persistent-controls setting keeps shortcuts available when all services are idle.
+- Coalesce rapid updates so Android does not drop the newest controls or status. Recording failures remain visible with details.
+- Android’s separate display-over-other-apps notice and notifications belonging to the Pebble app remain separate.
+- Preserve the Pebble/Index integration, speech improvements, and editable Actions input delivered in 2.9.0–2.9.6. No watch reinstall or database migration is needed for this notification change.
+
+# 2.9.6 — Editable Actions input
+
+- Show a scrollable input panel above the Actions library, with a floating button to expand or collapse it.
+- Bring Inbox selections into the panel automatically as names and snippets. Add or remove items, or import their contents with Edit text.
+- Keep a separate editable working copy so completed actions never replace the panel or change saved source items. Load current clipboard explicitly to choose new clipboard input.
+- Save generated text to Inbox and copy it to the clipboard. Tap the completion message to open the result in Preview, with Write available for editing.
+- Keep the input, action list, and completion message usable with the keyboard open.
+
+# 2.9.5 — Plain-text watch replies
+
+- Convert Markdown into readable text before sending watch pages or building mirrored notification previews. Chat keeps the original formatted reply.
+- Keep headings, emphasis, link labels, list order, code and Unicode text; turn tables into labeled rows for the narrow display.
+- Preserve the original saved-message identity for Read with TTS, and retain the single-display routing introduced in 2.9.4.
+- Compatible with watch app 0.2.0; no watch reinstall or database migration is needed.
+
+# 2.9.4 — One watch display per Index reply
+
+- Wait for the Hyperscribe watch app to acknowledge the exact response before posting its phone notification.
+- Keep confirmed replies' phone notifications local to the phone, preventing the normal Pebble mirror from covering the custom response display.
+- Use a standard mirrorable notification if custom delivery is unavailable, fails or is unconfirmed; preserve the notification's Chat link and TTS actions.
+- Preserve saved responses, watch pagination, existing Chat notifications, and database schema 12. No watch app reinstall is needed.
+
+# 2.9.3 — Speech stays with its source
+
+- Reading an Inbox note saves reusable speech on that note without creating another Inbox card. Replays use its saved voice and cached audio; edits invalidate the old rendition.
+- Chat/watch read-aloud no longer creates Inbox audio entries. Reading unsaved drafts or a multi-item selection also leaves the Inbox unchanged.
+- Text filtering renders text and voice transcripts as text cards, excluding generated TTS entries and attachment filenames. Audio filtering retains recordings and existing standalone generated audio.
+- Pull down on the view tab strip, or tap its expand button, to reveal a scrollable, wrapping picker. Selecting a view collapses it. Emoji and emoji-only view names are supported.
+- Existing standalone speech history is retained. No speculative matching or removal of older recordings is performed.
+
+# 2.9.2 — Watch controls for Chat speech
+
+- Add Read with TTS and Stop reading to Chat notification actions and the Pebble watch app's Select menu.
+- Reuse Chat's saved voice preset, preprocessing, segmented playback, cache and history while a foreground audio service keeps speech running with the phone locked.
+- Pin actions to the exact reply and suppress duplicate watch commands; old Stop actions cannot interrupt a newer reading.
+- Preserve scroll and page navigation, existing ring conversations, and database schema 12.
+
+# 2.9.1 — Connected ring conversations
+
+- Continue a pending ring reminder in Chat when the next recording supplies its time. New requests start separate conversations; clear references and short acknowledgments continue recent threads.
+- Keep raw ring recordings, clarification questions, and conversational replies in Chat. Save only the actual note, reminder, or librarian answer to Inbox; preserve existing Inbox entries.
+- Show Index origin, original-audio playback, and queued/failed recordings in Chat. Open completed conversations from ring setup.
+- Process recordings in durable arrival order and preserve conversation affinity across retries. Deleting an original Chat request cancels its queued capture.
+- Preserve existing text replacements, automatic tags, reminder scheduling, watch responses, and database schema 12.
+
+# 2.9.0 — Index capture, Chat assistant, and Pebble display
+
+- Receive Index audio/transcripts through an authenticated webhook on the same phone; save original input before processing and retain pending work across restarts.
+- Use the shared Chat assistant for notes, time-aware reminders, and sourced Inbox questions. Preserve text replacements and programmatic tagging, supplemented by bounded semantic tag suggestions.
+- Prevent duplicate notes and reminders with stable request IDs and durable receipts. Keep raw speech separate from normalized commands and generated answers.
+- Add the Pebble & Index setup screen, receiver status, capture history and retry controls, plus a bundled watch app for Pebble 2 Duo and Time 2.
+- Persist the latest watch response, paginate long answers, and report display only after the watch confirms it.
+- Preserve deployed 2.8.3 features and database schema 12. See [setup instructions and known delivery limits](pebble-index-setup.md).
+
 # 2.8.3 — Floating TTS playlist and compact controls
 
 - Add a configurable TTS tab to the floating menu, connected to the same segmented speech player as the main app.
@@ -14,49 +77,55 @@
 - Let every action assign separate Inbox result tags to generated items, with Inbox-tag creation and retention controls directly in the action editor.
 - Preserve Inbox result tags across local persistence, desktop JSON import/export, chat proposals, custom actions, floating actions, automatic actions, and post-transcription workflows.
 
-# Hyperscribe Mobile v2.8.1
+# 2.8.1 — Floating input and Inbox controls
 
-Hyperscribe Mobile 2.8.1 improves one-handed floating-menu use.
+- Match the floating tabs to right-edge use: Input nearest the button, then Actions and Inbox. Short swipes select each tab directly, with no repeated first step; custom tab order is respected.
+- Rename the standard Recording tab to Input and show recording profiles above import shortcuts.
+- Give floating Inbox previews the full width. Long-press an item for Edit and Pin/Unpin; pinned items update live at the top.
+- Keep pins and Pin tags consistent for transcripts, recordings, and Inbox metadata.
 
-- Input sits nearest the right-edge button, followed by Actions and Inbox. Short leftward swipes select each tab directly and follow custom tab order.
-- Recording is renamed Input; recording profiles appear above other input shortcuts.
-- Floating Inbox previews use the full width. Long-press for Edit, Pin, or Unpin.
-- Pin changes update the open list immediately, with pinned items first, and stay consistent with recording and Inbox metadata.
+# 2.8.0 — Recording workflows and a cleaner workspace
 
-Production package: `com.rykersoft.hyperscribemobile`, version code 20. Android 10+; ARM64 and x86-64. Signed with the existing release certificate for in-place updates.
+- Add every action type to navigation menus, with direct type filtering on the Actions tab.
+- Keep automatic execution in individual action editors and remove the Auto Action toolbar button.
+- Separate action and Inbox tag catalogs, with action-tag creation, editing, assignment, and migration of existing assignments.
+- Use the tag color wheel for action categories and a compact toolbar picker for clipboard or ordered Inbox input.
 
-Validation: 262 unit tests and five emulator integration tests passed. Lint: zero errors. Both release artifacts match the production signing certificate. The APK upgraded production 2.8.0 to 2.8.1 and launched successfully on the emulator.
+- Add stop recording profiles with transcription, provider selection, ordered action steps, optional automatic actions, and final clipboard delivery.
+- Link capture profiles to stop profiles and choose a default capture profile; every stop profile is available while recording in the floating menu and in-app stop menus.
+- Move Recording button tap behavior out of Transcription into Stop recording profiles. Migrate the previous tap choice and Auto Action into stop-profile defaults. Auto-transcribe now describes imported audio.
+- Persist the resolved stop plan with each recording and checkpoint completed action steps for recovery. Audio-only stops never enqueue automatic transcription.
+- Add configurable Recording, Actions, and Inbox tabs plus custom action tabs. Support tab order, names, visibility, opening tab, remembered tab, top/bottom placement, selected action order, import shortcuts, Inbox limits, and menu dimensions.
+- Include workflow and floating-menu preferences in portable backups and add a non-destructive database migration for recording plans.
 
-# Hyperscribe Mobile v2.8.0
+## Clearer Inbox
 
-Hyperscribe Mobile 2.8.0 adds recording workflows and makes the Inbox and action workspace more compact.
+- Hide the text editor's tags and bottom Save/Cancel controls while the keyboard is open, without losing the draft or dismissing the Add tag dialog.
+- Fix the tag manager's plus button by showing the manager and tag editor as separate full-screen states; return to the manager after saving or cancelling.
 
-- Collapsible Inbox search with an active-filter indicator, wider item previews, animated copy feedback without losing your reading position, and automatic alignment of expanded day groups.
-- More room for the text editor while the keyboard is open; repaired new-tag creation.
-- Voice and music capture profiles, configurable stop profiles, ordered action steps, and recoverable transcript delivery.
-- Configurable floating Recording, Actions, Inbox, and custom action tabs.
-- Every action type in navigation menus, direct action-type filtering, and automatic execution settings in individual action editors.
-- Independent action tags with creation, editing, and assignment; category color picker; compact clipboard/Inbox input picker.
-- Non-destructive database upgrades and backup compatibility for existing tag assignments.
+- Replace successful Inbox copy toasts with an accent outline flash and animated card movement.
+- Preserve the reading position when copying, including the first visible card and cards that move between day groups.
+- Scroll newly expanded day groups to the top, with only the trailing space needed for short final groups.
 
-Package: `com.rykersoft.hyperscribemobile` · version code: `19`.
-Android 10 or newer; ARM64 and x86-64. Signed with the existing production certificate for in-place upgrades.
-
-Download `app-release.apk` for installation. `app-release.aab` is the store distribution bundle.
+- Collapse Filter Inbox by default; toggle it with the search icon below the view tabs.
+- Keep the search icon colored while a query is present, even when the field is hidden.
+- Give text and audio previews the full card width, with header actions and a tighter footer.
+- Preserve live filtering, saved-view searches, item actions, retention controls, and selection.
 
 # 2.7.0 — Saved Inbox views
 
-Hyperscribe Mobile 2.7.0 adds fully customizable saved Inbox views.
-
-- Full view titles in a horizontally scrolling tab bar above live search.
-- Compact save icon captures search text, tags and matching modes, item/audio filters, reminders, pins, sorting, and day-group expansion.
-- Recall views instantly, clear or replace their search, and long-press All to restore defaults.
-- Preserves the editor tag-dialog fix, editor attachments/recording, recording profiles, and retention behavior from 2.6.2.
-
-Package: `com.rykersoft.hyperscribemobile` · version code: `16`.
-Signed with the existing production certificate for in-place upgrades.
+- Scrollable tabs above live search show complete view titles.
+- Save the current search, tags, filter modes, sorting, and day-group expansion with the compact save button.
+- Recall a saved view instantly; long-press All to restore defaults.
+- Retains the editor, recording profiles, and retention improvements from 2.6.2.
 
 # Hyperscribe Mobile updates
+
+## v2.6.1
+
+- Preserve all v2.6.0 Inbox, Chat, TTS, Settings and schema-10 behavior.
+- Add opt-in experimental 2× transcription with preserved originals, original-time timestamps and normal-speed fallback.
+- Add native import normalization, preferred microphone routing, advanced model defaults and portable action availability checks.
 
 ## v2.6.0
 
