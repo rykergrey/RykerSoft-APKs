@@ -4,7 +4,7 @@
 
 - Desktop application built with Tauri 2, Rust, React, TypeScript, and Vite.
 - RykerSoft package identity: `com.rykersoft.yoink`.
-- Release version: `0.1.0`; RykerSoft version code: `1`.
+- Release version: `0.1.23`; RykerSoft version code: `24`.
 - Windows x86_64 packages: NSIS `.exe` and MSI `.msi`.
 - Linux x86_64 packages: AppImage and Debian `.deb`.
 - Media engines: system `yt-dlp`, `ffmpeg`, and `ffprobe`.
