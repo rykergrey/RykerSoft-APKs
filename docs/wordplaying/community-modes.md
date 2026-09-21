@@ -145,3 +145,36 @@ Player profile discovery and submission gating are described in
 [Player engagement and submission](player-engagement.md).
 
 See [Daily community seasons](daily-community-seasons.md) for daily rotation, weekly retirement, saved-mode preservation, and recap statistics.
+
+## Discovery page and personal prompts
+
+The directory now starts with three compact built-in starters. Community, Upvoted,
+Saved, and list navigation sit above the results, with the browse sort immediately
+above the community cards. New visitors start with **Newest first**; explicit sort
+preferences are retained. Each card shows its added date, a brief options summary,
+and expandable rules instead of displaying every option control at once.
+
+**New to you** means the player has no known completed play or vote for the mode.
+Guest completions are remembered on the device, separately from each signed-in
+account. These local facts never publish results or unlock votes. Registered
+players also use their server play index, historical receipts, and both vote
+directions. A failed history request shows a retry instead of marking unknown
+modes as unplayed.
+
+Played community modes without a vote show **Awaiting your vote**. If a submitted
+play receipt exists, the card offers upvote and downvote directly, through the
+existing receipt-validated voting function. Other completed plays explain how to
+submit a result after a match. Existing votes show their direction without another
+prompt. Archived modes never offer voting.
+
+`getCommunityModeParticipation` returns owner-scoped play/vote status and an
+existing receipt for at most 12 requested mode IDs. It does not accept a target
+account, expose another player's receipts, or grant access to private receipts
+through Firestore rules. Deploy this callable before releasing the updated client:
+
+```sh
+npx firebase deploy --only functions:getCommunityModeParticipation --project wordplaying-5eec3
+```
+
+The participation callable was deployed and verified ACTIVE for v1.3.29 on
+2026-09-20. Its production endpoint rejects unauthenticated requests.

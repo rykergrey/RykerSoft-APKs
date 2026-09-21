@@ -1,5 +1,41 @@
 # Updates
 
+## v1.3.29 — Discover new modes
+
+- Put built-in starters at the top and browse controls above a calmer community directory.
+- Start discovery with newest modes and mark unplayed options as **New to you**.
+- Invite players to rate played modes and vote directly when a submitted result is available.
+- Remember device play history separately from synced account history and public result submission.
+- Clarify scores, ranks, ties, and opponents across match cards and standings.
+- Add a consistent letter-grid loading experience and board-learning summaries after matches.
+
+## v1.3.28 — Automatic scoring and scoreboard reveals
+
+- Automatically submit signed-in competitive results as soon as the match reaches game over.
+- Lead results with animated verified scores and placement, including new leaders, ties, and defended high scores.
+- Abandon early without posting a score; opening a competitive board consumes its one attempt.
+- Remove same-board retries and mark Daily Boards used when they start.
+- Retry failed submissions on reconnect and respect reduced-motion preferences.
+- Preserve local-only play outside ranked competition.
+
+## v1.3.27 — Letter Lock and accurate Gravity
+
+- Add **Letter Lock**, where each physical tile can belong to only one scored word.
+- Let a newly submitted valid word take over its tiles, breaking every earlier overlapping word and removing those points.
+- Keep claimed tiles selectable and mark them on the board so an early find can be traded quickly for a stronger word.
+- Preserve existing words after invalid attempts, and enforce the same replacement scoring in trusted community matches.
+- Build every board from one complete shuffled physical dice set, with each rolled letter constrained to that die's six faces.
+- Make Gravity recycle only the consumed dice, preserving their exact letters and die-bound bonuses while deterministically shuffling their return positions.
+- Keep client play, Showdown, Daily boards, and trusted competitive replay in deterministic parity.
+- Correct Tap Out's description to state that scored tiles are consumed and cannot be reused.
+
+## v1.3.26 — Tabletop multiplayer
+
+- Add fast shared-phone Tabletop matches for two to eight players.
+- Show player-facing turn colors and clocks around the board, with Boggled enabled by default.
+- Give every player an independent time bank and add optional Fuse time rewards.
+- Add Hide Scores and Hide Words List modifiers with a complete final reveal.
+
 ## v1.3.25 — Daily community rotation and weekly recaps
 
 - Keep Classic available every day and rotate four eligible community mode boards.
