@@ -1,5 +1,20 @@
 # Updates
 
+## v1.3.31 — Multiplayer reliability
+
+- Finish live Word Hunt rounds reliably when the server clock reaches the deadline before the local timer.
+- Keep players in their live lobby when a recoverable connection or action error appears.
+- Reopen any Word Builder lobby from Matches, show turn errors, and enable Start only when all players are present and ready.
+- Use reserved public player names in online Word Builder rooms instead of Google account display names.
+- Smooth Word Builder tile travel between rack and board so tiles stay visible through each move.
+
+## v1.3.30 — Word Builder and smoother play
+
+- Add Word Builder alongside Word Hunt, with local, live, and asynchronous matches, custom rules, saved modes, and verified rankings.
+- Save verified online Builder results automatically when matches finish, including timeouts, and retry pending result recording.
+- Show Builder rankings for each player count and turn clock while keeping Word Hunt scores and career records separate.
+- Improve loading, mode browsing, match options, and touch interactions across both games.
+
 ## v1.3.29 — Discover new modes
 
 - Put built-in starters at the top and browse controls above a calmer community directory.

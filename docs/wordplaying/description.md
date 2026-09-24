@@ -1,11 +1,12 @@
 # WordPlay.ing
 
-Boggle-style word game for Android with solo play, local pass-and-play, community challenges, Firebase live matches, weekly seasons, and a built-in Web Audio synth. Find words on a classic letter grid, chase combos and modifiers, then compete on shared boards.
+Two word games for Android and desktop: swipe adjacent letters in Word Hunt or place tiles to make connected words in Word Builder. Play locally, join online matches, explore custom rules, and compare verified scores within each game.
 
 ## Key Features
+- **Word Builder**: Place letter tiles on a 15×15 board, use crossings and premium squares, exchange tiles, and play practice, local, live, or asynchronous matches. Optional barriers, hidden or randomized bonuses, stacking, and falling tiles change the board. When enabled, verified online matches keep separate Builder rankings, ruleset statistics, and weekly totals.
 - **Classic boards**: 4×4 or 5×5 dice grids with TWL06 dictionary validation (min 3 letters; Q expands to QU).
-- **Modifiers & presets**: Strict modes, Gravity, Blind Mode, Combo Meter, Reroll, First Claim, Sabotage, and Word Grid's tile-swapping arrangement puzzle — plus Classic / Gravity Well / Ghost Grid / Zenith of Chaos presets.
-- **Community challenges**: Start a compatible signed-in solo round to reserve a trusted publishable board, then post its validated result or a direct-link best-of-three series. Firebase recalculates scores and owns immutable per-board and combined standings; offline/local-only boards cannot be published after reveal.
+- **Modifiers & presets**: Letter Lock tile ownership, Strict modes, Gravity, Blind Mode, Combo Meter, Reroll, First Claim, Sabotage, and Word Grid's tile-swapping arrangement puzzle — plus Classic / Gravity Well / Ghost Grid / Zenith of Chaos presets.
+- **Community challenges**: Start a compatible signed-in solo round to reserve a trusted publishable board, then automatically post its validated result at game over. Abandoned boards remain used without posting a score. Firebase recalculates scores and owns immutable per-board and combined standings; offline/local-only boards cannot be published after reveal.
 - **Local pass & play**: Hand the device around with shared seeds, initials tumbler, and colored local players.
 - **Live multiplayer**: Host or join a 4-character room code; lobby ready → countdown → simultaneous play with result reconciliation.
 - **Seasons & leaderboards**: Today / This Week boards, a Career leaderboard (lifetime high score, longest word, and other public stats), season recaps, and tap-through player career profiles via Firebase.

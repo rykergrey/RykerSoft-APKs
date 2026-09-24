@@ -1,6 +1,6 @@
 # WordPlay.ing User Guide
 
-Find words on a letter grid before time runs out — alone, pass-and-play, or against the community.
+Choose Word Hunt to swipe words on a letter grid, or Word Builder to place tiles and form connected words.
 
 ## Table of Contents
 
@@ -15,9 +15,11 @@ Find words on a letter grid before time runs out — alone, pass-and-play, or ag
 - [9. Awards & progression](#9-awards--progression)
 - [10. Comfort & accessibility](#10-comfort--accessibility)
 - [11. Windows desktop](#11-windows-desktop)
+- [12. Word Builder](#12-word-builder)
 
 ## 1. How to play
 
+- Select **Word Hunt** for the letter-grid game described below, or **Word Builder** for tile placement (section 12).
 - From the main menu, start a new match.
 - Drag across adjacent letters (including diagonals) to build a word, then release to submit.
 - Words must be at least 3 letters and in the dictionary. The same word only scores once per round.
@@ -29,7 +31,7 @@ Find words on a letter grid before time runs out — alone, pass-and-play, or ag
 ## 2. Match setup & modifiers
 
 - Select **Create match** to open **Match Options**. Choose **Solo**, **Pass & Play**, **Showdown**, or **Live**, then board size and timer. Showdown also lets you choose the number of rounds.
-- Enable modifiers (Gravity, Blind Mode, Combo Meter, Reroll, First Claim, Color Bonus, and others) or pick a preset such as Classic or Zenith of Chaos.
+- Enable modifiers (Letter Lock, Gravity, Blind Mode, Combo Meter, Reroll, First Claim, Color Bonus, and others) or pick a preset such as Classic or Zenith of Chaos. In Letter Lock, reusing a tile in a valid word breaks every older scored word that overlaps it; invalid attempts leave those words intact.
 - **Color Bonus** adds three each of red, yellow, and blue tiles on 4×4 boards, or four each on 5×5 boards. A word using three tiles of one color earns +25% (at least 1 point), while four earns +50% (at least 2); different qualifying colors stack additively.
 - **Word Grid** lets you swap any two tiles and swipe adjacent letters to lock words. Swaps recalculate which words remain valid. Tap the option chip for the complete rules.
 - Use **Save / lists** to save match options privately and organize them in named lists. The home screen's **Modes** tab includes the community directory, weekly top-ten charts, Upvoted, Saved, and your lists. The same library is available through **Load a mode**. **Saved → On this device** holds device saves; **Save to account** copies one into your private library with its name and your chosen lists.
@@ -55,6 +57,12 @@ Find words on a letter grid before time runs out — alone, pass-and-play, or ag
 - In **Match Options**, choose **Pass & Play** (or **Showdown** for one secret word per round).
 - Each player takes a turn on the same board seed; use the swap screen and initials tumbler between turns.
 - Finish the match when everyone has played.
+
+### Tabletop multiplayer
+
+Choose **Create match → Tabletop** for 2–8 people around one phone. Boggled is enabled by default and can be turned off; a player-colored border repeats whose turn it is on all four sides. A valid word advances immediately. The selected time is divided equally between players, and only the active player's clock runs. Highest score wins after every clock expires. **Fuse** adds one second per word point to the finder's clock. **Hide Scores** and **Hide Words List** are optional and reveal the hidden information in results. See [Tabletop rules and modifier combinations](tabletop.md).
+
+The current player's color fills the space around the board, colors the turn banner and word tray, and appears on all four board edges with the player identity and remaining time. Saved local-player initials are used when available; otherwise the interface falls back to P1, P2, and so on. This makes the active turn visible from every seat without moving the phone.
 
 ## 5. Live multiplayer
 
@@ -96,9 +104,10 @@ Find words on a letter grid before time runs out — alone, pass-and-play, or ag
 - Use the Monday–Sunday week strip to open any Daily Board in the current competitive week. Future days stay locked.
 - Other players’ names, ranks, and scores stay hidden until you submit that day’s board, so standings cannot spoil an unplayed Daily.
 - When signed in with an account, competitive Daily leaderboard results and missions are recorded.
-- Later attempts on the board can be replayed freely for practice.
+- Opening a Daily or competitive challenge uses your one attempt. Abandoning it does not post a score and does not unlock a replay.
 - Complete rotating Daily Missions and play on consecutive days to build a Daily Board streak.
-- From eligible static-board results, retry the same letters and review high-value missed words.
+- Completed signed-in competitive matches submit automatically. Results reveal your verified score and rank first; eligible static boards also show high-value missed words.
+- Use the abandon control during play to leave without submitting. Choose New Board after results to play another board.
 - After you have played a board, tap a player in the standings to open their public career profile.
 
 
@@ -121,3 +130,11 @@ Find words on a letter grid before time runs out — alone, pass-and-play, or ag
 - Google sign-in opens from the packaged app's private loopback origin; no game server is exposed to the network.
 - Use the custom title bar to minimize, maximize, or close the app.
 - Windows may show a publisher warning because the portable desktop executable is not code-signed.
+
+## 12. Word Builder
+
+- Choose **Word Builder** on the home screen, then create a practice game, a local pass-and-play match, or a live/asynchronous online match. Online play requires sign-in and is available when the rollout is enabled; share the invitation code with the other players.
+- Place tiles from your rack in one row or column to make connected words of at least two letters. The first play must cross the center square. Existing letters can form extra crossing words, and premium squares affect the score when first covered.
+- Tap a rack tile, then tap a board square. Select a blank's letter when prompted. Use **Undo**, **Redo**, **Recall**, **Shuffle**, or **Exchange** while preparing a turn, then tap **Submit**. Pass and resign are in the match menu.
+- Optional Builder rules include hidden or randomized bonuses, barriers, stacking, and falling tiles. Open a modifier chip during play to see its rules.
+- Local games save on this device. Finished online matches record verified results automatically. **Leaderboards** compare the same ruleset, player count, format, and turn clock; **Awards** shows Builder career milestones. Word Hunt career and season scores remain separate.
