@@ -1,6 +1,6 @@
 # WordPlay.ing User Guide
 
-Choose Word Hunt to swipe words on a letter grid, or Word Builder to place tiles and form connected words.
+Choose Bungle to swipe words on a letter grid, or Scramble to place tiles and form connected words.
 
 ## Table of Contents
 
@@ -15,11 +15,11 @@ Choose Word Hunt to swipe words on a letter grid, or Word Builder to place tiles
 - [9. Awards & progression](#9-awards--progression)
 - [10. Comfort & accessibility](#10-comfort--accessibility)
 - [11. Windows desktop](#11-windows-desktop)
-- [12. Word Builder](#12-word-builder)
+- [12. Scramble](#12-scramble)
 
 ## 1. How to play
 
-- Select **Word Hunt** for the letter-grid game described below, or **Word Builder** for tile placement (section 12).
+- Select **Bungle** for the letter-grid game described below, or **Scramble** for tile placement (section 12).
 - From the main menu, start a new match.
 - Drag across adjacent letters (including diagonals) to build a word, then release to submit.
 - Words must be at least 3 letters and in the dictionary. The same word only scores once per round.
@@ -131,10 +131,10 @@ The current player's color fills the space around the board, colors the turn ban
 - Use the custom title bar to minimize, maximize, or close the app.
 - Windows may show a publisher warning because the portable desktop executable is not code-signed.
 
-## 12. Word Builder
+## 12. Scramble
 
-- Choose **Word Builder** on the home screen, then create a practice game, a local pass-and-play match, or a live/asynchronous online match. Online play requires sign-in and is available when the rollout is enabled; share the invitation code with the other players.
+- Choose **Scramble** on the home screen, then create a practice game, a local pass-and-play match, or a live/asynchronous online match. Online play requires sign-in; share the invitation code with the other players.
 - Place tiles from your rack in one row or column to make connected words of at least two letters. The first play must cross the center square. Existing letters can form extra crossing words, and premium squares affect the score when first covered.
 - Tap a rack tile, then tap a board square. Select a blank's letter when prompted. Use **Undo**, **Redo**, **Recall**, **Shuffle**, or **Exchange** while preparing a turn, then tap **Submit**. Pass and resign are in the match menu.
 - Optional Builder rules include hidden or randomized bonuses, barriers, stacking, and falling tiles. Open a modifier chip during play to see its rules.
-- Local games save on this device. Finished online matches record verified results automatically. **Leaderboards** compare the same ruleset, player count, format, and turn clock; **Awards** shows Builder career milestones. Word Hunt career and season scores remain separate.
+- Local games save on this device. Finished online matches record verified results automatically. **Leaderboards** compare the same ruleset, player count, format, and turn clock; **Awards** shows Builder career milestones. Bungle career and season scores remain separate.

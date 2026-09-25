@@ -1,5 +1,19 @@
 # Updates
 
+## v1.3.33 — Bungle & Scramble
+
+- Rename Word Hunt to Bungle and Word Builder to Scramble across current game screens.
+- Choose games from illustrated cartridge cards with miniature boards, clear selection states, and a horizontally scrollable library for future games.
+- Keep existing matches, saves, rules, and online invitations compatible.
+
+## v1.3.32 — Word Builder online
+
+- Restore online match creation and ship Builder without a build-time opt-in.
+- Add styled lobbies, copyable invitation codes, player seats, ready/undo, host transfer, and clear turn-clock rules.
+- Keep drafts and undo history after failed submissions, prevent duplicate creation on retry, and wait for matching private-rack and board revisions.
+- Show reconnect status, countdowns, and your own rack during opponents’ turns.
+- Replace raw service errors with recovery screens that match the app.
+
 ## v1.3.31 — Multiplayer reliability
 
 - Finish live Word Hunt rounds reliably when the server clock reaches the deadline before the local timer.
