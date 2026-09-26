@@ -1,5 +1,11 @@
 # Updates
 
+## v1.3.39 — Scramble alerts and notifications
+
+- Keep the larger board and compact match header from 1.3.37.
+- Move turn alerts into the Scramble matches header, remember the on/off choice, and detect Android notification settings.
+- Add an in-game notification center for invites, turns, results, and score updates, with direct invites from multiplayer lobbies.
+
 ## v1.3.37 — Compact Scramble match header
 
 - Put tappable player scores and the bag count in one compact header, with all four players visible in a two-row phone layout.
