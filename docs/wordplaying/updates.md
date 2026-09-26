@@ -1,5 +1,11 @@
 # Updates
 
+## v1.3.37 — Compact Scramble match header
+
+- Put tappable player scores and the bag count in one compact header, with all four players visible in a two-row phone layout.
+- Replace the large waiting message with a single-row ticker showing the last word, letter count, turn points, word multiplier and rack bonus.
+- Open an online career profile or local match profile from any player score, and remove the caption below the board.
+
 ## v1.3.36 — Larger Scramble board on phones
 
 - Let the Scramble board fill the usable phone width by reclaiming space below the controls and tightening vertical spacing.
