@@ -1,5 +1,10 @@
 # Updates
 
+## v1.3.36 — Larger Scramble board on phones
+
+- Let the Scramble board fill the usable phone width by reclaiming space below the controls and tightening vertical spacing.
+- Keep the rack and turn actions visible while showing more of the full board.
+
 ## v1.3.35 — Clearer Scramble turns
 
 - Show an animated waiting cue while an opponent plays, and use gray and white accents for letters planned between turns.
