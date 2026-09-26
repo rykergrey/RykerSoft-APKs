@@ -3,7 +3,7 @@
 Two word games for Android and desktop: swipe adjacent letters in Bungle or place tiles to make connected words in Scramble. Play locally, join online matches, explore custom rules, and compare verified scores within each game.
 
 ## Key Features
-- **Scramble**: Place letter tiles on a 15×15 board, use crossings and premium squares, exchange tiles, and play practice, local, live, or asynchronous matches. Optional barriers, hidden or randomized bonuses, stacking, and falling tiles change the board. Verified online matches keep separate Builder rankings, ruleset statistics, and weekly totals.
+- **Scramble**: Place letter tiles on an 11×11, 15×15, or 19×19 board, with crossings, premium squares, and tile exchanges. Play Solo, Pass & Play, Online, or against Raid. Choose 5, 10, or unlimited turns per player and a separate turn timer. Combine barriers, hidden or randomized bonuses, stacking, or falling tiles and save custom modes. Verified online scores have their own rankings and awards.
 - **Classic boards**: 4×4 or 5×5 dice grids with TWL06 dictionary validation (min 3 letters; Q expands to QU).
 - **Modifiers & presets**: Letter Lock tile ownership, Strict modes, Gravity, Blind Mode, Combo Meter, Reroll, First Claim, Sabotage, and Word Grid's tile-swapping arrangement puzzle — plus Classic / Gravity Well / Ghost Grid / Zenith of Chaos presets.
 - **Community challenges**: Start a compatible signed-in solo round to reserve a trusted publishable board, then automatically post its validated result at game over. Abandoned boards remain used without posting a score. Firebase recalculates scores and owns immutable per-board and combined standings; offline/local-only boards cannot be published after reveal.
@@ -17,7 +17,7 @@ Two word games for Android and desktop: swipe adjacent letters in Bungle or plac
 - **Persistent progression**: Home page Awards tab tracks 50+ achievements across career milestones, scoring feats, Endless survival, streaks, custom modifiers, and multiplayer matches. Progression automatically syncs to Firestore with deduplication receipts to prevent double counting. Special achievements unlock exclusive tile themes.
 - **Responsive feedback**: Connected selection paths, precise submission results, scoring callouts, adjustable effects, and optional haptics.
 - **Accessible play**: Guided onboarding, keyboard tile controls, reduced motion, high contrast, larger letters, focus-managed dialogs, and live selection announcements.
-- **Focused setup**: Match Options contains match rules and saved modes, while a dedicated Player Settings screen contains theme, sound, haptics, motion, contrast, and letter-size preferences.
+- **Compact setup**: Tap a setting to cycle its value, or hold or drag vertically to choose from a list. Both games share Solo/Multiplayer setup and mode-library styling. Player Settings contains theme, sound, haptics, motion, contrast, and letter-size preferences.
 - **Reliable match completion**: Timer expiry is fail-safe even when a tile is selected, Android audio is unavailable, or post-match board analysis is still running.
 
 ## Platforms
