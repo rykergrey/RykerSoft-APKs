@@ -1,5 +1,10 @@
 # Updates
 
+## v1.3.42 — Smoother scrolling and option menus
+
+- Smoothly collapse and expand the Bungle and Scramble game tiles while scrolling the home screen.
+- Tap a match setting to open its option list above or below the button, keeping the compact styling and allowing normal page scrolling over every setting.
+
 ## v1.3.41 — Match options and custom Scramble modes
 
 - Unify Solo and Multiplayer setup across Bungle and Scramble, with compact tap-to-cycle and hold-or-drag option menus.
