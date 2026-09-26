@@ -1,5 +1,10 @@
 # Updates
 
+## v1.3.40 — Simpler notification control
+
+- Show a single bell icon for Scramble turn alerts: grey when disabled and orange when enabled.
+- Keep the control accessible to screen readers without visible text labels.
+
 ## v1.3.39 — Scramble alerts and notifications
 
 - Keep the larger board and compact match header from 1.3.37.
