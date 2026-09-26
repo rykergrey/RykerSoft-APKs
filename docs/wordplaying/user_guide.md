@@ -30,7 +30,9 @@ Choose Bungle to swipe words on a letter grid, or Scramble to place tiles and fo
 
 ## 2. Match setup & modifiers
 
-- Select **Create match** to open **Match Options**. Choose **Solo**, **Pass & Play**, **Showdown**, or **Live**, then board size and timer. Showdown also lets you choose the number of rounds.
+- Select **Create match** to open **Match Options**. Choose **Solo** for one player or **Multiplayer**, then select **Pass & Play**, **Online**, **Vs Raid**, or Bungle’s **Tabletop**. Bungle’s **Showdown** switch adds one-word rounds to Pass & Play or Tabletop.
+- Tap a setting to cycle its value. Hold it, or drag up or down, to open the complete list; release over a value to select it. Keyboard users can open a list with an arrow key.
+- Signed-in Bungle Solo matches remain eligible for leaderboards; selecting Solo does not add an opponent.
 - Enable modifiers (Letter Lock, Gravity, Blind Mode, Combo Meter, Reroll, First Claim, Color Bonus, and others) or pick a preset such as Classic or Zenith of Chaos. In Letter Lock, reusing a tile in a valid word breaks every older scored word that overlaps it; invalid attempts leave those words intact.
 - **Color Bonus** adds three each of red, yellow, and blue tiles on 4×4 boards, or four each on 5×5 boards. A word using three tiles of one color earns +25% (at least 1 point), while four earns +50% (at least 2); different qualifying colors stack additively.
 - **Word Grid** lets you swap any two tiles and swipe adjacent letters to lock words. Swaps recalculate which words remain valid. Tap the option chip for the complete rules.
@@ -54,19 +56,19 @@ Choose Bungle to swipe words on a letter grid, or Scramble to place tiles and fo
 
 ## 4. Local pass & play
 
-- In **Match Options**, choose **Pass & Play** (or **Showdown** for one secret word per round).
+- In Bungle **Match Options**, choose **Multiplayer → Pass & Play**. Enable **Showdown** for one secret word per round.
 - Each player takes a turn on the same board seed; use the swap screen and initials tumbler between turns.
 - Finish the match when everyone has played.
 
 ### Tabletop multiplayer
 
-Choose **Create match → Tabletop** for 2–8 people around one phone. Boggled is enabled by default and can be turned off; a player-colored border repeats whose turn it is on all four sides. A valid word advances immediately. The selected time is divided equally between players, and only the active player's clock runs. Highest score wins after every clock expires. **Fuse** adds one second per word point to the finder's clock. **Hide Scores** and **Hide Words List** are optional and reveal the hidden information in results. See [Tabletop rules and modifier combinations](tabletop.md).
+Choose **Create match → Multiplayer → Tabletop** in Bungle for 2–8 people around one phone. Boggled is enabled by default and can be turned off; a player-colored border repeats whose turn it is on all four sides. A valid word advances immediately. The selected time is divided equally between players, and only the active player's clock runs. Highest score wins after every clock expires. **Fuse** adds one second per word point to the finder's clock. **Hide Scores** and **Hide Words List** are optional and reveal the hidden information in results. See [Tabletop rules and modifier combinations](tabletop.md).
 
 The current player's color fills the space around the board, colors the turn banner and word tray, and appears on all four board edges with the player identity and remaining time. Saved local-player initials are used when available; otherwise the interface falls back to P1, P2, and so on. This makes the active turn visible from every seat without moving the phone.
 
 ## 5. Live multiplayer
 
-- Choose **Live** in **Match Options**, or use **Join live with a code** in Matches.
+- Choose **Multiplayer → Online** in **Match Options**, or join with a code from Matches.
 - Host creates a short room code; guests enter the code and ready up in the lobby.
 - After countdown, everyone plays the same board; results are reconciled (important for First Claim).
 - Only live-safe modifiers are available in this mode.
@@ -133,7 +135,10 @@ The current player's color fills the space around the board, colors the turn ban
 
 ## 12. Scramble
 
-- Choose **Scramble** on the home screen, then create a practice game, a local pass-and-play match, or a live/asynchronous online match. Online play requires sign-in; share the invitation code with the other players.
+- Choose **Scramble**, then **Solo** or **Multiplayer**. Multiplayer offers **Pass & Play**, **Online**, and **Vs Raid**. Online play requires sign-in; share the room code or invite players in game. Raid’s built-in opponent works offline.
+- Choose a small **11×11**, standard **15×15**, or large **19×19** board. **Turns per player** is **5**, **10**, or **Unlimited**. The separate **Turn timer** is **30 sec**, **1 min**, **2 min**, or **Unlimited**. A timed-out turn passes automatically. Normal end rules can finish a match before its turn cap.
+- Pass & Play needs no player-count setting. After a turn, review the words and points, enter initials, and pass to a new player or back to Player 1. Each receiving player taps **Continue** before their letters appear. On the first return, choose **I’m Player 1** or **I’m a new player**; Player 1 continuing sets the roster for subsequent rounds. Turn timers pause during handoffs.
+- Save your combination under **Save, load & share modes**. Find it from **Home → Modes → Scramble → Saved**, on this device or in your account. Publishing to the community is a separate action.
 - Place tiles from your rack in one row or column to make connected words of at least two letters. The first play must cross the center square. Existing letters can form extra crossing words, and premium squares affect the score when first covered.
 - Tap a rack tile, then tap a board square. Select a blank's letter when prompted. Use **Undo**, **Redo**, **Recall**, **Shuffle**, or **Exchange** while preparing a turn, then tap **Submit**. Pass and resign are in the match menu.
 - Optional Builder rules include hidden or randomized bonuses, barriers, stacking, and falling tiles. Open a modifier chip during play to see its rules.
