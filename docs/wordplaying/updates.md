@@ -1,5 +1,18 @@
 # Updates
 
+## v1.3.35 — Clearer Scramble turns
+
+- Show an animated waiting cue while an opponent plays, and use gray and white accents for letters planned between turns.
+- Announce and highlight each newly played word on the board; keep the last played word outlined after later passes or exchanges.
+- Keep real rack and board tiles visible while shuffling and zooming, and clear letter selection after a swap.
+
+## v1.3.34 — Scramble turns and scoring
+
+- Arrange, swap, and shuffle your private letters while waiting for an online turn. Plan placements on the board and keep them ready when your turn begins, as long as those spaces remain free.
+- Keep the Scramble board centered as turn controls change, with tile movement that remains aligned during layout updates.
+- Animate premium tile scoring and score additions with readable, reduced-motion-aware effects.
+- Enable multiplayer turn alerts on Android or supported browsers and open the relevant match from a notification.
+
 ## v1.3.33 — Bungle & Scramble
 
 - Rename Word Hunt to Bungle and Word Builder to Scramble across current game screens.
