@@ -17,7 +17,7 @@ Two word games for Android and desktop: swipe adjacent letters in Bungle or plac
 - **Persistent progression**: Home page Awards tab tracks 50+ achievements across career milestones, scoring feats, Endless survival, streaks, custom modifiers, and multiplayer matches. Progression automatically syncs to Firestore with deduplication receipts to prevent double counting. Special achievements unlock exclusive tile themes.
 - **Responsive feedback**: Connected selection paths, precise submission results, scoring callouts, adjustable effects, and optional haptics.
 - **Accessible play**: Guided onboarding, keyboard tile controls, reduced motion, high contrast, larger letters, focus-managed dialogs, and live selection announcements.
-- **Compact setup**: Tap a setting to cycle its value, or hold or drag vertically to choose from a list. Both games share Solo/Multiplayer setup and mode-library styling. Player Settings contains theme, sound, haptics, motion, contrast, and letter-size preferences.
+- **Compact setup**: Tap a setting to open its option list above or below the button. Swipe over settings to scroll normally. Both games share Solo/Multiplayer setup and mode-library styling. Player Settings contains theme, sound, haptics, motion, contrast, and letter-size preferences.
 - **Reliable match completion**: Timer expiry is fail-safe even when a tile is selected, Android audio is unavailable, or post-match board analysis is still running.
 
 ## Platforms
