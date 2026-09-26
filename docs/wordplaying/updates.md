@@ -1,5 +1,20 @@
 # Updates
 
+## v1.3.41 — Match options and custom Scramble modes
+
+- Unify Solo and Multiplayer setup across Bungle and Scramble, with compact tap-to-cycle and hold-or-drag option menus.
+- Treat Showdown as a modifier for Bungle Pass & Play and Tabletop; keep Bungle Solo eligible for leaderboards.
+- Add custom Scramble modes with saved libraries, sharing, and consistent home-screen styling.
+- Choose 11×11, 15×15, or 19×19 Scramble boards, 5/10/unlimited turns per player, and independent 30-second/1-minute/2-minute/unlimited turn timers.
+- Let Scramble Pass & Play players join during the first round, with word and score confirmations, initials, private handoffs, and a clear return to Player 1.
+- Preserve saved matches and protect older online clients from unsupported boards and rules.
+
+- Play Bungle or Scramble against Raid with Easy, Medium, Hard, or Expert difficulty.
+- Use the same Your matches list and filters in both games, including separate local saves.
+- Keep the game selector visible as compact title-and-subtitle buttons while scrolling matches.
+- Continue saved games from the list; delete solo saves or forfeit online matches with a recorded loss.
+- Use Raid’s built-in opponent online or offline. The optional cloud AI provider remains disabled until a server key is configured.
+
 ## v1.3.40 — Simpler notification control
 
 - Show a single bell icon for Scramble turn alerts: grey when disabled and orange when enabled.
@@ -10,6 +25,11 @@
 - Keep the larger board and compact match header from 1.3.37.
 - Move turn alerts into the Scramble matches header, remember the on/off choice, and detect Android notification settings.
 - Add an in-game notification center for invites, turns, results, and score updates, with direct invites from multiplayer lobbies.
+
+## v1.3.38 — Scramble turn alerts control
+
+- Move the turn alerts control into the Scramble matches header and show whether alerts are active.
+- Keep a player's choice to turn alerts off across sign-ins, and detect when Android notification settings block them.
 
 ## v1.3.37 — Compact Scramble match header
 
@@ -417,3 +437,4 @@ Career Leaderboards, Daily Fair-Play Standings & Gravity Integrity
 - Weekly seasons / leaderboards and season recap
 - Audio Lab synth workstation and word gallery with dictionary lookups
 - Signed Android release APK for Application Manager install
+
