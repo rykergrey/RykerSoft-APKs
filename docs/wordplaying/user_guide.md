@@ -31,7 +31,7 @@ Choose Bungle to swipe words on a letter grid, or Scramble to place tiles and fo
 ## 2. Match setup & modifiers
 
 - Select **Create match** to open **Match Options**. Choose **Solo** for one player or **Multiplayer**, then select **Pass & Play**, **Online**, **Vs Raid**, or Bungle’s **Tabletop**. Bungle’s **Showdown** switch adds one-word rounds to Pass & Play or Tabletop.
-- Tap a setting to cycle its value. Hold it, or drag up or down, to open the complete list; release over a value to select it. Keyboard users can open a list with an arrow key.
+- Tap a setting to open its options, then tap a value to select it. The list opens above or below the button to fit the screen. Swipe over settings to scroll normally. Keyboard users can open a list with Enter, Space, or an arrow key.
 - Signed-in Bungle Solo matches remain eligible for leaderboards; selecting Solo does not add an opponent.
 - Enable modifiers (Letter Lock, Gravity, Blind Mode, Combo Meter, Reroll, First Claim, Color Bonus, and others) or pick a preset such as Classic or Zenith of Chaos. In Letter Lock, reusing a tile in a valid word breaks every older scored word that overlaps it; invalid attempts leave those words intact.
 - **Color Bonus** adds three each of red, yellow, and blue tiles on 4×4 boards, or four each on 5×5 boards. A word using three tiles of one color earns +25% (at least 1 point), while four earns +50% (at least 2); different qualifying colors stack additively.
