@@ -19,11 +19,13 @@ Open the Hyperscribe Desktop entry in RykerSoft and choose the Windows executabl
 
 ## Inbox and capture
 
-Use Inbox for Audio and Text items. The New button opens the split Markdown/editor preview for a blank Text item. Audio rows keep their recording and attached transcript; when that transcript enters the text workflow, its linked Text row can coexist beside the Audio row in All. Text source badges distinguish Manual, Clipboard, Voice transcript, Action, and other origins without creating more item types. Reminders, pins, search, and tag filters compose with both types. Offline keyword, exact-phrase, and guarded regular-expression rules automatically tag new Inbox content.
+Use Inbox for Audio and Text items. New opens a Viewer for a blank Text item. A recording, its transcript, and generated speech appear together in one item. The Viewer offers reading, editing, item chat, audio, alerts, and a version history. Reminders, pins, search, and tag filters compose with both types. Save the current search, filters, sort order, and grouping as an Inbox view tab. Offline word, phrase, tag, and advanced regular-expression rules can automatically tag new content.
 
 ## Actions and chat
 
 Actions transform selected text or Inbox content. Hyperscribe supports AI, Python, template, snippet, search, persona, TTS, and combo actions, including ordered Before, Combine, Main, and After stages. Chat keeps persistent threads and supports streaming, stop, edit/regenerate, fork, search, Personas, action and Inbox-item context, and review-before-commit action-library proposals.
+
+Save filtered Actions views as tabs and assign Action tags separately from Inbox tags. Chat and Custom Actions each keep independent tabs. The Agent toggle in Chat can use an installed Codex or Gemini CLI for file tasks; every file-change batch has a selectable preview before it runs. Agent settings controls allowed folders. The global AI override can route text generation through Gemini API, Codex CLI, or Gemini CLI, using the configured model and account or API-key access.
 
 In Chat or Actions, the Inbox button opens a dropdown with an **Inbox Items** submenu showing the ten latest entries. Check multiple items, remove selected entries, clear all, or choose **Open Inbox**. In Inbox, select one or more rows and right-click → **Send Items to Actions**. Actions opens with a selection count beside Run; those items replace clipboard input until you press **Clear**.
 

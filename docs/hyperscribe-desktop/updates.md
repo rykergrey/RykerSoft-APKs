@@ -1,5 +1,13 @@
 # Hyperscribe Desktop updates
 
+## v2.4.2
+
+- Save custom Inbox and Actions views, with separate Action tags and independent Chat and Custom Action tabs.
+- Edit Inbox items in a versioned Viewer with item chat, audio playback, and multiple alerts. Recordings, transcripts, and generated speech stay together.
+- Choose Codex or Gemini CLI for text generation and use reviewed Agent mode for file tasks in allowed folders.
+- Improve recording controls, action results, notifications, sync reconciliation, and local data recovery.
+- Build Windows and Linux packages from one source revision with the same isolated test preflight.
+
 ## v2.4.1
 
 - Fix Pro verification after a successful Google login by reusing the Hyperscribe session.
