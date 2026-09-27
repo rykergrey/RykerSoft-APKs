@@ -31,6 +31,8 @@ Hyperscribe uses the transcription provider/fallback and text replacement settin
 
 In the same screen, tap **Install Pebble watch app**, complete Pebble’s installation flow, then **Test watch display**. The bundled native watch app supports Pebble 2 Duo (`flint`) and Pebble Time 2 (`emery`).
 
+Watch app 0.3.0 adds **Chats**. Open it to browse recent threads and read each conversation newest first; page through longer threads with the watch controls. With Global voice chat enabled on the phone, the assigned voice thread remains the Index 01 target even if the watch is displaying another conversation. Change the assigned thread from Chat on the phone.
+
 Use Up/Down to scroll, Select for options, and hold Select for the previous page. Select **Read with TTS** to hear the saved response through the phone or connected headphones while the phone stays locked; **Stop reading** cancels that reading. Next/previous page options remain in the same menu. Normal mirrored Chat notifications also expose **Read with TTS** and **Stop reading**. For Index replies, Hyperscribe first tries the custom watch display. Once that exact reply is acknowledged, the phone notification is marked phone-only to avoid a second watch alert. If custom delivery is unconfirmed or fails, the phone notification remains mirrorable as a fallback. Pebble normally honors phone-only notifications; its advanced **send local-only notifications** override must remain disabled to preserve this behavior. Install the updated watch app once to get the new menu. Hyperscribe keeps the latest response for reopening/reconnection. The phone reports **displayed** only after the watch acknowledges the matching response and page; a Bluetooth transport acknowledgement alone is insufficient. The complete conversation stays in Chat even if the watch is unavailable. Completed notes, reminders, and librarian answers appear in Inbox.
 
 New replies use plain text on the watch and in notification previews. Headings and emphasis keep their words without Markdown delimiters; links show their labels; tables become labeled rows. Chat retains the original formatting and links. Read with TTS still targets the original saved message. This phone-side change works with watch app 0.2.0. A response cached before this update retains its previous display text until a new response replaces it.
@@ -76,4 +78,3 @@ Text replacements run once before interpretation; original speech remains availa
 - [Pebble companion source](https://github.com/coredevices/mobileapp)
 - [Pebble Android communication guide](https://developer.repebble.com/guides/communication/using-pebblekit-android/)
 - [SDK](https://developer.repebble.com/sdk/)
-

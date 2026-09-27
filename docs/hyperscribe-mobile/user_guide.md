@@ -145,6 +145,12 @@ In an action editor’s Basics tab, select Action tags or choose New tag. The pe
 
 Choose Automation → Auto-run in an individual action editor to run it after transcription or for new clipboard items. Automatic execution must also be enabled in the applicable recording stop profile.
 
+## Global voice chat (2.12.0)
+
+Open a Chat thread and choose **Use this as voice chat** from its menu. Turn on Global voice chat from the Chat voice control, by dragging up on the Chat navigation button, or from the floating button’s Input menu. Green on the floating button and navigation controls confirms the mode is on. The chosen thread stays at the top of the Chat thread picker, where you can select and assign a different one.
+
+With the mode on, a new voice recording from the app or floating button, or an Index 01 recording, is transcribed and sent to that same thread. Hyperscribe speaks the saved assistant reply using the thread’s Chat voice even if the phone UI is closed. Saved text and clipboard Inbox items are not sent automatically. The mode remains on until you turn it off. On the watch, Chats lists recent threads; open one to read messages newest first and page through the history. Viewing another watch thread does not change the assigned global voice target.
+
 ## Floating menu gestures (v2.8.1)
 
 Tabs are arranged from the right edge outward: Input, Actions, then Inbox by default. A short left swipe opens the nearest tab; continue a little farther to select the next tab. Settings lists the tab order nearest-edge first, including custom tabs. Opening and remembered-tab preferences apply when opening the menu without a swipe.

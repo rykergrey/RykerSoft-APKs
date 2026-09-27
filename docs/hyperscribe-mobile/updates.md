@@ -1,3 +1,10 @@
+# 2.12.0 — Global voice chat
+
+- Choose one Chat thread for hands-free conversation. New voice transcripts from the phone microphone, floating button, and Index 01 ring are sent there automatically and replies are spoken with the thread’s Chat voice while the phone UI is closed.
+- Toggle the mode in Chat, by dragging up on the Chat navigation button, or from the floating button’s Input menu. Green controls show when it is on; the chosen thread is pinned at the top of Chat’s thread picker.
+- The bundled Pebble watch app 0.3.0 lists recent Chat threads and displays each conversation newest first with paging. Install the updated watch app from Hyperscribe’s Index/Pebble setup screen.
+- Automatic sending applies to new voice captures only. Text and clipboard Inbox entries are not sent automatically. This release also includes the Inbox alert and recording workflow improvements from versions 2.10 and 2.11.
+
 # 2.9.7 — One Hyperscribe controls notification
 
 - Combine recording controls, floating button status, and the Index ring receiver into one notification.
