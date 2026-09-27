@@ -1,3 +1,9 @@
+# 2.13.1 — Names and search aliases
+
+- Use matching enabled text replacement rules as bidirectional knowledge-search aliases, so alternate spellings can find older saved entries without rewriting them or rebuilding the index.
+- Prioritize alias matches before broad generic search terms; keyword search supports the feature without a semantic model download.
+- Tell Chat which configured aliases matched, and strengthen guidance against claiming a person or topic is absent merely because retrieval found no match.
+
 # 2.13.0 — My knowledge in Chat
 
 - Ground Chat in saved text and transcripts, including archived entries, using bounded local keyword retrieval and optional on-device semantic search.

@@ -51,6 +51,12 @@ Inbox remains the place to capture and organize material. **My knowledge** is th
 
 Enable **Find related ideas** to download a 23 MB model over Wi-Fi and add local search by meaning for English text. The status shows whether the download is waiting, running, or indexing entries. Keyword search remains available during indexing. Search and embedding run on-device; selected excerpts are sent to your configured chat provider when you ask a question.
 
+### Names and alternate spellings
+
+Knowledge search also uses your enabled **Settings → Text replacements** rules as aliases. For example, if one rule connects **Alex** and **Alyx**, asking “What should I get Alex for Christmas?” can retrieve an older entry saying “Alyx wants a telescope.” Either spelling can find the other; a configured phrase such as “my wife” can also match. This works with keyword search alone, without a model download or index rebuild.
+
+Both spellings must belong to the same enabled rule. Search uses matching rules, not every name in your settings; it does not guess that all similar names identify the same person. Dynamic date/time replacement rules are not identity aliases. Changing or disabling a rule affects subsequent searches. Your original Chat message and saved entries are not rewritten. Alias matches improve retrieval, but results are still bounded and incomplete; check **Saved sources** when an answer misses something.
+
 ### Read the sources
 
 After an answer, expand **Saved sources** to see capture dates, archived status, and short previews. Tap a source to open its relevant passage, then use **Read next passage**, **Start of entry**, or **Open entry & history**. Source text is read fresh. If it changed since the answer, the viewer tells you; deleted, expired, and knowledge-excluded sources show as unavailable. Larger source lists page eight entries at a time.

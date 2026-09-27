@@ -3,7 +3,7 @@
 ## Android
 
 - Package: `com.rykersoft.hyperscribemobile`
-- Version: `2.13.0` (code 38)
+- Version: `2.13.1` (code 39)
 - Minimum Android: 10 / API 29
 - Target Android: API 36
 - Architectures: arm64-v8a and x86_64
@@ -13,6 +13,7 @@
 
 ## Personal knowledge
 
+- Enabled static text replacement rules supply bounded, bidirectional search aliases for matching names and phrases; source content is unchanged and no reindex is needed.
 - Local SQLite full-text search over eligible saved text and transcripts, including retained archived entries.
 - Optional English semantic search using a roughly 23 MB quantized MiniLM model on ARM64 devices; downloads use unmetered Wi-Fi and background indexing waits for sufficient battery.
 - Incremental, resumable passage indexing. Keyword search remains available while the semantic index updates. Derived indexes can be rebuilt from saved entries.

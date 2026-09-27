@@ -7,6 +7,7 @@ Inbox remains your everyday capture and organization space. **My knowledge** bri
 ## Features
 
 - Ask Chat about saved text and transcripts. Automatic keyword search finds relevant passages; optional **Find related ideas** adds on-device search by meaning for English text.
+- Find saved names under alternate spellings: matching enabled text replacement rules also act as search aliases, including for older entries.
 - Open **My knowledge** from Chat to control retrieval, check indexing progress, or rebuild the search index without losing your draft.
 - Expand **Saved sources** beneath replies to inspect dated previews, read source passages, and open an entry with its history.
 - Propose entry replacements in Chat, compare the proposed and current text, and choose **Apply change**, **Cancel change**, or **Review later**. Applying retains the previous version and checks for intervening edits.
