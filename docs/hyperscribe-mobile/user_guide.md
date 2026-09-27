@@ -5,6 +5,7 @@
 - [Getting started](#getting-started)
 - [Inbox and recording](#inbox-and-recording)
 - [Actions and chat](#actions-and-chat)
+- [My knowledge in Chat](#my-knowledge-in-chat)
 - [Text to speech](#text-to-speech)
 - [Provider keys and privacy](#provider-keys-and-privacy)
 - [Sharing and interoperability](#sharing-and-interoperability)
@@ -21,6 +22,8 @@ Install Hyperscribe Mobile through its Android entry in RykerSoft. Grant microph
 
 Use Inbox for recordings, transcripts, saved text, files, and images. Content has no forced Note, Journal, Task, or Voice Memo type: add any combination of tags as its purpose evolves. Tap text to edit it, use Copy for a quick copy, sort by added, copied, or retention date, and select several items to copy, tag, archive, run through an action, or add to Chat. Items approaching expiry show a retention indicator. Create saved tag-driven views such as Journal or Family + Urgent, capture modes such as Work Reminder that preapply tags in the standard editor, and workflows such as auto-archiving Complete items that do not also have Journal. Tags can override the default text and audio retention periods; the longest matching tag policy applies, and pinned content remains protected.
 
+On each Inbox card, Copy sits next to the three-dot menu. The speaking-person icon plays text-to-speech; the Play triangle plays recorded audio. Tap the card's microphone to start recording into that item, then use the normal Stop or Cancel controls. Recording continues after you lift your finger or leave the screen. Stop attaches the audio to the original item and appends the transcript as a new paragraph. Tap its Recording chip to play the saved audio. See [Inbox dictation](inbox-dictation.md) for details.
+
 Tap the central record control to create a voice note, or drag upward for a compact set of frequently used creation choices. Choose **All options…** to open the scrollable create-and-import sheet with every recording profile, capture mode, and import method. In the Markdown editor, use the image menu to extract text from one or more images or attach them without OCR. Use the microphone at the right edge of the toolbar to record and insert dictated text; the adjacent cancel control abandons that capture. The tag row and bottom Cancel/Save buttons hide while the on-screen keyboard is visible, leaving that space to the text input. Hide the keyboard to restore them; the draft and assigned tags are preserved. The Add tag dialog remains usable while typing a tag name.
 
 In Settings, edit the built-in recording profiles or add custom profiles. Each profile can set its name, sample rate, mono/stereo mode, encoding, Opus bitrate, audio retention, noise suppression, echo cancellation, and automatic gain control.
@@ -30,6 +33,43 @@ In Settings, edit the built-in recording profiles or add custom profiles. Each p
 Actions transform text or Inbox content. When one or more Inbox text items or recording transcripts are selected, the Actions page preserves and uses that selection. The Actions page shows an editable input panel, initially loaded from the clipboard when no Inbox items are selected. This working copy stays unchanged when actions finish; use Load current clipboard to explicitly replace it. Successful text transformations replace the clipboard contents and are saved to the Inbox; snippets copy their own content and do not require an input item. Hyperscribe supports AI, Python, template, snippet, search, persona, TTS, and combo actions, including ordered Before, Combine, Main, and After stages. Chat keeps persistent threads, accepts one or several selected Inbox items as temporary question context, supports action stacks, and provides streaming, generation cancellation, edit/regenerate, fork, search, Personas, action context, and review-before-commit action proposals. Android posts a completion notification when the relevant Chat thread is not actively visible.
 
 In **Settings → Text replacements**, create a rule with the spelling or phrase you want as its replacement, then add any number of spoken or misspelled variants. For example, a `Crystal` rule can include `Kristal`, `Krystal`, and `my wife`; every completed transcript converts those variants to `Crystal` before it is saved or routed elsewhere. Matching is case-insensitive and uses whole words or phrases. Replacements may also contain `{current_date}`, `{date_stamp}`, `{current_day}`, `{current_month}`, `{current_year}`, `{current_time}`, or `{timestamp}` to insert the current local date or time.
+
+## My knowledge in Chat
+
+### Start with what you already save
+
+1. Save text, record and transcribe a thought, or extract text from an image into Inbox. You do not need to curate a separate knowledge database.
+2. Open Chat → **My knowledge** and leave **Use saved entries in Chat** enabled (the default). Configure a chat provider in Settings if you have not already.
+3. Ask a specific question, such as “What did I save about the garden project?” Automatic search chooses a limited set of relevant passages; it does not send your entire Inbox.
+4. Expand **Saved sources** under the answer and check the source before relying on the answer or changing an entry.
+
+Saved material supplies context, not guaranteed facts or a record of everything you believe. A collected quote may express somebody else's opinion. If an answer misses an entry, try a distinctive phrase, open it directly, or explicitly attach it to Chat.
+
+### Control search and indexing
+
+Inbox remains the place to capture and organize material. **My knowledge** is the saved text Chat can search, including archived entries. Open the compact **My knowledge** control in Chat to turn automatic retrieval on or off. Changes take effect immediately for future messages and leave your current draft intact. Explicitly attached entries and excerpts already in the conversation remain available in that conversation.
+
+Enable **Find related ideas** to download a 23 MB model over Wi-Fi and add local search by meaning for English text. The status shows whether the download is waiting, running, or indexing entries. Keyword search remains available during indexing. Search and embedding run on-device; selected excerpts are sent to your configured chat provider when you ask a question.
+
+### Read the sources
+
+After an answer, expand **Saved sources** to see capture dates, archived status, and short previews. Tap a source to open its relevant passage, then use **Read next passage**, **Start of entry**, or **Open entry & history**. Source text is read fresh. If it changed since the answer, the viewer tells you; deleted, expired, and knowledge-excluded sources show as unavailable. Larger source lists page eight entries at a time.
+
+You can also type `Read source 1` or `Read entry <id> from <offset>` to read saved text in passages.
+
+### Review an entry change
+
+To propose an entry replacement, type **Update source 1 to: replacement text**. Tap **Review change** to compare the current text and proposed replacement. **Apply change** replaces the entire text and retains the previous version in history; **Cancel change** dismisses the proposal without editing; **Review later** closes the sheet while leaving the proposal pending. If an entry changes in the meantime, the old proposal cannot overwrite it. Long current entries show their first part with a link to read the full entry before replacing it. These controls do not submit or clear your Chat draft.
+
+### Choose what stays available
+
+In a capture’s **Contents & history**, **Available to Chat** controls future knowledge access. Retention is shown separately: inclusion does not prevent cleanup. Use the existing Keep, Archive, and expiry controls to decide what stays. Existing chat excerpts are not removed when an entry is excluded.
+
+Only saved text and transcripts are searchable; transcribe audio or extract attachment text first. Generated Chat/library answers stay in Chat unless explicitly saved, reducing repeated assistant output in the collection. Archiving alone does not protect an entry from expiry; check its retention controls when you want to keep it.
+
+If related-idea search is waiting, connect to unmetered Wi-Fi and ensure the battery is not low. Keyword search works while the English model downloads and indexing catches up. If status needs attention, open **My knowledge**, check its message, and use **Rebuild search index** when needed. Rebuilding recreates search data from existing entries; it does not restore deleted content. **Settings → Chat** also exposes knowledge settings; save changes made there.
+
+Automatic retrieval is only one way to provide context. Turning it off does not disable explicit library commands, remove earlier excerpts from a thread, or exclude content you deliberately attach. Selected excerpts and conversation messages reach the configured cloud provider when you use cloud Chat; local search does not make cloud Chat offline.
 
 ## Text to speech
 
@@ -95,7 +135,9 @@ position. With the default newest-copied sort, it moves to the top; other saved
 sort orders still apply. The list keeps your reading position so you can continue
 copying nearby items. Successful Inbox copies do not show an app toast.
 
-Use the type, audio-status, reminder, pin, and tag controls to customize the list.
+Use the type, audio-status, schedule, pin, and tag controls to customize the list. Saved views can also filter by schedule kind (reminder, timer, alarm), status (including upcoming, snoozed, paused, completed), and sort by Alert time.
+
+Open an item’s menu → **Alarm, timer or reminder** to attach or edit a schedule without changing its content. Choose a date/time or timer duration; use the same editor for pause/resume, restart, snooze, completion, cancellation, or removal. Chat and Index understand requests such as “Set a timer for 10 minutes” and “Remind me every day at 9 am to stretch.” See [Inbox schedules](inbox-schedules.md) for commands, repeating schedules, and Android permission requirements.
 Tags can match any, all, or none of the selected tags. The sort menu includes date
 copied, date added, cleanup date, and title, with ascending/descending order. It
 also controls day grouping, pinned items first, and expanding/collapsing groups.
@@ -144,12 +186,6 @@ Use Load current clipboard or choose Use clipboard in the input picker to replac
 In an action editor’s Basics tab, select Action tags or choose New tag. The pencil on a tag edits its name, color, and matching rules. Action tags and Inbox tags are independent; the same name may exist in both. Existing action assignments are preserved as independent copies when upgrading. Search actions by tag name. Manage categories from the Actions options menu and use the color wheel to choose a category color.
 
 Choose Automation → Auto-run in an individual action editor to run it after transcription or for new clipboard items. Automatic execution must also be enabled in the applicable recording stop profile.
-
-## Global voice chat (2.12.0)
-
-Open a Chat thread and choose **Use this as voice chat** from its menu. Turn on Global voice chat from the Chat voice control, by dragging up on the Chat navigation button, or from the floating button’s Input menu. Green on the floating button and navigation controls confirms the mode is on. The chosen thread stays at the top of the Chat thread picker, where you can select and assign a different one.
-
-With the mode on, a new voice recording from the app or floating button, or an Index 01 recording, is transcribed and sent to that same thread. Hyperscribe speaks the saved assistant reply using the thread’s Chat voice even if the phone UI is closed. Saved text and clipboard Inbox items are not sent automatically. The mode remains on until you turn it off. On the watch, Chats lists recent threads; open one to read messages newest first and page through the history. Viewing another watch thread does not change the assigned global voice target.
 
 ## Floating menu gestures (v2.8.1)
 

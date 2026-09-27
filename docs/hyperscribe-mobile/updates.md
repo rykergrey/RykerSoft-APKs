@@ -1,9 +1,52 @@
+# 2.13.0 — My knowledge in Chat
+
+- Ground Chat in saved text and transcripts, including archived entries, using bounded local keyword retrieval and optional on-device semantic search.
+- Open **My knowledge** in Chat to control automatic retrieval and related-idea search, see indexing progress, and rebuild the index. Controls apply immediately and preserve your draft.
+- Expand **Saved sources** beneath a reply to see dated previews, including all eight retrieved sources. Open the relevant passage, read onward, or open the entry and its history. Changed or unavailable sources are identified.
+- Review entry replacements with current and proposed text, **Apply change**, **Cancel change**, and **Review later**. Edits check the source revision, retain history, and commit the entry and proposal status together.
+- Use **Available to Chat** in capture contents & history to exclude an entry from future retrieval. Search access and retention are explained separately.
+- Keep generated library answers in Chat and index new or edited entries through resumable background work. The optional 23 MB English model runs on-device; selected context still goes to the configured chat provider.
+
+# 2.12.1 — Faster recording-to-clipboard delivery
+
+- Speed up audio compression after stopping a recording.
+- Reuse captured audio for experimental 2× transcription, avoiding redundant decoding while preserving archive-based fallback.
+- Prioritize new transcription requests and copy final text before optional speech and tagging.
+- Add stage timings for diagnosing recording-to-clipboard latency.
+
 # 2.12.0 — Global voice chat
 
-- Choose one Chat thread for hands-free conversation. New voice transcripts from the phone microphone, floating button, and Index 01 ring are sent there automatically and replies are spoken with the thread’s Chat voice while the phone UI is closed.
-- Toggle the mode in Chat, by dragging up on the Chat navigation button, or from the floating button’s Input menu. Green controls show when it is on; the chosen thread is pinned at the top of Chat’s thread picker.
-- The bundled Pebble watch app 0.3.0 lists recent Chat threads and displays each conversation newest first with paging. Install the updated watch app from Hyperscribe’s Index/Pebble setup screen.
-- Automatic sending applies to new voice captures only. Text and clipboard Inbox entries are not sent automatically. This release also includes the Inbox alert and recording workflow improvements from versions 2.10 and 2.11.
+- Choose one Chat thread for Global voice chat. Newly captured voice transcripts from the phone microphone, floating control, and Index 01 are sent to that thread automatically; the reply is read aloud using its Chat voice even when the phone UI is closed.
+- Toggle the mode in Chat, from the Chat navigation button’s drag menu, or from the floating control’s Input menu. A green outline marks the floating button and central microphone; the Chat navigation icon also turns green.
+- Pin the chosen voice thread at the top of Chat’s thread picker and assign a different thread from its Chat menu. Browsing another thread on the watch does not change the global target while the mode is on.
+- Browse recent Chat threads on the Pebble watch and read full conversations newest first. The bundled watch app is now 0.3.0 and should be installed through Settings → Readiness → Set up Index ring & Pebble watch.
+- Only new voice captures are automatically sent. Text and clipboard Inbox entries keep their existing behavior. Interrupted background delivery reuses the same saved Chat request and response.
+
+# 2.11.0 — Multiple alerts on a unified Inbox item
+
+- Display alerts attached to either a recording or any of its transcripts on the same visible Inbox card and Alerts tab. Notification links open that same item and clear filters that could hide it.
+- Add several independent one-time or recurring alerts to one item. **Add alert** creates a new alert; **Edit alert → Update alert** changes the selected alert. Saved alerts appear in a numbered list, with a confirmation after saving.
+- Keep enabled recurring alerts in Upcoming alerts while due as well as between occurrences. Cards show recurrence, the nearest countdown, and additional alert summaries.
+- Dismiss, snooze, edit, stop, or remove alerts individually. Preserve all remaining alerts, tags, exports, backups, and the underlying capture.
+- Migrate the existing alert table without losing schedules. Text edits preserve alert changes made since the editor opened.
+
+# 2.10.2 — Recurring alerts in the Inbox
+
+- Keep the next occurrence active after completing or dismissing a recurring alert. Separate **Skip next alert** from **Stop repeating**.
+- Show repeat interval, next alert, and last alert together on Inbox cards. Update quick schedule dialogs from live schedule state.
+- Restore series disabled by the previous Complete action without restoring explicitly cancelled schedules. Preserve last-alert information when stopping a schedule.
+- Add **Recurring** and **Past** saved-view filters; include future snoozed alerts in **Upcoming**.
+
+# 2.10.0 — Inbox alarms, timers, and reminders
+
+- Attach a reminder, countdown timer, or alarm to an existing Inbox item; preserve its text, attachments, and organization.
+- Create and control schedules from typed Chat or Index 01, with clarification for ambiguous targets and durable retry protection.
+- Add date/time pickers, duration entry, live countdowns, pause/resume, restart, snooze, dismiss, complete, cancel, and remove controls.
+- Filter saved views by schedule type and status, and sort by alert time. Removing a schedule also clears its Reminder tag.
+- Use Android exact alarms when permitted, retain WorkManager recovery, and expose notification/exact-access settings. Ringing alerts have snooze and dismiss actions.
+- Preserve existing reminders through database migration and retain new schedule metadata in backups/exports.
+
+See [Inbox schedules](inbox-schedules.md) for usage and delivery behavior.
 
 # 2.9.7 — One Hyperscribe controls notification
 

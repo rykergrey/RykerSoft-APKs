@@ -1,8 +1,16 @@
 # Hyperscribe Mobile
 
-Hyperscribe Mobile is a local-first voice, text, action, chat, and speech workspace built specifically for Android. Record or import audio, keep an organized Inbox, transform text with reusable actions and pipelines, chat with configurable AI providers, and read content aloud with local or cloud speech.
+Hyperscribe Mobile is an Android capture workspace and personal knowledge assistant built around the material you save. Record thoughts, collect text, and keep transcripts in your Inbox. Over time, that collection becomes a growing source of context for Chat: ask about your saved information, inspect the original sources, and review proposed changes to your entries.
+
+Inbox remains your everyday capture and organization space. **My knowledge** brings eligible saved text, including archived entries, into conversations through local search. You can collect broadly without manually attaching every relevant note or sending the whole Inbox with every question. Reusable actions, voice chat, reminders, and local or cloud speech support the same workflow.
 
 ## Features
+
+- Ask Chat about saved text and transcripts. Automatic keyword search finds relevant passages; optional **Find related ideas** adds on-device search by meaning for English text.
+- Open **My knowledge** from Chat to control retrieval, check indexing progress, or rebuild the search index without losing your draft.
+- Expand **Saved sources** beneath replies to inspect dated previews, read source passages, and open an entry with its history.
+- Propose entry replacements in Chat, compare the proposed and current text, and choose **Apply change**, **Cancel change**, or **Review later**. Applying retains the previous version and checks for intervening edits.
+- Control **Available to Chat** for individual entries separately from retention. Archive can keep material out of the active Inbox while leaving retained text searchable.
 
 - Record with built-in or custom profiles, import audio and multi-image items, extract image text, attach images to notes, transcribe, edit, tag, search, archive, share, and back up voice and text items. Build tag-defined views, capture modes, retention policies, and automatic organization workflows without assigning rigid content types.
 - Normalize every completed transcript with configurable replacement rules, including multiple spelling and phrase variants plus dynamic date and time tokens.
@@ -19,24 +27,20 @@ Hyperscribe Mobile is a local-first voice, text, action, chat, and speech worksp
 
 ## PRO Features
 
-Hyperscribe Mobile v2.8.0 supports optional RykerSoft Pro Access for trusted family members.
+Hyperscribe Mobile supports optional RykerSoft Pro Access for trusted family members.
 
-- * Family provider access — after Google sign-in, the exact Hyperscribe Mobile package entitlement can supply configured Gemini, OpenAI, Groq, and ElevenLabs credentials in memory.
+- Family provider access — after Google sign-in, the exact Hyperscribe Mobile package entitlement can supply configured Gemini, OpenAI, Groq, and ElevenLabs credentials in memory.
 - Personal bring-your-own keys remain supported and take priority.
 - Recording, organization, local actions, backups, available local TTS, and every other free workflow remain usable without a RykerSoft account or Pro grant.
 
 ## Privacy
 
-Content is stored locally unless the user explicitly invokes a configured cloud provider or shares/exports it. Personal and Pro provider credentials are excluded from backups, diagnostics, source control, and release artifacts; Pro values are cleared from memory when access is lost.
+Saved content and its search index are stored on your device. When you use cloud Chat with saved-entry retrieval enabled, selected relevant excerpts are sent to your configured provider along with the conversation; the entire Inbox is not attached automatically. Search and optional English embeddings run locally, but cloud Chat still needs a provider connection. The optional related-idea model downloads about 23 MB over unmetered Wi-Fi.
+
+Turning retrieval off or excluding an entry affects future automatic retrieval; it does not remove excerpts already in conversations or explicitly attached content. Search availability does not override cleanup or expiry. Generated Chat answers stay in Chat unless you explicitly save them.
+
+Personal and Pro provider credentials are excluded from backups, diagnostics, source control, and release artifacts; Pro values are cleared from memory when access is lost.
 
 ## Support
 
 For support, contact heavensounds@gmail.com.
-
-## v2.6 workspace improvements
-
-Powerful saved Inbox views combine tags, media, search, and retention windows. Selected input stays visible across Actions, Custom, and Chat; multimodal Chat attachment review makes the included content explicit. Responsive segmented speech now supports Previous/Next and direct playlist navigation. Capture history, date dividers, compact controls, and Settings draft preservation improve everyday use.
-
-## v2.8 recording and action workspace
-
-A compact Inbox offers collapsible search and animated copy feedback. Capture profiles support voice and music; stop profiles can save audio, transcribe, run ordered actions, and copy the final result. Customize floating tabs and action shortcuts. Actions have an independent tag catalog, color-managed categories, and compact clipboard or Inbox input selection.
