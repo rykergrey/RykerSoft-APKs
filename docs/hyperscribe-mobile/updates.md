@@ -1,3 +1,10 @@
+# 2.13.2 — Chat commands and dated project updates
+
+- Create or extend text replacement rules with “Whenever I say X, I mean Y.” Check existing mappings, preserve unrelated settings, avoid duplicates, and leave conflicts unchanged.
+- Protect settings commands against replay after interruption or edits to past messages.
+- For current-status questions, reserve recent topic matches alongside relevant notes and instruct Chat to distinguish last known status, capture dates, event dates, plans, and conflicting updates.
+- Give conversational Chat an accurate list of supported app operations and require application execution before claiming success.
+
 # 2.13.1 — Names and search aliases
 
 - Use matching enabled text replacement rules as bidirectional knowledge-search aliases, so alternate spellings can find older saved entries without rewriting them or rebuilding the index.

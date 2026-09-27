@@ -3,7 +3,7 @@
 ## Android
 
 - Package: `com.rykersoft.hyperscribemobile`
-- Version: `2.13.1` (code 39)
+- Version: `2.13.2` (code 40)
 - Minimum Android: 10 / API 29
 - Target Android: API 36
 - Architectures: arm64-v8a and x86_64
@@ -20,6 +20,13 @@
 - Automatic retrieval selects up to eight source passages with bounded context instead of attaching the entire Inbox. Configured cloud Chat receives those excerpts; embeddings and retrieval run locally.
 - Source previews, passage reading, entry/history navigation, per-entry exclusion, and reviewed whole-entry replacements with revision checks and history preservation.
 - Raw audio and attachment bodies need transcription or text extraction before knowledge search can use them. Retention and expiry continue to apply. English semantic search is optional; no Jev service is integrated.
+
+## Chat operations and time-sensitive answers
+
+- Direct replacement commands check current settings and atomically create, extend, or re-enable a matching rule. Conflicting mappings are left unchanged; receipts and an attempt checkpoint prevent retrying an interrupted settings mutation.
+- Current-status queries with a named topic reserve up to four recent keyword passages alongside relevant evidence, within the existing eight-source/16,000-character budget. Historical queries retain ordinary retrieval.
+- Evidence includes retrieval time and capture dates. Model instructions distinguish save dates from event dates, plans from actual events, and last known status from current facts. There is no verified project-state ledger or guarantee of complete chronology.
+- Chat executes registered app operations. Other settings and workflows remain available through their UI; conversational text alone cannot perform unsupported operations.
 
 ## Providers
 

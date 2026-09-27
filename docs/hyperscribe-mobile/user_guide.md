@@ -57,6 +57,24 @@ Knowledge search also uses your enabled **Settings → Text replacements** rules
 
 Both spellings must belong to the same enabled rule. Search uses matching rules, not every name in your settings; it does not guess that all similar names identify the same person. Dynamic date/time replacement rules are not identity aliases. Changing or disabling a rule affects subsequent searches. Your original Chat message and saved entries are not rewritten. Alias matches improve retrieval, but results are still bounded and incomplete; check **Saved sources** when an answer misses something.
 
+### Create a replacement rule in Chat
+
+Send **Whenever I say Alyx, I mean Alex** as a new Chat message. You can also use **Add a text replacement: Alyx -> Alex**. The app checks its current rules, creates a missing rule, or adds the spelling to the rule for Alex. An existing enabled mapping is reported without duplication; a matching disabled rule is enabled. Unrelated settings and variants are preserved.
+
+A spelling already mapped to a different replacement is a conflict: the app leaves it unchanged and points you to **Settings → Text replacements**. Identical spellings do not create a redundant rule. These commands support static names and phrases; configure dynamic date/time replacements in Settings. Quoted examples and attached notes do not execute commands. Editing or regenerating an older Chat message does not change settings; send a new message to request a change. If a settings request is interrupted, check Settings before resending it.
+
+### Ask about current project status
+
+Name the project: for example, **What is the current status of project Aurora?** Current-status retrieval looks for recent topic matches as well as relevant excerpts, so an old note with the exact word “status” is less likely to crowd out a newer update. Historical questions such as **What was Aurora's status as of 2025?** use ordinary retrieval.
+
+A saved date is not necessarily an event date. A new note can quote an old update, and a plan is not evidence that the work happened. Chat is instructed to compare dates, identify contradictions, cite the evidence, and describe unverified information as the **latest saved update found**. If your most recent evidence is old, it should say so and ask for an update rather than present it as today's status.
+
+Retrieval remains bounded and can miss entries; Hyperscribe does not maintain a verified live project-state database. Use **Saved sources** to inspect the dated text, and save a fresh update when the situation changes. Old entries can remain useful history instead of being deleted.
+
+### What Chat can do
+
+Direct app handlers support saving notes, schedules and their controls, recording controls, library searches/counts, source reading, reviewed entry replacement, and the text replacement commands above. Chat receives guidance describing these supported routes. Other configuration and workflows still use the app's screens; a conversational claim alone is not proof that a setting or item changed. An app handler confirms an operation only after it runs.
+
 ### Read the sources
 
 After an answer, expand **Saved sources** to see capture dates, archived status, and short previews. Tap a source to open its relevant passage, then use **Read next passage**, **Start of entry**, or **Open entry & history**. Source text is read fresh. If it changed since the answer, the viewer tells you; deleted, expired, and knowledge-excluded sources show as unavailable. Larger source lists page eight entries at a time.
