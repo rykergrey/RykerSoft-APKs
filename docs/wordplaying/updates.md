@@ -1,5 +1,10 @@
 # Updates
 
+## v1.3.44 — Smoother Match Options transition
+
+- Prepare the complete Match Options page below Home before motion begins, so both pages travel upward together without a loading delay or opposing movement.
+- Prevent focus from scrolling the hidden options page into view while the transition is being prepared.
+
 ## v1.3.43 — Connected pages and consistent mode controls
 
 - Tie the home game tiles directly to scroll position: stop halfway, reverse direction, or keep scrolling without an automatic collapse animation.
