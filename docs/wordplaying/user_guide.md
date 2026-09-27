@@ -20,7 +20,7 @@ Choose Bungle to swipe words on a letter grid, or Scramble to place tiles and fo
 ## 1. How to play
 
 - Select **Bungle** for the letter-grid game described below, or **Scramble** for tile placement (section 12).
-- From the main menu, select **Create match**. The home page slides up to reveal the full-screen options page below. **Back** returns to your previous home position. Home game tiles shrink and expand in step with your scrolling.
+- From the main menu, select **Create match**. Home and the prepared full-screen options page move upward together as one continuous surface. **Back** returns to your previous home position. Home game tiles shrink and expand in step with your scrolling.
 - Drag across adjacent letters (including diagonals) to build a word, then release to submit.
 - Words must be at least 3 letters and in the dictionary. The same word only scores once per round.
 - A **Q** tile counts as **QU**. Longer words score more; some modifiers add boosts or combo multipliers.
