@@ -77,6 +77,8 @@ Direct app handlers support saving notes, schedules and their controls, recordin
 
 ### Read the sources
 
+Answers use brief source descriptions, dates, or labels such as **source 1**, so read-aloud does not recite internal source IDs. Exact references remain attached to **Saved sources** for opening entries and reviewing changes. This applies to new replies; existing saved conversation text is not rewritten.
+
 After an answer, expand **Saved sources** to see capture dates, archived status, and short previews. Tap a source to open its relevant passage, then use **Read next passage**, **Start of entry**, or **Open entry & history**. Source text is read fresh. If it changed since the answer, the viewer tells you; deleted, expired, and knowledge-excluded sources show as unavailable. Larger source lists page eight entries at a time.
 
 You can also type `Read source 1` or `Read entry <id> from <offset>` to read saved text in passages.

@@ -1,3 +1,9 @@
+# 2.13.3 — Read-aloud-friendly sources
+
+- Use source numbers, dates, and brief descriptions in new replies instead of opaque source IDs.
+- Keep exact source IDs and revision metadata in Saved sources for entry navigation and reviewed edits.
+- Filter known IDs before displaying or speaking streamed answers, including IDs split across provider chunks. Source reading and library summaries also use readable labels.
+
 # 2.13.2 — Chat commands and dated project updates
 
 - Create or extend text replacement rules with “Whenever I say X, I mean Y.” Check existing mappings, preserve unrelated settings, avoid duplicates, and leave conflicts unchanged.
