@@ -16,6 +16,7 @@ Choose Bungle to swipe words on a letter grid, or Scramble to place tiles and fo
 - [10. Comfort & accessibility](#10-comfort--accessibility)
 - [11. Windows desktop](#11-windows-desktop)
 - [12. Scramble](#12-scramble)
+- [13. Make it yours](#13-make-it-yours)
 
 ## 1. How to play
 
@@ -140,6 +141,13 @@ The current player's color fills the space around the board, colors the turn ban
 - Pass & Play needs no player-count setting. After a turn, review the words and points, enter initials, and pass to a new player or back to Player 1. Each receiving player taps **Continue** before their letters appear. On the first return, choose **I’m Player 1** or **I’m a new player**; Player 1 continuing sets the roster for subsequent rounds. Turn timers pause during handoffs.
 - Expand **Selected rules**, then choose **Save mode** to save your combination. Use **Load a mode** beside Match format to browse saved modes or import an image. Find it from **Home → Modes → Scramble → Saved**, on this device or in your account. Publishing to the community is a separate action.
 - Place tiles from your rack in one row or column to make connected words of at least two letters. The first play must cross the center square. Existing letters can form extra crossing words, and premium squares affect the score when first covered.
-- Tap a rack tile, then tap a board square. Select a blank's letter when prompted. Use **Undo**, **Redo**, **Recall**, **Shuffle**, or **Exchange** while preparing a turn, then tap **Submit**. Pass and resign are in the match menu.
-- Optional Builder rules include hidden or randomized bonuses, barriers, stacking, and falling tiles. Open a modifier chip during play to see its rules.
+- Tap a rack tile, then tap a board square. A dashed ghost previews the placement, while its marked letter stays in your tray. Tap that tray letter to recall it. Drag any tray letter to arrange the rack, or use Shift + Left/Right with a keyboard; Shuffle includes drafted letters and never moves their board positions. Select a blank's letter when prompted. Undo and Redo preserve both arrangements and draft placements. Tap **Submit** to commit. Pass and resign are in the match menu.
+- Optional Builder rules include hidden or randomized bonuses, barriers, stacking, falling tiles, and **Lasting Bonuses**. Lasting Bonuses reapplies DL/TL/DW/TW every time a scored word uses that square; its colored outline stays visible under the letter. Open a modifier chip during play to see its rules.
 - Local games save on this device. Finished online matches record verified results automatically. **Leaderboards** compare the same ruleset, player count, format, and turn clock; **Awards** shows Builder career milestones. Bungle career and season scores remain separate.
+
+## 13. Make it yours
+
+- Open the palette button on Home, or **Appearance** in Scramble's match menu. Mix coordinated palettes, tile finishes, and motion in a live preview; choose **Use this look** to apply earned pieces.
+- Try locked pieces freely. Rewards start at 3 completed matches and continue through 50; online wins provide an optional faster route. The studio shows the requirement for every piece and your next reward.
+- Bonus colors retain their meaning in every palette. Your current-turn drafts use the main accent; planning while waiting uses a separate accent. New letters are colored, while all contributing letters receive an outline.
+- Choices and locally earned rewards stay on this device for the current profile. Guest rewards stay with the guest profile; a local match only rewards one profile. Online eligibility is rebuilt from account statistics. See [Appearance system](appearance.md) for the complete collection and design rules.
