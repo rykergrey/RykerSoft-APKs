@@ -1,5 +1,14 @@
 # Updates
 
+## v1.3.45 — Make it yours
+
+- Introduce a coordinated charcoal-and-orange color system with distinct draft, contribution, stack, and premium-square accents.
+- Add Appearance Studio: five palettes, three tile finishes, and three motion styles with live previews. Eight optional cosmetic upgrades unlock through completed matches or online wins; choices and local progress stay per profile on this device.
+- Keep drafted letters visible and sortable in the rack, with ghost placements on the board and tap-to-recall.
+- Add Lasting Bonuses, reapplying premium squares whenever a scored word uses them, with persistent colored outlines.
+- Refine randomized opponent reveals, sequential score popups, complete multi-word tickers, modifier chips, and turn controls.
+- Keep turn notifications synchronized with current match state instead of retaining a history of completed turns.
+
 ## v1.3.44 — Smoother Match Options transition
 
 - Prepare the complete Match Options page below Home before motion begins, so both pages travel upward together without a loading delay or opposing movement.
