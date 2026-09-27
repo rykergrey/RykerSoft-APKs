@@ -45,6 +45,22 @@ In **Settings → Text replacements**, create a rule with the spelling or phrase
 
 Saved material supplies context, not guaranteed facts or a record of everything you believe. A collected quote may express somebody else's opinion. If an answer misses an entry, try a distinctive phrase, open it directly, or explicitly attach it to Chat.
 
+### Search and browse from Chat
+
+Ask **Search for Batman** or **Find notes mentioning Batman**. Chat creates a **Search results** card. Expand **Preview results** for five matching excerpts at a time; tap an entry to read its current text, or choose **Open in Inbox** for a larger, temporary search view. The query is already entered and active. **Next results** advances through matches without sending them to the AI provider. Previews use the entry's body text; entries do not need titles or tags.
+
+Search includes active and archived knowledge by default. Add **only active** or **in the archive** to the request, or use the Inbox search scope chips. Ordinary search requires all query words; quoted phrases, such as **Find notes containing "my favorite thing"**, match consecutive words. Enabled static text replacement aliases are included. Results are ordered by save date, newest first. This is text search; it does not promise every related idea or inspect attachments without extracted text.
+
+**Back to Chat** returns to the conversation. Leaving this temporary search preserves your previous Inbox filters and view. The Chat preview and Inbox use the same search specification. Results are fetched live rather than saved as a permanent list. If the library changes between pages, use **Refresh results**. Deleted, expired, excluded, and generated content is omitted; opening a result checks availability again. Older search cards retain the alias spellings used when created; send a new search after changing replacement rules.
+
+Search results are navigation aids, separate from **Saved sources** supplied to an answer. The expandable list and internal identifiers are not part of the spoken response. Explicit navigation works even when automatic knowledge retrieval is off, and does not need a Chat provider call.
+
+### Questions across multiple notes
+
+Questions such as **What are my 10 favorite things?** can gather more matching excerpts than an ordinary question. The first version searches for explicit favorite/favourite wording, including archived entries, and sends one bounded set of passages in a single AI request. It does not exhaustively infer preferences from everything you have captured. Other explicit collection questions, such as **Summarize all notes about Batman**, use the question's topic words.
+
+The app stops at its reading, candidate, or time budget and tells the model when coverage is partial. It also provides a search card so you can browse the underlying query. Ten matching short notes can all fit; a requested number does not guarantee that many supported findings. Quotes, former preferences, plans, and conflicting notes should be distinguished from current preferences. Check the sources. Use **Stop response** to cancel while searching or generating.
+
 ### Control search and indexing
 
 Inbox remains the place to capture and organize material. **My knowledge** is the saved text Chat can search, including archived entries. Open the compact **My knowledge** control in Chat to turn automatic retrieval on or off. Changes take effect immediately for future messages and leave your current draft intact. Explicitly attached entries and excerpts already in the conversation remain available in that conversation.

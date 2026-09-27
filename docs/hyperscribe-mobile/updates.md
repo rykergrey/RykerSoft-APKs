@@ -1,3 +1,11 @@
+# 2.14.0 — Browse your knowledge from Chat
+
+- Ask **Search for Batman** for a native search card with expandable, clickable excerpts and **Open in Inbox**. Browse local matches without sending the result list to the AI provider or reading it aloud.
+- Search active and archived entries with the same query, scope, aliases, and ordering in Chat and the temporary Inbox search. Page beyond the previous candidate window; refresh if the library changes.
+- Preserve the previous Inbox view on exit and suspend its full-library rendering observer while browsing the temporary search.
+- Let explicit collection questions gather up to forty matching excerpts in one bounded provider request. Explain partial coverage rather than implying an exhaustive review of the library or of inferred preferences.
+- Exclude expired entries from explicit librarian counts before cleanup and recheck result availability when opening an entry.
+
 # 2.13.3 — Read-aloud-friendly sources
 
 - Use source numbers, dates, and brief descriptions in new replies instead of opaque source IDs.
