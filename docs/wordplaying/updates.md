@@ -1,5 +1,11 @@
 # Updates
 
+## v1.3.43 — Connected pages and consistent mode controls
+
+- Tie the home game tiles directly to scroll position: stop halfway, reverse direction, or keep scrolling without an automatic collapse animation.
+- Reveal full-screen Match Options below the home page with a vertical transition, preserving your home position when you go back.
+- Give Bungle and Scramble the same Load a mode control and expandable Selected rules summary. Save mode now lives inside the summary, leaving Start match as the primary footer action.
+
 ## v1.3.42 — Smoother scrolling and option menus
 
 - Smoothly collapse and expand the Bungle and Scramble game tiles while scrolling the home screen.
@@ -442,4 +448,3 @@ Career Leaderboards, Daily Fair-Play Standings & Gravity Integrity
 - Weekly seasons / leaderboards and season recap
 - Audio Lab synth workstation and word gallery with dictionary lookups
 - Signed Android release APK for Application Manager install
-
