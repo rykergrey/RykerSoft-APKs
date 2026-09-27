@@ -20,7 +20,7 @@ Choose Bungle to swipe words on a letter grid, or Scramble to place tiles and fo
 ## 1. How to play
 
 - Select **Bungle** for the letter-grid game described below, or **Scramble** for tile placement (section 12).
-- From the main menu, start a new match.
+- From the main menu, select **Create match**. The home page slides up to reveal the full-screen options page below. **Back** returns to your previous home position. Home game tiles shrink and expand in step with your scrolling.
 - Drag across adjacent letters (including diagonals) to build a word, then release to submit.
 - Words must be at least 3 letters and in the dictionary. The same word only scores once per round.
 - A **Q** tile counts as **QU**. Longer words score more; some modifiers add boosts or combo multipliers.
@@ -36,7 +36,7 @@ Choose Bungle to swipe words on a letter grid, or Scramble to place tiles and fo
 - Enable modifiers (Letter Lock, Gravity, Blind Mode, Combo Meter, Reroll, First Claim, Color Bonus, and others) or pick a preset such as Classic or Zenith of Chaos. In Letter Lock, reusing a tile in a valid word breaks every older scored word that overlaps it; invalid attempts leave those words intact.
 - **Color Bonus** adds three each of red, yellow, and blue tiles on 4×4 boards, or four each on 5×5 boards. A word using three tiles of one color earns +25% (at least 1 point), while four earns +50% (at least 2); different qualifying colors stack additively.
 - **Word Grid** lets you swap any two tiles and swipe adjacent letters to lock words. Swaps recalculate which words remain valid. Tap the option chip for the complete rules.
-- Use **Save / lists** to save match options privately and organize them in named lists. The home screen's **Modes** tab includes the community directory, weekly top-ten charts, Upvoted, Saved, and your lists. The same library is available through **Load a mode**. **Saved → On this device** holds device saves; **Save to account** copies one into your private library with its name and your chosen lists.
+- In either game, expand **Selected rules** above **Start match**, then choose **Save mode** to save your settings privately to your account or device. Bungle account modes can also be organized in named lists. The home screen's **Modes** tab includes the community directory, weekly top-ten charts, Upvoted, Saved, and your lists. The same library is available through **Load a mode**. **Saved → On this device** holds device saves; **Save to account** copies one into your private library with its name and your chosen lists.
 - Modifier cards stay in place as you select them. Replacing incompatible options shows what changed and offers **Undo**. **Most used** counts starts on this device. Expand the summary above Start Match to inspect every selected option.
 - Load or share saved modes, import them from an image, or randomize a loadout.
 - Open **About** for rules and modifier descriptions; **Changelog** for release notes.
@@ -138,7 +138,7 @@ The current player's color fills the space around the board, colors the turn ban
 - Choose **Scramble**, then **Solo** or **Multiplayer**. Multiplayer offers **Pass & Play**, **Online**, and **Vs Raid**. Online play requires sign-in; share the room code or invite players in game. Raid’s built-in opponent works offline.
 - Choose a small **11×11**, standard **15×15**, or large **19×19** board. **Turns per player** is **5**, **10**, or **Unlimited**. The separate **Turn timer** is **30 sec**, **1 min**, **2 min**, or **Unlimited**. A timed-out turn passes automatically. Normal end rules can finish a match before its turn cap.
 - Pass & Play needs no player-count setting. After a turn, review the words and points, enter initials, and pass to a new player or back to Player 1. Each receiving player taps **Continue** before their letters appear. On the first return, choose **I’m Player 1** or **I’m a new player**; Player 1 continuing sets the roster for subsequent rounds. Turn timers pause during handoffs.
-- Save your combination under **Save, load & share modes**. Find it from **Home → Modes → Scramble → Saved**, on this device or in your account. Publishing to the community is a separate action.
+- Expand **Selected rules**, then choose **Save mode** to save your combination. Use **Load a mode** beside Match format to browse saved modes or import an image. Find it from **Home → Modes → Scramble → Saved**, on this device or in your account. Publishing to the community is a separate action.
 - Place tiles from your rack in one row or column to make connected words of at least two letters. The first play must cross the center square. Existing letters can form extra crossing words, and premium squares affect the score when first covered.
 - Tap a rack tile, then tap a board square. Select a blank's letter when prompted. Use **Undo**, **Redo**, **Recall**, **Shuffle**, or **Exchange** while preparing a turn, then tap **Submit**. Pass and resign are in the match menu.
 - Optional Builder rules include hidden or randomized bonuses, barriers, stacking, and falling tiles. Open a modifier chip during play to see its rules.
