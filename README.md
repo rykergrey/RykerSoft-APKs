@@ -1,6 +1,6 @@
 # RykerSoft Public Distribution
 
-This repository contains the reviewed current Android and Windows release artifacts and hub documentation referenced by the RykerSoft Application Manager.
+This repository contains the reviewed current Android, Windows, and Linux release artifacts and hub documentation referenced by the RykerSoft Application Manager.
 
 - Downloads and documentation are intentionally public and anonymously accessible.
 - Application source code may live in separate private repositories.

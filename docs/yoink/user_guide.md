@@ -21,6 +21,8 @@ Choose Video or Audio, select a preset, and expand Advanced when you need an exa
 
 Open a completed download or import a local file. Use the timeline and exact time fields to create up to ten-second initial selections, split or add clips, then export precise or lossless versions. Metadata, track selection, joining, audio replacement, overlays, and other supported FFmpeg operations create new versions while preserving the original.
 
+Studio autosaves independent editing sessions for each video. Back closes the editor after saving, and reopening the video restores the selected tool and timeline. Use **Proxy** in the editor header to preview a cached, easier-to-seek copy while exports continue to use the original media.
+
 ## AI connections
 
 Open **AI connection** from Studio. You can enter personal OpenAI, Gemini, or Groq keys for the current app session. On desktop, the installed official Codex CLI can also connect an eligible ChatGPT plan for text planning and questions; transcription still needs OpenAI or Groq.
