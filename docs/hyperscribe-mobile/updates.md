@@ -1,3 +1,9 @@
+# 2.15.0 — Voice reminders and browsable answers
+
+- Understand reminder requests inside longer voice messages from Chat or Index 01. Create an Inbox item with a short task title, the saved spoken transcription, configured auto-tags, and an alert at the requested time.
+- Keep the Alerts tab visible for every Inbox item, including items without alerts, so an alert can be added later. Show scheduled alerts there and allow follow-up controls to use the short task title.
+- Open saved sources and search results directly from Chat, with consistent result cards and local Inbox navigation.
+
 # 2.14.0 — Browse your knowledge from Chat
 
 - Ask **Search for Batman** for a native search card with expandable, clickable excerpts and **Open in Inbox**. Browse local matches without sending the result list to the AI provider or reading it aloud.

@@ -34,6 +34,8 @@ Actions transform text or Inbox content. When one or more Inbox text items or re
 
 In **Settings → Text replacements**, create a rule with the spelling or phrase you want as its replacement, then add any number of spoken or misspelled variants. For example, a `Crystal` rule can include `Kristal`, `Krystal`, and `my wife`; every completed transcript converts those variants to `Crystal` before it is saved or routed elsewhere. Matching is case-insensitive and uses whole words or phrases. Replacements may also contain `{current_date}`, `{date_stamp}`, `{current_day}`, `{current_month}`, `{current_year}`, `{current_time}`, or `{timestamp}` to insert the current local date or time.
 
+For a voice request such as “I need groceries tonight, so remind me in four hours to ask my wife what we need,” Chat creates a scheduled Inbox entry. The item keeps the spoken transcription, shows a short task title, and receives matching automatic tags. Open the item and choose **Alerts** to check or change the scheduled alert. Every saved item's viewer has an Alerts tab, so you can add one later too. If the request lacks a usable time, Chat asks for one before creating the alert.
+
 ## My knowledge in Chat
 
 ### Start with what you already save

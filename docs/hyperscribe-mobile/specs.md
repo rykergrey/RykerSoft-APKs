@@ -3,7 +3,7 @@
 ## Android
 
 - Package: `com.rykersoft.hyperscribemobile`
-- Version: `2.14.0` (code 42)
+- Version: `2.15.0` (code 43)
 - Minimum Android: 10 / API 29
 - Target Android: API 36
 - Architectures: arm64-v8a and x86_64
@@ -28,6 +28,7 @@
 
 ## Chat operations and time-sensitive answers
 
+- Explicit embedded reminder requests in longer Chat or Index 01 speech are parsed locally after transcription normalization. The saved item retains the original request, carries a concise assistant title, receives configured auto-tags, and schedules a local reminder. Every Inbox viewer exposes alert controls, including for items without an existing alert.
 - Direct replacement commands check current settings and atomically create, extend, or re-enable a matching rule. Conflicting mappings are left unchanged; receipts and an attempt checkpoint prevent retrying an interrupted settings mutation.
 - Current-status queries with a named topic reserve up to four recent keyword passages alongside relevant evidence, within the existing eight-source/16,000-character budget. Historical queries retain ordinary retrieval.
 - Evidence includes retrieval time and capture dates. Model instructions distinguish save dates from event dates, plans from actual events, and last known status from current facts. There is no verified project-state ledger or guarantee of complete chronology.

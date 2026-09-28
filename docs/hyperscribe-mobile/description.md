@@ -14,6 +14,7 @@ Inbox remains your everyday capture and organization space. **My knowledge** bri
 - Ask about project status with recent topic matches alongside relevant notes, dated sources, and explicit guidance to distinguish the last known update from current reality.
 - Open **My knowledge** from Chat to control retrieval, check indexing progress, or rebuild the search index without losing your draft.
 - Hear readable source references instead of long internal IDs when Chat speaks its replies.
+- Ask for a reminder as part of a longer voice thought. Chat saves the spoken words with a concise Inbox title, applies matching tags, and schedules the requested alert. Every Inbox item has an Alerts tab for reviewing or adding alerts.
 - Expand **Saved sources** beneath replies to inspect dated previews, read source passages, and open an entry with its history.
 - Propose entry replacements in Chat, compare the proposed and current text, and choose **Apply change**, **Cancel change**, or **Review later**. Applying retains the previous version and checks for intervening edits.
 - Control **Available to Chat** for individual entries separately from retention. Archive can keep material out of the active Inbox while leaving retained text searchable.
