@@ -1,6 +1,6 @@
 # Android specifications
 
-- Version 0.1.26, version code 27.
+- Version 0.1.27, version code 28.
 - Package: `app.flux.download`.
 - Android 8.0 (API 26) or later; arm64-v8a and x86_64.
 - Kotlin host with the shared React interface, bundled yt-dlp and FFmpeg through youtubedl-android 0.18.1.

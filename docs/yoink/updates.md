@@ -1,5 +1,11 @@
 # yoink. Release Updates
 
+## 0.1.27
+
+- Move mobile Library status, media type, and sort controls into one title bar filter button, removing the bottom filter strip and Library heading.
+- Replace card status icons with a three-dot menu for Media details and Clip history.
+- Show only the active video while viewing or editing; close the expanded video from its three-dot menu.
+
 ## 0.1.26
 
 - Save independent editing sessions per video, including the selected tool, clips, timeline view, export settings, and playhead. Back closes the editor from any tool after autosaving; reopening the video restores the saved session.

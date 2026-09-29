@@ -11,7 +11,9 @@
 
 ## Getting started
 
-Install the package for your operating system, then install `yt-dlp`, `ffmpeg`, and `ffprobe` and ensure all three commands are available on `PATH`. Open yoink. and paste a supported media URL, or open Studio and import a local media file.
+Install the package for your operating system. On Linux, open **Settings → Engine updates** to check for `yt-dlp`, `ffmpeg`, and `ffprobe`. On Arch/Omarchy and Debian/Ubuntu, **Install or repair Linux tools** opens a terminal with the distribution package manager; review and confirm its transaction. Debian packages also declare the tools and playback plugins as dependencies when installed through a package manager. AppImage and manual installs need the system packages installed separately. Open yoink. and paste a supported media URL, or open Studio and import a local media file.
+
+On portrait screens, use the filter button in the title bar to choose download status, media type, and sort order. The library starts directly below the title bar. Open a completed video to focus on it alone; its three-dot menu contains Media details, Clip history, and Close video.
 
 ## Downloading media
 
