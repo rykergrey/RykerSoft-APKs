@@ -1,26 +1,24 @@
 # Home navigation
 
-The home screen centers on choosing the next match:
+The home screen opens with all games together and centers on choosing the next match:
 
-- **Matches → Challenges** lists unplayed community challenges from this week.
-  When there are none, the next unplayed daily appears directly with its Play
-  button, option descriptions, and player activity. Daily retains the full checklist.
-- **Matches → Daily** shows all five current Daily Boards, even before anyone
-  plays them. Each card offers its complete option descriptions, available/used/
-  completed status, and player count. Submitted boards display the viewer's score,
-  rank, leading score, and expandable full standings. Scores stay hidden until
-  the viewer's account has a submitted leaderboard entry for that exact board.
+- **Matches** combines available Bungle challenges and Daily Boards with ongoing
+  Bungle and Scramble multiplayer matches. Cards show a B or S badge, game name,
+  status, match options, and modifiers. The list sorts by latest activity; All,
+  Ready, and Ongoing shortcuts and Type and Status filters help narrow it.
+  Daily retains all five current boards even before anyone plays them. Scores
+  stay hidden until the viewer submits a result for that exact board.
 - **Modes** contains the community directory, weekly and all-time top-ten charts,
   latest discoveries, Upvoted, Saved, and named private lists. A mode opens Match
   Options for review before play, retaining audio preference and using a fresh
   board. It never imports ranked attempt IDs.
-- **Leaderboards → My standings** holds awaiting-opponent, winning, tied, and outranked submitted community matches and
-  the weekly recap. **Rankings** offers Today, This week, and per-board scores for
-  days in the current week. **Career** retains lifetime rankings.
+- **Leaderboards** puts submitted results with the latest opponent activity first,
+  followed by rankings for the current Monday–Sunday season and career records.
+  Individual season score rows expire after the weekly recap; career totals remain.
 - **Awards** retains achievements, career progress, and streaks.
 
 The separate Daily Boards modal and footer button are removed. Result-screen
-links and Play Again after a daily match return to **Matches → Daily**. Past boards
+links and Play Again after a daily match return to **Matches** with the Daily type filter. Past boards
 remain accessible as rankings, with the same submission requirement; they cannot
 be replayed. The home screen detects the Pacific date change on a timer and on
 returning to the tab, refreshing today's boards automatically.

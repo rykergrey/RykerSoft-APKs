@@ -21,7 +21,7 @@ Choose Bungle to swipe words on a letter grid, or Scramble to place tiles and fo
 ## 1. How to play
 
 - Select **Bungle** for the letter-grid game described below, or **Scramble** for tile placement (section 12).
-- From the main menu, select **Create match**. Home and the prepared full-screen options page move upward together as one continuous surface. **Back** returns to your previous home position. Home game tiles shrink and expand in step with your scrolling.
+- Home opens with **All games** selected. The Matches, Modes, Leaderboards, and Awards tabs show Bungle and Scramble together. Use the **Show** menu to focus on one game. Match cards carry a small B or S badge and game name, and Matches is ordered by most recent activity. Select **Create match** to open the full-screen options page; **Back** returns to Home.
 - Drag across adjacent letters (including diagonals) to build a word, then release to submit.
 - Words must be at least 3 letters and in the dictionary. The same word only scores once per round.
 - A **Q** tile counts as **QU**. Longer words score more; some modifiers add boosts or combo multipliers.
@@ -49,10 +49,10 @@ Choose Bungle to swipe words on a letter grid, or Scramble to place tiles and fo
 - Sign in before starting a compatible solo game if you may want to post it. WordPlay.ing transparently reserves an eligible trusted draft before revealing the tiles; only that pre-reserved result can become a public challenge or best-of-three series.
 - If the trusted draft cannot be reserved (for example, while offline), solo play still starts locally, but that completed board cannot be published afterward.
 - A registered account is required before a community challenge board is shown.
-- On the Matches tab, open **Challenges** for this week. Opening the board secures your one competitive attempt to that account.
+- On the Matches tab, choose **Challenge** from the Type filter to find this week's challenges. Opening a board secures your one competitive attempt to that account.
 - Your first result is recorded automatically. You may retry the board afterward for practice, but practice results never replace the competitive score or affect standings.
 - Check **Leaderboards → My standings** for winning / outranked status and tap players to see their word lists.
-- Open **Matches → Daily** for all five Daily Boards, their options, and completion status. Scores unlock after your account submits that board; then you can see your rank, the leading score, and expand all scores. The separate Daily Boards popup has been replaced by this home view.
+- Open **Matches**, then choose **Daily** from the Type filter for all five Daily Boards, their options, and completion status. Scores unlock after your account submits that board; then you can see your rank, the leading score, and expand all scores.
 - Challenges reset on a Monday weekly cadence with the season.
 
 ## 4. Local pass & play
@@ -127,27 +127,35 @@ The current player's color fills the space around the board, colors the turn ban
 - The guided first-run tutorial introduces selection, scoring, Daily Board play, progression, and comfort options.
 - Dialogs manage keyboard focus, tiles expose accessible labels, and live announcements describe the active selection.
 
-## 11. Windows desktop
+## 11. Android updates
+
+- When a newer Android release is available on RykerSoft, the bell on Home shows an update notice. The notice stays until you upgrade, even if you are signed out.
+- Open **Notifications → WordPlay.ing update available → Update now** to read the release notes and download the APK. If Android asks, allow WordPlay.ing to install updates, then confirm the install in Android's installer.
+
+## 12. Windows desktop
 
 - Run the portable WordPlay.ing executable; no installer is required.
 - Google sign-in opens from the packaged app's private loopback origin; no game server is exposed to the network.
 - Use the custom title bar to minimize, maximize, or close the app.
 - Windows may show a publisher warning because the portable desktop executable is not code-signed.
 
-## 12. Scramble
+## 13. Scramble
+
+- Tap the board to zoom; drag or pinch to explore. The zoomed board fills the play area behind the top information and bottom controls, and you can pan every edge clear of those overlays. The color key above your letters identifies double/triple letter and word bonuses, including the colored outlines on covered bonus cells.
 
 - Choose **Scramble**, then **Solo** or **Multiplayer**. Multiplayer offers **Pass & Play**, **Online**, and **Vs Raid**. Online play requires sign-in; share the room code or invite players in game. Raid’s built-in opponent works offline.
 - Choose a small **11×11**, standard **15×15**, or large **19×19** board. **Turns per player** is **5**, **10**, or **Unlimited**. The separate **Turn timer** is **30 sec**, **1 min**, **2 min**, or **Unlimited**. A timed-out turn passes automatically. Normal end rules can finish a match before its turn cap.
 - Pass & Play needs no player-count setting. After a turn, review the words and points, enter initials, and pass to a new player or back to Player 1. Each receiving player taps **Continue** before their letters appear. On the first return, choose **I’m Player 1** or **I’m a new player**; Player 1 continuing sets the roster for subsequent rounds. Turn timers pause during handoffs.
 - Expand **Selected rules**, then choose **Save mode** to save your combination. Use **Load a mode** beside Match format to browse saved modes or import an image. Find it from **Home → Modes → Scramble → Saved**, on this device or in your account. Publishing to the community is a separate action.
 - Place tiles from your rack in one row or column to make connected words of at least two letters. The first play must cross the center square. Existing letters can form extra crossing words, and premium squares affect the score when first covered.
-- Tap a rack tile, then tap a board square. A dashed ghost previews the placement, while its marked letter stays in your tray. Tap that tray letter to recall it. Drag any tray letter to arrange the rack, or use Shift + Left/Right with a keyboard; Shuffle includes drafted letters and never moves their board positions. Select a blank's letter when prompted. Undo and Redo preserve both arrangements and draft placements. Tap **Submit** to commit. Pass and resign are in the match menu.
+- Tap a rack tile, then tap a board square, or drag the tile directly onto a square. Dragging uses the board's current zoom and position without changing either. A dashed ghost previews the placement, while its marked letter stays in your tray. Tap that tray letter to recall it. Drag within the tray to arrange the rack, or use Shift + Left/Right with a keyboard; Shuffle includes drafted letters and never moves their board positions. Select a blank's letter when prompted. Undo and Redo preserve both arrangements and draft placements. Exchange, Shuffle, Undo, and Redo share one evenly spaced row. The bottom row has **Back** on the left and the larger **Submit** button on the right; Submit commits your turn. Pass and resign are in the match menu.
 - Optional Builder rules include hidden or randomized bonuses, barriers, stacking, falling tiles, and **Lasting Bonuses**. Lasting Bonuses reapplies DL/TL/DW/TW every time a scored word uses that square; its colored outline stays visible under the letter. Open a modifier chip during play to see its rules.
 - Local games save on this device. Finished online matches record verified results automatically. **Leaderboards** compare the same ruleset, player count, format, and turn clock; **Awards** shows Builder career milestones. Bungle career and season scores remain separate.
 
-## 13. Make it yours
+## 14. Make it yours
 
-- Open the palette button on Home, or **Appearance** in Scramble's match menu. Mix coordinated palettes, tile finishes, and motion in a live preview; choose **Use this look** to apply earned pieces.
-- Try locked pieces freely. Rewards start at 3 completed matches and continue through 50; online wins provide an optional faster route. The studio shows the requirement for every piece and your next reward.
+- Open the palette button on Home, or **Appearance** in Scramble's match menu. Mix neon arcade palettes, tile finishes, interface styles, and motion in a live preview; choose **Use this look** to apply earned pieces. The collection has 8 palettes, 6 tile finishes, 5 interface styles, and 3 motion options: 4 starters and 18 earnable upgrades.
+- Scroll each category to browse its whole collection. Locked pieces show a name, silhouette, lock, and requirement; their looks cannot be previewed until earned. Each category shows its unlocked percentage. Tap the board preview to switch between Bungle and Scramble, or tap **Replay** to replay its brief animation.
+- Earn vector outlines, terminal double borders, clipped corners, and grid-backed controls through play. Rewards start at 3 completed matches and continue through 125; online wins offer an optional faster route. Each locked piece shows its requirement, and existing progress is preserved.
 - Bonus colors retain their meaning in every palette. Your current-turn drafts use the main accent; planning while waiting uses a separate accent. New letters are colored, while all contributing letters receive an outline.
 - Choices and locally earned rewards stay on this device for the current profile. Guest rewards stay with the guest profile; a local match only rewards one profile. Online eligibility is rebuilt from account statistics. See [Appearance system](appearance.md) for the complete collection and design rules.

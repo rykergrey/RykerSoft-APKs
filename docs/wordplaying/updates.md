@@ -1,5 +1,39 @@
 # Updates
 
+## v1.3.50 — Matches and seasonal standings
+
+- Bring Bungle and Scramble matches together on Home, with clear game badges and filters. Keep playable challenges, daily boards, and live turns in Matches; put submitted results in Leaderboards.
+- Show match rules and modifiers directly on the cards, and keep the Daily board list available even before other players submit scores.
+- Put recently updated submitted matches first in My standings so new opponent scores are easy to find. Keep rankings within the current seven-day season while preserving career statistics.
+- Improve mode discovery, awards, and match setup across both games.
+
+## v1.3.49 — Updates in Notifications
+
+- Check RykerSoft for a newer Android version when the app opens and when it returns online.
+- Keep an update notice in Notifications, including for signed-out players, until the installed version catches up.
+- Open release notes and download the verified APK directly from the notice, then confirm installation with Android.
+
+## v1.3.48 — Clearer match results and notifications
+
+- Show the played mode by name on Time's Up, display an existing vote, and let players change their upvote or downvote. Built-in modes keep their names and never ask for a discovery name.
+- Show a combined word list after multiplayer matches, with compact player labels beside each word so shared and unique finds are easy to compare.
+- Rename the home header to WordPlay. Move the account action into the left-aligned notifications panel and make the icon-only push alert control turn alerts on or off.
+- Close notifications with Escape, Android back, or a tap outside the panel.
+
+## v1.3.47 — Cleaner Scramble board
+
+- Blend the bonus-color legend into the top interface with a dark background that fades into the board.
+- Keep the turn ticker above the letter tray and remove routine placement hints beside Your Letters.
+
+## v1.3.46 — Neon collection
+
+- Expand the retro arcade collection to eight palettes, six tile finishes, five interface styles, and three motion choices: four starters and 18 earnable upgrades.
+- Keep every locked option browsable as a named silhouette with an unlock requirement, without exposing or applying its look. Show completion percentages for each category.
+- Switch between real Bungle and Scramble tile previews with a tap. Apply the same palettes, finishes, and restrained one-shot motion to both games.
+- Improve letter spacing around stack indicators, bonus labels, and point values, including Bungle's Qu tiles.
+- Drag rack letters directly onto Scramble's board at the current zoom; use equal-sized Exchange, Shuffle, Undo, and Redo controls, plus a reachable Back button beside Submit.
+- Let the zoomed board extend behind the top and bottom overlays, and show a compact bonus-color legend.
+
 ## v1.3.45 — Make it yours
 
 - Introduce a coordinated charcoal-and-orange color system with distinct draft, contribution, stack, and premium-square accents.
