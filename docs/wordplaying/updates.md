@@ -1,5 +1,11 @@
 # Updates
 
+## v1.3.51 — Clearer Scramble tiles
+
+- Keep every board letter in the same position, whether or not its tile has a stack count.
+- Enlarge the stack count and point value in the lower corners.
+- Mark a reusable bonus with a bold, colored point value: teal/blue for double/triple letter and orange/red for double/triple word.
+
 ## v1.3.50 — Matches and seasonal standings
 
 - Bring Bungle and Scramble matches together on Home, with clear game badges and filters. Keep playable challenges, daily boards, and live turns in Matches; put submitted results in Leaderboards.
