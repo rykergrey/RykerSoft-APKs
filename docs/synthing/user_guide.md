@@ -2,7 +2,7 @@
 
 Synthing is an Android music sketchpad for chords, melodies, arrangements, and dual synth voices.
 
-This guide covers **v1.0.14**. The update reduces repeated drawing work and adds clearer save and audio-recovery feedback.
+This guide covers **v1.0.15**. The update aligns the GRID and KEYS editor Preview keyboard with its touch targets in FILTER and COLORS.
 
 ## Table of Contents
 
@@ -52,6 +52,15 @@ Projects load in the background. If startup shows **Couldn’t open your project
 Both standard and dual-row keyboards keep the complete 88-key range, A0 through C8, prepared while they are present. Quickly revealing offscreen keys does not wait for those keys to be built. When resizing fixed-cell grids, Synth A keeps its left corner anchored and Synth B keeps its right corner anchored, including fractional pan positions.
 
 Previously visited tabs stay prepared for returning to them; hidden playhead displays stop collecting visual updates. Audio and recording timing continue independently of how often the screen redraws.
+
+### Editing grid and keyboard notes
+
+Open edit mode for a **GRID** or **KEYS** surface on either synth. The editor places its tools beside a **PREVIEW** keyboard.
+
+- In **FILTER**, choose the key and scale type and use the preview to edit note inclusion.
+- In **COLORS**, choose a color and tap a preview note to paint it, or select a note first and then choose its color. Tap a selected note again to clear its color.
+- The preview shows one complete octave from **C** through **B**, including the sharp keys. It fits the available panel width, so tapping a displayed note such as **A** selects that note even after the panel is resized.
+- White keys also respond in their exposed upper areas beside the black keys. Tap a black key directly to select its sharp note.
 
 ### Tempo and scale
 

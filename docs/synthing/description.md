@@ -2,13 +2,14 @@
 
 Synthing is an Android music sketchpad with a continuous arrangement timeline, dual synth voices, chord grids, scale-aware keyboards, and a piano-roll editor backed by a native low-latency Oboe engine.
 
-Version **1.0.14** focuses on Play-grid resizing, dense visual editing, and project/audio reliability. Display updates follow screen frames while native audio and recording keep their own timing.
+Version **1.0.15** corrects the Preview keyboard in the GRID and KEYS editors. In **FILTER** and **COLORS**, the complete octave fits the available panel and touch targets match the displayed notes, including after resizing. The fix applies to both Synth A and Synth B.
 
 ## Features
 
 - Continuous infinite-arrangement timeline with arrangement-wide loop IN/OUT markers
 - Dual Synth A / Synth B subtractive engines with presets, modulators, LFO, and FX
 - Play tab chord pads, scale-aware keys, and isomorphic grids with performance toggles
+- GRID and KEYS editors with note filters, pitch-class colors, arpeggiator settings, and an octave preview whose visible keys and touch targets fit the panel together
 - Standard and dual-row keyboards keep the full 88-key range prepared for immediate reveal and playing; cached grid shapes, labels, and note highlights reduce repeated work during resizing
 - Piano-roll editor with touchpads, snap/quantize, automation lanes, and note links
 - Cached note, link, and automation drawing with viewport indexes that retain sustained notes and curves crossing the screen; separate moving playheads and growing recording overlays

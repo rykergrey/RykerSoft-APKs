@@ -1,5 +1,14 @@
 # Synthing Updates
 
+## v1.0.15
+
+September 30, 2026 — Preview keyboard alignment fix. Android versionCode **16**.
+
+- Fit the complete C–B octave, including sharp keys, inside the GRID and KEYS editor Preview panel in **FILTER** and **COLORS** for both Synth A and Synth B.
+- Align note labels, drawn keys, and touch targets with the current preview width, including after resizing. Tapping the displayed A selects A instead of a neighboring note.
+- Make exposed white-key areas beside the black keys respond to their own notes, including at the top of the keyboard.
+- Add Compose UI regression coverage for every white and black note label across both tabs and multiple preview widths, plus exposed white-key tops.
+
 ## v1.0.14
 
 Performance and reliability release — Android versionCode **15**.

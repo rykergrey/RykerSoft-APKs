@@ -7,7 +7,7 @@
 | Product name | Synthing |
 | Package / applicationId | `com.rykersoft.synthing` |
 | Namespace | `com.rykersoft.synthing` |
-| Latest version | 1.0.14 (versionCode 15) |
+| Latest version | 1.0.15 (versionCode 16) |
 
 ## Platform requirements
 
@@ -58,6 +58,8 @@ UI (Compose, ui/main/)
 ## Rendering and release optimization
 
 - Standard and dual-row keyboards prepare all 88 pitches from A0 to C8, including offscreen keys
+- GRID/KEYS edit previews use a shared C4–B4 keybed for both synths. Its seven white-key columns derive from the available preview width; hit testing uses the current viewport and checks black-key regions before exposed white-key regions
+- Compose UI regression tests cover FILTER/COLORS note-label touch mapping through repeated resizes, label containment, paired note presses/releases, and exposed white-key tops
 - Cached grid geometry, labels, and note-highlight decisions; resize handling preserves Synth A's left and Synth B's right anchor
 - Static piano-roll/overview layers are separate from playheads and live recording bars; viewport indexes include sustained notes and crossing automation segments
 - Automation paths use adjacent-node interpolation; note-link paths and pitch-row lookups are reused
