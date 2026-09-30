@@ -1,5 +1,21 @@
 # Synthing Updates
 
+## v1.0.14
+
+Performance and reliability release — Android versionCode **15**.
+
+- Reduce repeated work when resizing Play grids by caching cell shapes, labels, pitch lookups, and highlight decisions. Standard and dual-row keyboards retain all 88 keys, including offscreen keys, ready for immediate reveal and playing.
+- Retain piano-roll and clip-overview note/grid drawing while updating playheads and growing recorded notes separately. Long recording holds expand overview bounds by whole bars.
+- Cache note links and automation paths, interpolate between neighboring automation points, and use viewport indexes for notes, curve segments, and handles, including sustained notes and curves crossing the screen.
+- Keep display-frame sampling separate from native audio and recording timing. Draw launcher progress without resizing its layout, reuse unchanged playback schedules, and stop hidden visual clocks and inactive edit/target pulses.
+- Apply synth changes immediately while coalescing saved snapshots. Project, clip, scope, preview, copy/template, export, and lifecycle transitions retain the pending edits in their original destination.
+- Keep project and section deletion isolated from the replacement workspace. New projects and chord-sheet imports no longer inherit another project's notes, and creating a project saves the previous take first.
+- Order atomic saves and deletes through one background writer. Failed saves remain available for retry; **Changes not saved yet.** and **Retry** make failures visible. Pausing captures the latest state and queues disk work without blocking the screen.
+- Load projects and read, write, and encode imported/exported documents in the background. Separate export payloads and an in-flight guard prevent overlapping MIDI/WAV requests from mixing files.
+- Protect native engine lifetime during pause/resume and pending audio callbacks, publish playback schedules through owned snapshots, and finalize held-note recording before stopping or changing projects.
+- Reserve command capacity for note releases and stops, retain final patch/routing settings during saturation, and use bounded arpeggiator storage. If critical audio command capacity is exhausted, playback stops and a recovery notice offers a clear resume path.
+- Enable R8 optimization and resource shrinking, include startup/baseline profiles, and add repeatable frame and lifecycle validation journeys. These changes do not establish a fixed frame rate or guarantee uninterrupted audio on every device.
+
 ## v1.0.13
 
 - Tap and release either arrangement overview to place the playhead at an absolute position

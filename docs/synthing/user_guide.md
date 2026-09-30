@@ -2,6 +2,8 @@
 
 Synthing is an Android music sketchpad for chords, melodies, arrangements, and dual synth voices.
 
+This guide covers **v1.0.14**. The update reduces repeated drawing work and adds clearer save and audio-recovery feedback.
+
 ## Table of Contents
 
 - [1. Getting around](#1-getting-around)
@@ -34,6 +36,10 @@ Transport controls (play, stop, record, loop), BPM, and scale live in the top co
 
 Arrangement loop markers (IN / OUT) apply to the whole project timeline.
 
+Creating or switching projects preserves pending edits in their original project. Deleting the selected project or section loads the replacement workspace before further saves run. Chord-sheet imports begin with their own notes rather than the previous workspace's take.
+
+Projects load in the background. If startup shows **Couldn’t open your projects.**, use **Retry** to attempt loading again.
+
 ## 3. Playing chords and melodies
 
 1. Open **PLAY**.
@@ -42,6 +48,10 @@ Arrangement loop markers (IN / OUT) apply to the whole project timeline.
 4. Tap chord pads to play. Empty pads show `—` until you assign pitches in edit mode.
 5. Use performance toggles such as **Glide**, **Latch**, **Tog**, **Mono**, **Chord**, **Slide**, **Legato**, and **Arp**.
 6. On **KEYS** or **GRID**, play scale-aware notes. Drag for expression when modulators are assigned.
+
+Both standard and dual-row keyboards keep the complete 88-key range, A0 through C8, prepared while they are present. Quickly revealing offscreen keys does not wait for those keys to be built. When resizing fixed-cell grids, Synth A keeps its left corner anchored and Synth B keeps its right corner anchored, including fractional pan positions.
+
+Previously visited tabs stay prepared for returning to them; hidden playhead displays stop collecting visual updates. Audio and recording timing continue independently of how often the screen redraws.
 
 ### Tempo and scale
 
@@ -60,6 +70,10 @@ Arrangement loop markers (IN / OUT) apply to the whole project timeline.
 
 Long-press **Record** to configure pre-roll length, pre-roll click, or disable overdub for explicit overlap punch mode. Use the full-width arrangement overview above Synth A/B to position the playhead without leaving PLAY.
 
+Held notes grow in the recording display. For a take extending beyond the current overview, its displayed range expands by whole bars. Stopping or changing projects finalizes held-note capture before changing the recording destination.
+
+If the app shows **Audio stopped after an overload. Tap to dismiss, then press Play to resume.**, the engine has stopped voices, arpeggiators, and transport to recover from a full critical command queue. Tap the notice to dismiss it, check your take and playhead position, then press **Play** when ready. Play held keys again to start a new live note. Long-press **Stop** remains available for panic.
+
 ## 5. Synth design
 
 1. Open **SYNTH**.
@@ -67,6 +81,8 @@ Long-press **Record** to configure pre-roll length, pre-roll click, or disable o
 3. Browse **PRESETS**, or edit **CONTROL**, **LFO**, and **MOD**.
 4. Parameter groups follow the signal path: source -> filters -> envelopes -> modulation -> FX -> output.
 5. Use **+ SAVE**, restore/rename/update, and **EXPORT** / import for preset JSON.
+
+Synth changes reach the live sound immediately. Saving combines rapid parameter changes in the background, and pending edits are captured before switching projects, clips, or sound scopes, previewing or copying a clip, saving a template, or exporting.
 
 ## 6. Piano roll (ROLL)
 
@@ -84,6 +100,8 @@ Long-press **Record** to configure pre-roll length, pre-roll click, or disable o
 - Create **Slide** (portamento) or **Legato** note links from the selection tools.
 - Draw automation in the **MOD** side panel.
 
+Dense arrangements reuse prepared note, link, and automation drawing. Scrolling keeps long notes and automation curves visible when they cross the view, even if their starting point is offscreen. The moving playhead and growing recorded notes use a separate visual layer; editing and scrubbing still use the current transport position.
+
 ## 7. Overview strip (playhead scrubber)
 
 Across the full width above the ROLL control panel and piano-roll grid is a **bird's-eye overview** of the whole arrangement:
@@ -94,18 +112,30 @@ Across the full width above the ROLL control panel and piano-roll grid is a **bi
 - **Drag with two fingers** to scrub relatively while snapping the playhead to each measure.
 - The same overview is always available above both synth panels on **PLAY**. Pressing **Play** starts from the position selected there.
 
+During recording, the overview expands by whole bars when the take outgrows its current range. Clip-property previews also keep their note drawing separate from the moving cursor.
+
 ## 8. Clips and export
 
 When working inside a section, the clip launcher shows slots for takes.
 
 - Long-press a slot for clip properties (length, loop, clear, preview).
-- Export a clip bounce as WAV from clip properties when available.
+- Choose MIDI or WAV export from clip properties. MIDI exports note events; WAV renders an audio bounce with the clip's selected synth sounds.
 - Clear a clip for a fresh take without deleting the slot.
+
+Choose the tracks and loop length before exporting, then select a destination in Android's document picker. Preparation and file writing happen in the background. Allow the current export to finish, or cancel its picker, before starting another export; an in-flight guard keeps each picker result paired with the correct MIDI/WAV payload. The app reports success after writing the document and reports an error if the write fails.
+
+Project and preset JSON import/export also use the document picker. A cloud document provider may need a network connection even though Synthing's local projects and instruments work offline.
 
 ## 9. Undo, settings, and saving
 
 - Use undo/redo in the top bar for notes and many performance edits.
 - Open the gear icon for system settings across PROJECT / PLAY / SYNTH / ROLL.
 - Projects auto-save in the background after edits. This includes arrangement and piano-roll notes, Synth A/B parameters, chords and arp settings, filters/colors, note links, and Play/Synth/Roll workspace state.
-- Leaving or closing the app finalizes active recording and flushes the latest save before audio shuts down.
+- Leaving the app finalizes active recording, captures the latest project/synth state, and queues remaining saves without waiting for disk.
 - You can also export project JSON from **PROJECT** for a portable backup or transfer.
+
+### If a save needs attention
+
+When **Changes not saved yet.** appears, Synthing retains the failed save in memory and retries automatically. Tap **Retry** to request another attempt. If storage is full, free space and retry; keep the app open until the notice clears. Atomic file replacement protects the last successfully saved version. Changes still waiting in memory can be lost if Android ends the process before a write succeeds, so do not treat an unresolved warning as a completed save.
+
+Save and delete operations are ordered together, and rapid edits are combined before writing. These safeguards prevent an older queued save from recreating a deleted file or sending pending synth edits into a newly selected project.
