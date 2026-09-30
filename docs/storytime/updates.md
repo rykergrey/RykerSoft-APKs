@@ -1,5 +1,17 @@
 # Storytime Updates
 
+## v1.4.0 — Android
+
+- Separate Solo and Multiplayer on Home, with direct **Write a story** and **Play an adventure** entries and **One device** / **Online** choices for each multiplayer mode
+- Fix Firebase room creation, full eight-player writing-room starts, and response retries after a lost connection
+- Add a notification bell with direct match links, pending-turn and host-action alerts that clear when resolved, and expiring chapter/activity notices
+- Add Android push notifications and account-based room recovery across devices, backed by trusted notification functions and hourly cleanup of expired rooms
+- Add update checks in the notification window and verified APK downloads that open Android's installer
+- Improve Android Back behavior across dialogs, editors, setup, and saved stories, with an exit confirmation on Home
+- Improve narration controls and unavailable-device-voice feedback, add a manuscript listening playlist, and make the mobile scene board easier to rearrange
+
+This release updates Android only; the published Windows build remains v1.3.0. Online play still requires the host to continue the game, Android push requires notification permission, and Android controls final update installation approval.
+
 ## v1.3.0
 
 - Add title-first scene insertion and full draft expansion on the board
