@@ -1,5 +1,16 @@
 # Release notes
 
+## v1.9.0
+- Add a saved coach profile for confirmed goals, allergies, food preferences, coaching philosophies, training context and practical constraints
+- Use current profile facts and dated weight for personalized advice, with questions when relevant information is missing or stale
+- Add conversational progress check-ins with editable cadence and saved review history
+- Propose journal, library, profile and reminder updates through reviewable chat actions
+- Recognize natural meal reports and ask whether to use a similar saved library item or a one-off estimate
+- Log estimated vacation and restaurant meals in one step without creating regular library entries
+- Improve restaurant library drafts: readable portions, estimated nutrition and assumptions without package-label requirements
+- Normalize review notes, preserve valid drafts on failed corrections, and remove stale errors and repeated retry narration
+- Prevent cached tool results from skipping repeated draft updates
+
 ## v1.8.0
 - Calculate amounts with addition, subtraction, multiplication, and division directly in the number pad
 - Preview results live and use the calculated amount with Log Now, To Tray, and Done

@@ -56,6 +56,10 @@ Tap an amount to open the number pad. Use **+**, **−**, **×**, and **÷** to 
 
 You can also type or paste calculations using `+`, `-`, `*`, and `/`. Decimals work in each number. Tap backspace to correct the last character, or hold it to clear everything. Finish an incomplete calculation or correct an error such as division by zero before submitting. Time entry keeps its AM/PM controls.
 
+### Add a restaurant dish or recipe
+
+Describe the dish, known toppings or ingredients, and your usual portion in **Library draft assistant**. For example: “Giuseppe’s Chicago-style deep dish pizza with pepperoni, sausage, red onions, jalapenos and mushrooms; I usually have two slices.” The assistant can draft rounded nutrition estimates without a package label. Review the portion, values marked ≈, and recipe assumptions before tapping **Save Item**. Two slices are stored as two pieces; one serving of that saved item represents the whole two-slice portion. Ask for a refinement when slice size or toppings change. For exact restaurant nutrition, provide its location or official source so similarly named restaurants are not confused.
+
 ### Add a product from photos
 
 1. Open a new food or supplement item and its **Library draft assistant**.
@@ -95,7 +99,10 @@ For background on sustainable changes and weight management, see [NIDDK’s eati
 ## 6. AI chat & Health Coach
 
 - Chat streams replies with markdown and item cards; conversations persist to your account.
-- The assistant can use tools: navigate the app, query your library and logs, create or update items, adjust your profile, set reminders, and propose batch updates.
+- The assistant can use tools to query your library and logs, propose journal additions or corrections, create or update library items, adjust your profile, and manage reminders. Review and apply the proposed action; a chat reply alone does not save it.
+- Say “I just had a waffle sandwich” to start a meal log. When similar saved items exist, the assistant asks whether to use those entries or a one-off estimate. Estimated meals show the described portion and assumptions. Tap **Log meal** to save the hidden one-off record and journal entry together; you do not need a new regular library entry.
+- For personalized nutrition advice, chat checks saved goals and relevant weight records. It asks about missing goals or a stale weight instead of treating application defaults as personal facts.
+- Ask for a progress check-in, or accept an invitation when due. Questions cover progress, goals, nutrition, training, recovery and changed constraints; you can skip questions. Review and apply the completed check-in and any profile changes. Invitations appear inside chat.
 - Attach day logs or a saved analysis by calendar date as chat context.
 - **Health Coach Analysis** builds a detailed day/week/month coaching prompt locally from your profile, targets, notes, and logs. Choose Perplexity (the default), ChatGPT, Google Gemini, or copy the prompt into any other chatbot. Long prompts are copied for manual paste when a prefilled URL would be unreliable. Existing saved reports remain available to read or download.
 - Voice input works in chat (Groq or OpenAI Whisper).
@@ -123,7 +130,9 @@ Notes:
 
 ## 9. Profile, keys & preferences
 
-- **Goals & biometrics**: weight goal, body-composition goal (lose / maintain / gain), dietary preferences, and coach context.
+- **Goals & biometrics**: confirmed weight and fitness goals, body-composition goals, and dietary preferences.
+- **Your coach profile**: allergies, food preferences, nutrition/training philosophies, training context, practical constraints and coaching style. Edit these directly or ask chat to propose a change. Keep allergies separate from dislikes.
+- **Coach check-ins**: enable invitations, set the interval, and review or remove saved check-ins. Record a new body weight in the journal or ask chat to prepare the measurement.
 - **Custom targets**: manual calorie/macro/micro overrides and an adaptive-target preview.
 - **Rolling Calorie Balance settings**: show/hide, window, recovery days, daily limit, and opt-in goal adjustment.
 - **API Keys**: RykerSoft AI unlock sign-in, plus optional manual Gemini / Groq / OpenAI keys and model picks.
