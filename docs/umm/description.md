@@ -11,7 +11,8 @@ Pick a mystery card, answer before time runs out, and see how other people think
 - Design cards with palettes, textures, motion, typography, frames, answer tiles, and reusable sticker layers. Save named looks on your device and synchronize a quiz's design.
 - Start with 40 game coins. Earn one for each first submitted answer and a one-time bonus when the question's creator first gives your answer a thumbs up. Spend coins on question creation, timer pauses, and sticker books.
 - Read shared response boards and quiz recaps, edit submitted answers, and vote on questions and answer choices.
-- Use optional anonymous answers and hidden authorship when the creator enables them. See private history and participation statistics in your profile, and find other players by username.
+- Open a compact **You** screen with prominent coin, answer, question, and sticker totals. Tap them to play, review private history, or open your collection. Your quizzes and a Create button are near the top; **More stats** expands extra participation and rating totals.
+- Use optional anonymous answers and hidden authorship when the creator enables them. See private history in your profile, and find other players by username.
 - Receive persistent in-app activity updates, with optional Android notifications for completed shared quizzes.
 
 The core game is free and does not require RykerSoft Pro. Game coins are earned through participation; the app has no real-money coin checkout.

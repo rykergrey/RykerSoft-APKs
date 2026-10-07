@@ -1,5 +1,15 @@
 # Umm updates
 
+## 0.4.2 — Compact You screen — October 7, 2026
+
+- Replace the large illustrated player card with a compact name and username header, and reduce Google connection status to a small row.
+- Put coins, answers, questions, and stickers in prominent tiles. Tap coins to play, answers or questions to open private history, and stickers to visit your collection.
+- Move **Your quizzes** above activity, with a quiz count and visible Create button.
+- Keep question and answer history under **Your activity**, and place extra participation and rating totals in an expandable **More stats** section.
+- Preserve profile editing, player search, answer editing, anonymous privacy, and the existing release's installation identity and local data.
+
+Automated profile/account and mobile/desktop layout checks passed. Interactive Google sign-in and live push delivery on a physical Android device remain unverified.
+
 ## 0.4.1 — Google accounts and mystery cards
 
 - Require Google sign-in followed by a unique username before gameplay. The hosted API independently enforces both requirements. Returning players keep their account's questions, answers, and coins; switching to an existing Google player does not merge wallets.

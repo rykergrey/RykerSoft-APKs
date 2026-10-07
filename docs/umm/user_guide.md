@@ -68,7 +68,11 @@ Creators can give another player's submitted response a thumbs-up or thumbs-down
 
 ## Profiles and privacy
 
-Open **You** to view your questions, answers, quizzes, coins, and participation statistics. Find another player by username or open a named responder's profile. Your display name and username can be changed independently in settings.
+Open **You** for your coins, answers, questions, and stickers. Tap **Coins** to open Play and earn more, **Answers** or **Questions** to jump to the corresponding private history tab, or **Stickers** to open your collection.
+
+**Your quizzes** appears below these totals, with a quiz count and a **Create** button. Open a quiz to play it; a completed quiz also shows its copyable share code. **Your activity** contains your question and answer history. Expand **More stats** for completed quizzes, your day streak, and question and answer-choice ratings.
+
+Your name, username, and Google connection use compact rows above the totals. Use the settings button to change your display name and username independently. Find another player by username in **Your activity**, or open a named responder's profile.
 
 Your private history includes anonymous contributions and skipped cards. Public profiles hide anonymous contributions and unpublished questions. Published question text may appear in public profiles, but another player's answer and choices stay locked until you finish that card. Anonymous answers hide your name from other players while remaining connected to your account privately.
 

@@ -1,25 +1,26 @@
 # Umm specifications
 
-| Item | Requirement or behavior |
-| --- | --- |
-| Release | 0.4.1 |
-| Android package | `com.oddly.app.release` |
-| Minimum Android | Android 6.0 / API 23 |
-| Target Android API | 35 |
-| Account | Google sign-in and a unique username required before gameplay |
-| Username | 3–20 letters, numbers, or underscores; start with a letter; unique without regard to case |
-| Connection | Internet access to the hosted Firebase API over HTTPS |
-| Quiz size | 1–20 questions |
-| Question formats | Multiple choice, true/false, fill-in-the-blank, and open text |
-| Multiple-choice options | 2–8 distinct choices |
-| Workshop timer choices | 15 seconds, 30 seconds, 1 minute, or 2 minutes |
-| Daily edition | Six questions; changes at the UTC date boundary |
-| Starting wallet | 40 game coins for a new player |
-| First answer reward | One coin per first submitted answer |
-| Creator bonus | One coin per answer, awarded only on the creator's first thumbs-up |
-| Quiz creation | One coin per question when saved |
-| Timer pause | One coin each time a running timer is paused; resuming is free |
-| Sticker books | Little guys: 8 coins; Cosmic club: 12 coins; Snack break: 8 coins |
+| Item                    | Requirement or behavior                                                                   |
+| ----------------------- | ----------------------------------------------------------------------------------------- |
+| Release                 | 0.4.2 — October 7, 2026                                                                   |
+| Android version code    | 8                                                                                         |
+| Android package         | `com.oddly.app.release`                                                                   |
+| Minimum Android         | Android 6.0 / API 23                                                                      |
+| Target Android API      | 35                                                                                        |
+| Account                 | Google sign-in and a unique username required before gameplay                             |
+| Username                | 3–20 letters, numbers, or underscores; start with a letter; unique without regard to case |
+| Connection              | Internet access to the hosted Firebase API over HTTPS                                     |
+| Quiz size               | 1–20 questions                                                                            |
+| Question formats        | Multiple choice, true/false, fill-in-the-blank, and open text                             |
+| Multiple-choice options | 2–8 distinct choices                                                                      |
+| Workshop timer choices  | 15 seconds, 30 seconds, 1 minute, or 2 minutes                                            |
+| Daily edition           | Six questions; changes at the UTC date boundary                                           |
+| Starting wallet         | 40 game coins for a new player                                                            |
+| First answer reward     | One coin per first submitted answer                                                       |
+| Creator bonus           | One coin per answer, awarded only on the creator's first thumbs-up                        |
+| Quiz creation           | One coin per question when saved                                                          |
+| Timer pause             | One coin each time a running timer is paused; resuming is free                            |
+| Sticker books           | Little guys: 8 coins; Cosmic club: 12 coins; Snack break: 8 coins                         |
 
 ## Data and permissions
 
