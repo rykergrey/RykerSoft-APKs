@@ -1,3 +1,22 @@
+# 2.16.1 — Desktop action compatibility
+
+- Retain Desktop Computer actions as Desktop-only content through Sync and JSON import/export, with their original operation and automatic-trigger metadata. Android shows **Requires Desktop** and rejects direct or nested execution before provider calls.
+- Skip unavailable actions in Android automatic transcription and clipboard delivery, including the legacy configured Auto Action, so synced Desktop triggers cannot interrupt local capture processing.
+- Recheck the signed-in account before updating cloud-tag status after a server read.
+- Include the conversational-note and Sync improvements prepared in 2.16.0 below. Version 2.16.1/code 45 supersedes that preparation build.
+
+# 2.16.0 — Conversational notes and reliable Sync preparation
+
+- Include Inbox text in knowledge by default. **Only include tagged items** remains available in Chat and Settings; explicit exclusions and retention still apply. Scope changes rebuild the derived semantic index without moving or retagging notes.
+- Enable related-idea search for missing/new preferences while preserving existing opt-outs; preserve both knowledge settings in portable backups.
+- Interpret natural note/list requests with bounded recent conversation. Search, refine, and read source entries before answering; append new list items without replacing existing text and propose full replacements through review.
+- Keep operation receipts, source revision checks, cancellation, and source citations. Saved content cannot change a recall request into a write.
+- Route natural note/list commands and short write follow-ups from Index through the shared Chat assistant.
+- Match Desktop's all-tagged Inbox policy, keep Inbox and Action tag catalogs separate, read Desktop Chat payloads, and optionally sync transcription text replacement rules.
+- Report Sync completion only after server confirmation and saved local acknowledgments. Show upload/download counts and the latest successful check; Pro access and another device's delivery remain separate states.
+- Protect in-flight local and remote edits, slow device clocks, deletion markers, and device-only exclusions. Preserve compatible Desktop history/metadata and this device's attachment handles while excluding local paths from uploads.
+- Coalesce relevant automatic edits, use incremental server-change checks, retry failed work, and schedule Android background checks subject to network and battery restrictions. Manual Sync now performs a full reconciliation.
+
 # 2.15.0 — Voice reminders and browsable answers
 
 - Understand reminder requests inside longer voice messages from Chat or Index 01. Create an Inbox item with a short task title, the saved spoken transcription, configured auto-tags, and an alert at the requested time.

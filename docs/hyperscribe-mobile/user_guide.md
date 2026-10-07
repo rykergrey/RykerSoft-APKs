@@ -9,6 +9,7 @@
 - [Text to speech](#text-to-speech)
 - [Provider keys and privacy](#provider-keys-and-privacy)
 - [Sharing and interoperability](#sharing-and-interoperability)
+- [Sync between devices](#sync-between-devices)
 - [Backup and restore](#backup-and-restore)
 - [Platform differences](#platform-differences)
 - [PRO Features](#pro-features)
@@ -20,7 +21,7 @@ Install Hyperscribe Mobile through its Android entry in RykerSoft. Grant microph
 
 ## Inbox and recording
 
-Use Inbox for recordings, transcripts, saved text, files, and images. Content has no forced Note, Journal, Task, or Voice Memo type: add any combination of tags as its purpose evolves. Tap text to edit it, use Copy for a quick copy, sort by added, copied, or retention date, and select several items to copy, tag, archive, run through an action, or add to Chat. Items approaching expiry show a retention indicator. Create saved tag-driven views such as Journal or Family + Urgent, capture modes such as Work Reminder that preapply tags in the standard editor, and workflows such as auto-archiving Complete items that do not also have Journal. Tags can override the default text and audio retention periods; the longest matching tag policy applies, and pinned content remains protected.
+Use Inbox for recordings, transcripts, saved text, files, and images. Inbox items are text without separate titles. Content has no forced Note, Journal, Task, or Voice Memo type: add any combination of tags as its purpose evolves. Tap text to edit it, use Copy for a quick copy, sort by added, copied, or retention date, and select several items to copy, tag, archive, run through an action, or add to Chat. Items approaching expiry show a retention indicator. Original audio defaults to 30 days while text remains separately retained. Transcribed audio lasts at most 30 days unless its Audio tab is set to keep it indefinitely. Create saved tag-driven views such as Journal or Family + Urgent, capture modes such as Work Reminder that preapply tags in the standard editor, and workflows such as auto-archiving Complete items that do not also have Journal. Tags can override the default text and audio retention periods within that transcribed-audio limit; the longest matching tag policy applies, and pinned text remains protected.
 
 On each Inbox card, Copy sits next to the three-dot menu. The speaking-person icon plays text-to-speech; the Play triangle plays recorded audio. Tap the card's microphone to start recording into that item, then use the normal Stop or Cancel controls. Recording continues after you lift your finger or leave the screen. Stop attaches the audio to the original item and appends the transcript as a new paragraph. Tap its Recording chip to play the saved audio. See [Inbox dictation](inbox-dictation.md) for details.
 
@@ -30,7 +31,7 @@ In Settings, edit the built-in recording profiles or add custom profiles. Each p
 
 ## Actions and chat
 
-Actions transform text or Inbox content. When one or more Inbox text items or recording transcripts are selected, the Actions page preserves and uses that selection. The Actions page shows an editable input panel, initially loaded from the clipboard when no Inbox items are selected. This working copy stays unchanged when actions finish; use Load current clipboard to explicitly replace it. Successful text transformations replace the clipboard contents and are saved to the Inbox; snippets copy their own content and do not require an input item. Hyperscribe supports AI, Python, template, snippet, search, persona, TTS, and combo actions, including ordered Before, Combine, Main, and After stages. Chat keeps persistent threads, accepts one or several selected Inbox items as temporary question context, supports action stacks, and provides streaming, generation cancellation, edit/regenerate, fork, search, Personas, action context, and review-before-commit action proposals. Android posts a completion notification when the relevant Chat thread is not actively visible.
+Actions transform text or Inbox content. When one or more Inbox text items or recording transcripts are selected, the Actions page preserves and uses that selection. The Actions page shows an editable input panel, initially loaded from the clipboard when no Inbox items are selected. Selecting Inbox items automatically loads their text in selection order. Saving an Inbox item or transcript makes the saved text the input; copying text switches the panel to that copied text. This working copy stays unchanged when actions finish or you switch tabs; use Load current clipboard to load text copied outside the app. Successful text transformations replace the clipboard contents and are saved to the Inbox; snippets copy their own content and do not require an input item. Hyperscribe supports AI, Python, template, snippet, search, persona, TTS, and combo actions, including ordered Before, Combine, Main, and After stages. Chat keeps persistent threads, accepts one or several selected Inbox items as temporary question context, supports action stacks, and provides streaming, generation cancellation, edit/regenerate, fork, search, Personas, action context, and review-before-commit action proposals. Android posts a completion notification when the relevant Chat thread is not actively visible.
 
 In **Settings → Text replacements**, create a rule with the spelling or phrase you want as its replacement, then add any number of spoken or misspelled variants. For example, a `Crystal` rule can include `Kristal`, `Krystal`, and `my wife`; every completed transcript converts those variants to `Crystal` before it is saved or routed elsewhere. Matching is case-insensitive and uses whole words or phrases. Replacements may also contain `{current_date}`, `{date_stamp}`, `{current_day}`, `{current_month}`, `{current_year}`, `{current_time}`, or `{timestamp}` to insert the current local date or time.
 
@@ -40,34 +41,46 @@ For a voice request such as “I need groceries tonight, so remind me in four ho
 
 ### Start with what you already save
 
-1. Save text, record and transcribe a thought, or extract text from an image into Inbox. You do not need to curate a separate knowledge database.
+1. Save text, record and transcribe a thought, or extract text from an image into Inbox. Saved text is available to Chat by default, including untagged and archived entries. Excluded and expired entries stay out of search.
 2. Open Chat → **My knowledge** and leave **Use saved entries in Chat** enabled (the default). Configure a chat provider in Settings if you have not already.
 3. Ask a specific question, such as “What did I save about the garden project?” Automatic search chooses a limited set of relevant passages; it does not send your entire Inbox.
 4. Expand **Saved sources** under the answer and check the source before relying on the answer or changing an entry.
 
 Saved material supplies context, not guaranteed facts or a record of everything you believe. A collected quote may express somebody else's opinion. If an answer misses an entry, try a distinctive phrase, open it directly, or explicitly attach it to Chat.
 
+### Save, extend, and recall a list
+
+You can say **Save a VR games to check out list with Beat Saber and Walkabout Mini Golf**, then later ask **What games did I put on that VR list?** The assistant uses your wording and recent conversation to identify the request. A list of things to try is saved information; it becomes an alert only when you ask to be notified at a time.
+
+In the same thread, **Add Moss to that list** can find the earlier entry and append the new item while preserving its existing text. Already-present whole list lines are not added twice. If several entries could be the target, the assistant can ask which one you mean. For an edit such as **Change Beat Saber to Beat Saber on Quest**, it prepares a whole-entry replacement for your review before saving.
+
+The assistant can search, adjust its query, and read successive pages of a note before answering. Recent thread context helps with follow-ups; saved-note search supplies the durable information in a later conversation. Requests are bounded, and unclear targets or incomplete results may need a narrower follow-up. An app receipt confirms a save; generated conversation alone does not. Editing or regenerating an earlier message does not repeat an Inbox change—send a new message for a new change.
+
 ### Search and browse from Chat
 
-Ask **Search for Batman** or **Find notes mentioning Batman**. Chat creates a **Search results** card. Expand **Preview results** for five matching excerpts at a time; tap an entry to read its current text, or choose **Open in Inbox** for a larger, temporary search view. The query is already entered and active. **Next results** advances through matches without sending them to the AI provider. Previews use the entry's body text; entries do not need titles or tags.
+Ask **Search for Batman** or **Find notes mentioning Batman**. Chat creates a **Search results** card. Expand **Preview results** for five matching excerpts at a time; tap an entry to read its current text, or choose **Open in Inbox** for a larger, temporary search view. The query is already entered and active. **Next results** advances through matches without sending them to the AI provider. Previews use the entry's body text; entries do not need titles or tags under the default search scope.
 
-Search includes active and archived knowledge by default. Add **only active** or **in the archive** to the request, or use the Inbox search scope chips. Ordinary search requires all query words; quoted phrases, such as **Find notes containing "my favorite thing"**, match consecutive words. Enabled static text replacement aliases are included. Results are ordered by save date, newest first. This is text search; it does not promise every related idea or inspect attachments without extracted text.
+Search includes available saved text, including untagged and archived entries, by default. Enable **Only include tagged items** to restrict it to cards with a tag you added or confirmed. Add **only active** or **in the archive** to the request, or use the Inbox search scope chips. Ordinary search requires all query words; quoted phrases, such as **Find notes containing "my favorite thing"**, match consecutive words. Enabled static text replacement aliases are included. Results are ordered by save date, newest first. This is text search; it does not promise every related idea or inspect attachments without extracted text.
 
-**Back to Chat** returns to the conversation. Leaving this temporary search preserves your previous Inbox filters and view. The Chat preview and Inbox use the same search specification. Results are fetched live rather than saved as a permanent list. If the library changes between pages, use **Refresh results**. Deleted, expired, excluded, and generated content is omitted; opening a result checks availability again. Older search cards retain the alias spellings used when created; send a new search after changing replacement rules.
+**Back to Chat** returns to the conversation. Leaving this temporary search preserves your previous Inbox filters and view. The Chat preview and Inbox use the same search specification. Results are fetched live rather than saved as a permanent list. If the library changes between pages, use **Refresh results**. Deleted, expired, and excluded content is omitted; opening a result checks availability again. Older search cards retain the alias spellings used when created; send a new search after changing replacement rules.
 
 Search results are navigation aids, separate from **Saved sources** supplied to an answer. The expandable list and internal identifiers are not part of the spoken response. Explicit navigation works even when automatic knowledge retrieval is off, and does not need a Chat provider call.
 
 ### Questions across multiple notes
 
-Questions such as **What are my 10 favorite things?** can gather more matching excerpts than an ordinary question. The first version searches for explicit favorite/favourite wording, including archived entries, and sends one bounded set of passages in a single AI request. It does not exhaustively infer preferences from everything you have captured. Other explicit collection questions, such as **Summarize all notes about Batman**, use the question's topic words.
+Questions such as **What are my 10 favorite things?** or **Summarize all notes about Batman** can draw on several saved entries. The assistant can refine a search and read the relevant entries before answering. It does not exhaustively infer preferences from everything you have captured.
 
-The app stops at its reading, candidate, or time budget and tells the model when coverage is partial. It also provides a search card so you can browse the underlying query. Ten matching short notes can all fit; a requested number does not guarantee that many supported findings. Quotes, former preferences, plans, and conflicting notes should be distinguished from current preferences. Check the sources. Use **Stop response** to cancel while searching or generating.
+Search and reading remain bounded. A requested number does not guarantee that many supported findings, and a limited result does not prove that no other entries exist. If Chat reaches its reading limit, narrow the request to one list or topic; explicit **Search for…** commands let you browse more matches. Quotes, former preferences, plans, and conflicting notes should be distinguished from current preferences. Check **Saved sources**. Use **Stop response** to cancel while searching or generating.
 
 ### Control search and indexing
 
-Inbox remains the place to capture and organize material. **My knowledge** is the saved text Chat can search, including archived entries. Open the compact **My knowledge** control in Chat to turn automatic retrieval on or off. Changes take effect immediately for future messages and leave your current draft intact. Explicitly attached entries and excerpts already in the conversation remain available in that conversation.
+Inbox remains the place to capture and organize material. In **My knowledge**, **Only include tagged items** is off by default, so available untagged and archived entries can be found. Turn it on to require a tag you added or confirmed. Rule and assistant tags remain suggestions until confirmed.
 
-Enable **Find related ideas** to download a 23 MB model over Wi-Fi and add local search by meaning for English text. The status shows whether the download is waiting, running, or indexing entries. Keyword search remains available during indexing. Search and embedding run on-device; selected excerpts are sent to your configured chat provider when you ask a question.
+Search scope and Inbox organization are separate controls. Confirmed tagged cards still archive automatically; removing the last confirmed tag restores a card archived for that reason. Untagged cards remain in Inbox and follow ordinary retention; pin a card to retain it while pinned. Open the compact **My knowledge** control in Chat to turn automatic retrieval on or off. Changes affect future messages and leave your current draft intact. Explicitly attached entries and excerpts already in the conversation remain available in that conversation.
+
+The editable **Daily Inbox Review** Chat action starts a new dated thread at 8 p.m. local time. It includes today's captures, tags, archive state, and excerpts. In Actions, run it manually, edit its prompt and model settings, choose a different card selection or schedule, duplicate it, or delete it. Android runs scheduled actions through WorkManager, so battery and system scheduling can delay the exact start time. In the review thread, requests such as **tag source 2 with Family**, **confirm source 2**, and **pin source 2** change the named card and return a receipt.
+
+**Find related ideas** is enabled by default when no preference has been saved. If you previously turned it off, that choice is preserved. It downloads a roughly 23 MB model over unmetered Wi-Fi and adds local search by meaning for English text on supported devices. Turn it off whenever you prefer keyword search only. The status shows whether the download is waiting, running, or indexing entries; keyword search remains available throughout. Search and embedding run on-device; selected excerpts are sent to your configured chat provider when you ask a question.
 
 ### Names and alternate spellings
 
@@ -91,7 +104,7 @@ Retrieval remains bounded and can miss entries; Hyperscribe does not maintain a 
 
 ### What Chat can do
 
-Direct app handlers support saving notes, schedules and their controls, recording controls, library searches/counts, source reading, reviewed entry replacement, and the text replacement commands above. Chat receives guidance describing these supported routes. Other configuration and workflows still use the app's screens; a conversational claim alone is not proof that a setting or item changed. An app handler confirms an operation only after it runs.
+Direct app handlers support saving notes, adding to existing entries, schedules and their controls, recording controls, library searches/counts, source reading, reviewed entry replacement, and the text replacement commands above. Chat receives guidance describing these supported routes. Other configuration and workflows still use the app's screens; a conversational claim alone is not proof that a setting or item changed. An app handler confirms an operation only after it runs.
 
 ### Read the sources
 
@@ -107,7 +120,7 @@ To propose an entry replacement, type **Update source 1 to: replacement text**. 
 
 ### Choose what stays available
 
-In a capture’s **Contents & history**, **Available to Chat** controls future knowledge access. Retention is shown separately: inclusion does not prevent cleanup. Use the existing Keep, Archive, and expiry controls to decide what stays. Existing chat excerpts are not removed when an entry is excluded.
+In a capture’s **Contents & history**, **Available to Chat** can exclude any card from future knowledge access. Turning it back on makes its saved text eligible under your current search scope; a confirmed tag is required only when **Only include tagged items** is enabled. Use a pin to keep a card as long as it remains pinned. Existing chat excerpts are not removed when an entry is excluded.
 
 Only saved text and transcripts are searchable; transcribe audio or extract attachment text first. Generated Chat/library answers stay in Chat unless explicitly saved, reducing repeated assistant output in the collection. Archiving alone does not protect an entry from expiry; check its retention controls when you want to keep it.
 
@@ -127,6 +140,21 @@ Cloud features require either personal provider credentials or optional RykerSof
 
 Use Android Sharesheet, Process Text, Copy, and Share commands to move content between Hyperscribe Mobile and other apps. Compatible action JSON can be imported or exported for use with a separate Hyperscribe Desktop installation.
 
+Desktop **Computer** actions, such as opening a folder or capturing the desktop, are retained with their operation settings and show **Requires Desktop** on Android. They cannot run as AI actions on the phone. Their automatic triggers are skipped on Android while preserved for Desktop, and an explicitly selected pipeline containing a Desktop-only action reports the limitation before running any of its actions.
+
+## Sync between devices
+
+1. Install the current Hyperscribe releases on the devices you want to use. Sign in to RykerSoft and Hyperscribe with the same Google account. Sync requires an active administrator-managed Pro grant for the edition you are using; Google sign-in alone does not grant access.
+2. Open **Settings → Sync**, sign in, and enable Sync. Choose **All tagged items**, **Only selected tags**, or **Everything except** for Inbox. Check the matching selection on every device. Newly configured installations can start with cloud settings; existing installations retain their own selections.
+3. Choose whether to share Chat threads and text replacements, and select actions by tag, category, or all actions. Inbox tags and Action tags remain separate even when their names match. An item's **Sync on all devices** control explicitly includes it; **Keep only on this device** overrides tag selection and protects that local item from remote changes.
+4. Tap **Sync now** and inspect the latest successful check and uploaded/downloaded counts. This confirms that this installation completed a server reconciliation. Open the receiving device, run Sync there if needed, and check that the item is visible under its chosen policy and Inbox filters. Pro Active describes access; it does not confirm that another device downloaded your content.
+
+Leave **Automatic sync** enabled to schedule relevant local edits and check remote changes. Android periodic checks use a 15-minute interval, but battery restrictions, missing connectivity, and background limits can delay them. Opening the app also checks changes. Force-stopping Android prevents background work until you open the app again. Failed work retries; signing out, disabling Sync, or switching to manual-only mode stops automatic work.
+
+Sync transfers text and compatible metadata, including selected actions, tags, conversations, and replacement rules. Audio, images, files, generated speech caches, and device-local paths remain on their original device. Use a portable backup to move that media. A synced note can therefore contain text while its original recording is unavailable on another device.
+
+Removing an item from sharing removes its cloud copy and keeps another device's existing local copy. Deleting a previously shared item propagates a deletion marker. Sync protects revisions that changed while a pass was running, but it remains separate from a backup; keep backups for recovery. If content is missing, check the Google account, Pro access, enabled policy, selected tags/actions, archive filters, and latest successful check on both devices. Use **Sync now** for a full reconciliation after upgrading an older client or after an interrupted connection. A failed pass keeps its error visible and does not claim a new successful check.
+
 ## Backup and restore
 
 Use the Android document picker to create a portable ZIP backup. Backups contain app-owned content, settings, actions, chat, and media, but never provider credentials. Restore validates the archive before merging it with local data. Back up before uninstalling, clearing app data, or moving devices.
@@ -137,11 +165,12 @@ Modern Android does not allow continuous background clipboard monitoring, silent
 
 ## PRO Features
 
-Hyperscribe Mobile v2.8.0 offers optional RykerSoft Pro Access for personal family use.
+Hyperscribe Mobile offers optional RykerSoft Pro Access for trusted family use. Access is managed for your RykerSoft account; use that same Google identity in the app.
 
-- * Family provider access — sign in with Google in Settings. If the RykerSoft administrator granted `com.rykersoft.hyperscribemobile`, configured Gemini, OpenAI, Groq, and ElevenLabs family providers become available without saving their values on the device.
-- Personal keys remain supported and take priority.
-- Free and local workflows do not require an account, entitlement, or provider key.
+* Family provider access — sign in with Google in Settings. If the RykerSoft administrator granted Hyperscribe Mobile, configured Gemini, OpenAI, Groq, and ElevenLabs family providers become available without saving their values on the device.
+* Hyperscribe Sync — enable selected-content cloud synchronization in **Settings → Sync** after the product backend verifies your active grant. See [Sync between devices](#sync-between-devices) for setup and limitations.
+
+Personal keys remain supported and take priority. Free and local workflows do not require an account, entitlement, or provider key. A Pro grant does not automatically enable Sync or share the Inbox.
 
 ## Support
 
@@ -223,7 +252,7 @@ Create custom action tabs and explicitly choose and reorder their actions. The b
 
 Drag up or long-press the Custom navigation button to choose any action type. Drag up or long-press Actions to filter the library by type. The full action picker remains available through All actions / manage.
 
-The Actions input panel stays above the action library. Its floating expand button grows the panel from roughly one quarter to half of the available page; tap again to shrink it. Text scrolls and can be edited without changing the source clipboard or Inbox items. Selecting items in Inbox automatically shows their names and snippets in this panel. Uncheck rows to remove them, use the input picker to add or reorder items, or choose Edit text to import the selected contents into one editable working copy. Changing the selection returns to the item list.
+The Actions input panel stays above the action library. Its floating expand button grows the panel from roughly one quarter to half of the available page; tap again to shrink it. Text scrolls and can be edited without changing the source clipboard or Inbox items. Selecting items in Inbox automatically loads their full text into the editable field in selection order. Use the input picker to add, remove, or reorder items; changing the selection refreshes the field. Saving a text item or transcript replaces the input with that saved item, including when you save changes to the same item. Copying text from Inbox or its editor switches to the exact copied text and clears the previous input selection. Items without available text remain listed until their text is ready.
 
 Use Load current clipboard or choose Use clipboard in the input picker to replace the working copy explicitly. The Custom page retains its input picker beside the type selector. When a text action finishes, a brief completion message confirms that its result was saved and copied. Tap the message or View to open that new Inbox item in Preview; switch to Write to edit it. Ignoring the message leaves the current input and action library ready for another action.
 

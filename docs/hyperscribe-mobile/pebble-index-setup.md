@@ -1,4 +1,4 @@
-# Pebble and Index setup — Hyperscribe Mobile 2.9.7
+# Pebble and Index setup — Hyperscribe Mobile 2.9.5
 
 ## What is connected
 
@@ -17,7 +17,7 @@ This implementation receives recordings through the installed Pebble companion. 
 ## Phone setup
 
 1. In Hyperscribe, open **Settings → Readiness → Set up Index ring & Pebble watch**.
-2. Tap **Start receiver** and wait for **Listening**. This includes receiver status in the shared Hyperscribe controls notification and enables recovery after ordinary process restarts and phone reboots.
+2. Tap **Start receiver** and wait for **Listening**. This enables an ongoing phone notification and recovery after ordinary process restarts and phone reboots.
 3. Copy the webhook URL. In Pebble, open **Index → Settings → Ring Button → Hold & Talk → Webhook only** and open its webhook settings. Labels may vary by companion version.
 4. Paste `http://127.0.0.1:18765/index` as the URL.
 5. Add a custom header named **Authorization**. Use **Copy Authorization value** in Hyperscribe and paste the complete `Bearer …` value.
@@ -39,7 +39,7 @@ New replies use plain text on the watch and in notification previews. Headings a
 
 ### If a bell notification covers the full watch response
 
-In the Pebble phone app, search Settings for **local-only** and turn **Send local-only notifications to watch** off (Phone → Notifications). This override can forward Hyperscribe's phone-only notification even after successful custom-watch delivery. Dismiss the existing bell notification and test a new ring request after changing the setting.
+In the Pebble phone app, search Settings for **local-only** and turn **Send local-only notifications to watch** off (Phone → Notifications). This override can forward Hyperscribe's phone-only notification even after successful custom-watch delivery. It was the confirmed cause of duplicate displays on the user's phone on 2026-09-15. Dismiss the existing bell notification and test a new ring request after changing the setting.
 
 If the override is already off, check whether the custom display acknowledgment was missing: an unconfirmed delivery still intentionally enables the standard notification fallback. Do not infer acknowledgment failure solely from the two displays.
 
@@ -47,6 +47,9 @@ If the override is already off, check whether the custom display acknowledgment 
 
 | Say or type | Result |
 |---|---|
+| “Stop recording” or “End recording” | Stops the current phone recording and saves using its configured stop workflow. |
+| “Cancel recording” | Cancels the current phone recording and discards its unfinished audio. |
+| “Start recording”, “Start a recording”, or “Begin recording.” | Starts the phone microphone using the default capture profile from Recording workflows; also accepts polite requests such as “Could you please start a recording?” |
 | “Remind me to update the calendar later today at 2.” | Calendar reminder at 2 PM today when still in the future; otherwise asks for a future time. |
 | “Remind me to process payroll tomorrow at 3.” | “Process payroll” reminder tomorrow at 3 PM; Work tag when that tag exists and auto-tagging is enabled. |
 | “Remind me in three days to do XYZ.” | Reminder interpreted from the capture date and timezone. |
@@ -63,18 +66,40 @@ Chat labels Index messages and offers original-recording playback. Pending recor
 
 Text replacements run once before interpretation; original speech remains available. Existing programmatic tag rules remain authoritative. Bounded semantic suggestions supplement those rules; optional background enrichment does not block saving or scheduling. Generated answers and input recordings for processed commands are excluded from the librarian’s authored-content counts to avoid counting the question itself.
 
+### Starting a phone recording from Chat or the Ring
+
+Recording commands use the same local handler in typed Chat and Index delivery. They resolve the current default capture profile when the microphone starts, including custom profiles and their stop workflows. They do not create an Inbox note containing the command. The reply confirms success only after the microphone starts. An existing recording is kept; a paused recording must be resumed or stopped with the recording controls. The Index setup screen’s **Allow recording screen from Ring** button opens Android’s overlay access setting.
+
+With Hyperscribe open and microphone permission granted, recording starts directly. For a background Ring command, existing **Display over other apps** access allows Hyperscribe to bring up a brief recording screen, including over the lock screen, and start from that visible activity. This uses Android’s activity-launch exemption; overlay access alone does not grant background microphone access. Without that access, or if Android blocks the launch, tap the **Start recording** phone notification. The notification expires after five minutes. If notifications are disabled, open Hyperscribe and send a fresh command or tap Record. Microphone permission is requested on the phone when needed. Device-specific background and lock-screen behavior still requires physical validation.
+
+Replayed Ring deliveries, regenerated answers, and edited past messages do not start another session. If processing is interrupted after dispatch, check the recording controls before sending a fresh command. Say or type **Stop recording** or **End recording** to save with the configured stop workflow, or **Cancel recording** to discard unfinished audio. Stop and cancel work on running or paused recordings in the background. They target only the session active when dispatched; delayed or replayed commands cannot affect a newer session. Once a recording is already being saved, cancel will explain that it is too late to discard it through this command. Existing app, notification, and floating controls remain available.
+
+Validated on 2026-09-17: 513 JVM tests passed; debug APK and instrumentation APK builds and Android lint passed. Three Android 36 emulator tests verified a custom default profile, active-session preservation and replay protection, expired launch requests, notification fallback without overlay access, and automatic background launch with overlay access. Host audio was disabled. Physical Ring delivery and phone-specific lock-screen behavior were not exercised.
+
 ## Delivery and recovery limits
 
 - **Offline after receipt:** audio/text is saved before processing and HTTP acceptance. Background work retries transient provider failures; credential or invalid-request failures remain visible for manual retry. Stable IDs and persisted Chat receipts prevent duplicate notes/reminders after replay or interruption. A capture needing attention holds later captures in order; retry it after correcting settings, or delete that capture to release the queue.
 - **Before receipt:** Pebble’s current webhook sender is best-effort and lacks a durable retry outbox. Hyperscribe cannot recover a request that Pebble never delivers. Keep the receiver enabled, and check received captures after an interruption. “Webhook only” should not be treated as a second archive in Pebble.
 - **Phone restrictions:** force-stop prevents background work until Hyperscribe is opened again. Android background/battery policies can delay work; the visible receiver status is the useful check.
 - **Audio limits:** the receiver accepts at most 16 MiB per HTTP body. The journal limits audio to 512 MiB and retains up to 2,048 capture/tombstone records. It reports capacity failures instead of acknowledging discarded data. Chat and setup expose saved captures. Deleting a capture or its original Chat request cancels/tombstones processing and frees its journal audio. Deleting older Inbox source recordings also cancels their processing.
-- **Reminders:** the current app schedules reminders with WorkManager, so Android can delay the notification. This update preserves that scheduler; exact alarm delivery is not implemented. Ambiguous or elapsed times prompt for clarification rather than claiming a reminder was scheduled.
+- **Schedules:** Chat and Index support Inbox reminders, timers, and alarms. Exact delivery requires Android Alarms & reminders access and enabled notifications; otherwise delivery is approximate. WorkManager provides recovery. Ambiguous or elapsed times prompt for clarification. See [Inbox schedules](inbox-schedules.md) for commands and controls.
 - **Watch storage:** the bridge retains the latest response, not a full independent watch library. Older results remain in the phone app.
+
+## Implementation and build
+
+Core ingress is in `core/wearable`; Android wiring and setup are in `platform/wearable`. The original audio is journaled before acknowledgement, kept in a private journal outside ordinary Inbox retention. Transcription uses a temporary upload copy with the correct audio extension. Generic transcription recovery excludes Index-owned captures so it cannot run unrelated after-transcription actions on a command. Deleting an original capture records a tombstone before its content is removed.
+
+Watch source, protocol, emulator notes, and rebuild instructions are in [watchapp/README.md](watchapp-guide.md). The APK includes `app/src/main/assets/watchapp.pbw`. PebbleKit 1.2.0 supports the app’s compile SDK 36; its published JVM classes require Java 21 for desktop unit tests. The Android app still compiles to Java/Kotlin 17.
+
+The local source was reconciled with the verified deployed 2.8.3 source before this update, preserving the newer Inbox, floating controls, action tag collections, recording stop profiles, and TTS playlist features. Room remains schema 12. The production update is version code 28 and uses the existing release signing identity.
 
 ## References
 
+- [Android background activity launch rules](https://developer.android.com/guide/components/activities/secure-bal)
+- [Android background microphone service restrictions](https://developer.android.com/develop/background-work/services/fgs/restrictions-bg-start)
 - [Index advanced features](https://help.repebble.com/en/articles/15724406-index-advanced-features-mcp-webhook)
 - [Pebble companion source](https://github.com/coredevices/mobileapp)
 - [Pebble Android communication guide](https://developer.repebble.com/guides/communication/using-pebblekit-android/)
 - [SDK](https://developer.repebble.com/sdk/)
+
+Implementation validation and physical setup results are recorded separately in the release verification notes. Source research alone does not establish that a physical ring/watch exchange has completed.
