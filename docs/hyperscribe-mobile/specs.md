@@ -3,7 +3,7 @@
 ## Android
 
 - Package: `com.rykersoft.hyperscribemobile`
-- Version: `2.16.1` (code 45)
+- Version: `2.17.0` (code 46)
 - Minimum Android: 10 / API 29
 - Target Android: API 36
 - Architectures: arm64-v8a and x86_64
@@ -46,6 +46,18 @@
 - The initial semantic task intent is pinned before retrieved content arrives. Notes and tool results are reference data and cannot expand write authority. Source IDs must be known; reads progress contiguously with revision checks. Answers and replacement proposals require complete cited sources, and answers recheck availability and revision.
 - Appending preserves existing text, removes duplicate whole list lines, checks the current revision, and retains the old text in revision history. Whole-entry replacement produces the existing review proposal rather than applying immediately. Notes are limited to 50,000 characters.
 - Application receipts and persisted mutation checkpoints protect interrupted requests from duplicate creates or appends. Editing or regenerating old requests cannot write. Stored source references support follow-ups; natural-language intent and retrieval relevance still depend on the configured model and available evidence.
+
+## Floating control and speech actions
+
+- The permission-gated Android floating control opens a two-column category grid on an inward swipe or hold. Vertical dragging repositions the button; an ordinary tap retains its recording shortcut. Choosing a category does not execute its content.
+- Capture, Actions, Inbox, and Listen are reusable module types. Tabs can be duplicated and independently titled, ordered, hidden, removed, and configured. The category grid fits its content up to the configured height; module surfaces use the configured workspace height and scroll when needed. Theme colors follow the application, with 48 dp minimum touch targets.
+- Capture tabs select all or an ordered subset of capture profiles plus clipboard, new-text, text-file, audio-file, and image shortcuts. Recording pause, stop-profile, and cancel controls remain available across modules.
+- Actions tabs show all eligible clipboard actions or an ordered selection, optionally constrained by category and Action tags. Category and tag constraints apply together; multiple selected tags match any selected tag. Image-input workflows require the main app; Desktop-only workflows require Desktop.
+- Inbox tabs bind to the active Inbox or an existing saved view and may add Inbox tag filters. Saved-view bindings follow current search, archive, content, retention, and schedule settings. Filters apply before recent limits and matching pins. A missing view does not broaden the tab's results.
+- Default speech references a stored action, including its provider, voice, synthesis settings, and pipeline. Existing effective default settings and per-chat presets migrate without replacing edited user actions. Chat and spoken-reminder selections persist; Default follows the current application default.
+- Chat, Inbox, text viewers/editors, Listen, and spoken reminders accept compatible speech-action overrides. A selected workflow processes the complete input once before speech segmentation; nested pipelines and multiple TTS outputs preserve execution order. Chat automatic reading waits for the completed reply before applying the workflow.
+- Listen offers a Default-or-specific-action dropdown, Play clipboard, and the live ordered speech playlist. Playback can continue when the menu closes. Explicit saved-audio replay reuses its original rendition; generating speech with Default or another action runs the selected workflow.
+- Missing, cyclic, unavailable, or incompatible speech workflows report errors instead of silently selecting another voice. Default, Chat, and spoken-reminder action references guard deletion. Portable backups retain default-action references and modular menu settings.
 
 ## Providers
 

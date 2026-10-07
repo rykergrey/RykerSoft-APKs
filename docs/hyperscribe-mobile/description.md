@@ -22,6 +22,8 @@ Inbox remains your everyday capture and organization space. **My knowledge** bri
 - Record with built-in or custom profiles, import audio and multi-image items, extract image text, attach images to notes, transcribe, edit, tag, search, archive, share, and back up voice and text items. Build tag-defined views, capture modes, retention policies, and automatic organization workflows without assigning rigid content types.
 - Normalize every completed transcript with configurable replacement rules, including multiple spelling and phrase variants plus dynamic date and time tokens.
 - Build AI, Python, template, snippet, search, persona, TTS, and combo actions. Run them against selected Inbox content or the clipboard, with text results copied back to the clipboard.
+- Swipe inward across the floating button or hold it to open a compact category grid. Create multiple Capture, Actions, Inbox, and Listen tabs, including live saved Inbox views, tag filters, category filters, and ordered action shortcuts.
+- Save provider, voice, and playback settings in reusable speech actions. Choose a default for Chat, Inbox, Listen, and spoken reminders, override it where needed, or run a complete workflow such as summarizing an article before reading it aloud.
 - Keep persistent chat threads with streaming, cancellation, multi-item Inbox context, action stacks, completion notifications, editing, regeneration, action context, and TTS.
 - Use Piper or system TTS locally, or configure Gemini and ElevenLabs speech.
 - Use personal provider credentials protected by Android Keystore or optional Google-account-bound RykerSoft Pro Access.

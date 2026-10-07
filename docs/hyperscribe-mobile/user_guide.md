@@ -7,6 +7,8 @@
 - [Actions and chat](#actions-and-chat)
 - [My knowledge in Chat](#my-knowledge-in-chat)
 - [Text to speech](#text-to-speech)
+- [Floating menu customization](#floating-menu-customization)
+- [Floating menu gestures](#floating-menu-gestures-v281)
 - [Provider keys and privacy](#provider-keys-and-privacy)
 - [Sharing and interoperability](#sharing-and-interoperability)
 - [Sync between devices](#sync-between-devices)
@@ -130,7 +132,17 @@ Automatic retrieval is only one way to provide context. Turning it off does not 
 
 ## Text to speech
 
-Choose Piper for downloaded on-device voices, the Android system speech engine on mobile, or a configured Gemini or ElevenLabs provider. Long text is divided into ordered sections so playback can begin while later sections are prepared. Paragraph mode treats bullet and numbered-list items as separate speech segments.
+Speech settings belong to reusable TTS actions. In **Settings → Text to speech**, choose the default action, edit it, or create another. A TTS action can use Piper for downloaded on-device voices, the Android system speech engine, or configured Gemini or ElevenLabs speech. Set its provider, voice, model, speed, and other playback choices in the action editor. In its Content or Pipeline tab, enable **Use as default TTS action** and save to make it the default.
+
+After upgrading, your previous effective default settings become a **Default speech** action. Existing per-conversation voice presets become equivalent speech actions. Review or edit those actions instead of recreating your voice settings.
+
+The speech-action dropdown in Chat, Inbox speech controls, text viewers/editors, Listen, and spoken reminders offers **Default** or a specific action. Default follows whichever action you currently choose in Settings. A specific choice overrides it for that conversation or use. Chat uses its selected action for both manual and automatic reading; automatic reading processes the completed reply.
+
+For an article summary, create an AI action that summarizes its input. Add that action to a TTS action's **Before** steps, choose the voice in its Content tab, and save it with a name such as **Summary aloud**. Copy an article, open the floating menu's **Listen** tab, select **Summary aloud**, and tap **Play clipboard**. The action summarizes the complete article once and reads the result. Choose a plain TTS action for verbatim reading. Other compatible multi-step speech workflows can also appear in the dropdown; multiple speech steps play in their execution order. AI preprocessing and cloud voices require the corresponding provider access.
+
+Long speech text is divided into ordered sections so playback can begin while later sections are prepared. Paragraph mode treats bullet and numbered-list items as separate speech segments. Listen shows the live playlist, with play/pause, previous/next, segment selection, seek, and Stop. Closing the floating menu leaves playback running. Stop cancels active and queued speech; the current playlist remains available for replay.
+
+Choosing **Speak** with Default or another action runs that workflow even when the item has saved speech. Use the saved-audio playback control to replay the original rendition. Changing the item's text invalidates its old rendition. If an action is missing or incompatible, repair it or choose another action; the app does not silently switch voices. To delete an action used by the default, a Chat conversation, or a spoken reminder, first change that selection.
 
 ## Provider keys and privacy
 
@@ -180,7 +192,7 @@ Contact heavensounds@gmail.com and include the platform, Hyperscribe version, an
 
 Use the Inbox content dropdown to show text, audio, images, or files; mixed captures can match more than one content category. Saved views occupy the horizontal strip. Drag upward or long press the Inbox navigation button for pinned views, then use All/manage to create or manage views. Saved rules support all/any/excluded tags, nested groups, archive scope, and retention windows such as the next 24 hours. Temporary search and tag filters can be saved as a new view. Full date dividers follow the chosen sort, including cleanup date.
 
-Select several Inbox captures and use Copy to create an independent combined text note while retaining the originals. Open Actions or Custom to see the Inbox input count; tap it to inspect, reorder, or remove inputs. Speak in the selection menu uses the configured default voice. Captures without usable text must be transcribed or have their text extracted before text-based operations.
+Select several Inbox captures and use Copy to create an independent combined text note while retaining the originals. Open Actions or Custom to see the Inbox input count; tap it to inspect, reorder, or remove inputs. Speak in the selection menu offers Default or a specific speech action for the combined input. Captures without usable text must be transcribed or have their text extracted before text-based operations.
 
 Adding captures to Chat opens a contents review. Text is selected by default where available. Original audio and images are separate choices, and audio transcription or image text extraction require an explicit choice. Choose the destination thread and attach; sending remains a separate step. Tap Inbox context to reorder captures or remove text/media parts before sending. Local attachment snapshots are included in native backups; they are not automatically transferred to other devices through text sync.
 
@@ -227,7 +239,7 @@ standard active Inbox; long-press **All** to reset every query and display setti
 to defaults. **Archive** remains a separate built-in view. Saved views and the last
 selected view persist on this device. Opening a view also scrolls its tab into view. Pull down on the strip or tap its expand arrow to reveal all views in a wrapping, scrollable picker. Selecting a view collapses the picker. Names can include emoji or consist entirely of emoji.
 
-**Text** shows text cards and voice transcripts, without audio cards or generated TTS entries. **Audio** shows recordings and existing standalone speech recordings. Reading a note with its play button or **Speak** saves speech on that note and does not create another Inbox item. The saved voice and audio are reused on replay; changing the note's text invalidates its old rendition. Chat/watch read-aloud and draft previews also avoid creating extra Inbox items.
+**Text** shows text cards and voice transcripts, without audio cards or generated TTS entries. **Audio** shows recordings and existing standalone speech recordings. Reading a note with **Speak** saves speech on that note and does not create another Inbox item. Speak runs the chosen Default or specific speech action. Explicit saved-audio playback reuses the saved rendition; changing the note's text invalidates its old rendition. Chat/watch read-aloud and draft previews also avoid creating extra Inbox items.
 
 In the tag manager, tap **+** to open the New tag editor. Save adds the tag and returns to the manager; closing the editor cancels creation and returns to the same manager. Tapping an existing tag opens its editor.
 
@@ -238,15 +250,22 @@ In the tag manager, tap **+** to open the New tag editor. Save adds the tag and 
 
 **Settings → Stop recording profiles** defines what happens after audio is saved. The default is Transcribe and copy. Save audio only and Transcribe without copying are also provided. Add and reorder profiles, choose a transcription provider or use the Transcription default, add actions in order, and choose whether to copy the final result. Each action receives the preceding output. Repeated steps are allowed. Image and browser-opening actions require the main app; stop profiles process transcript text and can run speech actions. Automatic transcript/Inbox actions are optional; new custom profiles run only their selected steps unless you enable them. The former Recording button tap setting and existing Auto Action are migrated into stop-profile preferences. Automatic execution is configured inside each action editor’s Automation tab; there is no Auto Action toolbar button. Recording stop profiles still control whether automatic actions are allowed.
 
-Each capture profile can follow the default stop profile or choose another one. For performances, link Music Lossless or Music Compact to Save audio only. During a recording, use the stop menu or the floating button's Input tab to choose any stop profile for that recording. A normal Stop tap, including the recording notification, uses the capture profile's linked/default workflow. Saving audio only never transcribes or changes the clipboard, even if auto-transcription for imports is on. In-editor dictation retains its dedicated insert-text behavior.
+Each capture profile can follow the default stop profile or choose another one. For performances, link Music Lossless or Music Compact to Save audio only. During a recording, use the stop menu or the controls available across the floating menu's tabs to choose any stop profile for that recording. A normal Stop tap, including the recording notification, uses the capture profile's linked/default workflow. Saving audio only never transcribes or changes the clipboard, even if auto-transcription for imports is on. In-editor dictation retains its dedicated insert-text behavior.
 
 The selected stop plan and provider are stored with the recording. If an action fails, the completed transcript and successful step outputs are retained; clipboard delivery waits until processing finishes. A retry resumes at the unfinished step. A process interruption between an external action response and saving its checkpoint can still repeat that unfinished action. Explicitly retranscribing a completed recording starts a new transcription request rather than rerunning its old stop macro. Provider fallback and text replacements remain in Transcription settings; auto-transcribe there controls imports and older recordings.
 
 ## Floating menu customization
 
-**Settings → Floating control** includes Input, Actions, and Inbox tabs. Use Move up/down to arrange tabs, edit their titles, show or hide them, select the opening tab, remember the last tab, or place the tab bar below the content. Tabs scroll horizontally when they do not all fit. At least one tab remains visible.
+Open **Settings → Floating control → Floating menu** to arrange your command grid. Add a Capture, Actions, Inbox, or Listen tab; give it a title such as **Ideas**, **Work actions**, or **Articles**. Use **Duplicate** to start another tab with the same settings, then choose different content. Tabs can be renamed, reordered, hidden, and deleted; at least one must remain visible.
 
-Create custom action tabs and explicitly choose and reorder their actions. The built-in Actions tab can show all compatible actions or a selected list. Screenshot actions need the main app and are omitted from the floating action picker. You can also show/hide capture imports and action categories, change the recent Inbox item limit and pinned-item inclusion, and adjust menu width and height within the screen's available space. All capture profiles appear when idle; all stop profiles appear while recording, with Pause/Resume and Cancel. Settings persist and travel in portable backups.
+- **Capture:** show all recording profiles or choose and order a subset. Select the Clipboard, New text, Text file, Audio file, and Images import buttons you want. Clipboard import saves text directly; other imports open the app's editor or picker.
+- **Actions:** show all matching clipboard actions or select and order individual actions. Optionally choose a category and Action tags. With both configured, an action must match the category and at least one selected tag. The selected-list option still applies these filters. Image-input and screenshot workflows need the main app; Desktop-only actions need Desktop.
+- **Inbox:** choose **All active Inbox** or bind the tab to a saved Inbox view, then optionally select Inbox tags. Several tags match any selected tag. A saved view follows your later edits to its search, archive, content, retention, and schedule filters. If that view is deleted, choose another; the tab stays empty instead of showing unrelated entries.
+- **Listen:** choose Default or another speech action and use **Play clipboard**. The tab also controls the current speech playlist. See [Text to speech](#text-to-speech) for summary-then-speech workflows.
+
+For example, create an Inbox tab named **Ideas** with your Ideas tag, a second Inbox tab bound to your **Work + Urgent** saved view, and an Actions tab limited to your Writing category. Inbox tags and Action tags are separate catalogs.
+
+Choose whether to include matching pinned Inbox items and set the recent-item limit. Filtering happens before that limit and before pins are included. Adjust menu width and height, quick-tab placement, the restore tab, and whether to remember the last selected tab. The category grid fits its contents up to the chosen height; modules use the chosen workspace height. Scroll to reach overflow content, including Listen controls in a short panel. Settings persist and travel in portable backups.
 
 ## Action workspace (v2.8)
 
@@ -262,11 +281,13 @@ Choose Automation → Auto-run in an individual action editor to run it after tr
 
 ## Floating menu gestures (v2.8.1)
 
-Tabs are arranged from the right edge outward: Input, Actions, then Inbox by default. A short left swipe opens the nearest tab; continue a little farther to select the next tab. Settings lists the tab order nearest-edge first, including custom tabs. Opening and remembered-tab preferences apply when opening the menu without a swipe.
+The current command grid, introduced in 2.17, opens when you swipe inward across the floating button or hold it. Tap a category to open that tab. Releasing the swipe or choosing a category does not start a recording or execute an action. Tap the floating button for its normal recording shortcut, or drag vertically to reposition it.
 
-Input shows recording profiles at the top, followed by clipboard, text, audio, and image imports. While recording it shows stop profiles and recording controls.
+Use **Tabs** to return to the category grid. Back returns to the grid from a module, then closes the menu. Quick tabs let you switch directly between modules and scroll when they do not all fit. Closing the menu restores the button's saved position.
 
-In the floating Inbox, tap an item to copy it. Long-press for Edit or Pin/Unpin. Pinned items move to the top immediately; unpinning returns them to normal recent-item order (or removes an older item outside the configured recent limit).
+Capture and Actions present their tools in grids. While recording, Pause/Resume, stop-profile selection, and Cancel remain available across every module. Closing the menu does not stop a recording.
+
+In a floating Inbox tab, tap text to copy its full contents; tap non-text content to open its editor. Long-press for Edit or Pin/Unpin. Pinned items move to the top immediately when they match that tab's filters; unpinning returns them to normal recent-item order or removes an older item outside the configured recent limit.
 
 ## Shared controls notification (2.9.7)
 

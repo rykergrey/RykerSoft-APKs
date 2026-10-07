@@ -1,3 +1,13 @@
+# 2.17.0 — Custom command grid and speech actions
+
+- Open the floating menu with an inward swipe or hold to reveal a compact category grid. Selecting a category opens its tools without starting recording or running an action. Capture and Actions use compact grids; active recording controls remain available across modules.
+- Add, duplicate, rename, reorder, hide, and remove Capture, Actions, Inbox, and Listen tabs. Choose capture profiles and import shortcuts, all matching actions or an ordered selection, Action categories/tags, and live saved Inbox views with optional Inbox tags. Multiple tabs can use the same module with different content.
+- Keep matching pinned items and recent-item limits inside each Inbox tab's filters. Saved-view tabs follow later view edits; a removed view shows an empty state until another view is chosen.
+- Replace separate default speech parameters with a reusable default TTS action. Existing effective provider, voice, model, and playback settings migrate to a **Default speech** action, and existing per-chat presets become equivalent speech actions.
+- Select a speech action in Chat, Inbox, text viewers/editors, Listen, and spoken reminders. **Default** follows the current default action; another choice overrides it for that conversation or use. Compatible action editors can mark an action **Use as default TTS action**.
+- Run a speech workflow on the complete input before splitting it for playback. A copied article can be summarized once and then read aloud; nested multi-step workflows and multiple speech outputs retain their execution order.
+- Keep explicit saved-audio replay available separately from generating speech with the current action. Invalid or missing speech actions report a useful error, and actions referenced by the default, Chat, or spoken reminders are protected from deletion.
+
 # 2.16.1 — Desktop action compatibility
 
 - Retain Desktop Computer actions as Desktop-only content through Sync and JSON import/export, with their original operation and automatic-trigger metadata. Android shows **Requires Desktop** and rejects direct or nested execution before provider calls.
