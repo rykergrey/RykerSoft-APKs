@@ -29,4 +29,12 @@ The non-debuggable APK manifest confirms version 2.17.1/code 47, minimum API 29,
 
 The signed APK upgraded production 2.17.0/code 46 in place on the connected phone. No production data was cleared or uninstalled. Package Manager reports 2.17.1/code 47 and preserves the original installation date. MainActivity launched successfully, with no fatal-exception, SQLite corruption, or database-migration error markers in the startup check. Live provider/entitlement testing is not claimed; this revision adds no provider or backend changes.
 
-Public release: [Hyperscribe Mobile 2.17.1](https://github.com/rykergrey/RykerSoft-APKs/releases/tag/hyperscribe-mobile-v2.17.1). Public download and catalog evidence is appended after verification and activation.
+## Public publication evidence
+
+Public release: [Hyperscribe Mobile 2.17.1](https://github.com/rykergrey/RykerSoft-APKs/releases/tag/hyperscribe-mobile-v2.17.1). All five release assets were downloaded anonymously and matched the reviewed local bytes. The downloaded APK's manifest and production certificate were verified again. The installed phone APK's SHA-256 also exactly matched the signed and public APK.
+
+All four app documents and supporting release/menu references were fetched anonymously and matched the reviewed files. The existing Inbox, Actions, and Chat gallery was preserved; two reviewed native captures with synthetic content show the tabbed Capture and speech-action Listen interface.
+
+Source tag `v2.17.1` identifies commit `4856cd60f9ce09a74370b84e7c51c9f221dad715`. User documentation was published in `d51f888`, native images in `fb40ef4`, and the catalog in `e49819b91ddfa7c26e271595f8b73c9762394e15`. The full catalog retains 17 unique applications and all unrelated entries and Desktop pointers. Only Mobile's release version, APK URL/hash, changelog, and screenshot list changed.
+
+The catalog's canonical public raw URL, explicit-main-ref URL, and commit-pinned URL were verified at 2.17.1/code 47. After the canonical URL's five-minute CDN cache updated, its complete 17-app catalog matched the reviewed published file. RykerSoft was opened on the phone, but its current WebView did not expose the expected native refresh controls; an on-device hub refresh was not confirmed. Production installation, startup, exact APK bytes, and the six native checks were confirmed independently.
