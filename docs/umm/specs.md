@@ -2,8 +2,8 @@
 
 | Item                    | Requirement or behavior                                                                   |
 | ----------------------- | ----------------------------------------------------------------------------------------- |
-| Release                 | 0.4.2 — October 7, 2026                                                                   |
-| Android version code    | 8                                                                                         |
+| Release                 | 0.4.3 — October 7, 2026                                                                   |
+| Android version code    | 9                                                                                         |
 | Android package         | `com.oddly.app.release`                                                                   |
 | Minimum Android         | Android 6.0 / API 23                                                                      |
 | Target Android API      | 35                                                                                        |
@@ -21,6 +21,12 @@
 | Quiz creation           | One coin per question when saved                                                          |
 | Timer pause             | One coin each time a running timer is paused; resuming is free                            |
 | Sticker books           | Little guys: 8 coins; Cosmic club: 12 coins; Snack break: 8 coins                         |
+
+## Card presentation
+
+The Meadow interface uses original scenic artwork and a shared bright palette across the menu, workshop, player, stickers, profiles, and settings. Ten light starter looks and ten coordinated palette choices provide subtle defaults; detailed textures, motion, touch effects, frames, and sticker controls remain available.
+
+Saved sticker arrangements retain their positions, sizes, rotation, opacity, and layer placement. A legacy card with a single emoji and no saved design uses a small, faint corner decoration beneath the readable question. Card lifts and transitions respect reduced-motion preferences, and the workshop retains manual **Flip** and **Front** controls.
 
 ## Data and permissions
 

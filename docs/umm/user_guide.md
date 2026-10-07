@@ -21,15 +21,17 @@ A new player then chooses a username: 3–20 letters, numbers, or underscores, b
 
 The core game is free and needs no RykerSoft Pro subscription. Umm uses its own Google account for game history. The signed release installs separately from the development app.
 
+Use **Play**, **Create**, **Stickers**, and **You** in the side navigation on larger screens or the bottom navigation on phones.
+
 ## Pick and answer cards
 
-Open **Play** to choose the **Daily** tile or browse the **Mystery pool**. The daily edition has six curated questions and changes at midnight UTC.
+Open **Play** and choose **Let’s play** for today's six curated questions, or browse the **Mystery pool**. The daily edition changes at midnight UTC; its tile reads **Again!** after you finish it.
 
 Use the arrows to browse, shuffle for a different order, or filter by answer time. **All**, **New**, and **Answered** switch which cards are shown. Browsing does not start a timer or reveal the question and answer format.
 
-Tap a card to reveal the question and start its timer. Choose an option or enter text, then submit before the deadline. When a question permits anonymous answers, enable the anonymity option before submitting. Use the pause control if you need a break, or the skip control to move on.
+Choose the separate **Play this card** button for the selected mystery card to lift it into the player, reveal the question, and start its timer. Choose an option or enter text, then submit before the deadline. When a question permits anonymous answers, enable the anonymity option before submitting. Use the pause control if you need a break, or the skip control to move on. The card lift and transitions respect your device's reduced-motion setting.
 
-A quiz advances to its next card after an answer, skip, or timeout. When all its cards are finished, the recap groups the questions and shared responses on one scrollable page. An individual pool card opens its response board after completion. Reopening an answered card shows its saved response and the current board.
+A quiz advances to its next card after an answer, skip, or timeout. When all its cards are finished, the recap groups the questions and shared responses on one scrollable page. An individual pool card opens its response board after completion. Choose **View answers** for an answered pool card to see its saved response and the current board.
 
 ## Coins and timers
 
@@ -50,13 +52,17 @@ Timers belong to the server. Closing a card or the app does not stop or reset a 
 
 Workshop changes save automatically as a draft on this device for the current player. Saving the quiz stores it online. A saved quiz remains private until you finish it yourself. Codes can be copied for reference; the current interface offers pool discovery rather than a code-entry screen.
 
+Use **Flip** to turn the workshop preview over and **Front** to return to editing the question.
+
 ## Style cards and collect stickers
 
-Tap a card's color or design controls to open the style studio. Adjust palettes, fills, textures, motion, touch effects, typography, frames, shadows, and answer tiles. **Randomize** changes the current design, and **Done** returns to direct card editing.
+Tap a card's color or design controls to open the style studio. Start with a light, subtle look, or adjust palettes, fills, textures, motion, touch effects, typography, frames, shadows, and answer tiles. **Randomize** creates a coordinated light design while keeping sticker arrangements, and **Done** returns to direct card editing.
 
 New cards and quizzes inherit the last edited look. Keep series synchronization on to apply design changes across a quiz, or turn it off to style cards individually. Save a named look to reuse it on this device.
 
 Open **Stickers** to collect books with earned coins. Owned stickers can be reused. In the studio, drag, resize, rotate, fade, flip, duplicate, reorder, or remove sticker layers, and place them above or below text.
+
+Saved sticker arrangements keep their placement. A legacy card's single emoji without a saved design appears as a small, faint lower-corner decoration beneath the question while you answer.
 
 ## Read responses and react
 

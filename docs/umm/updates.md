@@ -1,5 +1,16 @@
 # Umm updates
 
+## 0.4.3 — Meadow menu — October 7, 2026
+
+- Refresh the game menu with original soft landscape artwork, dimensional controls, and a bright palette shared by the workshop, player, sticker collection, profiles, and settings.
+- Keep **Play**, **Create**, **Stickers**, and **You** easy to reach, with clearer phone browsing arrows and compact profile rows.
+- Add light, subtle starter card looks and coordinated random designs. Detailed textures, motion, touch effects, frames, and other expressive design controls remain available.
+- Keep saved looks, custom styles, and explicit sticker arrangements. Legacy single-emoji decorations move to a small, faint lower corner beneath the readable question.
+- Preserve the selected card's lift into the player, manual card flips, reduced-motion support, and complete question and answer text.
+- Keep the existing Google account flow, game rules, privacy, online data, package identity, and local drafts and saved looks.
+
+Build and automated mobile/desktop layout, game flow, account, customization, and card-experience checks passed. Interactive Google sign-in and live push delivery on a physical Android device remain unverified.
+
 ## 0.4.2 — Compact You screen — October 7, 2026
 
 - Replace the large illustrated player card with a compact name and username header, and reduce Google connection status to a small row.
