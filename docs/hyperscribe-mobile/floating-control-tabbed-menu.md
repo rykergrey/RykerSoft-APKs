@@ -1,8 +1,10 @@
 # Floating control menu
 
-Tap the floating button for the default recording action. Drag vertically to reposition it. Swipe inward or hold to reveal a grid of configured destinations. Tap a destination to open it; selecting a destination never starts recording or executes an action. The **Tabs** control returns to the grid. Back returns to the grid from a module, then closes the menu.
+Tap the right-edge floating button for the default recording action. Drag vertically to reposition it. Swipe inward to open the first enabled tab directly, nearest the right edge. Continue sliding your finger inward through tabs in their configured order, or move back toward the edge to select earlier tabs; the tab strip scrolls when needed. Releasing leaves the selected tab open without starting a recording or executing an action. Hold the button to open the configured or remembered tab.
 
-The category grid fits its contents up to the configured height, then scrolls when more tabs are present. Modules use the configured workspace height. Closing the panel restores the floating button's saved position. The panel follows the app’s light or dark theme, uses cyan emphasis, and offers controls with at least 48 dp touch targets. Settings → Floating control → Floating menu configures dimensions and modules. Tabs can be added, duplicated, renamed, reordered, hidden, and removed. Capture, Actions, Inbox, and Listen are module types, so multiple tabs of the same type can use different settings.
+Tap a tab to switch its content directly. Tap outside the menu or press Back to close it; the close button is also available. Closing restores the floating button's saved position and leaves recording and speech playback running.
+
+The tab strip and module contents scroll when they do not fit the configured workspace dimensions. The panel follows the app’s light or dark theme, uses cyan emphasis, and offers controls with at least 48 dp touch targets. Settings → Floating control → Floating menu configures dimensions, tab placement, and modules. Tabs can be added, duplicated, renamed, reordered, hidden, and removed. Capture, Actions, Inbox, and Listen are module types, so multiple tabs of the same type can use different names and settings.
 
 ## Capture
 

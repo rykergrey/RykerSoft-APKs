@@ -8,7 +8,7 @@
 - [My knowledge in Chat](#my-knowledge-in-chat)
 - [Text to speech](#text-to-speech)
 - [Floating menu customization](#floating-menu-customization)
-- [Floating menu gestures](#floating-menu-gestures-v281)
+- [Floating menu gestures](#floating-menu-gestures)
 - [Provider keys and privacy](#provider-keys-and-privacy)
 - [Sharing and interoperability](#sharing-and-interoperability)
 - [Sync between devices](#sync-between-devices)
@@ -256,7 +256,7 @@ The selected stop plan and provider are stored with the recording. If an action 
 
 ## Floating menu customization
 
-Open **Settings → Floating control → Floating menu** to arrange your command grid. Add a Capture, Actions, Inbox, or Listen tab; give it a title such as **Ideas**, **Work actions**, or **Articles**. Use **Duplicate** to start another tab with the same settings, then choose different content. Tabs can be renamed, reordered, hidden, and deleted; at least one must remain visible.
+Open **Settings → Floating control → Floating menu** to arrange your tabs. Add a Capture, Actions, Inbox, or Listen tab; give it a title such as **Ideas**, **Work actions**, or **Articles**. Use **Duplicate** to start another tab with the same settings, then choose different content. Tabs can be renamed, reordered, hidden, and deleted; at least one must remain visible.
 
 - **Capture:** show all recording profiles or choose and order a subset. Select the Clipboard, New text, Text file, Audio file, and Images import buttons you want. Clipboard import saves text directly; other imports open the app's editor or picker.
 - **Actions:** show all matching clipboard actions or select and order individual actions. Optionally choose a category and Action tags. With both configured, an action must match the category and at least one selected tag. The selected-list option still applies these filters. Image-input and screenshot workflows need the main app; Desktop-only actions need Desktop.
@@ -265,7 +265,7 @@ Open **Settings → Floating control → Floating menu** to arrange your command
 
 For example, create an Inbox tab named **Ideas** with your Ideas tag, a second Inbox tab bound to your **Work + Urgent** saved view, and an Actions tab limited to your Writing category. Inbox tags and Action tags are separate catalogs.
 
-Choose whether to include matching pinned Inbox items and set the recent-item limit. Filtering happens before that limit and before pins are included. Adjust menu width and height, quick-tab placement, the restore tab, and whether to remember the last selected tab. The category grid fits its contents up to the chosen height; modules use the chosen workspace height. Scroll to reach overflow content, including Listen controls in a short panel. Settings persist and travel in portable backups.
+Choose whether to include matching pinned Inbox items and set the recent-item limit. Filtering happens before that limit and before pins are included. Adjust menu width and height, tab-strip placement, the restore tab, and whether to remember the last selected tab. The menu opens directly into a tab. The tab strip and its content scroll when needed, including Listen controls in a short panel. Settings persist and travel in portable backups.
 
 ## Action workspace (v2.8)
 
@@ -279,11 +279,11 @@ In an action editor’s Basics tab, select Action tags or choose New tag. The pe
 
 Choose Automation → Auto-run in an individual action editor to run it after transcription or for new clipboard items. Automatic execution must also be enabled in the applicable recording stop profile.
 
-## Floating menu gestures (v2.8.1)
+## Floating menu gestures
 
-The current command grid, introduced in 2.17, opens when you swipe inward across the floating button or hold it. Tap a category to open that tab. Releasing the swipe or choosing a category does not start a recording or execute an action. Tap the floating button for its normal recording shortcut, or drag vertically to reposition it.
+Swipe inward from the right-edge floating button to open the first enabled tab directly. Continue sliding inward through tabs in configured order, or move back toward the edge to select an earlier tab; the tab strip scrolls when needed. Release to leave that tab open. Navigating tabs does not start a recording or execute an action. Hold the button to open the configured or remembered tab, tap it for the normal recording shortcut, or drag vertically to reposition it.
 
-Use **Tabs** to return to the category grid. Back returns to the grid from a module, then closes the menu. Quick tabs let you switch directly between modules and scroll when they do not all fit. Closing the menu restores the button's saved position.
+Tap a tab to switch its content. Tap outside the menu or press Back to close it; the close button is also available. Closing restores the button's saved position and leaves recording and speech playback running.
 
 Capture and Actions present their tools in grids. While recording, Pause/Resume, stop-profile selection, and Cancel remain available across every module. Closing the menu does not stop a recording.
 

@@ -1,3 +1,9 @@
+# 2.17.1 — Direct tabbed floating menu
+
+- Open the floating menu directly from the right-edge button. Slide inward to open the first enabled tab, continue sliding through tabs in configured order, or hold to open the configured or remembered tab. Tab navigation never starts recording or runs an action.
+- Tap outside the menu or press Back to close it. Closing restores the button's saved position and leaves recording and speech playback running.
+- Keep custom tab names, duplicate Capture/Actions/Inbox/Listen modules, tab order and visibility, selected action lists, category/tag filters, saved Inbox views, and speech-action choices. The tab strip and module contents scroll when needed.
+
 # 2.17.0 — Custom command grid and speech actions
 
 - Open the floating menu with an inward swipe or hold to reveal a compact category grid. Selecting a category opens its tools without starting recording or running an action. Capture and Actions use compact grids; active recording controls remain available across modules.

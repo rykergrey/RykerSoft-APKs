@@ -37,4 +37,10 @@ The APK and app bundle retain production certificate SHA-256 `2D602C65836A42405D
 
 The signed APK installed in place on the Samsung SM-N975U1 (Android 12/API 31), upgrading production 2.16.0/code 44 without uninstalling or clearing application data. Package Manager reports 2.17.0/code 46 and retains the original installation date. MainActivity launched successfully; the live application process had no fatal-exception, SQLite corruption, or migration-error markers during the startup check. This is a startup smoke check, not full provider/backend or native-suite coverage.
 
-Public release: [Hyperscribe Mobile 2.17.0](https://github.com/rykergrey/RykerSoft-APKs/releases/tag/hyperscribe-mobile-v2.17.0). Anonymous publication and catalog readback evidence is appended after activation.
+## Public artifact verification
+
+Public release: [Hyperscribe Mobile 2.17.0](https://github.com/rykergrey/RykerSoft-APKs/releases/tag/hyperscribe-mobile-v2.17.0). All five release assets (APK, app bundle, both checksum files, and verification JSON) were downloaded anonymously and matched the staged bytes. The downloaded APK's manifest and production certificate were independently verified. The installed phone APK also matched the APK SHA-256 above.
+
+All four app documents, the modular-menu reference, the technical release document, and the four gallery images were fetched anonymously and verified. The added Listen image contains synthetic test content; the existing Inbox, Actions, and Chat gallery was preserved. Source tag `v2.17.0` points to `61429e5e36e6354878fd80cf66964f090e622c15`; public documentation was published in commit `ad54c6d` and the new image in `ba6f283`.
+
+The catalog was not activated for 2.17.0. Before activation, the user requested direct tabbed opening, drag-through-tab navigation, and outside-tap dismissal. Those changes are shipped as the subsequent 2.17.1/code 47 revision. The immutable 2.17.0 artifacts remain available for reference.

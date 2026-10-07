@@ -3,7 +3,7 @@
 ## Android
 
 - Package: `com.rykersoft.hyperscribemobile`
-- Version: `2.17.0` (code 46)
+- Version: `2.17.1` (code 47)
 - Minimum Android: 10 / API 29
 - Target Android: API 36
 - Architectures: arm64-v8a and x86_64
@@ -49,8 +49,9 @@
 
 ## Floating control and speech actions
 
-- The permission-gated Android floating control opens a two-column category grid on an inward swipe or hold. Vertical dragging repositions the button; an ordinary tap retains its recording shortcut. Choosing a category does not execute its content.
-- Capture, Actions, Inbox, and Listen are reusable module types. Tabs can be duplicated and independently titled, ordered, hidden, removed, and configured. The category grid fits its content up to the configured height; module surfaces use the configured workspace height and scroll when needed. Theme colors follow the application, with 48 dp minimum touch targets.
+- The permission-gated Android floating control opens a tabbed menu directly from the right-edge button. An inward swipe starts at the first enabled tab; continued swipe distance selects tabs in configured order, scrolling the strip when needed. Moving back toward the edge selects earlier tabs. Holding opens the configured or remembered tab. Vertical dragging repositions the button; an ordinary tap retains its recording shortcut. Tab navigation never executes an item.
+- Tapping outside the menu or pressing Back closes it and restores the button's saved position. Closing leaves recording and speech playback running.
+- Capture, Actions, Inbox, and Listen are reusable module types. Tabs can be duplicated and independently titled, ordered, hidden, removed, and configured. The tab strip and module contents scroll when needed within the configured workspace dimensions. Theme colors follow the application, with 48 dp minimum touch targets.
 - Capture tabs select all or an ordered subset of capture profiles plus clipboard, new-text, text-file, audio-file, and image shortcuts. Recording pause, stop-profile, and cancel controls remain available across modules.
 - Actions tabs show all eligible clipboard actions or an ordered selection, optionally constrained by category and Action tags. Category and tag constraints apply together; multiple selected tags match any selected tag. Image-input workflows require the main app; Desktop-only workflows require Desktop.
 - Inbox tabs bind to the active Inbox or an existing saved view and may add Inbox tag filters. Saved-view bindings follow current search, archive, content, retention, and schedule settings. Filters apply before recent limits and matching pins. A missing view does not broaden the tab's results.
