@@ -25,6 +25,7 @@ Inbox remains your everyday capture and organization space. **My knowledge** bri
 - Swipe inward from the right-edge floating button to open the first visible tab; continue sliding through your configured tabs. Hold to open the configured or remembered tab, and tap outside to close. Create multiple Capture, Actions, Inbox, and Listen tabs, including custom names, live saved Inbox views, tag filters, category filters, and ordered action shortcuts.
 - Save provider, voice, and playback settings in reusable speech actions. Choose a default for Chat, Inbox, Listen, and spoken reminders, override it where needed, or run a complete workflow such as summarizing an article before reading it aloud.
 - Keep persistent chat threads with streaming, cancellation, multi-item Inbox context, action stacks, completion notifications, editing, regeneration, action context, and TTS.
+- Choose **Save thread to Inbox** to keep a complete conversation as one readable Markdown item, with speaker headings, timestamps, and saved-source excerpts. Configured automatic Inbox actions, tagging, tag workflows, and retention policies apply when you save it.
 - Use Piper or system TTS locally, or configure Gemini and ElevenLabs speech.
 - Use personal provider credentials protected by Android Keystore or optional Google-account-bound RykerSoft Pro Access.
 - Move action libraries to or from Hyperscribe Desktop using compatible JSON exports.
@@ -49,7 +50,7 @@ Personal bring-your-own keys remain supported and take priority. Recording, orga
 
 Saved content and its search index are stored on your device. When you use cloud Chat with saved-entry retrieval enabled, selected relevant excerpts are sent to your configured provider along with the conversation; the entire Inbox is not attached automatically. Search and optional English embeddings run locally, but cloud Chat still needs a provider connection. The optional related-idea model downloads about 23 MB over unmetered Wi-Fi.
 
-Turning retrieval off or excluding an entry affects future automatic retrieval; it does not remove excerpts already in conversations or explicitly attached content. Search availability does not override cleanup or expiry. Generated Chat answers stay in Chat unless you explicitly save them.
+Turning retrieval off or excluding an entry affects future automatic retrieval; it does not remove excerpts already in conversations or explicitly attached content. Search availability does not override cleanup or expiry. Incoming and outgoing Chat messages stay in their conversation; they do not automatically create Inbox copies. Save selected threads when you want them in Inbox. Explicit note and reminder requests still create their requested items.
 
 Personal and Pro provider credentials are excluded from backups, diagnostics, source control, and release artifacts; Pro values are cleared from memory when access is lost.
 

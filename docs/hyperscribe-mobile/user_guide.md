@@ -5,6 +5,7 @@
 - [Getting started](#getting-started)
 - [Inbox and recording](#inbox-and-recording)
 - [Actions and chat](#actions-and-chat)
+- [Save a chat thread to Inbox](#save-a-chat-thread-to-inbox)
 - [My knowledge in Chat](#my-knowledge-in-chat)
 - [Text to speech](#text-to-speech)
 - [Floating menu customization](#floating-menu-customization)
@@ -38,6 +39,14 @@ Actions transform text or Inbox content. When one or more Inbox text items or re
 In **Settings → Text replacements**, create a rule with the spelling or phrase you want as its replacement, then add any number of spoken or misspelled variants. For example, a `Crystal` rule can include `Kristal`, `Krystal`, and `my wife`; every completed transcript converts those variants to `Crystal` before it is saved or routed elsewhere. Matching is case-insensitive and uses whole words or phrases. Replacements may also contain `{current_date}`, `{date_stamp}`, `{current_day}`, `{current_month}`, `{current_year}`, `{current_time}`, or `{timestamp}` to insert the current local date or time.
 
 For a voice request such as “I need groceries tonight, so remind me in four hours to ask my wife what we need,” Chat creates a scheduled Inbox entry. The item keeps the spoken transcription, shows a short task title, and receives matching automatic tags. Open the item and choose **Alerts** to check or change the scheduled alert. Every saved item's viewer has an Alerts tab, so you can add one later too. If the request lacks a usable time, Chat asks for one before creating the alert.
+
+### Save a chat thread to Inbox
+
+Incoming and outgoing messages remain in Chat without automatically creating Inbox copies. To keep a conversation, open that thread, tap the three-dot **Chat menu**, and choose **Save thread to Inbox**. Wait for an active reply to finish before saving. Explicit requests to create notes, lists, or reminders still save the items you request.
+
+The saved item contains the full visible conversation in order, with its title, speaker headings, local timestamps, and original Markdown lists, tables, and code. Stopped or failed replies include their available text with an interruption note. **Saved sources** lists numbered excerpts captured when you save, with dates and unavailable or changed-source notices. Attachments appear as references; their files are not embedded in the saved text.
+
+Configured automatic Inbox actions run when you save the thread and can transform its text before automatic tagging. Tag workflows and retention policies also apply. The item is an independent snapshot: later messages or edits in Chat do not update it. Choosing **Save thread to Inbox** again creates another item. Existing Inbox copies from earlier versions remain available.
 
 ## My knowledge in Chat
 

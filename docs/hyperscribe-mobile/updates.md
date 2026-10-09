@@ -1,3 +1,10 @@
+# 2.18.0 — Save selected chat threads
+
+- Keep incoming and outgoing Chat messages in their conversation without automatically adding individual copies to Inbox. Explicit note, list, and reminder requests still save their requested items.
+- Use **Chat menu → Save thread to Inbox** to save the whole visible conversation as one independent item. Saved Markdown preserves lists, tables, and code, with speaker headings, timestamps, and ordered source excerpts captured at save time. Attachment references identify their files without embedding media or local paths.
+- Apply configured automatic Inbox actions, automatic tags, tag workflows, and retention policies to saved threads. Saving waits for replies to finish; stopped or interrupted text is labeled. Later Chat edits leave saved snapshots unchanged.
+- Improved Sync reliability for Inbox and Actions tags, and fixed syncing of transcription replacement rules.
+
 # 2.17.1 — Direct tabbed floating menu
 
 - Open the floating menu directly from the right-edge button. Slide inward to open the first enabled tab, continue sliding through tabs in configured order, or hold to open the configured or remembered tab. Tab navigation never starts recording or runs an action.

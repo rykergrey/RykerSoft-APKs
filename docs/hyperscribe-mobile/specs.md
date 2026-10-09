@@ -3,7 +3,7 @@
 ## Android
 
 - Package: `com.rykersoft.hyperscribemobile`
-- Version: `2.17.1` (code 47)
+- Version: `2.18.0` (code 48)
 - Minimum Android: 10 / API 29
 - Target Android: API 36
 - Architectures: arm64-v8a and x86_64
@@ -33,6 +33,8 @@
 
 ## Chat operations and time-sensitive answers
 
+- Incoming and outgoing Chat turns no longer automatically create Inbox items. **Save thread to Inbox** explicitly saves the visible conversation as one independent text capture through standard Inbox creation. Configured automatic Inbox actions run before automatic tagging of the resulting text; tag workflows, history limits, and retention policies apply. Explicit note, list, and reminder commands retain their requested saves.
+- Thread snapshots preserve conversation order and message Markdown, add the thread title, speaker headings, and local timestamps, and omit internal system turns. Saving waits until active generation finishes; stopped or failed replies retain their text with an interruption note. Attachment labels are references without embedded files or device-local paths. Saved-source excerpts are limited to 240 characters per source, reflect current eligible text at save time, and identify unavailable or changed sources. Saving again creates another snapshot; existing saved items do not track later Chat edits.
 - Explicit embedded reminder requests in longer Chat or Index 01 speech are parsed locally after transcription normalization. The saved item retains the original request as text without a title, receives configured auto-tags, and schedules a local reminder. Every Inbox viewer exposes alert controls, including for items without an existing alert.
 - Direct replacement commands check current settings and atomically create, extend, or re-enable a matching rule. Conflicting mappings are left unchanged; receipts and an attempt checkpoint prevent retrying an interrupted settings mutation.
 - Current-status queries with a named topic reserve up to four recent keyword passages alongside relevant evidence, within the existing eight-source/16,000-character budget. Historical queries retain ordinary retrieval.
