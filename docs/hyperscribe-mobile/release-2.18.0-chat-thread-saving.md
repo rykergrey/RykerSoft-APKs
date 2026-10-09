@@ -28,3 +28,13 @@ APK and app bundle retain production certificate SHA-256 `2D602C65836A42405D353F
 
 - APK SHA-256: `4e7226c162d15d6c4209283972ec857b238989fef9eb88cbbed337ead89279ac`.
 - App bundle SHA-256: `ab9f9257e2959a92030d9edcc48dc9cd4b75b1786a6fd5de4241cd6a26ff87a3`.
+
+## Public publication and phone update
+
+Public release: [Hyperscribe Mobile 2.18.0](https://github.com/rykergrey/RykerSoft-APKs/releases/tag/hyperscribe-mobile-v2.18.0). All five release assets were downloaded anonymously and matched the verified local files. The downloaded APK's package, version, and production certificate were checked again. All four app documents, the two supporting documents, and the two new screenshots were also fetched anonymously and matched their reviewed contents.
+
+Source tag `v2.18.0` identifies commit `94c5c48f514ff5f5c1ed18b66e448f738be1d5e0`, including every pending application source change and its tests. Documentation and screenshots were published in `f1a27410b9029bc7edcfa39c3a8511a38ce7698c`. Catalog activation was published in `68d3a85`; `04353e83e35e77895eba606ab7d36d92e4a7bc79` preserves the catalog's existing Unicode formatting. The canonical public raw catalog and a fresh URL both matched the complete reviewed 17-app catalog at 2.18.0/code 48. Every unrelated entry, field, and Desktop download pointer is preserved.
+
+The anonymously downloaded APK upgraded production in place on the connected Samsung SM-N975U1. No production data was cleared or uninstalled. Package Manager confirms 2.18.0/code 48 and preserves the original September 7 installation date. The installed APK hash exactly matches the public download. MainActivity launched successfully; the startup check found no fatal exception, SQLite corruption, or Room migration errors.
+
+RykerSoft was opened on the phone and displayed a remote-registry synchronization message. Its refreshed listing was not confirmed before the phone moved to Recents. Public catalog contents and the production phone update were verified independently. Live provider generation, sign-in, and a new cloud Sync run are not claimed for this release.
