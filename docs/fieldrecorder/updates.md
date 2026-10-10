@@ -1,5 +1,14 @@
 # Updates
 
+## 1.1.0 — October 10, 2026 (Android code 3)
+
+- Google sign-in for the RykerSoft account and Field Recorder Pro access.
+- Pro-managed Groq transcription for game answers and spoken deck questions, without a personal API key.
+- Personal keys remain optional and take priority when saved.
+- Live entitlement checks block new managed requests after sign-out, revocation, or backend errors; managed keys are never persisted locally.
+- Retains the completed built-in microphone changes: external inputs are excluded and Android routing is verified.
+
+
 ## 1.0.0 — October 10, 2026 (Android code 2)
 
 First production-signed RykerSoft release.
