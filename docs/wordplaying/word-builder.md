@@ -138,8 +138,11 @@ its score before the clash, including words whose tiles lose. Returning players
 read opponents' words first, count the letters one at a time, then compare all
 submitted scores before the battles. Each winner stays visible before losing
 tiles fall away; the recap distinguishes submitted scores from actual round
-points. Player colors stay consistent on drafts, comparisons, battle tiles and
-winning board placements, with names and You/Opponent labels alongside color.
+points. Player colors stay consistent in the word comparison and tile battles,
+with names and You/Opponent labels alongside color. Settled board tiles keep
+their normal backgrounds. Only opponents’ letters added since your last turn
+use your chosen accent, across every opponent who played. Your next accepted
+turn clears those highlights; simply reopening the match does not.
 The reveal can be paused and pauses automatically while the match is hidden.
 Show result returns to the settled board early. Explicit online match clocks
 continue during playback; those reveals display a reminder alongside this control.
@@ -429,3 +432,12 @@ Verification: `npm run verify:builder`, `npm run verify:builder-ui`,
 `npm run test:builder-finale`. Use the Java 21 PATH noted above for the emulator.
 `/scripts/finale-preview.html` is an interactive fixture using the real rules
 and component without writing saved games.
+
+## Waiting for a turn
+
+Scramble defaults to unlimited turns and no timer. A per-player cap or timer
+applies only when explicitly chosen in Game options. A waiting online player
+can ping the current player after five minutes. Pings share a ten-minute
+cooldown across waiting players, appear in the current player’s notifications,
+and use push delivery when enabled. A ping never advances, skips, or forfeits
+a turn. Bungle Finale remains untimed and uses its own ten turns per player.

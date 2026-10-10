@@ -1,5 +1,12 @@
 # Updates
 
+## v1.3.54 — Scramble move fixes and turn reminders
+
+- Restore online move submission after a backend startup failure rejected valid words with a connection message. Existing matches remain playable.
+- Color only opponents’ tile letters added since your last turn with the chosen accent, including moves by several opponents. Your own tiles retain their normal appearance; recent highlights survive reopening and clear after your next accepted turn.
+- Scramble defaults to unlimited turns and no timer. Turn caps and timers apply only when selected in Game options.
+- Waiting players can ping the current player after five minutes, with a shared ten-minute cooldown. Reminders do not advance or forfeit turns.
+
 ## v1.3.53 — Clearer Clash reveals and Bungle Finale
 
 - Clash introduces the opponent’s submitted word before revealing each letter’s points, comparing both word totals, and showing the tile battle. Winners are named clearly before losing tiles fall away.
