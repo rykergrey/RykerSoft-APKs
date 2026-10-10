@@ -1,5 +1,12 @@
 # Updates
 
+## v1.3.53 — Clearer Clash reveals and Bungle Finale
+
+- Clash introduces the opponent’s submitted word before revealing each letter’s points, comparing both word totals, and showing the tile battle. Winners are named clearly before losing tiles fall away.
+- Keep player colors consistent across words, battles, and board tiles, with explicit You and Opponent labels. Pause the reveal or choose Show result; returning to a hidden match preserves the remaining reading time.
+- Add the optional Bungle Finale modifier: after Scramble, take turns tracing words on the completed board with no phase-two timer. Each player gets ten turns and can pass. The finale ends when every remaining player passes or uses all their turns.
+- Add the finale’s word points to each player’s Scramble score to determine the winner. Claimed words cannot be repeated, while board tiles remain reusable across words.
+
 ## v1.3.52 — Scramble modifiers and weekly lobbies
 
 - Free Placement lets you use your tray across separate parts of the board and build multiple words in one turn, including with Stacking.

@@ -6,7 +6,7 @@
 - **Web**: Modern Chromium-, Firefox-, or WebKit-based browser
 - **compileSdk / targetSdk**: 36
 - **Package ID**: `com.rykersoft.wordplaying`
-- **Release version**: 1.3.52 (Android version code 58)
+- **Release version**: 1.3.53 (Android version code 59)
 - **Shell**: Capacitor 8 (WebView) wrapping a Vite + React 19 TypeScript app
 
 
@@ -33,3 +33,10 @@
 - Public player profiles contain only a custom player name. Rules enforce the display-name-to-case-folded-reservation mapping, reject reserved and abusive names, and make reservations choose-once and client-immutable. Moderation and recovery are trusted administrator operations keyed to the same Firebase UID. Public profiles contain no Google name, email, provider ID, entitlement, or token data.
 - Existing password accounts use a migration-only sign-in and link a Google credential to the current Firebase user so UID-owned data is preserved.
 - Android Google sign-in uses the Capacitor Firebase Authentication bridge and the registered RykerSoft release SHA-1/SHA-256 certificate fingerprints.
+
+## Scramble Bungle Finale
+
+- Optional second phase on the completed Scramble board; always untimed, with ten turns per player.
+- Trace adjacent letters, including diagonals. A square can be used once within a word and reused across different words. Claimed words are shared and cannot score twice.
+- Pass when no move is available. All remaining players passing or exhausting their turns ends the phase. Finale points are added once to build scores for the final standings.
+- Scramble protocol 7 is required for this modifier; existing earlier match protocols remain supported.

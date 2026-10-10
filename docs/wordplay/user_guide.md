@@ -160,12 +160,13 @@ The current player's color fills the space around the board, colors the turn ban
 - Bonus colors retain their meaning in every palette. Your current-turn drafts use the main accent; planning while waiting uses a separate accent. New letters are colored, while all contributing letters receive an outline.
 - Choices and locally earned rewards stay on this device for the current profile. Guest rewards stay with the guest profile; a local match only rewards one profile. Online eligibility is rebuilt from account statistics. See [Appearance system](appearance.md) for the complete collection and design rules.
 
-## Scramble: Free Placement, Clash, and Strict
+## Scramble: Free Placement, Clash, Strict, and Bungle Finale
 
 Choose these modifiers in Scramble Match Options, or combine them in a saved mode.
 
 - **Free Placement**: Use up to seven tray tiles on any unblocked squares, across several separate words. Single letters can prepare later turns. Combine with Stacking to change distant words together.
-- **Clash**: Choose Online, Vs Raid, or a fixed Pass & Play roster. Each player locks a secret plan against the same board. After everyone submits, the round reveals together. Same-square tiles battle by letter value; changes to one word also gain strength from more contributing tiles. Equal strength uses a random tie break. Losing tiles stay in their tray.
+- **Clash**: Choose Online, Vs Raid, or a fixed Pass & Play roster. Each player locks a secret plan against the same board. After everyone submits, read the opponent’s word, follow each letter’s points, compare both totals, and watch the tile battle. Player colors stay consistent; each winner is named before losing tiles fall away. You can pause the reveal or choose Show result. Any explicitly selected online build timer continues running during playback. Same-square tiles battle by letter value; changes to one word also gain strength from more contributing tiles. Equal strength uses a random tie break. Losing tiles stay in their tray.
+- **Bungle Finale**: When building ends, take turns selecting one word of 3+ adjacent letters from the exact board you just played. Diagonals count; use each square once per word. Each word can be claimed once across all players. Bungle length points are tracked separately and added to your adjusted Scramble score at the end. Top stack letters and assigned blanks remain usable; board bonuses and tile values stop scoring. Phase 2 has **no timer**, even if building uses one. Each player gets **10 turns**; submitting a word or passing uses one. Players with no turns left are skipped. End when everyone uses their turns, or everyone still able to play passes consecutively. The combined score determines the winner.
 - **Strict**: The board shows your draft tiles, while the current word, score, and dictionary check stay hidden. Submit to check the word. An invalid word scores zero, places no letters, keeps your tray, and uses your turn.
 
 Free Placement and Clash can combine with Stacking. Falling Tiles cannot combine with Free Placement, Clash, or Stacking. Strict works with the other compatible rules.

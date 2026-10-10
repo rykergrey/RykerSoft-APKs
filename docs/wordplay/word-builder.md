@@ -5,9 +5,9 @@ on the client and server. Bungle (internally Hunt)
 continues through `services/games/huntAdapter.ts` without changing its engine,
 mode identity, saves, competitive collections or weekly cleanup.
 
-Version 1.3.52 includes Free Placement, Clash, Strict, and weekly public lobbies.
-The required multiplayer functions, Firestore rules, and lobby indexes were deployed
-on 2026-10-05. Earlier rollout notes below retain their original release context.
+The current match-options, custom-mode, board-size, turn-limit, timer and local
+roster changes are source changes only. This task has not deployed them. Dated
+rollout notes below describe earlier releases.
 
 ## Current source
 
@@ -17,7 +17,7 @@ on 2026-10-05. Earlier rollout notes below retain their original release context
   by turn. Solo has exactly one human player and no AI opponent.
 - Small, standard and large board fixtures, 100-tile distribution, blanks, crossing validation,
   stack values, premiums, seven-tile bonus, exchanges and endgame deductions.
-- Nine modifiers, 288 legal combinations, deterministic barrier/premium generation,
+- Ten modifiers, 576 legal combinations, deterministic barrier/premium generation,
   simultaneous Falling clears and gravity cascades. Hidden previews redact premiums.
 - Dedicated gray-and-orange board with touch navigation, tap selection and
   placement, universal tile swapping, recall, shuffle and exchange selection.
@@ -133,8 +133,18 @@ An invalid word created by combining otherwise legal plans also triggers a word
 battle. Only losing tiles in the contested word are removed; unrelated letters
 survive. Losing tiles stay in their owner's rack. Every surviving word scores for
 the player whose tiles changed it, then racks refill and the next round begins.
-The public reveal contains each battle, winning placement and player's score,
-and the board replays the winning placements. Clash can combine with Free
+The public reveal preserves every submitted word, its letter contributions and
+its score before the clash, including words whose tiles lose. Returning players
+read opponents' words first, count the letters one at a time, then compare all
+submitted scores before the battles. Each winner stays visible before losing
+tiles fall away; the recap distinguishes submitted scores from actual round
+points. Player colors stay consistent on drafts, comparisons, battle tiles and
+winning board placements, with names and You/Opponent labels alongside color.
+The reveal can be paused and pauses automatically while the match is hidden.
+Show result returns to the settled board early. Explicit online match clocks
+continue during playback; those reveals display a reminder alongside this control.
+Reduced motion retains the reading sequence without spatial animation. The board
+and match scores settle after the full reveal. Clash can combine with Free
 Placement or Stacking; Falling Tiles remains incompatible.
 
 Strict (`strict`) conceals the draft word, score, and dictionary-validity preview.
@@ -196,10 +206,10 @@ shows a short turn-complete transition before the concealed next-player screen.
 ## Authoritative online state
 
 Deploy the updated backend before releasing this client. Updated clients send
-protocol version 6 and can resume versions 1 through 6. Matches with legacy-compatible
+protocol version 7 and can resume versions 1 through 7. Matches with legacy-compatible
 15×15 boards, unlimited turn counts and legacy timers retain version 1; new
 board sizes, turn caps and timers require version 2. Lasting Bonuses requires
-version 3, Free Placement version 4, Clash version 5, and Strict version 6. Older clients can leave or
+version 3, Free Placement version 4, Clash version 5, Strict version 6, and Bungle Finale version 7. Older clients can leave or
 resign after a lobby upgrade, but cannot ready, start or play unsupported rules.
 Changing lobby rules clears readiness. Engine rules versions and existing mode
 identities remain unchanged.
@@ -377,10 +387,45 @@ complete replay data for new turns.
 Run `npm run verify:builder-replay` for deterministic playback checks, alongside
 `npm run verify:builder-online-ui` and `npm run test:builder` for integration coverage.
 
+## Bungle Finale modifier
 
-## 2026-10-05 rollout — 1.3.52
+`bungle-finale` adds a second phase to Solo, Vs Raid, Pass & Play, Live and Play
+by turn. A normal building end (played-out, six scoreless turns, turn limit or
+no legal Falling drop) applies the normal rack adjustment once, then freezes the
+exact board and starts phase 2 with the next remaining player. Resignation that
+ends the match skips the finale. No new players join during phase 2.
 
-- Deployed 27 Scramble and Bungle multiplayer/mode functions, rules, and lobby indexes. The optional connected AI provider was excluded from the deployment entry point; local Raid remains available.
-- The full Builder, season-lobby, live-match, synchronization, and rules emulator suite passed. Engine, UI, replay, online UI, home, and AI checks passed.
-- Release packages use version 1.3.52; Android uses version code 58 and the existing trusted signer. A visual check caught and fixed Pass & Play Clash setup, covered by a new SettingsModal regression assertion.
-- Physical device installation and desktop runtime smoke tests remain unverified.
+Players select one dictionary word of at least three letters per turn through
+adjacent occupied squares, including diagonals. A square can appear only once in
+a word, and a word can be claimed only once across all players, even along a
+different path. Words played during building are eligible. Empty squares and
+barriers cannot be traversed. Stacks contribute only their top letter, blanks
+keep their assigned letter, and physical Q stays Q (it does not become Qu).
+
+Bungle length scoring is tracked separately, then added to the adjusted Scramble scores when phase 2 ends: 3–4 letters earn
+1 point, 5 earn 2, 6 earn 3, 7 earn 5, and 8+ earn 11. Tile values, premiums and
+stack values no longer affect scoring. Each player gets **10 turns** in phase 2,
+independently of the build turn cap. A word, pass or invalid Strict submission
+uses one turn. Players who use all ten turns are skipped. Phase 2 ends when
+everyone uses their turns, or every remaining player passes consecutively; a
+successful claim resets the pass sequence. **Phase 2 never has a timer**, even
+when the building phase uses an explicitly selected timer. Old persisted local
+or online deadlines cannot consume phase-two turns or cause missed-turn forfeits. Strict hides word
+and validity previews and makes an invalid dictionary submission consume a turn
+and count as a pass. Clash finishes its building reveal before the finale uses
+ordinary sequential turns. Falling leaves its remaining board for the hunt.
+
+The finale screen supports tap/keyboard selection, undo, clear, zoom/pan, claim
+history, separate build/hunt scores, remaining-turn counts, pass, resign, and saved-game resume. Raid
+searches adjacent paths and avoids claimed words. Online matches stay active
+until phase 2 finishes; only then are Bungle points added to Scramble scores and combined results finalized and ranked.
+
+This modifier requires Builder protocol 7. Older rules continue using their
+existing protocols. Deploy the updated client and Builder Cloud Functions
+together before offering it online; these source changes do not deploy them.
+
+Verification: `npm run verify:builder`, `npm run verify:builder-ui`,
+`npm run verify:builder-online-ui`, `npm run verify:ai`, and
+`npm run test:builder-finale`. Use the Java 21 PATH noted above for the emulator.
+`/scripts/finale-preview.html` is an interactive fixture using the real rules
+and component without writing saved games.
