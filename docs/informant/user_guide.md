@@ -18,7 +18,7 @@ Research workspace for YouTube videos, articles, and Reddit posts — saved as i
 ## 1. Getting started
 
 1. Open INFORMANT, paste a URL on the home screen, and tap **Import**. The item is saved beside your projects; videos open full-screen with **Info** selected.
-2. To organize a standalone video later, tap **Add to project** below the player, choose an existing project, and confirm. Its saved work moves with it and the video stays open. Create an empty project with **New project** on the home screen when needed.
+2. To organize a standalone video later, tap the folder-plus **Add to project** icon below the player, choose an existing project, and confirm with the folder-plus icon. Its saved work moves with it and the video stays open. Create an empty project with **New project** on the home screen when needed.
 3. On Android, share a link into INFORMANT from another app to import and open it directly. For the original new/existing project chooser, select **Project-based import** under **Settings → General → URL import behavior**. Content added from inside a project stays in that project.
 4. Provider-backed features require keys entered under **Settings → Keys**, or administrator-granted INFORMANT Pro access followed by the same Google account under **Settings → RykerSoft AI unlock** (see section 9). Notes, bookmarks, local save/import, and System/Piper TTS do not require provider access.
 

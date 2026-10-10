@@ -1,5 +1,10 @@
 # Release notes
 
+## v1.4.5
+- Use folder-plus icons without visible text for both Add to project buttons
+- Keep descriptive tooltips, accessibility labels, and the project picker heading
+- Preserve the standalone import flow, saved work, and Android app data during the signed update (versionCode 22)
+
 ## v1.4.4
 - Import URLs as individual home-screen items by default, without creating or selecting a project
 - Open standalone videos full-screen with Info selected on desktop and Android
