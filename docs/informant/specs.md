@@ -3,7 +3,8 @@
 ## Package
 - **App name:** INFORMANT
 - **Android package ID:** `com.rykersoft.informant`
-- **Current version:** 1.4.0 (versionCode 17)
+- **Current Android version:** 1.4.4 (versionCode 21)
+- **Published Windows download:** 1.4.2
 
 ## Platforms
 | Platform | Stack | Storage |
@@ -22,7 +23,9 @@
 - **Firebase plan:** This Auth + Firestore model works on Firebase Spark. Blaze is required only if a future release deliberately moves provider operations into Cloud Functions
 
 ## Architecture notes
-- Project-centric navigation: `ProjectHome` → `Workspace` (no React Router)
+- Navigation: `ProjectHome` → `StandaloneVideoView` or project `Workspace` (no React Router)
+- Standalone membership/artifact snapshots are stored separately from projects (SQLite on desktop, IndexedDB on Android); Add to project moves the saved work into an existing project
+- URL imports default to standalone; General settings can restore project-based import
 - Single global YouTube player (`PlayerManager`) repositions over the active card target
 - Player modes: `collapsed`, `expanded`, `pip`
 - Video artifacts (notes, bookmarks, transcripts, comments, chat, analyses) keyed by content id (`videoId` / `articleId`)

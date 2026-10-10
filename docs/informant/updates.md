@@ -1,10 +1,16 @@
 # Release notes
 
+## v1.4.4
+- Import URLs as individual home-screen items by default, without creating or selecting a project
+- Open standalone videos full-screen with Info selected on desktop and Android
+- Move a video into an existing project with Add to project beneath the player, preserving its notes, bookmarks, transcript, chat, and playback position
+- Choose Single video or the original Project-based import under Settings → General → URL import behavior
+- Preserve Android app data during the signed update (versionCode 21)
+
 ## v1.4.3
 - Stop reopening old shared links on ordinary launches and Android resume; new Android shares and manual imports remain available
 - Restore the active project, expanded video, selected tab, and reading position after reopening
 - Preserve the existing Android signing identity and local app data during updates
-
 
 ## v1.4.2
 - Restore a complete, source-backed release after an unreleased direct-device build advanced the Android version

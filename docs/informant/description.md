@@ -1,9 +1,12 @@
-Local workspace for researching YouTube videos, articles, and Reddit posts. Organize work into projects, keep notes and bookmarks on each item, and run chat or analysis against the material you collected. No YouTube account login — API keys go in Settings.
+Local workspace for researching YouTube videos, articles, and Reddit posts. Import directly as individual home items, organize them into projects when ready, and keep notes and bookmarks on each item. Run chat or analysis against the material you collected. No YouTube account login — API keys go in Settings.
 
 ## Features
-- Project-based workspace: create, search, sort, rename, export, and delete projects
+- Standalone URL imports appear beside projects on the home screen and open videos full-screen on Info
+- Add to project beneath the player moves the video and saved work into an existing project
+- Optional projects: create, search, sort, rename, export, and delete projects
 - Import YouTube, article, and Reddit URLs (single links or mixed batches)
-- Android share-target: share a link into INFORMANT to start or fill a project
+- Android share-target: share a link into INFORMANT to import and open it directly
+- Settings → General → URL import behavior restores the original new/existing project chooser
 - Per-item tabs for notes, bookmarks, transcripts, comments, chat, and custom AI actions
 - Quote bookmarks in articles/Reddit; a permanent video bookmark action uses the nearest complete transcript sentence as its editable title and keeps the exact timestamp editable
 - Fetch and search YouTube captions; click a line to seek the player

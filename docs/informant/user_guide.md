@@ -1,6 +1,6 @@
 # INFORMANT User Guide
 
-Research workspace for YouTube videos, articles, and Reddit posts — organized into projects with notes, bookmarks, transcripts, and AI tools.
+Research workspace for YouTube videos, articles, and Reddit posts — saved as individual home items or organized into projects, with notes, bookmarks, transcripts, and AI tools.
 
 ## Table of Contents
 
@@ -17,9 +17,9 @@ Research workspace for YouTube videos, articles, and Reddit posts — organized 
 
 ## 1. Getting started
 
-1. Open INFORMANT and create a project (or open an existing one).
-2. Paste one or more YouTube, article, or Reddit URLs.
-3. On Android, you can also share a link into INFORMANT from another app.
+1. Open INFORMANT, paste a URL on the home screen, and tap **Import**. The item is saved beside your projects; videos open full-screen with **Info** selected.
+2. To organize a standalone video later, tap **Add to project** below the player, choose an existing project, and confirm. Its saved work moves with it and the video stays open. Create an empty project with **New project** on the home screen when needed.
+3. On Android, share a link into INFORMANT from another app to import and open it directly. For the original new/existing project chooser, select **Project-based import** under **Settings → General → URL import behavior**. Content added from inside a project stays in that project.
 4. Provider-backed features require keys entered under **Settings → Keys**, or administrator-granted INFORMANT Pro access followed by the same Google account under **Settings → RykerSoft AI unlock** (see section 9). Notes, bookmarks, local save/import, and System/Piper TTS do not require provider access.
 
 ## 2. Working with a video
@@ -119,6 +119,7 @@ Notes:
 
 ## 10. Settings
 
+- **General → URL import behavior** — **Single video (default)** for direct import and opening on Info, or **Project-based import** for the original chooser
 - Dark mode, resume-at-furthest-bookmark, and default tabs
 - **Models** — add Gemini or OpenAI models by retrieving the provider's current account-visible catalog or entering a model ID manually; assign defaults for chat, app functions, and each built-in/custom action
 - External search engines for highlighted text
