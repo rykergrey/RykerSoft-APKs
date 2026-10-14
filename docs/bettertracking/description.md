@@ -2,19 +2,19 @@ Holistic personal tracking for food, supplements, exercise, measurements, lifest
 
 bettertracking is a full journal + library system, not a simple calorie counter. Track what you eat and do, build a personal library of ingredients and combos, stage batches into your journal, and let targets adapt from your weight trend and activity.
 
-## New in 1.11.1
+## New in 1.11.2
 
-- Home's W/M controls open weekly/monthly Trends & History with all charts, metrics, relationships and the filtered log list
-- A nutrition-first overview with calorie, protein, fiber and weight comparisons and a dedicated recorded weight trend
-- The separate Analysis tab generates AI reviews inline, saves period reports and supports exports and chat follow-ups for the same period
-- Default AI reviews focus on nutrition and confirmed weight goals; full training, habits and food exploration remain available
+- Home’s Log/Stats control separates daily logging from period statistics
+- Log opens the selected day’s dashboard and entries; Stats starts on Week and retains the selected range when returning
+- One range control in Stats selects Day, Week, Month, Year, All time or Custom for both Trends & History and Analysis
+- Trends & History keeps charts, metrics, relationships, food exploration and selected-period logs; Analysis keeps inline AI reviews and saved reports for those same dates
 
 ## Features
 
 - **Six domains** in one place: Food, Supplement, Exercise, Measurement, Lifestyle, and Note
-- **Journal** with day/week/month views, domain filters, tag search, Trends & History statistics alongside filtered logs, and multi-select export (CSV / Markdown / clipboard)
-- **Trends & History** puts nutrition and weight progress first, with calorie/protein/fiber comparisons and a dedicated recorded weight trend; explore all six domains, custom numeric trends, nutrient goal rules, food contributors, exercise-specific metrics, body measurements, habit distributions and diary relationships; ranges support up to 3,660 days, with older history explored in smaller periods
-- **Period AI analysis** generates reviews inline in the separate Analysis tab, saves weekly/monthly reports and findings, and offers exports and chat follow-ups using the same selected period
+- **Journal** with a Home Log/Stats control, selected-day dashboards and entries in Log, domain filters, tag search, selected-period history in Stats, and multi-select export (CSV / Markdown / clipboard)
+- **Stats → Trends & History** puts nutrition and weight progress first, with calorie/protein/fiber comparisons and a dedicated recorded weight trend; explore all six domains, custom numeric trends, nutrient goal rules, food contributors, exercise-specific metrics, body measurements, habit distributions and diary relationships; ranges support up to 3,660 days, with older history explored in smaller periods
+- **Period AI analysis** generates reviews inline in Stats → Analysis, saves weekly/monthly reports and findings, and offers exports and chat follow-ups using the same selected period
 - **Logging tally** combines tray/combo batches into one before/contribution/after view, including nutrients, exercise, measurements and habits, with separate goal adjustments, pause/skip and reduced-motion support
 - **Personal library** of reusable ingredients and combos with macros, micros, custom fields, exercise routines, and attached reminders
 - **Staging tray** for multi-item logging with quantities, units, voice quick-add (uses each library item’s defined unit), and day-target awareness
@@ -49,9 +49,9 @@ In-app AI features (Quick Log, AI Architect, chat, and voice transcription) are 
 - **Windows** — x64 Electron portable build (not Authenticode signed)
 - **Linux** — x64 AppImage and Debian package
 
-## Download version 1.11.1
+## Download version 1.11.2
 
-- [Android APK](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.11.1/app-release.apk)
-- [Windows x64 portable](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.11.1/bettertracking-v1.11.1-win-x64.exe)
-- [Linux x64 AppImage](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.11.1/bettertracking-v1.11.1-linux-x86_64.AppImage)
-- [Linux x64 Debian package](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.11.1/bettertracking-v1.11.1-linux-amd64.deb)
+- [Android APK](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.11.2/app-release.apk)
+- [Windows x64 portable](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.11.2/bettertracking-v1.11.2-win-x64.exe)
+- [Linux x64 AppImage](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.11.2/bettertracking-v1.11.2-linux-x86_64.AppImage)
+- [Linux x64 Debian package](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.11.2/bettertracking-v1.11.2-linux-amd64.deb)

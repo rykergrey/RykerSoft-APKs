@@ -1,5 +1,13 @@
 # Release notes
 
+## v1.11.2 — October 14, 2026
+
+- Replace Home’s D/W/M controls with Log/Stats so daily logging and period statistics have clear destinations
+- Keep the selected day’s dashboard and daily entries in Log; start Stats on Week the first time and retain its selected range when returning
+- Use one Day/Week/Month/Year/All time/Custom range control for both Stats tabs, keeping Trends & History and Analysis on the same dates
+- Retain charts, calculations, relationships, food exploration and selected-period logs in Trends & History, with inline AI reviews and saved reports in Analysis
+- Release Android (versionCode 25), Windows x64 portable, Linux x64 AppImage and Debian packages
+
 ## v1.11.1 — October 14, 2026
 
 - Place all programmatic charts, metrics, relationships and food exploration in Trends & History alongside the existing filtered log list

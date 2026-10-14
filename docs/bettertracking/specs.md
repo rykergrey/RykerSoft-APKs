@@ -4,7 +4,7 @@
 
 - **App name:** bettertracking
 - **Android package ID:** `com.rykersoft.bettertracking`
-- **Current version:** 1.11.1 (versionCode 24)
+- **Current version:** 1.11.2 (versionCode 25)
 
 ## Platforms
 
@@ -43,7 +43,8 @@
 ## Health analysis
 
 - Shared local calculations for Trends & History metrics/charts, CSV / Markdown exports and read-only assistant report tools
-- Home W/M selects week/month; Trends & History contains the six statistics sections and existing filtered log items, while the separate Analysis tab handles inline AI generation, saved period reports/findings, exports and chat follow-ups for the same period
+- Home Log/Stats selects the task: Log shows the selected day’s dashboard and daily entries; Stats defaults to Week on first entry and retains its range on return
+- Only Stats offers Day/Week/Month/Year/All time/Custom; one shared range drives Trends & History statistics and selected-period logs, plus Analysis inline AI generation, saved reports/findings, exports and chat follow-ups
 - Weekly/monthly AI reports use the existing per-user Firestore analyses collection (`users/{userId}/analyses`); no new backend migration
 - Nutrition-first overview with dedicated recorded weight trends and calorie/protein/fiber/weight comparisons; default coach reviews prioritize nutrition and confirmed weight goals
 - Six domains; built-in and custom numeric metrics, compatible unit conversion, numeric trends, categorical distributions, notes and daily/domain coverage

@@ -1,8 +1,10 @@
 # Health analysis
 
-From Home, select **W** or **M** in the upper-right control to open **Trends & History**. This tab contains all calculated statistics, charts, relationships, exports, the food explorer, and the selected period’s log history. It starts with nutrition and recorded weight progress, while retaining food, supplements, exercise, measurements, lifestyle, and notes. Day, Monday-based week, calendar month, calendar year, all available history, and inclusive custom ranges share one calculation engine.
+From Home, use the upper-right **Log / Stats** control. **Log** shows the selected day’s dashboard and daily entries with a daily date navigator. **Stats** opens Week on first entry and retains the chosen range when you return. Its single range control offers Day, Monday-based Week, calendar Month, calendar Year, All time and inclusive Custom dates; this control applies to both Stats tabs.
 
-The separate **Analysis** tab contains AI coach reviews for that same selected period. Generate or refresh a review explicitly; it streams in place and saves here for later reading. Both tabs retain the same dates when switching between them.
+**Stats → Trends & History** contains all calculated statistics, charts, relationships, exports, the food explorer, and the selected period’s log history. It starts with nutrition and recorded weight progress, while retaining food, supplements, exercise, measurements, lifestyle, and notes. All ranges share one calculation engine.
+
+**Stats → Analysis** contains AI coach reviews for that same selected period. Generate or refresh a review explicitly; it streams in place and saves here for later reading. Both tabs retain the same dates when switching between them. Opening a date from statistics returns to that day in Log.
 
 ## Explore
 
@@ -43,4 +45,4 @@ All calculations use locally synchronized records. Reports support up to 3,660 d
 
 ## Development verification
 
-Run `npm run dev`, then open `/dev/analysis-preview.html` for an explicitly synthetic, six-domain fixture with no Firebase or model calls. It is a separate development entry and is not included in the production build. Unit tests cover calendar/DST boundaries, missing values, snapshots/deleted items, compatible units, target modes, exercise sessions, categories, and correlations. UI tests cover tab placement, inclusive shared-period log filtering, invalid custom ranges, journal drilldown, explicit coach generation, saved reviews, cancellation, stale results, retry-save recovery, and exports. Browser captures exercise desktop and phone layouts.
+Run `npm run dev`, then open `/dev/analysis-preview.html` for an explicitly synthetic, six-domain fixture with no Firebase or model calls. It is a separate development entry and is not included in the production build. Unit tests cover calendar/DST boundaries, missing values, snapshots/deleted items, compatible units, target modes, exercise sessions, categories, and correlations. UI tests cover Log/Stats navigation, tab placement, inclusive shared-period log filtering, invalid custom ranges, journal drilldown, explicit coach generation, saved reviews, cancellation, stale results, retry-save recovery, and exports. Browser captures exercise desktop and phone layouts.
