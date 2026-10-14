@@ -1,6 +1,8 @@
 # Health analysis
 
-Analysis now starts with a health dashboard spanning food, supplements, exercise, measurements, lifestyle, and notes. Day, Monday-based week, calendar month, calendar year, all available history, and inclusive custom ranges share one calculation engine. Journal week/month previews use the same engine.
+From Home, select **W** or **M** in the upper-right control to open **Trends & History**. This tab contains all calculated statistics, charts, relationships, exports, the food explorer, and the selected period’s log history. It starts with nutrition and recorded weight progress, while retaining food, supplements, exercise, measurements, lifestyle, and notes. Day, Monday-based week, calendar month, calendar year, all available history, and inclusive custom ranges share one calculation engine.
+
+The separate **Analysis** tab contains AI coach reviews for that same selected period. Generate or refresh a review explicitly; it streams in place and saves here for later reading. Both tabs retain the same dates when switching between them.
 
 ## Explore
 
@@ -10,7 +12,12 @@ Analysis now starts with a health dashboard spanning food, supplements, exercise
 - **Habits & journal:** supplement/lifestyle frequency, numeric ratings and habits, select/multiselect/boolean/short-text distributions, and dated notes.
 - **Relationships:** a user-selected pair of numeric metrics, same-day or later-day alignment, scatter plot, sample size, and descriptive Pearson correlation. A small cross-domain scan suggests pairs to inspect.
 - **Food explorer:** the existing nutrition report controls, per-serving/per-calorie/per-mass comparisons, nutrient filters, favorites, staging, and report-specific CSV.
-- **Health coach:** explicit in-app analysis with the configured AI model, focused nutrition/training/pattern reviews, a portable coach brief, and a readable Markdown report.
+
+## Analysis: AI coach reviews
+
+Nutrition and weight goals are the default focus, with training/recovery, patterns, and a whole-period plan also available. Generate or Refresh explicitly uses the configured reasoning model; opening the tab does not call AI. Reports show their saved timestamp, can be copied or downloaded as Markdown, and can be discussed in Chat. Existing daily, weekly, and monthly reviews retain their saved document IDs. Year, all-history, and custom reviews also persist by period.
+
+The coach uses read-only tools in this workflow. Cancel stops a pending review, changing periods prevents stale results from appearing, and a failed save keeps the generated report available with Retry save. Source links are retained when data tools consult item evidence. An expandable external handoff copies the same focused period brief for another provider.
 
 ## Meaning of the numbers
 
@@ -28,7 +35,7 @@ Correlation requires at least eight complete date pairs and variation in both me
 
 The existing assistant gains read-only `healthReport` and `metricCorrelation` tools. `healthReport` returns bounded summaries with paginated metrics and optional details for at most six metrics over 31 days. Tool requests cover up to 3,660 local days; older history can be examined in subranges. Correlation uses the full requested sample while limiting returned scatter points. Coach briefs summarize computed values, coverage, saved constraints, selected notes, and cautious interpretations without sending the whole journal on each request.
 
-Statistics, filters, and exports invoke no AI. An explicit coach action opens the existing assistant workflow; live model quality and credentials are separate from deterministic validation. External handoffs are initiated by the user and retain clipboard/manual-copy fallback.
+Statistics, filters, and exports invoke no AI. An explicit Generate or Refresh action creates an inline saved AI review; Discuss in chat opens the existing assistant workflow with that review. Live model quality and credentials are separate from deterministic validation. External handoffs are initiated by the user and retain clipboard/manual-copy fallback.
 
 CSV exports contain every daily metric with units and aggregation labels. Blank cells mean missing values; numeric zero and negative numeric observations retain their values. Text cells are guarded against spreadsheet formula interpretation. Markdown exports provide an understandable summary and coverage notes.
 
@@ -36,4 +43,4 @@ All calculations use locally synchronized records. Reports support up to 3,660 d
 
 ## Development verification
 
-Run `npm run dev`, then open `/dev/analysis-preview.html` for an explicitly synthetic, six-domain fixture with no Firebase or model calls. It is a separate development entry and is not included in the production build. Unit tests cover calendar/DST boundaries, missing values, snapshots/deleted items, compatible units, target modes, exercise sessions, categories, and correlations. UI tests cover navigation, invalid custom ranges, journal drilldown, explicit coach handoffs, and exports. Browser captures exercise desktop and phone layouts.
+Run `npm run dev`, then open `/dev/analysis-preview.html` for an explicitly synthetic, six-domain fixture with no Firebase or model calls. It is a separate development entry and is not included in the production build. Unit tests cover calendar/DST boundaries, missing values, snapshots/deleted items, compatible units, target modes, exercise sessions, categories, and correlations. UI tests cover tab placement, inclusive shared-period log filtering, invalid custom ranges, journal drilldown, explicit coach generation, saved reviews, cancellation, stale results, retry-save recovery, and exports. Browser captures exercise desktop and phone layouts.

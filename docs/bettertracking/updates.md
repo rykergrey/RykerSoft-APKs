@@ -1,5 +1,14 @@
 # Release notes
 
+## v1.11.1 — October 14, 2026
+
+- Place all programmatic charts, metrics, relationships and food exploration in Trends & History alongside the existing filtered log list
+- Use Home's W/M controls for week/month statistics, then open the separate Analysis tab for AI review of the same period
+- Generate AI reviews inline, save weekly/monthly reports and findings in the existing account storage, and support exports and same-period chat follow-ups
+- Put nutrition and weight progress first, with a dedicated recorded weight trend and calorie/protein/fiber/weight comparisons in the existing app style
+- Focus default AI reviews on nutrition and confirmed weight goals while retaining full training, habits and relationships
+- Release Android (versionCode 24), Windows x64 portable, Linux x64 AppImage and Debian packages
+
 ## v1.11.0 — October 13, 2026
 
 - Replace the Analysis tab with a health dashboard spanning food, supplements, exercise, measurements, lifestyle and notes

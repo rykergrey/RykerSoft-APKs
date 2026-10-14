@@ -38,7 +38,7 @@ Items marked * require app-specific RykerSoft pro access for your signed-in acco
 - Filter by domain (Food / Supplement / Exercise / Measurement / Lifestyle / Note), search, and filter by tags.
 - Sort by time, calories, burn, macros, or name; group by time, category, or item.
 - Day dashboards summarize nutrition, supplements, exercise, measurements, lifestyle, and notes.
-- Week/month views use the same health-report calculations as the **Analysis** tab for nutrition, movement, weight and other tracked numeric trends. Open Analysis for full reports and comparisons.
+- On **Home**, choose **W** for a week or **M** for a month. **Trends & History** contains the programmatic metrics, charts, relationships and food explorer alongside your filtered log items. Open the separate **Analysis** tab for an AI review of the same selected period.
 - Tap a log to edit its quantity, unit, date, or custom values. Multi-select for batch delete/update or export.
 - A yesterday catch-up banner appears when food logging looked thin, which keeps Energy Bank math honest.
 
@@ -106,7 +106,8 @@ For background on sustainable changes and weight management, see [NIDDK’s eati
 - For personalized nutrition advice, chat checks saved goals and relevant weight records. It asks about missing goals or a stale weight instead of treating application defaults as personal facts.
 - Ask for a progress check-in, or accept an invitation when due. Questions cover progress, goals, nutrition, training, recovery and changed constraints; you can skip questions. Review and apply the completed check-in and any profile changes. Invitations appear inside chat.
 - Attach day logs or a saved analysis by calendar date as chat context.
-- In **Analysis → Health coach**, choose **Analyze this period in chat** or a focused nutrition, training, pattern or planning review. The coach receives the same calculated metrics, comparisons and logging coverage shown in the report, together with your saved goals and constraints. In-app reviews use your configured AI model and credentials.
+- Open the separate **Analysis** tab and explicitly generate a review for the selected period. The AI response and findings appear inline and the period report is saved to your account; weekly/monthly reports use the existing analysis storage. The default review prioritizes nutrition and confirmed weight goals. It receives the calculated metrics, comparisons and logging coverage shown in **Trends & History**, together with your saved goals and constraints. In-app generation uses your configured AI model and credentials.
+- Read a saved period report, export it or continue with chat follow-ups using that same period as context. **Coach review** in Trends & History opens the outer Analysis tab.
 - **Copy coach brief** or select Perplexity, ChatGPT, Google Gemini or a copy-to-another-coach option to use your own external chatbot. The brief is built locally; no AI request is needed to create it. Preview the brief before sharing. Long briefs use clipboard/manual paste when a prefilled URL would be unreliable.
 - Voice input works in chat (Groq or OpenAI Whisper).
 
@@ -145,30 +146,33 @@ Notes:
 ## 10. Export & import
 
 - Multi-select journal logs → export **CSV**, **Markdown**, or copy to clipboard.
-- In **Analysis**, use **Export data** for daily metrics in CSV. In **Health coach**, choose **Download report** for a readable Markdown summary or **Copy coach brief** for calculated coaching context. CSV blanks mean missing values; zero remains a recorded zero.
+- In **Trends & History**, use **Export data** for daily metrics in CSV. The separate **Analysis** tab offers report exports and calculated coach briefs for the selected period. CSV blanks mean missing values; zero remains a recorded zero.
 - Export library items (including combo dependencies) as a JSON file; import that JSON on another device or account.
 
 ## 11. Health analysis
 
-Open the Journal's **Analysis** tab. Choose **Day**, **Week**, **Month**, **Year**, **All time** or **Custom**, then use the arrows to navigate periods. Weeks start on Monday; custom start/end dates are inclusive. Reports cover up to **3,660 days** per range. For older history, use years or smaller custom ranges; an oversized range shows a message instead of silently omitting records.
+Start on **Home**: choose **W → Trends & History** for weekly statistics and log items, then **Analysis** for that week's AI review. Choose **M → Trends & History → Analysis** for the equivalent monthly workflow. Your existing domain, search and tag filters remain available on the log list alongside the charts. **Coach review** also opens the outer Analysis tab for the same selected period.
 
-On a phone, use the **Explore** selector to choose a section. Wider screens show the same sections as navigation buttons:
+Statistics support **Day**, **Week**, **Month**, **Year**, **All time** and **Custom** ranges, with arrows to navigate periods. Weeks start on Monday; custom start/end dates are inclusive. Reports cover up to **3,660 days** per range. For older history, use years or smaller custom ranges; an oversized range shows a message instead of silently omitting records.
 
-- **Overview:** choose any numeric metric to inspect its interactive trend, recorded total or latest value, observed-day average and range. Turn **Compare previous period** on or off. **Your logging picture** shows daily and domain coverage; inspect a date and choose **Open journal** to review its records.
+In **Trends & History**, use the phone **Explore** selector to choose among six statistics sections. Wider screens show the same sections as navigation buttons:
+
+- **Overview:** start with nutrition and weight progress: calorie, protein, fiber and weight comparisons, plus a dedicated recorded weight trend when weight measurements are available. Choose a numeric metric to inspect its interactive trend, recorded total or latest value, observed-day average and range. Turn **Compare previous period** on or off. **Your logging picture** shows daily and domain coverage; inspect a date and choose **Open journal** to review its records.
 - **Nutrition:** explore all 16 nutrients, macro composition, hydration and food-log timing. Current aim, minimum, maximum and range rules appear as references, with the number of recorded days that meet them. **What contributes most** ranks foods and supplements by the selected nutrient.
 - **Training & body:** compare exercise time, distance, repetitions, sets, sessions and estimated burn with weight, other measurements and exercise-specific numeric fields. Compatible units are converted; rest intervals are excluded from exercise totals. Daily body measurements use the latest compatible reading.
 - **Habits & journal:** explore numeric ratings and habits, hydration, supplement/lifestyle frequency, categorical or boolean distributions and dated notes. Different item scales stay separate.
 - **Relationships:** choose two numeric metrics and compare the same day, the second metric on the next day or two days later. The scatter plot shows paired observations and a descriptive correlation only when at least eight complete date pairs have variation in both metrics. Suggested cross-domain pairs offer questions to investigate. These diary associations cannot establish a cause or predict an outcome.
 - **Food explorer:** compare recorded amounts, saved servings, per 100 calories or known weights; filter nutrients, use favorites, stage a food or export the food report's CSV.
-- **Health coach:** request an in-app review or focused follow-up, download a Markdown report, preview/copy a calculated coach brief or open an external chatbot. See section 6 for provider and sharing details.
 
-Charts, calculations and exports work without AI. They use records synchronized to this device, including saved nutrient amounts. Missing days and unknown values remain unknown; averages use days with complete recorded values and show their denominators. A recorded day does not prove that every meal or activity was captured. In-progress calendar periods compare equal elapsed portions of the preceding period, so coverage still matters when interpreting a change.
+The separate **Analysis** tab contains inline AI generation, saved period reports and findings, exports and chat follow-ups. The main review starts with nutrition and your confirmed weight goals, and follows the same period selected in the statistics view. See section 6 for provider and sharing details.
 
-Analysis uses **current goals as references**, rather than reconstructing historical profile settings. An aim uses a displayed ±10% band; minimums, maximums and ranges keep their literal boundaries. Adaptive references require confirmed goals and a recent recorded weight. Intake minus logged exercise is not an energy deficit or a prediction of weight change. Expand **How to read this report** for coverage and interpretation notes.
+Charts, calculations and data exports work without AI. They use records synchronized to this device, including saved nutrient amounts. Missing days and unknown values remain unknown; averages use days with complete recorded values and show their denominators. A recorded day does not prove that every meal or activity was captured. In-progress calendar periods compare equal elapsed portions of the preceding period, so coverage still matters when interpreting a change.
+
+Statistics use **current goals as references**, rather than reconstructing historical profile settings. An aim uses a displayed ±10% band; minimums, maximums and ranges keep their literal boundaries. Adaptive references require confirmed goals and a recent recorded weight. Intake minus logged exercise is not an energy deficit or a prediction of weight change. Expand **How to read this report** for coverage and interpretation notes.
 
 ## Nutrition assistant and reports (1.2.0)
 
-Use **Reports** in the journal header, **Analysis → Food explorer**, or **Food finder** in the library to compare foods without AI. Choose a preset, date range and nutrient limits. You can compare recorded amounts, saved servings, per 100 calories or known weights; save favorites, stage a food or export CSV. Missing nutrition appears as unknown.
+Use **Reports** in the journal header, **Trends & History → Food explorer**, or **Food finder** in the library to compare foods without AI. Choose a preset, date range and nutrient limits. You can compare recorded amounts, saved servings, per 100 calories or known weights; save favorites, stage a food or export CSV. Missing nutrition appears as unknown.
 
 In chat, ask “Help me meet my protein goal using my library” or “What foods do I eat most?” Chat retrieves the relevant totals and records as needed. It offers ideas outside your library when useful. Use **Web research: Auto / Off / On** to control external evidence searches.
 

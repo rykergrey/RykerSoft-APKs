@@ -4,7 +4,7 @@
 
 - **App name:** bettertracking
 - **Android package ID:** `com.rykersoft.bettertracking`
-- **Current version:** 1.11.0 (versionCode 23)
+- **Current version:** 1.11.1 (versionCode 24)
 
 ## Platforms
 
@@ -29,7 +29,7 @@
 
 ## AI providers
 
-- **Gemini / OpenAI** — selected-model tool-using chat; Gemini for Quick Log, AI Architect and nutrition/burn estimates. Explicit in-app Health Coach reviews use the configured chat provider and locally calculated report context. Portable coach briefs are generated locally for the user's external chatbot without calling a model.
+- **Gemini / OpenAI** — selected-model tool-using chat; Gemini for Quick Log, AI Architect and nutrition/burn estimates. Explicit in-app Health Coach reviews generate inline in Analysis using the configured chat provider and locally calculated context for the selected period. Portable coach briefs are generated locally for the user's external chatbot without calling a model.
 - **Groq Whisper** (default) / **OpenAI Whisper** — speech-to-text
 - Keys come from the RykerSoft hub Firebase (`rykersoft-abe84`) after unlock + hub sign-in (Profile → API Keys), or can be entered manually
 
@@ -42,7 +42,10 @@
 
 ## Health analysis
 
-- Shared local calculations for Analysis, journal week/month previews, CSV / Markdown exports and read-only assistant report tools
+- Shared local calculations for Trends & History metrics/charts, CSV / Markdown exports and read-only assistant report tools
+- Home W/M selects week/month; Trends & History contains the six statistics sections and existing filtered log items, while the separate Analysis tab handles inline AI generation, saved period reports/findings, exports and chat follow-ups for the same period
+- Weekly/monthly AI reports use the existing per-user Firestore analyses collection (`users/{userId}/analyses`); no new backend migration
+- Nutrition-first overview with dedicated recorded weight trends and calorie/protein/fiber/weight comparisons; default coach reviews prioritize nutrition and confirmed weight goals
 - Six domains; built-in and custom numeric metrics, compatible unit conversion, numeric trends, categorical distributions, notes and daily/domain coverage
 - Day, Monday-based week, calendar month/year, all-time and inclusive custom ranges, capped at 3,660 local days per request
 - Nutrient values use saved log amounts; missing values remain unknown, averages use complete recorded days and current targets are reference values
