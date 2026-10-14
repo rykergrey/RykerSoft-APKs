@@ -1,5 +1,30 @@
 # Release notes
 
+## v1.11.0 — October 13, 2026
+
+- Replace the Analysis tab with a health dashboard spanning food, supplements, exercise, measurements, lifestyle and notes
+- Add day, Monday-based week, calendar month/year, all-time and inclusive custom reports, with previous-period comparisons and a 3,660-day range limit
+- Explore interactive numeric trends, all 16 nutrients and current goal rules, food contributors, training quantities, body measurements, habit distributions and dated notes
+- Inspect daily/domain coverage and return to a selected journal day; missing data stays unknown rather than becoming zero
+- Compare same-day, next-day and two-days-later relationships with scatter plots and descriptive correlations when at least eight complete date pairs vary
+- Ground explicit AI coach reviews in the same calculated reports, saved goals and logging coverage; offer focused reviews, external coach briefs and CSV / Markdown exports
+- Use a compact Explore selector on phones and section navigation on wider screens
+- Release Android (versionCode 23), Windows x64 portable, Linux x64 AppImage and Debian packages
+
+## v1.10.1
+- Separate adaptive calorie and macro goal changes into a Goal adjustments section after the logged stats
+- Use Change in the tally so goal and budget adjustments are clearer
+- Verify exercise affects burned energy and activity without adding consumed nutrients, including mixed food/exercise batches
+
+## v1.10.0
+- Show an animated tally after logging, with before values, the combined contribution, and new totals for affected dashboard stats
+- Treat a whole staging tray or combo as one update, including food and exercise logged together
+- Smoothly fade the complete tray into the tally without removing its rows one by one or changing totals during the handoff
+- Support direct library logs, Quick Log, journal measurements, and confirmed coach meal/log actions
+- Include adaptive goals, remaining calories, tracked nutrients, measurements, scheduled doses and habit progress when affected
+- Add pause, skip, persistent results, reduced motion, and back-button support
+- Save tray batches and one-off meals atomically, with local offline acceptance and failed-save recovery
+
 ## v1.9.0
 - Add a saved coach profile for confirmed goals, allergies, food preferences, coaching philosophies, training context and practical constraints
 - Use current profile facts and dated weight for personalized advice, with questions when relevant information is missing or stale

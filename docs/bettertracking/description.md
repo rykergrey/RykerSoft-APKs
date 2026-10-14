@@ -2,17 +2,20 @@ Holistic personal tracking for food, supplements, exercise, measurements, lifest
 
 bettertracking is a full journal + library system, not a simple calorie counter. Track what you eat and do, build a personal library of ingredients and combos, stage batches into your journal, and let targets adapt from your weight trend and activity.
 
-## New in 1.9.0
+## New in 1.11.0
 
-- A personal coach profile with goals, allergies, preferences, philosophies, training context and check-in history
-- Chat uses saved facts and asks for missing goals or a relevant current weight
-- Log one-off vacation meals directly from chat, with a choice when similar library entries exist
-- Create restaurant library drafts with clear portion labels, estimated nutrition and reliable error recovery
+- A health analysis dashboard across all six domains, with day, week, month, year, all-time and custom reports
+- Interactive trends, nutrient contributors, training and body measurements, habits, notes and previous-period comparisons
+- Same-day and delayed relationships with paired-day counts and clear logging coverage
+- Coach reviews grounded in the same calculated report, plus portable briefs and CSV / Markdown exports
+- An animated logging tally showing the whole batch's contribution, new totals and separate goal adjustments
 
 ## Features
 
 - **Six domains** in one place: Food, Supplement, Exercise, Measurement, Lifestyle, and Note
-- **Journal** with day/week/month views, domain filters, tag search, trend charts, and multi-select export (CSV / Markdown / clipboard)
+- **Journal** with day/week/month views, domain filters, tag search, shared trend previews, and multi-select export (CSV / Markdown / clipboard)
+- **Health analysis** with all six domains, custom numeric trends, nutrient goal rules, food contributors, exercise-specific metrics, body measurements, habit distributions and diary relationships; ranges support up to 3,660 days, with older history explored in smaller periods
+- **Logging tally** combines tray/combo batches into one before/contribution/after view, including nutrients, exercise, measurements and habits, with separate goal adjustments, pause/skip and reduced-motion support
 - **Personal library** of reusable ingredients and combos with macros, micros, custom fields, exercise routines, and attached reminders
 - **Staging tray** for multi-item logging with quantities, units, voice quick-add (uses each library item’s defined unit), and day-target awareness
 - **Library panel** remembers search, scroll, and expanded groups across tray switches
@@ -20,7 +23,7 @@ bettertracking is a full journal + library system, not a simple calorie counter.
 - **Adaptive nutrition engine**: Mifflin–St Jeor BMR, weight-trend adaptation after ~14 days, conservative 0.8× trust on exercise burn, manual overrides
 - **Rolling Calorie Balance** that compares recent intake with combined goals, explains logging coverage, and supports opt-in adjustments
 - **Rolling nutrient progress** with daily and period views, goal-type-aware boundaries, cumulative variance, and individual overage-day counts
-- **AI assistant & coaching**: tool-using chat (navigate, query logs, create/update items, set reminders), plus local day/week/month Health Coach prompts that open in the user's selected chatbot (Perplexity by default)
+- **AI assistant & coaching**: tool-using chat (navigate, query logs, create/update items, set reminders), explicit coach reviews of calculated reports, and portable briefs for Perplexity, ChatGPT, Google Gemini or another chatbot
 - **AI Architect**: describe an item (optionally with images) and let the model draft the library entry
 - **Speech-to-text** via Groq Whisper (default) or OpenAI Whisper, plus on-device voice capture on Android
 - **Alerts & reminders**: per-item schedules (daily/weekly/monthly/etc.), wake/sleep alarms, Capacitor local notifications with reboot rescheduling
@@ -32,24 +35,23 @@ bettertracking is a full journal + library system, not a simple calorie counter.
 Items marked * require app-specific RykerSoft pro access for your signed-in account when using app-provided AI credentials. Sign in with the same RykerSoft account under Profile → API Keys.
 
 * **Library Draft Assistant** — Draft described restaurant dishes and recipes with estimates, read food and supplement labels, and refine portions or partial drafts
-* **AI chat and Quick Log** — Tool-assisted chat and food analysis
+* **AI chat, coach reviews and Quick Log** — Tool-assisted chat, calculated-report reviews and food analysis
 * **Cloud transcription** — Dictate using configured speech providers
 
 ## AI unlock
 
-In-app AI features (Quick Log, AI Architect, chat, and voice transcription) are enabled through the RykerSoft App Manager: have bettertracking access granted to your RykerSoft account, then sign in with that account inside the app under **Profile → API Keys → RykerSoft AI unlock**. Health Coach prompts do not use BetterTracking API credits; the external chatbot uses the user's own account. All tracking, journaling, library, and reminder features work without the unlock. You can also supply your own Gemini/Groq/OpenAI keys manually.
+In-app AI features (Quick Log, AI Architect, chat, and voice transcription) are enabled through the RykerSoft App Manager: have bettertracking access granted to your RykerSoft account, then sign in with that account inside the app under **Profile → API Keys → RykerSoft AI unlock**. In-app coach reviews use your configured AI provider. Charts, statistics, exports and portable coach briefs need no AI credentials; an external chatbot uses your own account. All tracking, journaling, library, and reminder features work without the unlock. You can also supply your own Gemini/Groq/OpenAI keys manually.
 
 ## Platforms
 
 - **Android** — Capacitor APK via the RykerSoft hub (`com.rykersoft.bettertracking`)
 - **Web** — Vite PWA with service worker
-- **Windows** — Electron portable build
-
+- **Windows** — x64 Electron portable build (not Authenticode signed)
 - **Linux** — x64 AppImage and Debian package
 
-## Download version 1.9.0
+## Download version 1.11.0
 
-- [Android APK](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.9.0/app-release.apk)
-- [Windows x64 portable](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.9.0/bettertracking-v1.9.0-win-x64.exe)
-- [Linux x64 AppImage](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.9.0/bettertracking-v1.9.0-linux-x86_64.AppImage)
-- [Linux x64 Debian package](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.9.0/bettertracking-v1.9.0-linux-amd64.deb)
+- [Android APK](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.11.0/app-release.apk)
+- [Windows x64 portable](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.11.0/bettertracking-v1.11.0-win-x64.exe)
+- [Linux x64 AppImage](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.11.0/bettertracking-v1.11.0-linux-x86_64.AppImage)
+- [Linux x64 Debian package](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.11.0/bettertracking-v1.11.0-linux-amd64.deb)

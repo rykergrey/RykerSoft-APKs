@@ -15,13 +15,14 @@ Holistic tracking for food, supplements, exercise, measurements, lifestyle, and 
 - [8. RykerSoft AI unlock](#8-rykersoft-ai-unlock)
 - [9. Profile, keys & preferences](#9-profile-keys--preferences)
 - [10. Export & import](#10-export--import)
+- [11. Health analysis](#11-health-analysis)
 
 ## PRO Features
 
 Items marked * require app-specific RykerSoft pro access for your signed-in account when using app-provided AI credentials. Sign in with the same RykerSoft account under Profile → API Keys.
 
 * **Library Draft Assistant** — Read food and supplement labels, search exact manufacturer products, and refine partial drafts with photos or typed details
-* **AI chat and Quick Log** — Tool-assisted chat and food analysis
+* **AI chat, coach reviews and Quick Log** — Tool-assisted chat, calculated-report reviews and food analysis
 * **Cloud transcription** — Dictate using configured speech providers
 
 ## 1. Getting started
@@ -37,7 +38,7 @@ Items marked * require app-specific RykerSoft pro access for your signed-in acco
 - Filter by domain (Food / Supplement / Exercise / Measurement / Lifestyle / Note), search, and filter by tags.
 - Sort by time, calories, burn, macros, or name; group by time, category, or item.
 - Day dashboards summarize nutrition, supplements, exercise, measurements, lifestyle, and notes.
-- Week/month views add trend charts (calories, macros, burn, weight) with totals, averages, and min/max.
+- Week/month views use the same health-report calculations as the **Analysis** tab for nutrition, movement, weight and other tracked numeric trends. Open Analysis for full reports and comparisons.
 - Tap a log to edit its quantity, unit, date, or custom values. Multi-select for batch delete/update or export.
 - A yesterday catch-up banner appears when food logging looked thin, which keeps Energy Bank math honest.
 
@@ -79,6 +80,7 @@ Photos stay on the device where they were attached. The current library draft co
 - Use voice or text quick-add inside the tray, create a combo from the current tray, or open chat with the staged items as context.
 - When you add from the library with a phrase like “three whole eggs,” the quantity uses that item’s library unit (pcs, g, srv, etc.), not adjectives from the phrase.
 - **Quick Log**: type free text and/or attach a photo → AI estimates the macros. Refine with feedback before saving; one-off hidden items can be created automatically.
+- After logging, a tally shows the previous values, combined contribution and new totals for affected stats. A tray or combo appears as one update, including mixed food/exercise batches. **Goal adjustments** follows the logged stats so adaptive calorie/macro changes are easy to distinguish from what you logged. Pause or skip the animation; the results remain available, and reduced-motion preferences are respected.
 
 ## 5. Adaptive targets & Energy Bank
 
@@ -104,7 +106,8 @@ For background on sustainable changes and weight management, see [NIDDK’s eati
 - For personalized nutrition advice, chat checks saved goals and relevant weight records. It asks about missing goals or a stale weight instead of treating application defaults as personal facts.
 - Ask for a progress check-in, or accept an invitation when due. Questions cover progress, goals, nutrition, training, recovery and changed constraints; you can skip questions. Review and apply the completed check-in and any profile changes. Invitations appear inside chat.
 - Attach day logs or a saved analysis by calendar date as chat context.
-- **Health Coach Analysis** builds a detailed day/week/month coaching prompt locally from your profile, targets, notes, and logs. Choose Perplexity (the default), ChatGPT, Google Gemini, or copy the prompt into any other chatbot. Long prompts are copied for manual paste when a prefilled URL would be unreliable. Existing saved reports remain available to read or download.
+- In **Analysis → Health coach**, choose **Analyze this period in chat** or a focused nutrition, training, pattern or planning review. The coach receives the same calculated metrics, comparisons and logging coverage shown in the report, together with your saved goals and constraints. In-app reviews use your configured AI model and credentials.
+- **Copy coach brief** or select Perplexity, ChatGPT, Google Gemini or a copy-to-another-coach option to use your own external chatbot. The brief is built locally; no AI request is needed to create it. Preview the brief before sharing. Long briefs use clipboard/manual paste when a prefilled URL would be unreliable.
 - Voice input works in chat (Groq or OpenAI Whisper).
 
 ## 7. Alerts & reminders
@@ -116,7 +119,7 @@ For background on sustainable changes and weight management, see [NIDDK’s eati
 
 ## 8. RykerSoft AI unlock
 
-In-app AI features (Quick Log, AI Architect, chat, and cloud voice transcription) require an unlock. Coach Analysis itself does not use a BetterTracking API key; the selected external chatbot uses the user's own account or subscription. All tracking, journaling, library, and reminder features work without an unlock.
+When using app-provided credentials, in-app AI features (Quick Log, AI Architect, chat, coach reviews and cloud voice transcription) require an unlock. Manually configured provider keys remain an alternative. Charts, statistics, exports and portable coach briefs need no unlock or AI request; an external chatbot uses your own account or subscription. All tracking, journaling, library, and reminder features work without an unlock.
 
 1. In the **RykerSoft App Manager**, create or sign in to your RykerSoft account.
 2. Have an administrator grant bettertracking pro access to your RykerSoft account through the App Manager.
@@ -142,11 +145,30 @@ Notes:
 ## 10. Export & import
 
 - Multi-select journal logs → export **CSV**, **Markdown**, or copy to clipboard.
+- In **Analysis**, use **Export data** for daily metrics in CSV. In **Health coach**, choose **Download report** for a readable Markdown summary or **Copy coach brief** for calculated coaching context. CSV blanks mean missing values; zero remains a recorded zero.
 - Export library items (including combo dependencies) as a JSON file; import that JSON on another device or account.
+
+## 11. Health analysis
+
+Open the Journal's **Analysis** tab. Choose **Day**, **Week**, **Month**, **Year**, **All time** or **Custom**, then use the arrows to navigate periods. Weeks start on Monday; custom start/end dates are inclusive. Reports cover up to **3,660 days** per range. For older history, use years or smaller custom ranges; an oversized range shows a message instead of silently omitting records.
+
+On a phone, use the **Explore** selector to choose a section. Wider screens show the same sections as navigation buttons:
+
+- **Overview:** choose any numeric metric to inspect its interactive trend, recorded total or latest value, observed-day average and range. Turn **Compare previous period** on or off. **Your logging picture** shows daily and domain coverage; inspect a date and choose **Open journal** to review its records.
+- **Nutrition:** explore all 16 nutrients, macro composition, hydration and food-log timing. Current aim, minimum, maximum and range rules appear as references, with the number of recorded days that meet them. **What contributes most** ranks foods and supplements by the selected nutrient.
+- **Training & body:** compare exercise time, distance, repetitions, sets, sessions and estimated burn with weight, other measurements and exercise-specific numeric fields. Compatible units are converted; rest intervals are excluded from exercise totals. Daily body measurements use the latest compatible reading.
+- **Habits & journal:** explore numeric ratings and habits, hydration, supplement/lifestyle frequency, categorical or boolean distributions and dated notes. Different item scales stay separate.
+- **Relationships:** choose two numeric metrics and compare the same day, the second metric on the next day or two days later. The scatter plot shows paired observations and a descriptive correlation only when at least eight complete date pairs have variation in both metrics. Suggested cross-domain pairs offer questions to investigate. These diary associations cannot establish a cause or predict an outcome.
+- **Food explorer:** compare recorded amounts, saved servings, per 100 calories or known weights; filter nutrients, use favorites, stage a food or export the food report's CSV.
+- **Health coach:** request an in-app review or focused follow-up, download a Markdown report, preview/copy a calculated coach brief or open an external chatbot. See section 6 for provider and sharing details.
+
+Charts, calculations and exports work without AI. They use records synchronized to this device, including saved nutrient amounts. Missing days and unknown values remain unknown; averages use days with complete recorded values and show their denominators. A recorded day does not prove that every meal or activity was captured. In-progress calendar periods compare equal elapsed portions of the preceding period, so coverage still matters when interpreting a change.
+
+Analysis uses **current goals as references**, rather than reconstructing historical profile settings. An aim uses a displayed ±10% band; minimums, maximums and ranges keep their literal boundaries. Adaptive references require confirmed goals and a recent recorded weight. Intake minus logged exercise is not an energy deficit or a prediction of weight change. Expand **How to read this report** for coverage and interpretation notes.
 
 ## Nutrition assistant and reports (1.2.0)
 
-Use **Reports** in the journal header or **Food finder** in the library to compare foods without AI. Choose a preset, date range and nutrient limits. You can compare recorded amounts, saved servings, per 100 calories or known weights; save favorites, stage a food or export CSV. Missing nutrition appears as unknown.
+Use **Reports** in the journal header, **Analysis → Food explorer**, or **Food finder** in the library to compare foods without AI. Choose a preset, date range and nutrient limits. You can compare recorded amounts, saved servings, per 100 calories or known weights; save favorites, stage a food or export CSV. Missing nutrition appears as unknown.
 
 In chat, ask “Help me meet my protein goal using my library” or “What foods do I eat most?” Chat retrieves the relevant totals and records as needed. It offers ideas outside your library when useful. Use **Web research: Auto / Off / On** to control external evidence searches.
 
