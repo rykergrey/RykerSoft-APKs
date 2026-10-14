@@ -6,6 +6,8 @@ Local workspace for researching YouTube videos, articles, and Reddit posts. Impo
 - Optional projects: create, search, sort, rename, export, and delete projects
 - Import YouTube, article, and Reddit URLs (single links or mixed batches)
 - Improved Android article extraction, including Daily Mail, with direct on-device retrieval and no automatic third-party scraper fallback
+- Direct Send to reader from Android, Windows and Linux; review the current tab, remember the reader address, and verify each transfer without requiring CrossPoint Inbox or a pairing file
+- Local Reader queue for exact snapshots saved offline and sent later while INFORMANT is in the foreground; optional desktop Inbox publishing remains a separate choice
 - Android share-target: share a link into INFORMANT to import and open it directly
 - Settings → General → URL import behavior restores the original new/existing project chooser
 - Per-item tabs for notes, bookmarks, transcripts, comments, chat, and custom AI actions
@@ -40,8 +42,11 @@ Items marked * require administrator-granted RykerSoft Pro access for this packa
 * **Family-and-friends Pro access** — After an administrator grants INFORMANT to a specific RykerSoft UID, the app loads its package-scoped Gemini, OpenAI, YouTube, transcript, Webshare, and ElevenLabs keys for that signed-in session
 
 ## Platforms
-- **Android** — Capacitor build; IndexedDB on device; native share import; System TTS via Android TextToSpeech
-- **Desktop** — Windows portable / local server; projects as JSON; artifacts in SQLite (`informant.db`)
+- **Android 1.4.13 (versionCode 30)** — Capacitor build; IndexedDB on device; native share import; System TTS via Android TextToSpeech
+- **Windows 1.4.13 (x64)** — Portable executable with the app runtime included; projects as JSON and artifacts in SQLite (`informant.db`)
+- **Linux 1.4.13 (x64)** — AppImage or `tar.gz` bundle with persistent local storage and the app runtime included
+
+Windows and Linux downloads are available from the INFORMANT listing in RykerSoft and the public `informant-v1.4.13` release. Packaged desktop users do not need a separate Node.js installation.
 
 ## Requirements
 Notes, bookmarks, portable project exchange, and System/Piper TTS need no provider account. Public users bring their own provider keys. Family and friends receive Pro only after an administrator grants `com.rykersoft.informant` to their authenticated RykerSoft UID; INFORMANT then loads only that package's keys into memory for the signed-in session. No reusable unlock code or global family role is used. Legacy password users can link Google without changing their Firebase UID or entitlement data.

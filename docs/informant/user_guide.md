@@ -14,6 +14,7 @@ Research workspace for YouTube videos, articles, and Reddit posts — saved as i
 - [PRO Features](#pro-features)
 - [9. RykerSoft pro unlock](#9-rykersoft-pro-unlock)
 - [10. Settings](#10-settings)
+- [11. Send to a CrossPoint reader](#11-send-to-a-crosspoint-reader)
 
 ## 1. Getting started
 
@@ -21,6 +22,17 @@ Research workspace for YouTube videos, articles, and Reddit posts — saved as i
 2. To organize a standalone video later, tap the folder-plus **Add to project** icon below the player, choose an existing project, and confirm with the folder-plus icon. Its saved work moves with it and the video stays open. Create an empty project with **New project** on the home screen when needed.
 3. On Android, share a link into INFORMANT from another app to import and open it directly. For the original new/existing project chooser, select **Project-based import** under **Settings → General → URL import behavior**. Content added from inside a project stays in that project.
 4. Provider-backed features require keys entered under **Settings → Keys**, or administrator-granted INFORMANT Pro access followed by the same Google account under **Settings → RykerSoft AI unlock** (see section 9). Notes, bookmarks, local save/import, and System/Piper TTS do not require provider access.
+
+### Desktop downloads and storage
+
+The latest packaged Windows and Linux editions are **1.4.13**, alongside Android **1.4.13 / versionCode 30**. Download the appropriate desktop file from INFORMANT's RykerSoft listing or the public [1.4.13 release](https://github.com/rykergrey/RykerSoft-APKs/releases/tag/informant-v1.4.13).
+
+- **Windows x64:** keep the portable `.exe` in a writable folder and open it. The app runtime is included; no separate Node.js installation is needed.
+- **Linux x64:** make the AppImage executable in your file manager and open it, or extract the `tar.gz` bundle and run its `informant` executable. The runtime is included; no separate Node.js installation is needed.
+
+Close INFORMANT normally before updating. Windows portable library files remain in the portable folder; preserve `informant.db`, any SQLite sidecars, and `projects/`. If moving the executable, move the library files with it. New Linux libraries normally live in `~/.config/informant/`, separate from the downloaded application; keep that profile when replacing the app. An existing adjacent `informant.db` or legacy `supertube.db` continues using its original location.
+
+Keep the separate application profile when updating so browser-based settings and local queues remain available, along with the Windows portable library folder or Linux data folder. For a backup, export items/projects inside INFORMANT, or close the app normally and copy the full data folder, including any SQLite sidecars still present. Reopen the updated app and check the saved library before removing an older app folder.
 
 ## 2. Working with a video
 
@@ -128,3 +140,31 @@ Notes:
 - **TTS** — default engine, System / Piper / ElevenLabs voice settings, Preview per provider
 - **Keys** — optional local BYOK values (Gemini, OpenAI, YouTube Data, YouTube Transcript, ElevenLabs)
 - **RykerSoft AI unlock** — Google sign-in, legacy account linking/recovery, sign-out, and entitlement refresh
+
+
+## 11. Send to a CrossPoint reader
+
+Use direct sending from Android, Windows or Linux. The standalone CrossPoint Inbox app and pairing JSON files are optional for this flow.
+
+1. Connect the sending phone or computer and the reader to the **same Wi-Fi** first. Wake the reader and open **Receive from phone**; INFORMANT cannot wake it or start this mode remotely.
+2. Select the exact content tab in INFORMANT. Open **Reader** on a phone or **Send to reader** on a larger screen, then choose **Send now**. Review the title, category, content type and text; only this snapshot is sent.
+3. Keep the default **Phone → reader** on Android or **Computer → reader** on Windows/Linux. Acknowledge the local-network notice: direct HTTP transfers are unencrypted, so use a network you trust.
+4. Enter the address shown on the reader, such as **192.168.1.50**, then choose **Connect reader**. No `http://` prefix is needed. Android also offers **Scan reader QR**; Windows and Linux use manual entry.
+5. Wait for **Ready to receive**, then choose **Send to reader**. Keep the reader in Receive mode while INFORMANT sends and verifies the file.
+6. Wait for **Sent and verified** before finishing. Readers supporting Library receipts also confirm **Received in Library**; a failed Library confirmation keeps the exact snapshot queued for retry. Older readers without that capability report exact-byte verification. On the reader, choose **Done**, then open **Home → Library**. Use **Filter → Categories** or **Content types** to find the item.
+
+### Remembered reader address
+
+INFORMANT remembers each app's verified reader connection and keeps the editable address draft separately. A fresh unpaired field starts with **192.168.1.**; replace or complete it with the reader's actual address. Each edit, including a partial address or a deliberately blank field, is retained when reopening the review or app. Typing does not connect: **Connect reader** validates the address and reader identity. A saved connection alone is not **Ready**; reopen Receive mode and use **Retry connection** if needed. Choose **Forget this reader** before connecting a different reader.
+
+### Queue now, send later
+
+Choose **Queue** from the reader menu to save the current tab's exact snapshot on this device without connecting or sending. **Queue for later** in the editable review saves that edited snapshot. The local queue remains after closing INFORMANT and is separate from desktop Inbox publishing.
+
+Open **Reader queue** from the home screen or reader menu when ready. Connect the awake reader on the same Wi-Fi, then choose **Send queued items**. Items send one at a time, oldest first, and leave the waiting list only after a verified transfer; receipts remain under **Saved for reader**. Keep INFORMANT in the foreground. A failure or backgrounding pauses the batch and preserves unsent items for retry. Select a title to review its saved snapshot, or **Remove from queue** to remove the local entry.
+
+### Away from home and optional desktop Inbox
+
+Same Wi-Fi is the first choice. As an alternative, on the reader choose **Receive from phone → Wi-Fi / hotspot → Create Hotspot**, connect the sending phone or computer to **CrossPoint-Reader**, and enter the address shown on the reader. Android may scan its QR. Keep that Wi-Fi connection even if it has no Internet.
+
+Choose **Desktop inbox (optional)** only when you want to publish to a separately configured CrossPoint desktop Inbox host for the reader's later Inbox sync. In the review, select that transport, acknowledge its HTTP notice, import the publisher pairing file exported by that host, then choose **Send to inbox**. The reader must be paired with the same host for its own Inbox sync, and the host computer must stay awake and reachable. Desktop upload retries run while INFORMANT is open and resume on reopening; Android retains its native background upload retries. The local Reader queue above sends directly in the foreground and needs neither that host nor its pairing file.

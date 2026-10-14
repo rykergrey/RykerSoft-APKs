@@ -1,9 +1,14 @@
 # Release notes
 
-## v1.4.13 — Android
+## v1.4.13 — Android, Windows and Linux
 
 - Keep the article header word count and reading-time estimate in sync with the current body after re-scraping previously saved articles
 - Retain the improved direct on-device article retrieval and preserved libraries from 1.4.12 (versionCode 30)
+- Publish Windows x64 portable and Linux x64 AppImage / `tar.gz` editions from the same released 1.4.13 source; the existing signed Android APK remains unchanged
+- Include the desktop runtime so packaged Windows and Linux users do not need to install Node.js separately
+- Send reviewed content directly to an awake CrossPoint reader on the same Wi-Fi; remember editable reader addresses and verify transfers without requiring Inbox or a pairing file
+- Keep exact snapshots in the local Reader queue for later foreground sending, with optional desktop Inbox publishing available separately
+- Preserve stable IDs when opening legacy analyses and finish pending desktop saves before normal window closure
 
 ## v1.4.12 — Android
 
