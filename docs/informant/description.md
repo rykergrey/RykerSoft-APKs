@@ -5,6 +5,7 @@ Local workspace for researching YouTube videos, articles, and Reddit posts. Impo
 - Add to project beneath the player moves the video and saved work into an existing project
 - Optional projects: create, search, sort, rename, export, and delete projects
 - Import YouTube, article, and Reddit URLs (single links or mixed batches)
+- Improved Android article extraction, including Daily Mail, with direct on-device retrieval and no automatic third-party scraper fallback
 - Android share-target: share a link into INFORMANT to import and open it directly
 - Settings → General → URL import behavior restores the original new/existing project chooser
 - Per-item tabs for notes, bookmarks, transcripts, comments, chat, and custom AI actions

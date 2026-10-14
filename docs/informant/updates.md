@@ -1,5 +1,27 @@
 # Release notes
 
+## v1.4.12 — Android
+
+- Import complete article bodies more reliably, including Daily Mail, while rejecting navigation, consent and verification pages as false successes
+- Preserve article paragraphs, captions and images while removing active page content
+- Retrieve Android articles directly on the device without automatically sending failed article URLs or provider credentials to a scraping service
+- Keep existing saved items and projects during the signed Android update (versionCode 29)
+
+## v1.4.11
+
+- Make direct Send to reader the default on Android, Windows and Linux; CrossPoint Inbox and pairing files remain optional
+- Remember each app's reader connection and exact manual IP draft, with foreground readiness and verified immutable EPUB transfers
+- Add a reusable Node/Electron SDK alongside the existing Android bridge, including identity checks, progress, safe retries and Library confirmation
+- Retain the separately selected desktop queue for unattended delivery
+
+## v1.4.10
+
+- Send reviewed content directly from Android to a paired CrossPoint reader, with QR pairing, live readiness, saved reviews and verified Library receipts
+- Accept bare reader IP addresses and remember exact editable drafts; offer desktop queued delivery separately
+- Fix speech startup, pause/resume, cancellation and stale callbacks, and improve narrow-screen controls, popovers, selection and scrolling
+- Preserve saved browser data on startup instead of running the obsolete one-time purge
+- Add Linux x64 AppImage and tar.gz builds with persistent storage, including migration of existing legacy libraries; retain Windows portable and signed Android builds (versionCode 27)
+
 ## v1.4.5
 - Use folder-plus icons without visible text for both Add to project buttons
 - Keep descriptive tooltips, accessibility labels, and the project picker heading

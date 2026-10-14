@@ -3,7 +3,7 @@
 ## Package
 - **App name:** INFORMANT
 - **Android package ID:** `com.rykersoft.informant`
-- **Current Android version:** 1.4.5 (versionCode 22)
+- **Current Android version:** 1.4.12 (versionCode 29)
 - **Published Windows download:** 1.4.2
 
 ## Platforms
@@ -21,6 +21,10 @@
 - **Provider access:** Public users bring their own keys. Family-and-friends Pro is an administrator-managed Boolean grant at `users/{hubUid}/entitlements/apps` for the exact package `com.rykersoft.informant`; there is no reusable unlock code or global family role
 - **Provider security:** Manual keys remain local and take priority. An entitled account may read only `providerKeys/com.rykersoft.informant`; those keys are loaded into process memory for the signed-in session, cleared on sign-out, and never embedded in distributable artifacts
 - **Firebase plan:** This Auth + Firestore model works on Firebase Spark. Blaze is required only if a future release deliberately moves provider operations into Cloud Functions
+
+## Article retrieval
+- Android retrieves article HTML through native HTTP on the device and extracts a sanitized body using semantic article candidates and Readability. Article imports do not require transcript/proxy keys or automatically use a remote scraper.
+- Navigation, consent and verification pages are rejected instead of being saved as articles. Sites requiring JavaScript rendering or interactive verification can still fail; Android rendered-browser capture is not included in this release.
 
 ## Architecture notes
 - Navigation: `ProjectHome` → `StandaloneVideoView` or project `Workspace` (no React Router)

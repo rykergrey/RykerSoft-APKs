@@ -40,6 +40,8 @@ Research workspace for YouTube videos, articles, and Reddit posts — saved as i
 
 ## 4. Articles and Reddit
 
+On Android, paste an article link and press **Import**, or share a link to INFORMANT. The app retrieves the article directly on your phone and displays cleaned paragraphs, captions and images. Article import does not require a transcript or proxy key and does not automatically fall back to a third-party scraping service. Sites requiring interactive verification or JavaScript rendering may still fail. Use **Re-scrape article** to retry.
+
 - Articles open a reader tab; highlight text to bookmark quotes.
 - Reddit posts show the post body plus comments when available.
 - Notes, chat, and AI actions work the same way as on videos.
