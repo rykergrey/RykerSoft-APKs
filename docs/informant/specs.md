@@ -3,7 +3,7 @@
 ## Package
 - **App name:** INFORMANT
 - **Android package ID:** `com.rykersoft.informant`
-- **Current Android version:** 1.4.12 (versionCode 29)
+- **Current Android version:** 1.4.13 (versionCode 30)
 - **Published Windows download:** 1.4.2
 
 ## Platforms

@@ -1,5 +1,10 @@
 # Release notes
 
+## v1.4.13 — Android
+
+- Keep the article header word count and reading-time estimate in sync with the current body after re-scraping previously saved articles
+- Retain the improved direct on-device article retrieval and preserved libraries from 1.4.12 (versionCode 30)
+
 ## v1.4.12 — Android
 
 - Import complete article bodies more reliably, including Daily Mail, while rejecting navigation, consent and verification pages as false successes
