@@ -1,5 +1,13 @@
 # Updates
 
+## v1.3.55 — More to compare after every Bungle match
+
+- Compare accuracy, words per minute, longest word, and max combo with another player after a shared board. Choose an opponent when several have played; a crown marks each higher stat.
+- Count up your points while the competitive result saves, then reveal opponents’ totals and your rank. Standings and word lists load together after submission, and standings appear as soon as they arrive. Skip the count-up or use reduced motion to see available totals directly.
+- Sort **All words found** by longest, shortest, most common across distinct players, or highest recorded points. Open found or missed words to highlight their letters in order over about 1.5 seconds, with the complete path staying visible afterward.
+- Keep original board snapshots for newly recorded words on changing boards. New competitive results save supported performance stats and word paths; older matches clearly identify unavailable details.
+- Replace **More daily matches** with **Next daily match** to start an available unplayed board directly from results. Already-used boards are skipped, including attempts used on another device.
+
 ## v1.3.54 — Scramble move fixes and turn reminders
 
 - Restore online move submission after a backend startup failure rejected valid words with a connection message. Existing matches remain playable.

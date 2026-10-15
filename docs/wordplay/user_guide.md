@@ -14,13 +14,16 @@ Choose Bungle to swipe words on a letter grid, or Scramble to place tiles and fo
 - [8. Daily Board & practice](#8-daily-board--practice)
 - [9. Awards & progression](#9-awards--progression)
 - [10. Comfort & accessibility](#10-comfort--accessibility)
-- [11. Windows desktop](#11-windows-desktop)
-- [12. Scramble](#12-scramble)
-- [13. Make it yours](#13-make-it-yours)
+- [11. Android updates](#11-android-updates)
+- [12. Windows desktop](#12-windows-desktop)
+- [13. Scramble](#13-scramble)
+- [14. Make it yours](#14-make-it-yours)
+- [Scramble modifiers](#scramble-free-placement-clash-strict-and-bungle-finale)
+- [Public weekly waiting lobbies](#public-weekly-waiting-lobbies)
 
 ## 1. How to play
 
-- Select **Bungle** for the letter-grid game described below, or **Scramble** for tile placement (section 12).
+- Select **Bungle** for the letter-grid game described below, or **Scramble** for tile placement (section 13).
 - Home opens with **All games** selected. The Matches, Modes, Leaderboards, and Awards tabs show Bungle and Scramble together. Use the **Show** menu to focus on one game. Match cards carry a small B or S badge and game name, and Matches is ordered by most recent activity. Select **Create match** to open the full-screen options page; **Back** returns to Home.
 - Drag across adjacent letters (including diagonals) to build a word, then release to submit.
 - Words must be at least 3 letters and in the dictionary. The same word only scores once per round.
@@ -109,7 +112,10 @@ The current player's color fills the space around the board, colors the turn ban
 - When signed in with an account, competitive Daily leaderboard results and missions are recorded.
 - Opening a Daily or competitive challenge uses your one attempt. Abandoning it does not post a score and does not unlock a replay.
 - Complete rotating Daily Missions and play on consecutive days to build a Daily Board streak.
-- Completed signed-in competitive matches submit automatically. Results reveal your verified score and rank first; eligible static boards also show high-value missed words.
+- Completed signed-in competitive matches submit automatically. Your points count up while the result saves, then opponents’ points reveal your rank. Choose **Skip count-up** to see available results immediately; reduced motion also shows the totals directly.
+- **How you played** compares accuracy, words per minute, longest word, and max combo with another player. A crown marks the higher stat. Max combo on boards without the Combo scoring modifier means the longest streak of successful submissions. Older matches can have unavailable stats.
+- **All words found** sorts by longest, shortest, or most common across distinct players in the list. Recorded scores also enable highest-points sorting, using each word’s highest recorded score. Tap a word here or in **Learn from this board** to highlight its numbered letters in order over about 1.5 seconds. The complete path stays visible afterward; close and reopen a word to replay it. Reduced motion shows the full path immediately. New changing-board matches retain the word’s original arrangement; older words may have unavailable paths.
+- Choose **Next daily match** after results to start an unplayed board directly. When every daily board is used, the screen explains when new boards arrive.
 - Use the abandon control during play to leave without submitting. Choose New Board after results to play another board.
 - After you have played a board, tap a player in the standings to open their public career profile.
 

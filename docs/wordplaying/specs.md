@@ -6,7 +6,7 @@
 - **Web**: Modern Chromium-, Firefox-, or WebKit-based browser
 - **compileSdk / targetSdk**: 36
 - **Package ID**: `com.rykersoft.wordplaying`
-- **Release version**: 1.3.54 (Android version code 60)
+- **Release version**: 1.3.55 (Android version code 61)
 - **Shell**: Capacitor 8 (WebView) wrapping a Vite + React 19 TypeScript app
 
 
@@ -28,6 +28,9 @@
 - V2 competition uses isolated collections (`competitiveAttemptsV2`, `leaderboardV2`, `challengesV2`, `challengeBoardsV2`, `challengeSeriesV2`, `competitiveUsersV2`, `careerModeStatsV2`, `playedMatchesV2`, and `weekWinnersV2`). Legacy v1.2.1 collections remain a migration-only compatibility surface and are excluded from v1.3 ranked queries and weekly finalization.
 - Word Builder online matches, verified results, rankings, ruleset statistics, and weekly totals live under `games/word-builder`. Server transactions validate turns and save each finished match once. These records do not enter Word Hunt's competitive collections or career totals.
 - Signed-in players may read public career fields on `competitiveUsersV2` and `careerModeStatsV2` (chosen player name plus lifetime/mode stats only). Clients cannot write those collections. `playedMatchesV2` word lists are readable only by the submitting player or another signed-in player who has also submitted that same match.
+- Bungle results freeze elapsed gameplay before end-screen animation and load standings and receipt-gated words concurrently after submission. The score count-up runs while results save and load, with skip and reduced-motion support.
+- New competitive results store accuracy, words per minute, longest word, max combo, and elapsed gameplay where supported by the submitted evidence. Optional attempt histories let the server replay accuracy and successful-word streaks; missing or incomplete telemetry never changes official scoring. Longest-word spellings and per-word paths/arrangements remain in receipt-gated match details. Older results retain explicit unavailable metrics.
+- Found-word comparisons count distinct players for common-word sorting and use the highest available recorded score for points sorting. Found and missed paths reveal tile by tile over about 1.5 seconds, then remain visible. Saved board snapshots preserve the original arrangement for new changing-board results; unavailable older paths are identified explicitly.
 - Live Match v2 requires a registered public profile. Callable functions own mutations, validate canonical boards and word claims against server deadlines, resolve First Claim atomically, publish results, and maintain presence and expiry.
 - Private progression documents live under each registered user and are readable/writable only by that account; per-match progression receipts are create-only. These personal collection/cosmetic records are not used as trusted public rankings or competitive aggregates.
 - Public player profiles contain only a custom player name. Rules enforce the display-name-to-case-folded-reservation mapping, reject reserved and abusive names, and make reservations choose-once and client-immutable. Moderation and recovery are trusted administrator operations keyed to the same Firebase UID. Public profiles contain no Google name, email, provider ID, entitlement, or token data.
