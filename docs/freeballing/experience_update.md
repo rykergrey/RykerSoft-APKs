@@ -1,21 +1,22 @@
-# Mobile and desktop experience update
+# Mobile arcade experience — v1.0.30
 
-Released as v1.0.29 (Android code 30) from the updated v1.0.28 source tree. Android, Windows, and Linux packages are available in the RykerSoft distribution release. The score and publishing functions are deployed, and existing Community summary metadata has been migrated. See [release notes and validation limits](release-1.0.29.md).
+This release updates the Android and Windows clients from v1.0.29. Android uses versionCode 46 and versionName 1.0.30; the portable Windows export uses file/product version 1.0.30.0. This document describes implementation and verification boundaries; published artifacts and catalog state must be checked through the release workflow.
 
-## What changed
+## Changes since v1.0.29
 
-- Pause stops the SceneTree simulation and preserves in-flight position, velocity, score, and time. Resume, restart, exit, Escape, Android Back, and focus loss share the same flow.
-- Home restores board selection, source, loaded pages, and scroll across layout changes. Overlays dismiss before exit; hidden/unfocused previews suspend rendering.
-- Mobile gains More, larger controls and text, typed username input, and a thumbnail sheet with favorites, recent boards, and search/sort of loaded entries.
-- Desktop prioritizes the board and Play, moves local stats to Profile, and groups details into Info/Parts/Scores. Gameplay supports keyboard aim/charge and collapsible controls in the side margin.
-- First play offers optional untimed practice, with a reminder of aim/charge/release and Perfect Shot streak feedback. Practice cannot submit scores.
-- AppPreferences supplies shared audio, text, motion, flashes, quality, and optional Windows remember-sign-in settings. The editor keeps its persona design and gains readable font weights, one color-scope dropdown, a dock that accommodates larger text, and compact toolbar icons when space is tight. History comparison/checkpoint/recovery helpers are extracted without changing save formats.
-- Community uses projected pages of 25 summaries with a timestamp/document-name cursor, and at most 64 thumbnail points per board. Geometry is fetched only for the selected board. Summary pagination reduces payload, not Firestore per-document read billing; it is not global full-text search.
-- Ranked submissions carry ruleset/time-limit/level timestamp metadata through offline retry. The server adds a revision digest and applies a generous score envelope. Legacy submissions remain bounded and identifiable; existing rankings are retained. Client metadata can still be forged: this is plausibility checking, not anti-cheat or replay verification.
+- Mobile Home, Community, More, and Profile are independent destinations. Their board selections, loaded Community pages, list filters, and scroll state are retained through navigation. More/Profile do not construct a hidden board preview. Nested popups and detail views close before Back returns to Home or offers exit.
+- The selected-board gallery and loaded-board list share real board artwork. One render/fetch queue bounds pending requests and the texture cache, drops requests with no visible consumer, and shows loading/unavailable states rather than an invented layout. Community request completion is guarded against navigation races.
+- Mobile controls and panels use square-corner paper faces, cut edges, opaque surfaces, and retained shadows. The board's soft perimeter cast is shared between preview and gameplay. A static exterior fill follows the selected level's rail color without painting over the live cabinet or its authored background.
+- Play retains the Home preview viewport and logo while the board expands into its matching gameplay frame. Source launcher, moving-piece, lighting, and background presentation are synchronized at handoff. Gameplay is frozen until the live board is rendered. Reduced motion uses a short dissolve; Back or backgrounding during the transition completes the handoff into Pause.
+- Mobile board previews render a static selection snapshot and mobile Home never starts an automatic attract-mode game. Desktop keeps live authored previews and its idle demo. Hidden or inactive ambient nodes stop processing, cancel presentation tweens, and discard suspended score-wave work.
+- Local high-score entry uses three cards. Existing longer local player preferences are read and saved as their first three A–Z letters; old score records keep their stored labels. Each touch direction has a bounded five-transition budget, and reversing a held touch resets the old remainder and budget. Stale touch velocity cannot flick in the previous direction. Authenticated public usernames remain separate one-to-five-letter names.
+- Desktop editor changes in this release are square-corner visual styling. The persona studios, contextual inspectors, numeric previews, color scopes, history helpers, and authoring tools were already present in v1.0.29.
 
-## Verification
+Pause/practice, shared preferences, keyboard aim/charge, optional Windows DPAPI sign-in persistence, Community summary pagination, and ranked-run metadata continue from v1.0.29. The Android presentation target remains 60 FPS with 60 Hz gameplay physics and sustained-pressure quality adaptation. No measured percentage speedup or universal device frame-rate guarantee is claimed.
 
-Use Godot 4.7.x, Python 3, and the Node 22 runtime declared by Firebase. Final development testing used Linux Godot 4.7.2, Node 22.23.2, and Java 21, with the Firebase emulators explicitly using Node 22.
+## Verification workflow
+
+Use Godot 4.7.x, Python 3, the Node 22 runtime declared by Firebase, and Java 21 for emulator checks. Run tests with isolated save directories so existing player data is unaffected.
 
 ```sh
 godot --headless --editor --path . --import
@@ -25,37 +26,33 @@ npm --prefix functions test
 firebase emulators:exec --project demo-freeballing --only auth,firestore,functions 'GCLOUD_PROJECT=demo-freeballing FIRESTORE_EMULATOR_HOST=127.0.0.1:8080 node --test functions/test/firestore.rules.test.js functions/test/functions.integration.test.js'
 ```
 
-The default runner covers 20 current suites, including pause physics, input, first play, practice, resize, preferences, score outbox, editor history/selection/tools, scoring, and performance contracts. Every scene has an isolated save directory. Script errors fail even if Godot exits zero. Emulator tests cover identity, ownership, weekly reads, retry idempotency, stale/invalid ranked rules, revision persistence, and stable 25-row pagination across equal timestamps.
+The regression runner isolates each scene and fails on script/assertion errors even if Godot exits zero. Current suites cover destination navigation, real thumbnails and caches, browse modes, launch handoff, mobile branding, ambient lifecycle, desktop-only attract mode, touch reversal and three-letter local initials, plus pause, preferences, editor tools/history, identity, scoring, and performance contracts. The runner selects a simulated mobile budget for its performance suite; this is functional coverage rather than physical-device frame-time certification.
 
-`desktop_palette_selection_regression_test` is a pre-persona historical suite referencing the removed `level-checkmate` fixture and obsolete three-tab UI. It is retained unchanged but excluded from the default runner; current professional-editor and selection-palette suites cover the present shell. Existing native-window screenshot suites are also excluded because they assume window geometry that local tiling does not guarantee. Use the fixed-viewport capture scene instead:
+The retained historical `desktop_palette_selection_regression_test` references a removed Checkmate fixture and pre-persona UI, so it is excluded from the default runner. Native-window screenshot suites that assume window geometry are also excluded. Use a fixed-viewport capture scene for layout inspection:
 
 ```sh
 godot --path . res://tools/experience_capture.tscn -- --capture-dir=/tmp/freeballing-captures
 godot --path . res://tools/experience_capture.tscn -- --simulate-mobile-performance --capture-dir=/tmp/freeballing-captures
 ```
 
-Add `--large-text` to capture 125% text at 1280×720 desktop / 480×800 portrait, instead of standard 1440×900 / 480×1023. Use isolated XDG save directories on Linux. The capture scene requires a renderer; it is not a headless screenshot test. It produces Home, settings/profile/browser, gameplay, Pause, practice, and desktop editor views. The project export presets exclude tools.
+Add `--large-text` to capture 125% text at 1280×720 desktop / 480×800 portrait instead of standard 1440×900 / 480×1023. The scene requires a renderer. Project exports exclude tools and development documentation. Some existing suites emit resource/RID cleanup warnings at exit; passing functional assertions does not certify leak-free behavior.
 
-Some existing Godot suites and editor captures emit resource/RID cleanup warnings at process exit. Passing functional assertions does not certify leak-free behavior or native-device performance.
+## Backend compatibility
 
-## Backend rollout order
+The v1.0.30 client changes add no Firebase functions, rules, indexes, or data migration. They retain the v1.0.29 backend contract: 25-document Community summary pages ordered by updatedAt and document ID, authenticated writes, retry idempotency, ruleset/time-limit/level revision metadata, and server plausibility bounds. These bounds are not authoritative replay verification. Existing rankings remain in place.
 
-1. Install functions dependencies and run unit/emulator checks under Node 22 and Java 21.
-2. With the intended Firebase project and authorized admin credentials, deploy `submitScore` and `publishCommunityLevel` before distributing the new client.
-3. Dry-run the metadata migration, review the count, then apply it:
+Older Community documents must already have summary metadata and numeric updatedAt for the paged feed. The existing admin maintenance tool supports a dry run and explicit apply:
 
 ```sh
 GCLOUD_PROJECT=freeballing-59589 node functions/tools/backfill-community-summaries.js
 GCLOUD_PROJECT=freeballing-59589 node functions/tools/backfill-community-summaries.js --apply
 ```
 
-The script adds preview points/count and fills missing numeric updatedAt; it does not rewrite geometry or scores. Each write has a lastUpdateTime precondition so a concurrent publication cannot be overwritten. If a batch races, rerun after review. The feed's orderBy excludes documents without updatedAt, so backfill existing boards before publishing the client. The query uses the standard updatedAt index and document-name tie breaker; emulator pagination has been checked.
+The tool adds preview points/count and missing numeric updatedAt, with lastUpdateTime preconditions. It does not rewrite geometry or scores. This is an administrator maintenance procedure, not a required player action or a new migration for this release.
 
-4. Confirm guest Community reads, loading/retry states, a legitimate score, an identical retry, and a stale-board rejection against the intended deployment. Build Android and Windows exports with their existing signing/packaging workflow, bump release versions, then publish through the normal release process.
+## Native release validation boundaries
 
-## Native-device checks not exercised for v1.0.29
-
-- Android: physical touch, software keyboard and safe-area/rotation behavior; Back from each sheet; background a moving multiball shot and resume without movement or timer loss.
-- Windows: browser sign-in, opt-in DPAPI write/restore after restart, refresh-token rotation, sign-out deletion, and graceful fallback if PowerShell/DPAPI is unavailable. Encrypted storage is specific to the Windows account; no secret is stored in command arguments or plain save JSON.
-- Representative modest Android hardware and an integrated-GPU Windows laptop: use F8 / `--perf-hud` for p95/p99 frame time, physics time, active balls, draw calls, and quality tier. Compare cold/warm loads and dense animated/multiball boards, then run 15–20 minutes to observe sustained thermal behavior. Check Full, Balanced, and Battery saver for presentation changes without physics/scoring changes.
-- This Linux simulation cannot certify native sign-in, battery use, touch ergonomics, Android thermal behavior, or native behavior of the EXE/APK. No speedup percentage is claimed from headless timings.
+- Android checks should cover physical touch reversals in both directions, three-card local entry and separate public username entry, software keyboard, safe areas/rotation, Back through each destination and dropdown, preview-to-game handoff, and background/resume during a moving multiball shot.
+- Windows checks should cover native launch, browser sign-in, opt-in DPAPI write/restore after restart, token renewal, sign-out deletion, and fallback when secure storage is unavailable. DPAPI storage is tied to the current Windows account; tokens are not placed in command arguments or plain save JSON.
+- Representative modest Android hardware and an integrated-GPU Windows laptop are needed for p95/p99 frame times and sustained 15–20 minute thermal checks on dense animated/multiball boards. Compare Full, Balanced, and Battery saver without changing physics or scoring.
+- A Linux-hosted Godot run and a successfully built Windows EXE do not establish native Windows sign-in/DPAPI behavior. Headless timing does not establish Android battery use, thermal behavior, or device touch ergonomics. Report actual artifact/device checks separately rather than treating this checklist as completed evidence.

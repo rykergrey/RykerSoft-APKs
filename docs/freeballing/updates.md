@@ -1,5 +1,16 @@
 # Updates
 
+## v1.0.30 — mobile arcade and three-letter initials
+
+- Rebuild Android navigation as separate Home, Community, More, and Profile screens, preserving destination browsing state and returning through Android Back in order
+- Add real board thumbnails with bounded shared rendering/cache work, compact list filters, and clear loading, empty, retry, and load-more states
+- Carry square-corner paper controls, opaque panels, raised shadows, and the selected board's rail color through mobile menus and gameplay
+- Keep the supplied logo visible as the selected board preview expands into its matching gameplay frame, with a shorter dissolve for reduced motion and a safe pause when the transition is interrupted
+- Keep mobile previews static and remove automatic mobile idle demos; retain animated previews and attract mode on desktop
+- Stop hidden/inactive ambient processing and suspended score effects while retaining the Android 60 FPS presentation target and existing physics/scoring
+- Reduce local high-score entry to three initials and fix touch direction changes so players can scroll up or down again without lifting their finger; public usernames remain one to five letters
+- Apply square-corner styling to desktop editor controls while preserving the existing Foreground/Background studios and authoring tools
+
 ## v1.0.29 — mobile and desktop experience update
 
 - Freeze physics and preserve shots during Pause; add Escape, focus-loss pause, overlay-first Android Back, and responsive Home state restoration
