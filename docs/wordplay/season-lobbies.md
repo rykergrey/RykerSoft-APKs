@@ -50,7 +50,3 @@ migrates their stored expiry or removes them if their season has ended.
 - `npm run verify:builder-online-ui`
 - `npm run verify:competitive-time`
 - `npm run typecheck` and `npm run build`
-
-
-The required production functions, rules, and composite indexes were deployed with
-version 1.3.52 on 2026-10-05. The isolated emulator suite passed before deployment.

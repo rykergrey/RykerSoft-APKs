@@ -1,5 +1,11 @@
 # Updates
 
+## v1.3.56 — Keep ongoing Scramble matches on Home
+
+- Save new Solo and Vs Raid Scramble matches automatically, alongside Pass & Play. Return to Home and choose **Continue** to resume the saved board, rack, and progress. Starting another match keeps your existing saves.
+- Show every unfinished Scramble save and all active online matches in Matches. Newer finished matches no longer push older ongoing online games out of the list.
+- Refresh Matches when returning with the device Back button. Returning Home keeps your match available to continue.
+
 ## v1.3.55 — More to compare after every Bungle match
 
 - Compare accuracy, words per minute, longest word, and max combo with another player after a shared board. Choose an opponent when several have played; a crown marks each higher stat.
