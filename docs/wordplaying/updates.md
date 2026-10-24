@@ -1,5 +1,12 @@
 # Updates
 
+## v1.3.57 — Daily Scramble and shared weekly boards
+
+- Play Daily Scramble: a pre-filled board, seven identical letters for every player, and two minutes to lock in one high-scoring move. The board appears after Start; leaving or reloading never resets the clock.
+- Find today’s Bungle and Scramble dailies even before anyone plays. Boards started by any player stay available to everyone through Sunday, with the original board and letters and a separate attempt for each player.
+- Open earlier daily boards from their dated match cards. Bungle’s Next daily match also includes available boards from earlier in the season. The season closes Monday at midnight Pacific.
+- Keep Scramble daily deadlines and validated results on the server so registered players can resume across devices.
+
 ## v1.3.56 — Keep ongoing Scramble matches on Home
 
 - Save new Solo and Vs Raid Scramble matches automatically, alongside Pass & Play. Return to Home and choose **Continue** to resume the saved board, rack, and progress. Starting another match keeps your existing saves.

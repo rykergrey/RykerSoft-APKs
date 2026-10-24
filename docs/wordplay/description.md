@@ -3,6 +3,8 @@
 Two word games for Android and desktop: swipe adjacent letters in Bungle or place tiles to make connected words in Scramble. Play locally, join online matches, explore custom rules, and compare verified scores within each game.
 
 ## Key Features
+- **Daily Scramble**: A shared pre-filled board and seven fixed letters, with two minutes to lock in one move. Everyone gets identical bonuses and tiles. Server-owned attempts keep the deadline and result across devices.
+- **Shared weekly daily boards**: Today’s boards are always available. Earlier boards started by anyone remain open to everyone until Monday midnight Pacific, with the original board and a separate attempt for each player.
 - **Scramble**: Place letter tiles on an 11×11, 15×15, or 19×19 board, with crossings, premium squares, and tile exchanges. Play Solo, Pass & Play, Online, or against Raid. Choose 5, 10, or unlimited turns per player and a separate turn timer. Combine barriers, hidden or randomized bonuses, stacking, falling tiles, Free Placement, secret Clash rounds, or Strict submissions and save custom modes. Bungle Finale adds ten untimed word-hunting turns per player on the completed Scramble board, then combines both phases’ scores. Discover public weekly waiting lobbies in Matches. Verified online scores have their own rankings and awards.
 - **Classic boards**: 4×4 or 5×5 dice grids with TWL06 dictionary validation (min 3 letters; Q expands to QU).
 - **Modifiers & presets**: Letter Lock tile ownership, Strict modes, Gravity, Blind Mode, Combo Meter, Reroll, First Claim, Sabotage, and Word Grid's tile-swapping arrangement puzzle — plus Classic / Gravity Well / Ghost Grid / Zenith of Chaos presets.

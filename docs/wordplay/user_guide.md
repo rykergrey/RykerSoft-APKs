@@ -105,9 +105,10 @@ The current player's color fills the space around the board, colors the turn ban
 
 ## 8. Daily Board & practice
 
-- Select **Today's Board** on the main menu to play the same deterministic board and ruleset as everyone else worldwide that day.
+- Open **Matches** and choose a Daily board. Today’s Bungle and Scramble boards are available to every player before anyone plays them.
 - The board resets at midnight Pacific Time (PST/PDT) every day with a fresh grid and a unique set of compatible modifiers.
-- Use the Monday–Sunday week strip to open any Daily Board in the current competitive week. Future days stay locked.
+- Earlier daily boards started by anyone stay available to all players through Sunday. Their dated cards open the original board and letters with your own attempt. Future days and previous seasons stay closed; the season ends Monday at midnight Pacific.
+- **Daily Scramble**: Press **Start 2-minute challenge** to reveal the pre-filled board and seven letters. Arrange tiles, preview scores, and lock in one valid play before time expires. Leaving or reloading keeps the same deadline. If no move is submitted in time, the result is 0 points. Registered accounts can resume across devices; guest attempts belong to their player session. Copy result shares the score without revealing the word.
 - Other players’ names, ranks, and scores stay hidden until you submit that day’s board, so standings cannot spoil an unplayed Daily.
 - When signed in with an account, competitive Daily leaderboard results and missions are recorded.
 - Opening a Daily or competitive challenge uses your one attempt. Abandoning it does not post a score and does not unlock a replay.
