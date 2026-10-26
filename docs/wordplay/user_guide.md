@@ -183,3 +183,9 @@ Free Placement and Clash can combine with Stacking. Falling Tiles cannot combine
 ## Public weekly waiting lobbies
 
 Open Home → Matches to discover Bungle and Scramble lobbies. Inspect their settings and join an available seat, then ready up. Hosts can edit waiting-room settings; changes clear ready votes so everyone reviews the same setup. Starting a game opens a new waiting lobby with those settings. Lobbies stay available until the next Monday at midnight in America/Los_Angeles. Leaving frees your seat; an empty waiting room remains available for others.
+
+## Daily Scramble formats and result notifications
+
+Choose one of five daily Scramble boards from Matches. Start to reveal the identical board and letters and begin your timer. One Perfect Word and Stack Attack allow one connected submission; Word Rush allows repeated plays with refills; Tile Tactics gives fourteen tiles over multiple plays; Free Rein allows up to fourteen tiles in separate scoring words or changes in one submission. Accepted points remain saved when time expires.
+
+After finishing, see rivals’ scores and standings, review the board, or copy your result. Played daily boards stay open for other players through Sunday. Home labels current leaders and ties. When an opponent plays a board you submitted, a result reveal compares both scores. Use Got it, Next result, or Dismiss all to acknowledge alerts across devices. Home checks automatically on return and while open; push alerts remain optional. Unread results remain visible after the weekly board closes.

@@ -1,33 +1,37 @@
-# Daily Scramble experiment
+# Daily Scramble challenges
 
-Open **Matches → Daily Scramble**, with either All games or Scramble selected. The development playtest at `/scripts/scramble-daily-preview.html` uses the same backend and requires the daily callables to be deployed.
+Home → Matches lists five Scramble challenges every Pacific calendar day. Each uses a dense 15×15 crossword, usually 58–62 occupied squares and 10–11 intersecting seed words. The versioned seed lexicon includes words such as CIPHERS, ORBITAL, LANTERN, MOSAIC, and VOYAGE. Generation checks every horizontal and vertical run, reserves the player's balanced rack first, and conserves the existing physical tile distribution. The board, premiums, starting letters, tile IDs, and subsequent draw order are identical for everyone.
 
-Each Pacific calendar day has one 11×11 board with two intersecting words already placed, visible randomized premium squares, and seven fixed rack tiles. Date, puzzle version, board, bonus positions, tile values, tile IDs, and rack order are deterministic and identical for every player. The letter pool follows Scramble’s existing tile distribution. A puzzle stays on its starting date if midnight passes while it is open.
+| Challenge | Time | Supply | Rules |
+| --- | --- | --- | --- |
+| One Perfect Word | 2 minutes | 7 tiles | One connected submission |
+| Word Rush | 3 minutes | 7 tiles, refilling | Make as many plays as possible; scores accumulate |
+| Stack Attack | 2 minutes | 7 tiles | One submission with letter stacking and prebuilt layers |
+| Tile Tactics | 3 minutes | 14 tiles, no refills | Spend the supply over multiple plays; stacking allowed |
+| Free Rein | 3 minutes | 14 tiles, no refills | One submission anywhere; disconnected words and changes score together |
 
-Players explicitly start a two-minute clock before seeing the board or rack. They have score previews, shuffle, undo, and redo during that time. The persisted deadline keeps running when they leave or reload; an unsubmitted attempt expires for 0 points. One valid connected placement locks the result. Normal word, crossword, premium, and full-rack bonuses apply; unused letters have no penalty. Invalid drafts do not consume the attempt. There is no exchange, pass, or redraw. Existing board premiums are consumed; newly placed letters activate available premiums.
+Players explicitly start the clock before seeing the board or letters. They can preview scores, shuffle, undo, and redo until submitting. Invalid drafts do not consume tiles or plays. Every submitted tile must contribute to a word; isolated setup tiles cannot score. Multi-play formats allow early finishing. Timeouts retain all accepted points. Unused letters have no penalty. There is no exchange or redraw. Existing seed premiums are consumed; new placements activate remaining premiums. Normal word, crossword, stack, and seven-tile bonuses apply.
 
-Attempts now live on the server, separately from ordinary Scramble matches. Registered accounts resume the same deadline and result across devices; guest Firebase sessions can also play. The server owns the deadline, reconstructs the canonical board, validates placements with its dictionary, and stores the result once. Device storage only caches shared results and account-scoped drafts. Clearing it cannot reset a server attempt. Copy result shares the date and score without revealing the word. These daily results do not enter the existing live/async Scramble rankings.
+Attempts live on the server. Accounts resume the same deadline, rack, accepted plays, and result across devices; anonymous Firebase sessions can also play. Board snapshots freeze the initial layout and tile order for later arrivals. Move receipts make network retries idempotent, and revisions reject stale moves. There is a 60-play server ceiling. Clearing local storage cannot reset an attempt. Date-only keys preserve the original v1 two-word boards; new keys use `YYYY-MM-DD_format` and a separate puzzle version.
 
-Today’s daily is always listed for everyone. Starting a daily publishes its original date in the shared weekly directory. That board remains open for any other player through Sunday, closing at Monday 00:00 Pacific. Late arrivals get the original board, bonuses, and rack with their own two-minute clock. Unstarted historical boards, future boards, and previous-season boards cannot start attempts. A clock started just before season end is capped by the season boundary. Historical cards include the original date. Earlier device-only experimental attempts are not automatically published as trusted shared history.
+Today's full lineup is available to everyone. Starting any Bungle or Scramble daily publishes its original key in the shared weekly directory. Those earlier boards remain available through Sunday, closing Monday 00:00 Pacific; late arrivals get their own clock, capped at season end. Unstarted past boards, future boards, and previous-season boards cannot start attempts. Completed boards remain on Home with a results action.
 
-Deploy `getSeasonDailyBoards`, `beginScrambleDailyAttempt`, `getScrambleDailyAttempt`, `submitScrambleDailyAttempt`, the updated `beginCompetitiveAttempt`, Firestore rules, and the client together. This source change does not deploy production.
+Each Scramble board has its own shared standings. Rival scores are available only after the current player finishes. The Home directory exposes completed-player counts and current leader names (including ties) once at least two players have finished, without scores or word lists. Bungle cards use the same leader labels and retain their existing verified score reveal. Scramble results show the Bungle-style animated score reveal, ranks, rivals' scores, word breakdown, best word, board review, score copying, and standings refresh/retry. Ordinary Scramble matches also use the new results screen; their recap is labeled as recent scoring plays because older matches may retain only partial turn history. Pass & Play shows a shared winner summary and final scores.
 
+Scramble daily scores remain separate from ordinary live/async Scramble rankings. Copy result shares only score information. Internal boards, attempts, receipts, and result documents deny direct client access; callables enforce reveal timing.
 
-## What to evaluate in playtests
+Development layout fixtures at `/scripts/scramble-challenges-preview.html?format=freestyle` and `?format=freestyle&result` use local canonical state and illustrative standings, without production writes. The older `/scripts/scramble-daily-preview.html` exercises the real online session and requires deployed callables.
 
-- Does seeing the score invite better exploration, or make choosing too mechanical?
-- Are simple hooks tempting while longer words and crosswords reward further thought?
-- Do blanks create enjoyable choice, or too much searching?
-- Are two-word crossings sufficiently varied, or should later versions include denser connected positions?
-
-The initial version rotates four hand-checked word crossings, orientation, six curated racks, and seeded premium layouts. Every rack has an S for a guaranteed legal hook. Boards should offer several plausible moves rather than a single forced solution. Keep published daily versions stable when changing generation or scoring.
-
-Run the deterministic and gameplay checks with:
+Validation:
 
 ```sh
-npm run verify:scramble-daily
+npm run verify:scramble-challenges
+npm run verify:scramble-daily # legacy v1 compatibility
 npm run verify:scramble-daily-ui
-npm run test:season-daily # Firestore emulator; Java 21+ required
+npm run verify:home
+npm run test:season-daily # Firestore emulator; Java 21+
 ```
 
-The check covers 366 distinct daily setups, repeatability, the complete tile pool, dictionary-valid starting words, guaranteed legal moves, rejected non-placement actions, immutable source boards, one-move completion, score handling, no redraw, replayed saved results, blank validation, Pacific midnight, persisted deadlines, boundary-time rejection, timeout restoration, and move variety using the production move finder.
+The new generator suite checks 70 layouts across all five formats, exact tile conservation, dictionary validity, legal choices, stacking transformations, disconnected plays, fixed supplies, refills, and cumulative timeout scores. Emulator checks cover frozen parity, independent attempts, receipt retries, revision conflicts, score privacy, ties, late arrivals, and weekly rollover.
+
+Deploy `getScrambleDailyStandings`, the updated daily attempt callables, `getSeasonDailyBoards`, Firestore rules, and the client together. This source change does not deploy production.

@@ -43,3 +43,5 @@
 - Trace adjacent letters, including diagonals. A square can be used once within a word and reused across different words. Claimed words are shared and cannot score twice.
 - Pass when no move is available. All remaining players passing or exhausting their turns ends the phase. Finale points are added once to build scores for the final standings.
 - Scramble protocol 7 is required for this modifier; existing earlier match protocols remain supported.
+
+Daily Scramble: five deterministic 15×15 challenge formats, server-owned clocks and attempts, shared weekly standings, revision checks, and retry-safe scoring. Match-result notifications use a durable server inbox and cross-device acknowledgments.

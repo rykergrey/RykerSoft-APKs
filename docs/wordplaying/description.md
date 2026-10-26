@@ -28,3 +28,5 @@ Two word games for Android and desktop: swipe adjacent letters in Bungle or plac
 - **Android** — Capacitor release APK for the RykerSoft hub (`com.rykersoft.wordplaying`)
 - **Web** — Vite + React
 - **Desktop** — Electron packaging from the same codebase
+
+Daily Scramble now offers five dense, shared challenges each day, including timed word building, stacking, fixed tile supplies, and free placement. Return to clear win/loss/tie alerts when another player challenges your score.

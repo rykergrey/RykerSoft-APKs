@@ -1,5 +1,13 @@
 # Updates
 
+## v1.3.58 — Rich daily challenges and result alerts
+
+- Five daily Scramble formats: One Perfect Word, Word Rush, Stack Attack, Tile Tactics, and Free Rein.
+- Fuller 15×15 starting boards with intersecting words, identical letters and draw order for every player, stacking, timed multi-play, and fixed tile supplies.
+- Played Bungle and Scramble dailies remain shared challenges through the weekly season; Home shows current leaders and ties.
+- Scramble results reveal rival scores, ranks, word breakdowns, and board review after completion.
+- Returning players receive prominent win/loss/tie alerts with both scores. Home refreshes automatically; acknowledged results do not repeat across devices.
+
 ## v1.3.57 — Daily Scramble and shared weekly boards
 
 - Play Daily Scramble: a pre-filled board, seven identical letters for every player, and two minutes to lock in one high-scoring move. The board appears after Start; leaving or reloading never resets the clock.

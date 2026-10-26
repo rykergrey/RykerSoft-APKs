@@ -18,6 +18,18 @@ community matches in the active week, including matches the player did not creat
 Acknowledgments merge transactionally and never move another device's seen time
 backward. Word lists retain their existing submission-based access rules.
 
+## Returning-player result notifications
+
+New Bungle daily submissions and Scramble daily results now notify every earlier participant on the same board. Community submissions use the same score comparison. Ordinary online Scramble and live Bungle finishes include structured wins, losses, and ties; Scramble forfeits respect the winner even when the forfeiting player has more points.
+
+The inbox is durable and does not require push permission. On Home, unread result notices open a prominent reveal with the challenger, both scores, margin, and win/loss/tie styling. Daily copy makes clear that the weekly board remains open: the result compares this opponent against the player's submitted score. **View match** opens the existing result/standings route. Players can step through multiple results or dismiss the whole batch. The reveal waits for other dialogs to close.
+
+Home refreshes every 30 seconds while visible and on focus/return. The notification panel also syncs on Home refresh, focus, visibility changes, and its own 60-second interval. Firestore delivers new inbox entries live. Dismissal writes owner-only acknowledgments, shared across devices; pending offline acknowledgments do not block Home. Failed acknowledgments restore the reveal with a retry message. Permanent server receipts prevent trigger retries from recreating dismissed score alerts. The former community-only automatic activity popup no longer competes with the inbox reveal.
+
+Push remains opt-in. Daily push taps route to the correct game's original daily results. No word lists enter notification payloads, and only players with an already-submitted score receive rival comparisons. Unread daily results survive the weekly rollover; their reveal marks the board closed and disables competing again. Prior result documents are not backfilled into new alerts.
+
+Additional checks: `npm run verify:result-notifications` and `npm run test:result-notifications` (Java 21+). Deploy the new `notifyBungleDailyScore` and `notifyScrambleDailyScore`, updated `notifyPlayedMatchScore`, `notifyBuilderTurn`, `notifyLiveMatchResult`, `syncGameNotifications`, and `deliverGameNotification` with the client. Source changes alone do not enable production alerts.
+
 ## Submission
 
 Daily Boards and community challenges no longer submit automatically. All timed

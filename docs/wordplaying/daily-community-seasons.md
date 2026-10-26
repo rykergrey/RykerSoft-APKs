@@ -29,6 +29,16 @@ start the four new community slots; Classic remains compatible.
 The client shows a loading/error state with retry if the lineup cannot load,
 rather than presenting generated replacements as ranked boards.
 
+## Shared daily availability within a season
+
+For both Bungle and Scramble, today’s full daily lineup is available to every player before anyone plays. Once any player starts a board, the server records its game and original daily key in `seasonDailyBoards/{Pacific Monday}/boards`. Earlier boards with activity stay available to everyone through Sunday. A player arriving later in the week sees today’s boards plus those earlier boards, even if that player has never played before. Unstarted historical boards and future boards are not listed or accepted. Every new attempt uses the original frozen daily configuration and seed; Scramble also preserves its exact rack and draw order. Scramble offers five dense challenges per day: One Perfect Word, Word Rush, Stack Attack, Tile Tactics, and Free Rein (see `scramble-daily.md`). One attempt per player and board remains in force.
+
+The directory exposes completed-player counts and current leader names, including tied leaders, after multiple players finish. It has no numeric scores or word lists. Completed cards remain available with a standings/results action. Existing trusted Bungle score rows also qualify older daily boards, including Classic’s legacy date-only key, so the rollout does not hide boards already played this season. Bungle’s startup now checks season availability and resolves the board’s original date, rather than requiring today’s date. Its Next daily match navigation includes the same season history. Scores remain hidden until the current player submits.
+
+New starts close at Monday 00:00 America/Los_Angeles. Daily timers and Bungle’s delivery grace are capped by the season boundary; old directory documents cannot extend availability into the next season. Waiting multiplayer lobbies retain their separate season lifecycle.
+
+Checks: `npm run verify:home`, `npm run verify:scramble-daily-ui`, and `npm run test:season-daily` (Java 21+). The emulator covers player A starting every daily in both games, player B arriving later, exact board parity, legacy scores, independent clocks, and week rollover. Deploy the new daily callables, updated competitive startup, rules, and client together; the historical production deployment described above predates this change.
+
 ## Weekly community review
 
 Monday at 00:00 America/Los_Angeles, modes with cumulative upvotes minus downvotes
