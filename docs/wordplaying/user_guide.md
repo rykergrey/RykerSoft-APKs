@@ -20,6 +20,7 @@ Choose Bungle to swipe words on a letter grid, or Scramble to place tiles and fo
 - [14. Make it yours](#14-make-it-yours)
 - [Scramble modifiers](#scramble-free-placement-clash-strict-and-bungle-finale)
 - [Public weekly waiting lobbies](#public-weekly-waiting-lobbies)
+- [Daily Scramble formats and result notifications](#daily-scramble-formats-and-result-notifications)
 
 ## 1. How to play
 
