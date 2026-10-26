@@ -2,12 +2,13 @@ Holistic personal tracking for food, supplements, exercise, measurements, lifest
 
 bettertracking is a full journal + library system, not a simple calorie counter. Track what you eat and do, build a personal library of ingredients and combos, stage batches into your journal, and let targets adapt from your weight trend and activity.
 
-## New in 1.11.2
+## New in 1.14.0
 
-- Home’s Log/Stats control separates daily logging from period statistics
-- Log opens the selected day’s dashboard and entries; Stats starts on Week and retains the selected range when returning
-- One range control in Stats selects Day, Week, Month, Year, All time or Custom for both Trends & History and Analysis
-- Trends & History keeps charts, metrics, relationships, food exploration and selected-period logs; Analysis keeps inline AI reviews and saved reports for those same dates
+- Full-history calorie accounting keeps earlier overages visible until later logged days balance them, including across weeks
+- Daily and recent views distinguish intake above your goal from intake above estimated maintenance
+- Optional recent-window plans use manageable daily adjustment caps and nutrient-aware bounds; historical balances remain visible without requiring a payoff deadline
+- Protein, fat, carbohydrate, fiber, vitamin, mineral and sodium goals keep their daily meaning; earlier intake does not reduce today's nutrient requirements or raise today's limits
+- Android also includes the optional Index Assistant library, journal and staging-tray connection, with separate default-off read/write controls
 
 ## Features
 
@@ -21,7 +22,7 @@ bettertracking is a full journal + library system, not a simple calorie counter.
 - **Library panel** remembers search, scroll, and expanded groups across tray switches
 - **Quick Log**: free text and/or a photo → AI-estimated macros, refine with feedback
 - **Adaptive nutrition engine**: Mifflin–St Jeor BMR, weight-trend adaptation after ~14 days, conservative 0.8× trust on exercise burn, manual overrides
-- **Rolling Calorie Balance** that compares recent intake with combined goals, explains logging coverage, and supports opt-in adjustments
+- **Rolling Goal Balances** that retain full-history calorie accounting, distinguish goals from estimated maintenance, protect daily nutrient goals, explain logging coverage and support capped opt-in plans
 - **Rolling nutrient progress** with daily and period views, goal-type-aware boundaries, cumulative variance, and individual overage-day counts
 - **AI assistant & coaching**: tool-using chat (navigate, query logs, create/update items, set reminders), inline coach reviews grounded in calculated period reports, and portable briefs for Perplexity, ChatGPT, Google Gemini or another chatbot
 - **AI Architect**: describe an item (optionally with images) and let the model draft the library entry
@@ -49,9 +50,9 @@ In-app AI features (Quick Log, AI Architect, chat, and voice transcription) are 
 - **Windows** — x64 Electron portable build (not Authenticode signed)
 - **Linux** — x64 AppImage and Debian package
 
-## Download version 1.11.2
+## Download version 1.14.0
 
-- [Android APK](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.11.2/app-release.apk)
-- [Windows x64 portable](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.11.2/bettertracking-v1.11.2-win-x64.exe)
-- [Linux x64 AppImage](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.11.2/bettertracking-v1.11.2-linux-x86_64.AppImage)
-- [Linux x64 Debian package](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.11.2/bettertracking-v1.11.2-linux-amd64.deb)
+- [Android APK](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.14.0/app-release.apk)
+- [Windows x64 portable](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.14.0/bettertracking-v1.14.0-win-x64.exe)
+- [Linux x64 AppImage](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.14.0/bettertracking-v1.14.0-linux-x86_64.AppImage)
+- [Linux x64 Debian package](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.14.0/bettertracking-v1.14.0-linux-amd64.deb)

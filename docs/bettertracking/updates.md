@@ -1,5 +1,43 @@
 # Release notes
 
+## v1.14.0 — October 26, 2026
+
+- Keep calorie overages in full-history accounting until subsequent usable logged days balance them, without Monday resets or recent-window expiry
+- Distinguish daily and recent intake versus base goals and estimated maintenance
+- Keep daily nutrient goals and limits intact; show nutrient history without borrowing or repaying daily nutrition
+- Use recent logs for optional calorie guidance and 1–365 day plan previews, with daily caps, nutrient-aware floors, calorie maxima and conflict notices
+- Recalculate later allowances after backdated edits; do not turn missing, skipped, excluded or incomplete days into unused allowance
+- Include the optional Android Index Assistant library, journal and staging connection from the intervening local versions
+- Android versionCode 30, Windows x64 portable, Linux x64 AppImage and Debian packages. See [release notes](releases/1.14.0.md).
+
+## v1.13.1 — October 20, 2026
+
+- Index tray reads now include ordinary local manual selections, clearly identified as volatile and read only through the bridge.
+- Empty-query tray listing covers all actual rows; filtered results disclose unfiltered counts.
+- Manual reads preserve quantity, date and custom values without saving, logging or duplicating data. See [release notes](releases/1.13.1.md).
+
+## v1.13.0 — October 20, 2026
+
+- Index Assistant can prepare items in the real durable staging tray through `staging_item`, using an existing library item and its observed revision.
+- Stage quantity/unit/date/custom values survive restart; owner changes keep tray data scoped correctly.
+- Native tray edits compare revisions, and logging atomically consumes selected stages exactly once.
+- Library discovery exposes supported units for the selected item. See [release notes](releases/1.13.0.md).
+
+## v1.12.1 — October 20, 2026
+
+- Wake the already loaded Android runtime when an Index bridge request is queued, without launching another activity or WebView.
+- Coalesce native wake events into one serialized drain, finish bounded queue pages without depending on background timers, and retain interval recovery.
+- Renew readiness on a native wake; keep owner, access, expiry, cancellation and canonical-save checks in place. Remove listeners on runtime disposal.
+- Android versionCode 27. See [release notes](releases/1.12.1.md).
+
+## v1.12.0 — October 20, 2026
+
+- Optional Android connection for the verified Index Assistant, with separate default-off read and write controls in Profile → Preferences.
+- Search/read library items and dated journal entries with exact IDs, revisions, bounded pages and explicit cache freshness.
+- Create/update validated library and journal content with stale-edit checks, deterministic identity, atomic Firestore save receipts and interrupted-operation reconciliation.
+- Keep Profile, health goals, provider credentials and sign-in data inside Better Tracking. Preserve rich content and fields outside requested edits.
+- Android versionCode 26. Local verification and artifact details are recorded in [release notes](releases/1.12.0.md); installation/distribution are separate steps.
+
 ## v1.11.2 — October 14, 2026
 
 - Replace Home’s D/W/M controls with Log/Stats so daily logging and period statistics have clear destinations

@@ -4,7 +4,7 @@
 
 - **App name:** bettertracking
 - **Android package ID:** `com.rykersoft.bettertracking`
-- **Current version:** 1.11.2 (versionCode 25)
+- **Current version:** 1.14.0 (versionCode 30)
 
 ## Platforms
 
@@ -38,7 +38,7 @@
 - `App.tsx` — shell, navigation, Firebase subscriptions, overlays
 - `services/` — Gemini/AI, adaptive nutrition engine, transcription, notifications, library search
 - `services/rykersoftHub.ts` — second Firebase app (`rykersoft-hub`) for entitlements + provider keys
-- Adaptive targets: Mifflin–St Jeor BMR, ~14-day calibration, 0.8× exercise-burn trust factor, optional Energy Bank
+- Adaptive targets: Mifflin–St Jeor BMR, ~14-day calibration, 0.8× exercise-burn trust factor, persistent calorie accounting plus opt-in recent-window calorie pacing
 
 ## Health analysis
 
@@ -53,6 +53,15 @@
 - Previous calendar-period comparisons use matching elapsed portions while a period is ongoing
 - Descriptive Pearson correlation requires at least eight complete date pairs and variation in both metrics; same-day and delayed associations do not establish causation
 - Data comes from locally synchronized records; historical profile/schema versions and complete cross-device coverage are not available
+
+## Rolling goal balances
+
+- Full locally available usable prior food-log history carries calorie variance forward until later logged days balance it; recent averages do not expire historical accounting
+- Daily and recent intake are compared separately with base goals and estimated maintenance
+- Negative full-history allowances are accounting values, separate from daily intake suggestions
+- Daily nutrient goals and limits remain intact; nutrient history is descriptive
+- Optional recent-window pacing and 1–365 day previews respect daily adjustment caps, nutrient-aware floors and calorie maxima; conflicting goals withhold suggestions
+- Missing/excluded/incomplete days create no unused allowance; historical goals use current profile settings and available dated weight
 
 ## Distribution
 
