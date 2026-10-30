@@ -21,7 +21,9 @@ Song title points decline from 6 to 3 over the playback budget. For visual clues
 
 ## YouTube search
 
-Open Settings → YouTube search. Enable YouTube Data API v3 in your Google Cloud project and create a personal API key. Restrict API access to that API and application access to Android package `com.rykersoft.closecall` with the production signing SHA-1 shown in the app. Save & connect validates the key before encrypted storage. Remove saved key deletes it. Search and playback require internet and available quota. Do not use browser referrer restrictions for the Android key.
+On Android, open Settings → RykerSoft Pro and sign in with the same Google identity you use in RykerSoft. Close Call uses its own Pro entitlement and centrally managed YouTube connection. You do not need to enter an API key. This same sign-in enables configured Pro judging providers; choosing free judging does not disconnect YouTube access.
+
+Use Refresh access if the administrator has just enabled a service. Sign out disconnects the shared Pro session. If search is unavailable, check internet access and your Close Call grant; the administrator manages missing service configuration and quota. Free image play and practice remain available signed out. Web browser key setup remains separate.
 
 ## PRO Features
 

@@ -1,5 +1,13 @@
 # Updates
 
+## 0.4.3 · version code 10 · 2026-10-30
+
+- One RykerSoft sign-in connects Android YouTube search and Pro answer judging.
+- Removes manual API-key entry from Android settings and media setup.
+- Verifies the exact Close Call grant before every search, including cached queries; account changes and backgrounding invalidate pending results.
+- Retires legacy personal YouTube key storage.
+- Retains the production certificate for an in-place update from 0.4.2.
+
 ## 0.4.2 · version code 9 · 2026-10-30
 
 First RykerSoft release with a dedicated production signing certificate.

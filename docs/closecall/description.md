@@ -12,4 +12,4 @@ A local family guessing game for Ryker, Nemo and Ender. Take turns setting image
 * Optional OpenAI or Gemini semantic judging for uncertain visual answers, using the same RykerSoft account and this app's exact entitlement.
 * Provider availability depends on the administrator's configuration and internet access. Gemini is currently unconfigured.
 
-Image/video search and YouTube media require internet. YouTube search needs your own restricted YouTube Data API v3 key in Settings. Android speech recognition may use your device's online service. This release uses a dedicated production certificate; earlier debug prototypes require a fresh install.
+Image/video search and YouTube media require internet. Android YouTube search connects through your RykerSoft Pro account; no personal API key is required. Android speech recognition may use your device's online service. This release uses a dedicated production certificate; earlier debug prototypes require a fresh install.
