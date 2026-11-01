@@ -1,5 +1,11 @@
 # MechaMeme updates
 
+## 1.0.22 — November 1, 2026
+
+- Add captions manually to an imported photo with the pencil button, without AI generation or Pro.
+- Save as new take keeps the original photo and selects the new captioned version.
+- Saved manual takes persist after reopening the app; leaving an unfinished draft discards it.
+
 ## 1.0.21 — November 1, 2026
 
 - Meme God is now MechaMeme, with a new red geometric launcher icon and splash artwork. Existing photos, settings and Pro access are retained.

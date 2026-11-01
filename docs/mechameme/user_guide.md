@@ -16,6 +16,8 @@ Tap the plus button to choose a camera or gallery photo. Adjust the crop, then t
 
 ## Edit, keep and share
 
+After importing a photo, tap the pencil to write your own captions. Select the upper or lower caption area to edit it, or double-tap the preview to add another caption. Tap **Save as new take** to keep your captioned version alongside the original. Manual captions are free and do not require AI generation. Leaving the editor before saving discards this new draft.
+
 Use the pencil action to edit a completed take's captions, size, color or position. The bookmark keeps a version. Export saves a PNG; Share opens Android's sharing options. Your original remains available alongside its versions.
 
 ## PRO Features
