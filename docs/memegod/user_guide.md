@@ -1,4 +1,4 @@
-# Meme God user guide
+# MechaMeme user guide
 
 ## Table of Contents
 
@@ -7,6 +7,7 @@
 - [PRO Features](#pro-features)
 - [Templates](#templates)
 - [Zoom and navigation](#zoom-and-navigation)
+- [Name or delete photos](#name-or-delete-photos)
 - [Storage and interrupted requests](#storage-and-interrupted-requests)
 
 ## Start with a photo
@@ -24,7 +25,7 @@ Use the pencil action to edit a completed take's captions, size, color or positi
 * Select a completed take and enter a direction to revise its captions.
 * Use template AI assistance to refine instructions or create examples.
 
-Open **Settings → RykerSoft Pro → Sign in with Google**. Use the same account as RykerSoft. Any active Pro grant in RykerSoft unlocks these features; a separate Meme God grant is not required. The app obtains its provider configuration automatically. No API-key entry, server URL or PC connection is needed.
+Open **Settings → RykerSoft Pro → Sign in with Google**. Use the same account as RykerSoft. Any active Pro grant in RykerSoft unlocks these features; a separate MechaMeme grant is not required. The app obtains its provider configuration automatically. No API-key entry, server URL or PC connection is needed.
 
 If access has just changed, tap **Refresh access**. Free users can continue importing, cropping, editing, browsing, saving and sharing. Internet is required for sign-in, Pro verification and AI requests.
 
@@ -40,4 +41,8 @@ Swipe left or right to change takes and up or down to switch photos. Pinch to zo
 
 Photos, kept takes and template changes are local, not a cloud backup. Export anything important before clearing app data or changing devices.
 
-The app manages requests and repeated submissions. Stopping the wait may not cancel an OpenAI request already running. Closing the app during generation can lose an in-flight result; the app will not silently purchase the same take again on reopening. Retrying an interrupted request can incur another provider charge. Provider configuration and billing are managed by the RykerSoft administrator.
+The app manages requests and repeated submissions. Stopping the wait may not cancel a provider request already running. Closing the app during generation can lose an in-flight result; the app will not silently purchase the same take again on reopening. Retrying an interrupted request can incur another provider charge. Provider configuration and billing are managed by the RykerSoft administrator.
+
+## Name or delete photos
+
+Open **Your photos** and hold a photo to open its action menu. Choose **Rename** to change its name, or **Delete** to remove the photo and its takes. Names stay on this device. Deleting requires confirmation. With a keyboard, focus a photo and press F2; right-click also opens these actions.
