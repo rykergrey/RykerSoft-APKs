@@ -1,5 +1,14 @@
 # MechaMeme updates
 
+## 1.0.23 — November 1, 2026
+
+- Your Photos is now Library: a two-column grid of original images with number-only version badges.
+- Cinematic thumbnail-to-photo selection transitions, with reduced-motion fades.
+- Takes, Library and Settings share anchored panels, consistent headers, dimming and reveal animation.
+- Pull down from the take indicator to reveal its drawer. Placement stays fixed on release and the purple backdrop follows the gesture.
+- Swipe up from the take drawer header or bottom handle to close it.
+- Deleting a selected take keeps the same numbered slot selected; deleting the last take selects the previous one.
+
 ## 1.0.22 — November 1, 2026
 
 - Add captions manually to an imported photo with the pencil button, without AI generation or Pro.

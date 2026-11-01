@@ -18,7 +18,7 @@ Tap the plus button to choose a camera or gallery photo. Adjust the crop, then t
 
 After importing a photo, tap the pencil to write your own captions. Select the upper or lower caption area to edit it, or double-tap the preview to add another caption. Tap **Save as new take** to keep your captioned version alongside the original. Manual captions are free and do not require AI generation. Leaving the editor before saving discards this new draft.
 
-Use the pencil action to edit a completed take's captions, size, color or position. The bookmark keeps a version. Export saves a PNG; Share opens Android's sharing options. Your original remains available alongside its versions.
+Use the pencil action to edit a completed take's captions, size, color or position. The bookmark keeps a version. Export saves a PNG; Share opens Android's sharing options. Your original remains available alongside its versions. When you delete the selected take, the next take moves into that slot and stays selected. Deleting the last take selects the previous one; deleting the only take shows the original photo.
 
 ## PRO Features
 
@@ -37,7 +37,7 @@ Open the meme-style picker to browse formats, inspect examples, choose a style o
 
 ## Zoom and navigation
 
-Swipe left or right to change takes and up or down to switch photos. Pinch to zoom the existing framed image, then drag to pan. Android Back resets inline zoom. Double-tap opens the full-screen viewer. In a short window, **All controls** exposes the actions.
+Swipe left or right to change takes and up or down to switch photos. Tap the take indicator or pull it down to open the take drawer. Release after a deliberate pull to keep it open; short pulls dismiss the preview. Swipe up from the drawer header or bottom handle to close it. Takes, Library and Settings open in matching panels beneath the top controls. Pinch to zoom the existing framed image, then drag to pan. Android Back resets inline zoom. Double-tap opens the full-screen viewer. In a short window, **All controls** exposes the actions.
 
 ## Storage and interrupted requests
 
@@ -47,4 +47,4 @@ The app manages requests and repeated submissions. Stopping the wait may not can
 
 ## Name or delete photos
 
-Open **Your photos** and hold a photo to open its action menu. Choose **Rename** to change its name, or **Delete** to remove the photo and its takes. Names stay on this device. Deleting requires confirmation. With a keyboard, focus a photo and press F2; right-click also opens these actions.
+Open **Library** to browse original photos in a grid. Each corner badge shows the number of takes. Tap an image to select it, or hold it to open its action menu. Choose **Rename** to change its name, or **Delete** to remove the photo and its takes. Names stay on this device. Deleting requires confirmation. With a keyboard, focus a photo and press F2; right-click also opens these actions.

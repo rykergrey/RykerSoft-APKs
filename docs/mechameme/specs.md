@@ -1,6 +1,6 @@
 # MechaMeme specifications
 
-- Version: 1.0.21 (Android version code 23).
+- Version: 1.0.23 (Android version code 25).
 - Package: com.rykersoft.memegod.
 - Platform: Android 9 or newer; phone-focused interface.
 - Free local photo import, cropping, caption editing, history, PNG export and sharing.

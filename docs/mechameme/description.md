@@ -4,6 +4,7 @@ Formerly Meme God, MechaMeme turns your photos into editable memes in a playful,
 
 - Import camera or gallery photos and crop them locally.
 - Edit captions, typography and placement.
+- Browse original photos in Library and pull down the take indicator to compare versions.
 - Keep versions on your device and export or share PNGs.
 - Pinch the framed image to zoom in place, then drag to pan.
 - Create and customize your own meme templates.
