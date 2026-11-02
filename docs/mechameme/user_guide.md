@@ -6,6 +6,7 @@
 - [Remix another player’s image](#remix-another-players-image)
 - [Create and edit](#create-and-edit)
 - [Keep, save and share](#keep-save-and-share)
+- [Editable meme files](#editable-meme-files)
 - [PRO Features](#pro-features)
 - [Templates and navigation](#templates-and-navigation)
 - [Storage and privacy](#storage-and-privacy)
@@ -28,9 +29,9 @@ Use the **Add to library** image-plus icon to save a private copy and keep brows
 
 Tap **Remix** beneath a Community post, or open the image and tap **Remix** there. The image opens directly in the studio as your own private copy. No sign-in, file download dialog, crop confirmation or manual library import is needed.
 
-Tap the pencil to add your captions, or enter a new twist and generate a take. Captions and caption generation are free. **Recreate me** can generate a new scene with RykerSoft Pro. Existing text on a shared snapshot is part of its image, so it cannot be edited as separate captions.
+Tap the pencil to add your captions, or enter a new twist and generate a take. Captions and caption generation are free. **Recreate me** can generate a new scene with RykerSoft Pro. New captioned posts retain their clean image, example captions and template guidance. Add to library keeps that reusable data with the same library photo. Older flattened posts cannot recover separate text layers.
 
-Your remix stays in My Library and remembers the original post and its public username. It does not change or delete the other player’s post. To share your variation back to Community, sign in with Google, choose your username and tap its thumbs-up. Starting a remix never publishes it automatically.
+If the post or an exactly matching image is already in My Library, Remix adds a private variation rather than another photo. Cropped or recompressed images may be treated as different items. Your remix stays in My Library and remembers the original post and its public username. It does not change or delete the other player’s post. To share your variation back to Community, sign in with Google, choose your username and tap its thumbs-up. Starting a remix never publishes it automatically.
 
 ## Create and edit
 
@@ -40,7 +41,15 @@ Use the pencil to write or edit captions, typography and placement. Double-tap t
 
 ## Keep, save and share
 
-The feed actions run left to right: Share, Save, Thumbs up, Keep. Keep is a private bookmark. Save creates a PNG through Android's file picker. Share sends the image file through Android's share sheet; it does not publish to Community. Captions are baked into exported images. The original remains in your library.
+The feed actions run left to right: Share, Save, Thumbs up, Keep. Keep is a private bookmark. Save creates a PNG through Android's file picker. Share sends the image file through Android's share sheet; it does not publish to Community. The PNG displays the finished meme normally and also embeds its editable document. The original remains in your library.
+
+## Editable meme files
+
+To save a portable editable document, open Library, hold a photo (or right-click / press F2), then choose **Save editable meme**. This creates a .meme ZIP package for the selected or last-viewed version, not a backup of every library item or take.
+
+Use **Add photo** or Android Files/share to open a .meme file or an editable PNG. The clean image, caption positions and styling, template descriptions/rules/examples, and known attribution restore privately to My Library without sign-in or AI calls. The same document is not imported twice; a different version of an exactly matching image becomes a variation. Ordinary photos still use the crop screen.
+
+Normal **Export image** and **Share image** include the same data in the PNG. Some other apps remove metadata when editing or sharing, and screenshots lose it. Use .meme files for dependable editable transfers. The preview remains a normal image even when metadata is lost. Private working notes, filenames, deleted caption text and account credentials are excluded. Files are limited to 32 MiB; exported clean images fit within a 2,000-pixel edge. Legacy flattened images cannot restore editable layers that were never saved.
 
 ## PRO Features
 
@@ -52,11 +61,11 @@ Open **Settings → RykerSoft Pro → Sign in with Google** using your RykerSoft
 
 Open the meme-style picker to browse, choose or create templates. Auto lets the AI choose a format. In the picture workspace, swipe left/right between takes and up/down between photos. Tap or pull down the take indicator to open the take drawer. Pinch to zoom and drag to pan. Android Back resets zoom or returns Home.
 
-The Library grid shows original photos with take-count badges. Hold a photo to rename or delete it; deletion asks for confirmation. Photo names stay on-device.
+The Library grid shows original photos with take-count badges. Hold a photo to save an editable meme, rename or delete it; deletion asks for confirmation. Photo names stay on-device.
 
 ## Storage and privacy
 
-Photos, takes and template edits are stored on-device, shared by accounts using that app installation. They are not cloud-synced. Export important images before clearing data or changing devices.
+Photos, takes and template edits are stored on-device, shared by accounts using that app installation. They are not cloud-synced. Export important editable memes before clearing data or changing devices. There is no automatic cloud backup.
 
 Only an explicit public thumbs-up uploads a Community snapshot. Public posts remain until removed by their owning account; deleting the local photo does not unpublish it. AI processing separately sends selected content to the service/provider.
 

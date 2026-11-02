@@ -1,5 +1,13 @@
 # MechaMeme updates
 
+## 1.0.30 — November 2, 2026
+
+- Captioned Community posts carry their reusable image, examples and template instructions. Add to library keeps them together for later use.
+- Remixes stay private in My Library; repeated remixes or matching existing images become new variations.
+- PNG exports include editable meme data. Library photo actions offer Save editable meme (.meme); importing either restores captions, layout, guidance, examples and known attribution privately.
+- Portable files include the renderer font/license and have a documented versioned format and agent CLI. Other apps may strip PNG metadata; use .meme for dependable transfers.
+- Smaller square and wide images open in compact, centered Community popups. Large emoji lists wrap and scroll while controls stay reachable.
+
 ## 1.0.29 — November 1, 2026
 
 - Publishing starts a Community image with your thumbs-up; you can remove your vote, including on your own post.

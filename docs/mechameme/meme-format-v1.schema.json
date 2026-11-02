@@ -1,0 +1,336 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:rykersoft:meme:v1",
+  "title": "RykerSoft portable meme v1",
+  "type": "object",
+  "required": [
+    "format",
+    "version",
+    "renderer",
+    "base",
+    "preview",
+    "font",
+    "fontLicense",
+    "assets",
+    "caption",
+    "imageDescription",
+    "template",
+    "provenance"
+  ],
+  "properties": {
+    "format": {
+      "const": "org.rykersoft.meme"
+    },
+    "version": {
+      "const": 1
+    },
+    "renderer": {
+      "const": "mechameme/oswald-v1"
+    },
+    "base": {
+      "type": "string",
+      "pattern": "^assets/[a-f0-9]{64}\\.(png|jpg|webp|ttf|txt)$"
+    },
+    "preview": {
+      "type": "string",
+      "pattern": "^assets/[a-f0-9]{64}\\.(png|jpg|webp|ttf|txt)$"
+    },
+    "font": {
+      "type": "string",
+      "pattern": "^assets/[a-f0-9]{64}\\.(png|jpg|webp|ttf|txt)$"
+    },
+    "fontLicense": {
+      "type": "string",
+      "pattern": "^assets/[a-f0-9]{64}\\.(png|jpg|webp|ttf|txt)$"
+    },
+    "assets": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "sha256",
+          "mediaType"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "pattern": "^assets/[a-f0-9]{64}\\.(png|jpg|webp|ttf|txt)$"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "mediaType": {
+            "enum": [
+              "image/png",
+              "image/jpeg",
+              "image/webp",
+              "font/ttf",
+              "text/plain"
+            ]
+          },
+          "width": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "height": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      }
+    },
+    "caption": {
+      "$ref": "#/$defs/caption"
+    },
+    "imageDescription": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "template": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "rule",
+            "examples"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9-]{0,79}$"
+            },
+            "name": {
+              "type": "string",
+              "maxLength": 80
+            },
+            "era": {
+              "type": "string",
+              "maxLength": 80
+            },
+            "description": {
+              "type": "string",
+              "maxLength": 3000
+            },
+            "sceneDescription": {
+              "type": "string",
+              "maxLength": 2000
+            },
+            "personality": {
+              "type": "string",
+              "maxLength": 1200
+            },
+            "sensibility": {
+              "type": "string",
+              "maxLength": 1200
+            },
+            "rule": {
+              "type": "string",
+              "maxLength": 2400
+            },
+            "structure": {
+              "type": "string",
+              "maxLength": 600
+            },
+            "tone": {
+              "type": "string",
+              "maxLength": 1200
+            },
+            "theme": {
+              "type": "string",
+              "maxLength": 1200
+            },
+            "humor": {
+              "type": "string",
+              "maxLength": 1800
+            },
+            "avoid": {
+              "type": "string",
+              "maxLength": 1200
+            },
+            "recreation": {
+              "type": "string",
+              "maxLength": 2400
+            },
+            "additional": {
+              "type": "string",
+              "maxLength": 2400
+            },
+            "examples": {
+              "type": "array",
+              "maxItems": 6,
+              "items": {
+                "type": "object",
+                "required": [
+                  "top",
+                  "bottom"
+                ],
+                "properties": {
+                  "top": {
+                    "type": "string",
+                    "maxLength": 160
+                  },
+                  "bottom": {
+                    "type": "string",
+                    "maxLength": 160
+                  },
+                  "description": {
+                    "type": "string",
+                    "maxLength": 2000
+                  },
+                  "layout": {
+                    "$ref": "#/$defs/caption"
+                  },
+                  "imageAsset": {
+                    "type": "string",
+                    "pattern": "^assets/[a-f0-9]{64}\\.(png|jpg|webp|ttf|txt)$"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "creators",
+        "parents"
+      ],
+      "properties": {
+        "creators": {
+          "type": "array",
+          "maxItems": 20,
+          "items": {
+            "type": "object",
+            "required": [
+              "name"
+            ],
+            "properties": {
+              "name": {
+                "type": "string",
+                "maxLength": 80
+              },
+              "postId": {
+                "type": "string",
+                "maxLength": 128
+              }
+            }
+          }
+        },
+        "parents": {
+          "type": "array",
+          "maxItems": 20,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "caption": {
+      "type": "object",
+      "properties": {
+        "top": {
+          "type": "string",
+          "maxLength": 2000
+        },
+        "bottom": {
+          "type": "string",
+          "maxLength": 2000
+        },
+        "text": {
+          "type": "string",
+          "maxLength": 2000
+        },
+        "size": {
+          "type": "number",
+          "minimum": -2,
+          "maximum": 2
+        },
+        "stroke": {
+          "type": "number",
+          "minimum": -2,
+          "maximum": 2
+        },
+        "topOffset": {
+          "type": "number",
+          "minimum": -2,
+          "maximum": 2
+        },
+        "bottomOffset": {
+          "type": "number",
+          "minimum": -2,
+          "maximum": 2
+        },
+        "topX": {
+          "type": "number",
+          "minimum": -2,
+          "maximum": 2
+        },
+        "bottomX": {
+          "type": "number",
+          "minimum": -2,
+          "maximum": 2
+        },
+        "x": {
+          "type": "number",
+          "minimum": -2,
+          "maximum": 2
+        },
+        "y": {
+          "type": "number",
+          "minimum": -2,
+          "maximum": 2
+        },
+        "color": {
+          "type": "string",
+          "pattern": "^#[a-fA-F0-9]{6}$"
+        },
+        "align": {
+          "enum": [
+            "left",
+            "center",
+            "right"
+          ]
+        },
+        "topStyle": {
+          "$ref": "#/$defs/caption"
+        },
+        "bottomStyle": {
+          "$ref": "#/$defs/caption"
+        },
+        "deletedCaptions": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "top",
+              "bottom"
+            ]
+          }
+        },
+        "captions": {
+          "type": "array",
+          "maxItems": 20,
+          "items": {
+            "$ref": "#/$defs/caption"
+          }
+        },
+        "id": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

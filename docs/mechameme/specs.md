@@ -1,13 +1,16 @@
 # MechaMeme specifications
 
-- Version: 1.0.29 (Android version code 31).
+- Version: 1.0.30 (Android version code 32).
 - Package: com.rykersoft.memegod.
 - Android 9 or newer; phone-focused interface.
 - Free captions, caption revisions, template assistance, local editing, bookmarks, PNG saving and sharing.
 - Unique public usernames: 3–24 letters, numbers or underscores; Google profile names and emails are not public attribution.
 - Community upvotes: one reversible vote per Google account, including the author’s initial publication vote; zero-vote posts are hidden from the feed.
 - Icon-only Add to library saves a private copy without sign-in or navigation; repeated additions are prevented while the copy exists.
-- One-tap Community remixes open a private studio copy without sign-in; captions and free generation remain available.
+- One-tap Community remixes stay private; the same post or an exactly matching image becomes a variation in the existing library item.
+- New captioned Community posts preserve a reusable image, caption examples and used template guidance; legacy flattened posts remain image-only.
+- Portable files: editable PNG metadata or .meme ZIP; 32 MiB carrier/expanded limit, 12 MiB per asset, normalized caption layout, SHA-256 asset checks, included font/license, no automatic publication.
+- Compact centered picture dialogs fit square, wide and tall images; emoji summaries wrap and scroll within a bounded area.
 - Owner deletion from Community works independently of local library records.
 - Google sign-in required to publish/remove Community posts and hide your own posts. Only Recreate me requires RykerSoft Pro.
 - Caption/template service and Community hosted over HTTPS. Recreate me uses the configured image provider with RykerSoft access.

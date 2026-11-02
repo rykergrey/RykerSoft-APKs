@@ -11,7 +11,9 @@ MechaMeme turns your photos into editable memes in a playful Android workspace, 
 - Bookmark private favorites, save PNGs, or send an image through Android sharing.
 - Sign in with Google, choose a public username, and thumbs-up an image to publish to Community. Your Google name and email stay private.
 - Your published image starts with your thumbs-up. Remove your vote in Community; images with zero votes leave the feed.
-- Compact centered usernames, full framed images and raised arcade-style actions in picture view.
+- Content-sized, centered Community picture popups with wrapped, scrollable emoji reactions.
+- Save reusable Community templates together with the meme in My Library; matching-image remixes become private variations.
+- Export editable PNGs or portable .meme files carrying the clean image, caption layout, rules, examples and known attribution.
 - Delete your Community posts with the trash-can action, even after removing the local photo.
 - Create custom templates and use free template assistance.
 
