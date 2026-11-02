@@ -4,6 +4,7 @@ MechaMeme turns your photos into editable memes in a playful Android workspace, 
 
 - Generate and revise captions for free, with optional meme styles and directions.
 - Import camera or gallery photos, crop locally, and edit caption text and placement.
+- Upvote other players’ posts, or use the icon-only Add to library button to save a private copy while browsing.
 - Tap **Remix** on any Community image to open a private studio copy and make your own take, without signing in.
 - Browse Community, or scroll your originals and generations in My Library.
 - Swipe across a library image to compare versions; dots mark the selected version.

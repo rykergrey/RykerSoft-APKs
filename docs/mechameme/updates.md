@@ -1,5 +1,13 @@
 # MechaMeme updates
 
+## 1.0.28 — November 1, 2026
+
+- Upvote other users’ Community posts, with one reversible vote per Google account and public counts.
+- Separate icon-only Add to library action in the feed and picture view, with an accessible label and saved checkmark.
+- Save a private copy without leaving Community or signing in; existing copies prevent duplicate additions.
+- Keep one-tap Remix for opening the studio directly.
+- Responsive action rows keep all controls reachable on narrow phones.
+
 ## 1.0.27 — November 1, 2026
 
 - Prominent Remix action on Community posts and picture view.

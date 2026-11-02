@@ -18,6 +18,10 @@ Tap the floating plus button to import from the gallery or camera. Drag that but
 
 To publish, sign in with Google through Settings and tap the thumbs-up on a library image. Choose a unique public username in Settings first. This uploads a public snapshot attributed only to that username; your Google name and email stay private. To remove a post, use its trash-can button in Community or its picture view, then confirm **Delete post**. This works even after the local library copy is deleted. Sign in with the Google account that originally posted it. The active library thumbs-up can also remove a publication. Removing a post cannot recall copies already downloaded. Tap **Remix** in the feed or picture view to start your own variation.
 
+The Community thumbs-up upvotes someone else’s post; sign in with Google to vote, and tap it again to undo. Each account gets one vote per post, and authors cannot vote for their own posts. This is separate from the library thumbs-up that publishes your own image.
+
+Use the **Add to library** image-plus icon to save a private copy and keep browsing. The button has no visible text and changes to a checkmark once saved. No sign-in is needed; adding a copy neither upvotes nor publishes it. You can find it in My Library later.
+
 ## Remix another player’s image
 
 Tap **Remix** beneath a Community post, or open the image and tap **Remix** there. The image opens directly in the studio as your own private copy. No sign-in, file download dialog, crop confirmation or manual library import is needed.

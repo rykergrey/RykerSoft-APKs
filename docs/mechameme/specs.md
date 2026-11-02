@@ -1,10 +1,12 @@
 # MechaMeme specifications
 
-- Version: 1.0.27 (Android version code 29).
+- Version: 1.0.28 (Android version code 30).
 - Package: com.rykersoft.memegod.
 - Android 9 or newer; phone-focused interface.
 - Free captions, caption revisions, template assistance, local editing, bookmarks, PNG saving and sharing.
 - Unique public usernames: 3–24 letters, numbers or underscores; Google profile names and emails are not public attribution.
+- Community upvotes: one reversible vote per Google account on other users’ posts, public counts with private selections.
+- Icon-only Add to library saves a private copy without sign-in or navigation; repeated additions are prevented while the copy exists.
 - One-tap Community remixes open a private studio copy without sign-in; captions and free generation remain available.
 - Owner deletion from Community works independently of local library records.
 - Google sign-in required to publish/remove Community posts and hide your own posts. Only Recreate me requires RykerSoft Pro.
