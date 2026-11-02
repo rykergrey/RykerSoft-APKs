@@ -3,6 +3,7 @@
 ## Table of Contents
 
 - [Home and Community](#home-and-community)
+- [Remix another player’s image](#remix-another-players-image)
 - [Create and edit](#create-and-edit)
 - [Keep, save and share](#keep-save-and-share)
 - [PRO Features](#pro-features)
@@ -15,7 +16,15 @@ Home opens Community. Switch to **My Library** for your private photos and gener
 
 Tap the floating plus button to import from the gallery or camera. Drag that button to reposition it. In My Library, tap an image to open its controls or swipe horizontally across it to compare versions. Visual dots mark the current version; dates appear above the image on the right.
 
-To publish, sign in with Google through Settings and tap the thumbs-up on a library image. Choose a unique public username in Settings first. This uploads a public snapshot attributed only to that username; your Google name and email stay private. To remove a post, use its trash-can button in Community or its picture view, then confirm **Delete post**. This works even after the local library copy is deleted. Sign in with the Google account that originally posted it. The active library thumbs-up can also remove a publication. Removing a post cannot recall copies already downloaded. You can save a Community image into your private library from its detail view.
+To publish, sign in with Google through Settings and tap the thumbs-up on a library image. Choose a unique public username in Settings first. This uploads a public snapshot attributed only to that username; your Google name and email stay private. To remove a post, use its trash-can button in Community or its picture view, then confirm **Delete post**. This works even after the local library copy is deleted. Sign in with the Google account that originally posted it. The active library thumbs-up can also remove a publication. Removing a post cannot recall copies already downloaded. Tap **Remix** in the feed or picture view to start your own variation.
+
+## Remix another player’s image
+
+Tap **Remix** beneath a Community post, or open the image and tap **Remix** there. The image opens directly in the studio as your own private copy. No sign-in, file download dialog, crop confirmation or manual library import is needed.
+
+Tap the pencil to add your captions, or enter a new twist and generate a take. Captions and caption generation are free. **Recreate me** can generate a new scene with RykerSoft Pro. Existing text on a shared snapshot is part of its image, so it cannot be edited as separate captions.
+
+Your remix stays in My Library and remembers the original post and its public username. It does not change or delete the other player’s post. To share your variation back to Community, sign in with Google, choose your username and tap its thumbs-up. Starting a remix never publishes it automatically.
 
 ## Create and edit
 

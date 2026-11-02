@@ -1,5 +1,13 @@
 # MechaMeme updates
 
+## 1.0.27 — November 1, 2026
+
+- Prominent Remix action on Community posts and picture view.
+- One tap opens a private studio copy, ready for captions or generation, without sign-in or import steps.
+- Remix copies retain source attribution locally and stay private until explicitly published.
+- Loading feedback and retryable errors when a public image cannot be opened.
+- Roomier author and action rows on narrow phone screens.
+
 ## 1.0.26 — November 1, 2026
 
 - Choose a unique public username in Settings; Google account names and emails stay private.
