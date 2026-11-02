@@ -1,5 +1,15 @@
 # MechaMeme updates
 
+## 1.0.24 — November 1, 2026
+
+- Public Community feed with Google-authenticated publication and owner removal; private My Library with sorting and all originals/takes.
+- Free caption generation, revisions and template assistance; only Recreate me requires Pro.
+- Image-led scrolling Home, horizontal take swipes, pinch zoom and a draggable Add photo button.
+- Compact retro header with collapsible filters and scroll-aware visibility.
+- Dates above images on the right, usernames below Community images on the left, and visual take indicators.
+- Share, Save, Thumbs up and Keep actions ordered consistently in the feed.
+- More stable thumbnail rendering and caption-hold layers while scrolling.
+
 ## 1.0.23 — November 1, 2026
 
 - Your Photos is now Library: a two-column grid of original images with number-only version badges.

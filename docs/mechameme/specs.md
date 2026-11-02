@@ -1,12 +1,13 @@
 # MechaMeme specifications
 
-- Version: 1.0.23 (Android version code 25).
+- Version: 1.0.24 (Android version code 26).
 - Package: com.rykersoft.memegod.
-- Platform: Android 9 or newer; phone-focused interface.
-- Free local photo import, cropping, caption editing, history, PNG export and sharing.
-- Optional Google sign-in through RykerSoft; any active RykerSoft Pro grant enables AI features.
-- AI: direct requests to the selected provider (OpenAI, Google Gemini, DeepSeek or Kimi); image recreation uses a compatible image provider. Internet required. No PC backend required.
-- Photo input: up to 12 MB and 40 megapixels; local metadata removal and resizing before AI upload.
-- Storage: local device history. Android app backup is disabled. No cloud photo synchronization.
-- Production-signed APK with certificate rotation from the development build for compatible Android updates.
-- No ads, live forum users or automatic social posting.
+- Android 9 or newer; phone-focused interface.
+- Free captions, caption revisions, template assistance, local editing, bookmarks, PNG saving and sharing.
+- Google sign-in required to publish/remove Community posts and hide your own posts. Only Recreate me requires RykerSoft Pro.
+- Caption/template service and Community hosted over HTTPS. Recreate me uses the configured image provider with RykerSoft access.
+- Photo input: up to 12 MB and 40 megapixels. Exports fit within 2000 × 2000 pixels without enlargement.
+- Community: public WebP snapshots, at most 2000 × 2000 pixels; 8 MB upload limit and 500 posts per account.
+- Private library: on-device storage, no cloud synchronization or account separation. Android app backup disabled.
+- Production-signed APK preserving the established package and signing lineage.
+- No ads; Community publication requires an explicit thumbs-up.
