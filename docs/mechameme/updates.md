@@ -1,5 +1,13 @@
 # MechaMeme updates
 
+## 1.0.29 — November 1, 2026
+
+- Publishing starts a Community image with your thumbs-up; you can remove your vote, including on your own post.
+- Posts disappear from Community when their thumbs-up count reaches zero.
+- Compact centered username badge and a tighter gap above the full image in picture view.
+- Raised arcade-style actions, clear frame spacing, responsive landscape layout and zoom reset.
+- Close picture view with Android Back, Escape or a tap outside; the close X is removed.
+
 ## 1.0.28 — November 1, 2026
 
 - Upvote other users’ Community posts, with one reversible vote per Google account and public counts.
