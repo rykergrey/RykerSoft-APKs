@@ -15,7 +15,7 @@ Home opens Community. Switch to **My Library** for your private photos and gener
 
 Tap the floating plus button to import from the gallery or camera. Drag that button to reposition it. In My Library, tap an image to open its controls or swipe horizontally across it to compare versions. Visual dots mark the current version; dates appear above the image on the right.
 
-To publish, sign in with Google through Settings and tap the thumbs-up on a library image. This uploads a public snapshot with your Google display name. Tap the active thumbs-up to remove your publication. Removing a post cannot recall copies already downloaded. You can save a Community image into your private library from its detail view.
+To publish, sign in with Google through Settings and tap the thumbs-up on a library image. Choose a unique public username in Settings first. This uploads a public snapshot attributed only to that username; your Google name and email stay private. To remove a post, use its trash-can button in Community or its picture view, then confirm **Delete post**. This works even after the local library copy is deleted. Sign in with the Google account that originally posted it. The active library thumbs-up can also remove a publication. Removing a post cannot recall copies already downloaded. You can save a Community image into your private library from its detail view.
 
 ## Create and edit
 

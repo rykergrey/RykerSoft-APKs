@@ -1,5 +1,13 @@
 # MechaMeme updates
 
+## 1.0.26 — November 1, 2026
+
+- Choose a unique public username in Settings; Google account names and emails stay private.
+- Delete owned posts directly from Community or picture view, even after deleting the local library copy.
+- Explicit delete confirmation, retryable errors, and clear session/ownership errors.
+- Expanded emoji reactions, bundled classic template photos, and vibrant retro-space themes with directional gradients.
+- Smoother library rendering and gestures; existing photos, takes, settings and signing identity are preserved.
+
 ## 1.0.24 — November 1, 2026
 
 - Public Community feed with Google-authenticated publication and owner removal; private My Library with sorting and all originals/takes.
