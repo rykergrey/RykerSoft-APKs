@@ -1,5 +1,12 @@
 # MechaMeme updates
 
+## 1.0.31 — November 3, 2026
+
+- Library opens fullscreen, with caption editing integrated into the image workspace.
+- Faster image handoffs and swipe previews keep complete cards and captions visible.
+- Brighter stack position indicators and steadier feed card angles.
+- Home offers a direct editing shortcut for private library images.
+
 ## 1.0.30 — November 2, 2026
 
 - Captioned Community posts carry their reusable image, examples and template instructions. Add to library keeps them together for later use.

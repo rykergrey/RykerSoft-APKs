@@ -15,7 +15,7 @@
 
 Home opens Community. Switch to **My Library** for your private photos and generations. Use the filter button beside the tabs for sorting; signed-in users can enable **Hide mine** in Community. The header hides as you scroll down and returns as you scroll up.
 
-Tap the floating plus button to import from the gallery or camera. Drag that button to reposition it. In My Library, tap an image to open its controls or swipe horizontally across it to compare versions. Visual dots mark the current version; dates appear above the image on the right.
+Tap the floating plus button to import from the gallery or camera. Drag that button to reposition it. In My Library, tap an image for fullscreen viewing, use its Open editor shortcut to edit the displayed version, or swipe horizontally across it to compare versions. Visual dots mark the current version; dates appear above the image on the right.
 
 To publish, sign in with Google through Settings and tap the thumbs-up on a library image. Choose a unique public username in Settings first. This uploads a public snapshot attributed only to that username; your Google name and email stay private. To remove a post, use its trash-can button in Community or its picture view, then confirm **Delete post**. This works even after the local library copy is deleted. Sign in with the Google account that originally posted it. The active library thumbs-up can also remove a publication. Removing a post cannot recall copies already downloaded. Tap **Remix** in the feed or picture view to start your own variation.
 
@@ -61,7 +61,7 @@ Open **Settings → RykerSoft Pro → Sign in with Google** using your RykerSoft
 
 Open the meme-style picker to browse, choose or create templates. Auto lets the AI choose a format. In the picture workspace, swipe left/right between takes and up/down between photos. Tap or pull down the take indicator to open the take drawer. Pinch to zoom and drag to pan. Android Back resets zoom or returns Home.
 
-The Library grid shows original photos with take-count badges. Hold a photo to save an editable meme, rename or delete it; deletion asks for confirmation. Photo names stay on-device.
+The fullscreen Library grid shows original photos with take-count badges. Hold a photo to save an editable meme, rename or delete it; deletion asks for confirmation. Photo names stay on-device.
 
 ## Storage and privacy
 
