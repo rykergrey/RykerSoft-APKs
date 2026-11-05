@@ -29,3 +29,6 @@ PRO provider access is granted by the RykerSoft administrator for this exact app
 - **Web** — Vite + React
 - **Windows** — Capacitor Electron portable build
 - **Linux** — native Wayland/X11 Electron build with AppImage and Arch/pacman packages
+
+
+Android 2.3.2 adds controls that collapse while scrolling to give your content more room, reviewed chat context attachments, segmented speech playback with optional offline Piper voices, and opt-in Index integration. It also strengthens saved-card deletion and readiness handling.

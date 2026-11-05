@@ -1,5 +1,23 @@
 # Release notes
 
+## v2.3.2 (Android)
+- Hide mobile navigation, tab bars, and reading/editor toolbars on downward scroll; restore them on upward scroll with a short animation and reduced-motion support.
+- Add chat context management, reviewed context edits, and stronger chat history handling.
+- Add shared speech settings and playback controls, segmented speech, caching, and optional offline Piper voices.
+- Add the opt-in Index app bridge for scoped, durable read/create/update requests.
+- Improve card readiness, save coordination, and deletion handling to prevent deleted cards from being recreated by delayed saves.
+- Retain the public Android Back navigation fixes.
+
+## v2.2.11
+- Android Back closes the visible card even when its selection ID is stale, then returns through its category to All Categories.
+- Keep a single Android Back listener using current navigation state.
+- Remove the category toolbar back arrow next to Search.
+- Publish updated Android, Windows portable, Linux AppImage, and Arch packages.
+
+## v2.2.10
+- Make Android Back move predictably from an open card to its category, then to the category overview.
+- Ask for confirmation before closing the Android application from the category overview.
+
 ## v2.2.9
 - Fix Android RykerSoft Pro Google sign-in error 28444 by using the OAuth client paired with the app's package and signing certificate, already safelisted by the Hub.
 - Show the underlying Google credential error when sign-in fails.

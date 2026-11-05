@@ -3,7 +3,7 @@
 ## Package
 - **App name:** SuperThink.ing
 - **Android package ID:** `com.rykersoft.superthinking`
-- **Current version:** 2.2.9 (versionCode 132)
+- **Current version:** 2.3.2 (versionCode 134)
 
 ## Platforms
 | Platform | Stack | Storage |
@@ -45,3 +45,6 @@
 - Windows releases use the portable Electron target
 - Linux releases provide an AppImage plus a native Arch/pacman package; the Wayland/desktop identity is `com.rykersoft.superthinking`
 - Hub gallery screenshots live in `rykergrey/RykerSoft` → `screenshots/superthinking/`
+
+
+Android 2.3.2 (139) includes mobile scroll-aware controls, reviewed chat context, segmented speech with optional Piper offline voices, and opt-in Index app integration. Windows and Linux downloads remain at 2.2.11. Offline voice downloads require device storage and supported WebView worker/OPFS features.

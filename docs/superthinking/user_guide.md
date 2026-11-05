@@ -114,3 +114,12 @@ Notes:
 - **Personas/boilerplates** for text, mindmap, image, video, audio, utility, and chat actions.
 - **UI**: fonts, long-press duration, tab swipe, maximize behavior, category colors, selection-search targets.
 - **Storage**: usage analysis, Firebase Storage toggle, template management.
+
+
+### Mobile reading space
+
+On phones, swipe up to scroll down through categories, cards, or text content and the upper controls collapse to give content more room. Swipe down to scroll back up and the controls return. Tapping or focusing a control also restores them. Horizontal tab swipes keep the controls visible. The collapse respects your system reduced-motion preference.
+
+### Chat, speech, and Index integration
+
+Chat context can be managed and proposed context edits reviewed before applying them. Shared speech controls provide playback and voice settings, with optional downloaded offline voices. Index integration is opt-in in Settings and requires explicit Android access; it supports scoped reads and saved card/text updates while preserving the owning account and existing save protections.
