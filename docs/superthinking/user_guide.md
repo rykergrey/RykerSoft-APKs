@@ -118,7 +118,7 @@ Notes:
 
 ### Mobile reading space
 
-On phones, swipe up to scroll down through categories, cards, or text content and the upper controls collapse to give content more room. Swipe down to scroll back up and the controls return. Tapping or focusing a control also restores them. Horizontal tab swipes keep the controls visible. The collapse respects your system reduced-motion preference.
+On phones, swipe up to scroll down through categories, cards, or text content and the upper controls collapse to give content more room. Swipe down to scroll back up and the controls return. Tapping or focusing a control also restores them. In an open card, controls collapse in stages: the app header first, then the card title and color strip, then the tab bar. In text edit mode, the formatting toolbar stays at the top edge. In preview mode, continued scrolling can hide the preview toolbar too. No space remains reserved for a hidden app header. Horizontal tab swipes keep the controls visible. The collapse respects your system reduced-motion preference.
 
 ### Chat, speech, and Index integration
 

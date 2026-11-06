@@ -1,5 +1,10 @@
 # Release notes
 
+## v2.3.3 (Android)
+- Remove the unused top padding from maximized cards when the app header collapses.
+- Collapse mobile card controls in stages: app header, title and color strip, then tabs. Text edit mode keeps the formatting toolbar at the top edge; preview mode can collapse its toolbar too.
+- Restore controls on upward scrolling and retain horizontal tab gestures and reduced-motion support.
+
 ## v2.3.2 (Android)
 - Hide mobile navigation, tab bars, and reading/editor toolbars on downward scroll; restore them on upward scroll with a short animation and reduced-motion support.
 - Add chat context management, reviewed context edits, and stronger chat history handling.

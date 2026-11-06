@@ -3,7 +3,7 @@
 ## Package
 - **App name:** SuperThink.ing
 - **Android package ID:** `com.rykersoft.superthinking`
-- **Current version:** 2.3.2 (versionCode 134)
+- **Current version:** 2.3.3 (versionCode 140)
 
 ## Platforms
 | Platform | Stack | Storage |
@@ -47,4 +47,4 @@
 - Hub gallery screenshots live in `rykergrey/RykerSoft` → `screenshots/superthinking/`
 
 
-Android 2.3.2 (139) includes mobile scroll-aware controls, reviewed chat context, segmented speech with optional Piper offline voices, and opt-in Index app integration. Windows and Linux downloads remain at 2.2.11. Offline voice downloads require device storage and supported WebView worker/OPFS features.
+Android 2.3.3 (140) includes mobile scroll-aware controls, reviewed chat context, segmented speech with optional Piper offline voices, and opt-in Index app integration. Windows and Linux downloads remain at 2.2.11. Offline voice downloads require device storage and supported WebView worker/OPFS features.
