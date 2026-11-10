@@ -1,5 +1,14 @@
 # Release notes
 
+## v1.15.0 — November 10, 2026
+
+- Chat journal proposals offer **Log**, **Tray** and Cancel. Log and Tray apply in place without the impact tally; the card changes to “Logged to …” or “Added to tray”
+- Chat logs to the day selected in the journal, at the current clock time, unless you state a day or time. Each card names the date it will be logged to
+- A proposal sent to the tray keeps a backdated or future date as that item's own; a proposal for the present follows the tray date
+- Tray items have a per-item date next to the per-item time. Items with their own date are highlighted and can return to the tray date; the tray footer says how many items the tray date still applies to
+- The selected-items header in the journal collapses its list by default, and search clear buttons have a larger touch target
+- Android versionCode 31, Windows x64 portable, Linux x64 AppImage and Debian packages. See [release notes](releases/1.15.0.md).
+
 ## v1.14.0 — October 26, 2026
 
 - Keep calorie overages in full-history accounting until subsequent usable logged days balance them, without Monday resets or recent-window expiry

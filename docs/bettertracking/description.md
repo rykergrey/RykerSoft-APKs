@@ -2,13 +2,12 @@ Holistic personal tracking for food, supplements, exercise, measurements, lifest
 
 bettertracking is a full journal + library system, not a simple calorie counter. Track what you eat and do, build a personal library of ingredients and combos, stage batches into your journal, and let targets adapt from your weight trend and activity.
 
-## New in 1.14.0
+## New in 1.15.0
 
-- Full-history calorie accounting keeps earlier overages visible until later logged days balance them, including across weeks
-- Daily and recent views distinguish intake above your goal from intake above estimated maintenance
-- Optional recent-window plans use manageable daily adjustment caps and nutrient-aware bounds; historical balances remain visible without requiring a payoff deadline
-- Protein, fat, carbohydrate, fiber, vitamin, mineral and sodium goals keep their daily meaning; earlier intake does not reduce today's nutrient requirements or raise today's limits
-- Android also includes the optional Index Assistant library, journal and staging-tray connection, with separate default-off read/write controls
+- Chat log cards have **Log** and **Tray** buttons; either one applies in place with no pop-up, and the card shows the result
+- Chat logs to the day selected in the journal unless you name a day or time, and each card states the date it will be logged to
+- Every staging tray item has its own date as well as its own time; the tray date still covers items without one
+- Duplicate a tray item and give the copy a different day or time, or return an item to the tray date
 
 ## Features
 
@@ -50,9 +49,9 @@ In-app AI features (Quick Log, AI Architect, chat, and voice transcription) are 
 - **Windows** — x64 Electron portable build (not Authenticode signed)
 - **Linux** — x64 AppImage and Debian package
 
-## Download version 1.14.0
+## Download version 1.15.0
 
-- [Android APK](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.14.0/app-release.apk)
-- [Windows x64 portable](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.14.0/bettertracking-v1.14.0-win-x64.exe)
-- [Linux x64 AppImage](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.14.0/bettertracking-v1.14.0-linux-x86_64.AppImage)
-- [Linux x64 Debian package](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.14.0/bettertracking-v1.14.0-linux-amd64.deb)
+- [Android APK](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.15.0/app-release.apk)
+- [Windows x64 portable](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.15.0/bettertracking-v1.15.0-win-x64.exe)
+- [Linux x64 AppImage](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.15.0/bettertracking-v1.15.0-linux-x86_64.AppImage)
+- [Linux x64 Debian package](https://github.com/rykergrey/RykerSoft-APKs/releases/download/bettertracking-v1.15.0/bettertracking-v1.15.0-linux-amd64.deb)

@@ -78,6 +78,7 @@ Photos stay on the device where they were attached. The current library draft co
 
 - Stage several items with quantities, units, and custom values before committing them as logs.
 - Pick the log date/time and watch staged vs remaining nutrition against your day targets.
+- The tray date and time apply to every item unless you tap an item's own date or time. An item with its own date is highlighted; tap the row to expand it and choose **Use tray date** to return it. **Duplicate** in the same expanded row makes a copy you can assign to another day or time.
 - Use voice or text quick-add inside the tray, create a combo from the current tray, or open chat with the staged items as context.
 - When you add from the library with a phrase like “three whole eggs,” the quantity uses that item’s library unit (pcs, g, srv, etc.), not adjectives from the phrase.
 - **Quick Log**: type free text and/or attach a photo → AI estimates the macros. Refine with feedback before saving; one-off hidden items can be created automatically.
@@ -105,6 +106,7 @@ For background on sustainable changes and weight management, see [NIDDK’s eati
 
 - Chat streams replies with markdown and item cards; conversations persist to your account.
 - The assistant can use tools to query your library and logs, propose journal additions or corrections, create or update library items, adjust your profile, and manage reminders. Review and apply the proposed action; a chat reply alone does not save it.
+- A journal proposal shows the date it will be logged to and offers **Log**, **Tray** and Cancel. Log saves it and Tray sends it to the staging tray; the card updates in place with no pop-up. Chat uses the day selected in the journal unless you name a day or time.
 - Say “I just had a waffle sandwich” to start a meal log. When similar saved items exist, the assistant asks whether to use those entries or a one-off estimate. Estimated meals show the described portion and assumptions. Tap **Log meal** to save the hidden one-off record and journal entry together; you do not need a new regular library entry.
 - For personalized nutrition advice, chat checks saved goals and relevant weight records. It asks about missing goals or a stale weight instead of treating application defaults as personal facts.
 - Ask for a progress check-in, or accept an invitation when due. Questions cover progress, goals, nutrition, training, recovery and changed constraints; you can skip questions. Review and apply the completed check-in and any profile changes. Invitations appear inside chat.
