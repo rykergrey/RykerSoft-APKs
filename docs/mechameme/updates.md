@@ -2,6 +2,7 @@
 
 ## 1.0.31 — November 3, 2026
 
+- Now on Windows and Linux. Sign in with Google opens your web browser.
 - Library opens fullscreen, with caption editing integrated into the image workspace.
 - Faster image handoffs and swipe previews keep complete cards and captions visible.
 - Brighter stack position indicators and steadier feed card angles.

@@ -2,6 +2,7 @@
 
 ## v1.0.30 — mobile arcade and three-letter initials
 
+- Linux build updated to 1.0.30
 - Rebuild Android navigation as separate Home, Community, More, and Profile screens, preserving destination browsing state and returning through Android Back in order
 - Add real board thumbnails with bounded shared rendering/cache work, compact list filters, and clear loading, empty, retry, and load-more states
 - Carry square-corner paper controls, opaque panels, raised shadows, and the selected board's rail color through mobile menus and gameplay

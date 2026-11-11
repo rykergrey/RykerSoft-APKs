@@ -3,6 +3,7 @@
 - Version: 1.0.30 (Android version code 32).
 - Package: com.rykersoft.memegod.
 - Android 9 or newer; phone-focused interface.
+- Windows 10 or 11 (x64): portable EXE. Linux (x86-64): AppImage. Google sign-in on desktop opens the system browser. Voice input is Android-only.
 - Free captions, caption revisions, template assistance, local editing, bookmarks, PNG saving and sharing.
 - Unique public usernames: 3–24 letters, numbers or underscores; Google profile names and emails are not public attribution.
 - Community upvotes: one reversible vote per Google account, including the author’s initial publication vote; zero-vote posts are hidden from the feed.

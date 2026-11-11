@@ -6,7 +6,8 @@
 - Release: `1.3.0` (`versionCode 6`)
 - UI: React 19, TypeScript, Vite, and Tailwind CSS
 - Android: Capacitor 8 with native Java bridges
-- Windows: Electron 40, NSIS installer, and portable x86-64 executable
+- Windows: Electron 40, portable x86-64 executable
+- Linux: Electron 40, x86-64 AppImage
 - Data: localStorage plus IndexedDB; stories and generated media remain local unless the user explicitly syncs
 
 ## Story Studio
@@ -53,7 +54,7 @@ Firebase UIDs are project-scoped. Storytime never treats app-project and hub-pro
 
 - Android app-data sign-in uses the Capacitor Firebase Authentication native Google flow.
 - Android hub sign-in uses a dedicated Credential Manager bridge with the app-project web client ID accepted by the hub, then imports the short-lived Google credential into the named hub Firebase Auth instance.
-- Windows app-data and hub sign-in use a temporary loopback Firebase helper opened in the system browser. The helper uses in-memory persistence and returns only short-lived credentials through narrow IPC.
+- Windows and Linux app-data and hub sign-in use a temporary loopback Firebase helper opened in the system browser. The helper uses in-memory persistence and returns only short-lived credentials through narrow IPC.
 - Web development uses Firebase Google popup authentication.
 - Google Drive authorization is separate from Firebase authentication.
 

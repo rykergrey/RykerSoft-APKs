@@ -2,6 +2,7 @@
 
 ## v0.8.0
 
+- Now on Windows and Linux. The computer can host a party for phones on the same Wi-Fi
 - Lessons: 28 short, hands-on lessons in nine topics, from how a match works to seventh chords, modes, reading and rhythm. Hear examples on a lit keyboard, compare two sounds, build shapes on the keys and answer quick checks
 - Every lesson ends with three practice matches, Warm-up, Steady and Stretch, open to everyone; the suggested one follows your recorded accuracy
 - Lesson suggestions on Home, the Lessons page and after a set, each with the reason from your own records, such as two sounds you keep mixing up. Put one off for a week with a tap

@@ -8,7 +8,7 @@
 | versionCode | 5 |
 | minSdk | 24 |
 | targetSdk / compileSdk | 36 |
-| Platforms | Android (Capacitor 8), Windows (Electron) |
+| Platforms | Android (Capacitor 8), Windows portable EXE and Linux AppImage (Electron) |
 
 ## Stack
 

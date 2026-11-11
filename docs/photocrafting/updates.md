@@ -2,6 +2,8 @@
 
 ## v1.0.3
 
+- Now on Linux, and the Windows build is up to date
+- Continue with Google on Windows and Linux opens your web browser to sign in
 - Restore **Continue with Google** in Settings and remove obsolete password/create-account controls
 - Bundle the canonical RykerSoft Hub Firebase configuration so release builds no longer depend on an unpublished local environment file
 - Use Android Credential Manager with the Hub web client ID, preserving the existing release signing identity and Pro entitlements

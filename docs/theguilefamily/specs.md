@@ -2,6 +2,7 @@
 
 * Release: 3.3.0 / Android version code 15.
 * Android 8.0 or newer; package com.rykersoft.somethingsoff.
+* Windows 10 or 11 (x64): portable EXE. Linux (x86-64): AppImage. The desktop builds play all three games offline; RykerSoft sign-in and AI features need the Android app. Voice dictation is Android-only.
 * One shared phone, exactly three named characters. Bluffer: three players; Party Guests and Same Again: two or three.
 * Bundled offline HTML, CSS, JavaScript, fonts and original painted artwork. No frontend build or game server is needed to play.
 * Local preferences and up to forty saved source packs. Unsaved drafts and live-round state remain in session memory. No account is required for offline play.

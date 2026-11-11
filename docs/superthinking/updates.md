@@ -1,6 +1,7 @@
 # Release notes
 
-## v2.3.3 (Android)
+## v2.3.3 (Android, Windows, Linux)
+- Windows and Linux builds updated to 2.3.3, with every change since 2.2.11.
 - Remove the unused top padding from maximized cards when the app header collapses.
 - Collapse mobile card controls in stages: app header, title and color strip, then tabs. Text edit mode keeps the formatting toolbar at the top edge; preview mode can collapse its toolbar too.
 - Restore controls on upward scrolling and retain horizontal tab gestures and reduced-motion support.

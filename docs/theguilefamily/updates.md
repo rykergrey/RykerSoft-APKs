@@ -2,6 +2,7 @@
 
 ## 3.3.0 — version code 15
 
+* Now on Windows and Linux for the offline games, writing and saved packs. AI features remain on Android.
 * Renamed the game to The Guile Family. Characters remain Ryker, Nemo and Ender.
 * Added RykerSoft Google sign-in, app-specific Pro checks, Refresh and Sign out in Settings.
 * Protected every AI draft, remix, hint-coaching and setting request with a fresh server grant check. Provider configuration stays outside the shipped app and is used only in native memory after authorization.
