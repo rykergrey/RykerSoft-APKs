@@ -1,5 +1,10 @@
 # Earbound Updates
 
+## v0.8.2
+
+- Recall and reading: unanswered notes on the staff are now faint vertical lines instead of dots on the middle line, so they no longer look like B notes. The next note to enter glows gold
+- Results: the Replay and Next match buttons are drawn in full, with their glow no longer cut off
+
 ## v0.8.1
 
 - Listening: a small spark now travels from each note to the next as they sound, landing on the note as you hear it, and follows the notes if the layout shifts. Chords have no spark, and reduced motion turns it off

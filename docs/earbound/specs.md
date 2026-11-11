@@ -3,7 +3,7 @@
 ## Application
 
 - Package: `com.rykersoft.earbound`
-- Release: `0.8.1` (`versionCode 15`)
+- Release: `0.8.2` (`versionCode 16`)
 - Platform: Android 7.0 (API 24) or newer; target API 36
 - Requires a current Android System WebView
 - UI: React 19, TypeScript and Vite, packaged with Capacitor 8
