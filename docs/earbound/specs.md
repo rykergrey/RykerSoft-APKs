@@ -3,12 +3,9 @@
 ## Application
 
 - Package: `com.rykersoft.earbound`
-- Release: `0.8.0` (`versionCode 14`)
+- Release: `0.8.1` (`versionCode 15`)
 - Platform: Android 7.0 (API 24) or newer; target API 36
 - Requires a current Android System WebView
-- Windows 10 or 11 (x64): portable EXE, no installation
-- Linux (x86-64): AppImage
-- On Windows and Linux, Earbound runs a small local server on port 19071 for the game and for party hosting. Allow it through the firewall if you want phones to join. Voice answers are Android-only; tap or use the keyboard instead
 - UI: React 19, TypeScript and Vite, packaged with Capacitor 8
 - Audio: on-device synthesis and bundled instrument samples; no streaming
 

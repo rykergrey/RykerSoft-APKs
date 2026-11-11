@@ -1,8 +1,13 @@
 # Earbound Updates
 
+## v0.8.1
+
+- Listening: a small spark now travels from each note to the next as they sound, landing on the note as you hear it, and follows the notes if the layout shifts. Chords have no spark, and reduced motion turns it off
+- Reading: notes on the staff no longer slide, bounce or ripple. Each note sits on its exact line or space from the first frame, and colour and a soft column of light show your answer
+- Stopping, replaying or leaving the app mid-sound now clears the glow cleanly
+
 ## v0.8.0
 
-- Now on Windows and Linux. The computer can host a party for phones on the same Wi-Fi
 - Lessons: 28 short, hands-on lessons in nine topics, from how a match works to seventh chords, modes, reading and rhythm. Hear examples on a lit keyboard, compare two sounds, build shapes on the keys and answer quick checks
 - Every lesson ends with three practice matches, Warm-up, Steady and Stretch, open to everyone; the suggested one follows your recorded accuracy
 - Lesson suggestions on Home, the Lessons page and after a set, each with the reason from your own records, such as two sounds you keep mixing up. Put one off for a week with a tap
