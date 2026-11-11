@@ -6,6 +6,8 @@
 - [Placement](#placement)
 - [The Campaign](#the-campaign)
 - [Answering Questions](#answering-questions)
+- [Lessons](#lessons)
+- [Explanations on Hold](#explanations-on-hold)
 - [Practice Studio](#practice-studio)
 - [Records and Achievements](#records-and-achievements)
 - [Customize](#customize)
@@ -15,7 +17,7 @@
 
 ## Getting Started
 
-Open Earbound and you land on the home screen. The arc of stars at the top is your current campaign sector; each star is a match. The large button below continues the campaign. The menu below that leads to Practice, Party, Records, Customize and the Glossary of musical terms.
+Open Earbound and you land on the home screen. The arc of stars at the top is your current campaign sector; each star is a match. The large button below continues the campaign. The menu below that leads to Lessons, Practice, Party, Records, Customize and the Glossary of musical terms.
 
 Use headphones or a quiet room, and set your volume before you begin.
 
@@ -45,6 +47,21 @@ Clearing matches unlocks new practice exercises, higher difficulties, sky effect
 
 Melody recall questions ask you to play the phrase back on the keyboard, including the first note and any repeats, in the same octave.
 
+## Lessons
+
+Lessons (from Home) holds 28 short lessons in nine topics: Start here, Notes & keys, Intervals, Chords, Scales & modes, Harmony & keys, Reading music, Rhythm, and Playing it back.
+
+- A lesson is a handful of steps. Read a few lines, hear examples on a lit keyboard, compare two sounds, build the shape on the keys, and answer a quick check.
+- Use **Continue** once a step is done, or **Skip** to move on. **Previous** goes back.
+- Every lesson ends with three practice matches: **Warm-up**, **Steady** and **Stretch**. The one marked **Suggested** follows your recorded accuracy on those sounds. These matches count in your records like any set.
+- Lesson checks are never recorded as match results.
+
+Earbound suggests lessons from your own records and says why, for example when two sounds crossed several times in recent sets. Suggestions appear on Home, on the Lessons page, after a set, and from glossary terms and practice exercises. Tap the cross on the Home card to put a suggestion off for a week.
+
+## Explanations on Hold
+
+Press and hold any label, number or control for a short explanation; on a computer, right-click it or press the ? key. The explanation opens in the other half of the screen, with a sound to hear when one helps and a link to the lesson that goes further. Holding never presses the button. During a match the explanation stays silent.
+
 ## Practice Studio
 
 Practice lets you train any exercise you have unlocked, at any difficulty you have reached.
@@ -59,6 +76,8 @@ Records shows your first-answer accuracy, practice volume, an activity calendar,
 
 The Achievements card lists every achievement by category, with the date you earned it and your progress towards the rest. Many achievements reward real skill: a sound becomes **reliable** when you answer 9 of your last 10 correctly without hints.
 
+The Lessons section shows lessons finished, time spent, checks answered, practice matches played, explanations opened, and your first-answer accuracy on a lesson's sounds before and after you finished it.
+
 ## Customize
 
 Choose a sky effect, a colour palette and the instrument sound used for questions. Locked items show what earns them.
@@ -66,7 +85,10 @@ Choose a sky effect, a colour palette and the instrument sound used for question
 ## Party Play
 
 - **Host a party:** connect every device to the same Wi-Fi, choose Party → Host a party, and share the QR invitation. Guests join in a browser. Keep the host app open; the host phone’s speaker plays for everyone.
-- **Pass the phone:** 2–6 players share one device, offline.
+- **Pass the phone:** 2–8 players share one device and one speaker, offline. Choose the exercise, a difficulty (Gentle, Steady or Bold) and 3 to 10 sounds each, then set the house rules:
+  - **Every sound** passes the phone after each answer; **Whole set** lets each player finish all their sounds first.
+  - **Hidden till the end** keeps scores secret for one big reveal; **After each answer** shows right or wrong straight away.
+  - **Fresh for each player** deals everyone different sounds; **Same for everyone** makes a true head-to-head.
 
 Party scores belong to the room and are not added to your solo records.
 
@@ -81,5 +103,6 @@ Progress is stored only on your device. Export a backup before clearing app data
 ## Tips
 
 - Listen before you answer, and use I don’t know rather than guessing; your records and suggestions are more useful when they are honest.
+- When a suggestion names a mix-up, take its lesson, then play its suggested practice match.
 - Short daily sessions build streaks and steady improvement better than occasional long ones.
 - Use Practice to revisit earlier material at any time.

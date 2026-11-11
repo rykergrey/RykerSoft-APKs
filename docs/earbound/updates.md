@@ -1,5 +1,15 @@
 # Earbound Updates
 
+## v0.8.0
+
+- Lessons: 28 short, hands-on lessons in nine topics, from how a match works to seventh chords, modes, reading and rhythm. Hear examples on a lit keyboard, compare two sounds, build shapes on the keys and answer quick checks
+- Every lesson ends with three practice matches, Warm-up, Steady and Stretch, open to everyone; the suggested one follows your recorded accuracy
+- Lesson suggestions on Home, the Lessons page and after a set, each with the reason from your own records, such as two sounds you keep mixing up. Put one off for a week with a tap
+- Hold any label, number or control for a short explanation (right-click or the ? key on a computer)
+- Records has a Lessons section: lessons finished, time spent, checks answered, practice played, and your accuracy before and after a lesson
+- Pass the phone, rebuilt: 2 to 8 players, any exercise at Gentle, Steady or Bold, 3 to 10 sounds each, pass after every sound or after a whole set, a hidden-till-the-end reveal, and the option for everyone to hear the same sounds
+- Lesson history travels with backups
+
 ## v0.7.0
 
 First RykerSoft release.
