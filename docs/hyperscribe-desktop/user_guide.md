@@ -50,17 +50,51 @@ Archived items do not count against the active Inbox item limit, but a configure
 calendar retention period can still remove them. Right-click an item to archive
 or restore it. The same menu can exclude one entry from Chat knowledge.
 
-Add text or import audio from the bottom footer, or right-click the recording
-button for either option. During recording, pause and cancel occupy those footer
+Add text or import files from the bottom footer, or right-click the recording
+button for either option. You can also drop one or multiple files directly onto
+the Inbox. A compact popup offers **File names** and **File contents** sections.
+Choose an individual-item or combined import directly; a single file has just
+one button in each section, with no Combine option. Cancel, press Escape, or
+click outside to dismiss the popup. Filename mode includes extensions and never
+reads file contents or runs OCR/transcription; it also works for file formats
+whose contents cannot be imported. Unsupported contents are skipped, with the
+supported count shown before import.
+Combined filenames appear one per line. Combined contents retain the displayed
+file order, with a blank line between files. Original paths remain in import metadata.
+
+Contents from text, CSV/TSV, Excel (.xlsx), Word (.docx), and OpenDocument (.odt)
+files are read locally without an API request. CSV and Excel tables are converted to tab-separated cells,
+as if copied from Excel. Excel workbooks include every nonempty worksheet, with
+sheet names when more than one is included. Formulas use their saved results;
+when no saved result is available, the formula itself is included. Audio follows
+the existing import and transcription flow when creating separate items; in a
+combined item, its transcript is included with the other text.
+Each new Inbox item automatically copies its content to the clipboard, ready to
+paste. After a batch, the last successfully imported content remains copied.
+If importing contents from PDFs or images, review the file list and approve OCR
+before any import starts. Gemini OCR can incur API token charges for each selected
+PDF or image. Uncheck files to exclude them, or cancel to import nothing. Use
+**Stop after current file** during import to keep the files already processed
+and skip the remaining files. In combined mode, the processed contents or names
+are saved together as one item. Separate audio transcription continues independently.
+Unsupported, empty, oversized, or unreadable files
+show an error; their contents are never silently shortened.
+
+During recording, pause and cancel occupy those footer
 positions; the right-click options remain available. The recording indicator
 starts in **Inbox** mode, which transcribes and saves the recording. Select
 **Chat** there to send the transcript to the active Chat thread and hear the
 assistant's reply. Right-click **Chat** to choose a new thread for this
 recording. Chat mode saves an Inbox item only when you ask it to, and this
 spoken reply does not change the ordinary Chat **Speak responses** preference.
-Click an Inbox item’s checkbox to select it. Clicking the rest of a row does
-not change its checkbox, so double-clicking can open or copy the item without
-selecting it. Right-click a day group for **Select All** or **Deselect All**.
+Click an Inbox item’s checkbox or **Ctrl-click** its row to select or deselect it.
+Ordinary row clicks leave the checkboxes unchanged, so double-clicking can open
+or copy the item without selecting it. Right-click a selected item to apply tags,
+archive, pin, and other menu commands to the whole checked selection, including
+items hidden by a filter. Right-clicking an unchecked item targets that item.
+A tag is checked when all selected items have it; use **Tags → Remove tags** to
+remove a tag from a mixed selection. **Add new tag…** creates and assigns the tag
+to the selected items. Right-click a day group for **Select All** or **Deselect All**.
 Checked items are the Inbox
 selection used for Send to Chat, Send to Actions, Ctrl+C stacks, and recording
 targets; keyboard focus alone does not select an item. **Clear selection** above
@@ -71,6 +105,26 @@ with the same count. Open it to select items from the last 24 hours or choose
 **Deselect all** to create a new item. Checked Inbox items are used automatically
 only while the Inbox tab is visible; switching away drops those inherited
 targets. Targets chosen explicitly in the popup remain active across tabs.
+After recording stops, the popup shows **Transcribing** on the left and the
+transcript controls on the right, disabled while speech is processed. When
+transcription finishes, the text preview appears in the same place and the
+controls become usable. A shrinking ring
+around **×** counts down three seconds by default before it closes automatically.
+In **Settings → Audio → Completed Recording Pop-up**, adjust **Close recording
+pop-up after** to 1–60 seconds, or choose **Never** to disable automatic closing.
+Saved changes apply to the next completed recording popup. Clicking,
+scrolling, or typing in the popup or its dropdowns cancels the countdown and
+keeps it open. Hovering does not cancel the countdown. Click
+**Open** to open this recording's Inbox item in the Viewer, or **Chat** to send
+the transcript to the active Chat (right-click for a new Chat). In **Actions**,
+check one or more actions and click **Run selected**; each receives the original
+transcript independently. The Actions menu lists the most recently used actions
+first and has a search box for action names and categories. Checked actions stay
+selected while you search. Choose search providers and click **Search selected**,
+or use the clock to set a reminder for the saved item. A Chat recording is saved
+to Inbox when you use Open or set a reminder. The completed popup closes when
+you click elsewhere, or you can close it with **×**. Its dropdowns remain part
+of the popup. Starting another recording replaces it.
 Double-clicking a row checks it before opening its Viewer. Opening a Viewer
 through another route does not change the Inbox selection.
 Each update is appended under a divider and a dated timestamp heading.
@@ -176,12 +230,15 @@ separate from Inbox tags, and can be assigned to actions from the Actions list.
 
 Grouped Actions default to **Auto** expansion: opening a category closes the
 previous category. The expansion control cycles through **Auto**, **Expanded**
-(all open), and **Collapsed** (all closed). Check an action's checkbox to add it
-to the run selection. Checks keep their order when you open another category,
+(all open), and **Collapsed** (all closed). Check an action's checkbox or
+**Ctrl-click** its row to add or remove it from the run selection.
+Checks keep their order when you open another category,
 filter the list, or switch grouping. Number badges show the order for sequential
 processing; the Run menu also supports combining the checked actions. Use
-**Clear selection** to uncheck everything. Clicking a row leaves the checks
-unchanged, and double-clicking runs that action directly. Favorite stars use the
+**Clear selection** to uncheck everything. Ordinary row clicks leave the checks
+unchanged, and double-clicking runs that action directly. Right-click a checked
+action to tag, favorite, duplicate, export, or delete all checked actions.
+The menu also runs the group in combination or sequence. Favorite stars use the
 Favorites category color and update when you change that color.
 If **Auto-action** is enabled for transcription, it uses the most recently
 checked action that is still selected.
@@ -361,6 +418,12 @@ Hyprland integration, its current installation status, and the separate
 Caps Lock/Hyper mappings. Ordinary shortcuts remain available when Hyper mode is
 enabled, so a recording action can have both `Hyper+R` and any additional keys.
 
+Assign **Inbox — open current item in viewer** to open an item from any
+application, including while Hyperscribe is hidden. While the Inbox is active,
+it opens the current row. Elsewhere, it opens the latest captured, copied, or
+cycled item. Recording transcripts open in their grouped audio Viewer, and an
+already open Viewer is brought forward. This command starts unassigned.
+
 ## Transcription replacements
 
 Use **Text Replacements** to clean up every completed transcript before it enters
@@ -371,13 +434,18 @@ without deleting them.
 
 Replacement text can include `{current_date}`, `{date_stamp}`, `{current_day}`,
 `{current_month}`, `{current_year}`, `{current_time}`, or `{timestamp}`. The
-value is expanded when the transcript finishes.
+value is expanded when the transcript finishes. Place the cursor in **Replacement
+text**, then use **Insert variable** beside the field to choose a value without
+typing its token. The menu shows current examples, and **Preview now** shows how
+the replacement will look with today's values. Selecting a variable replaces any
+selected text and supports Undo. Enter the **Words or phrases to replace** one
+per line; any of them will become the same replacement text.
 
 ## Sync
 
 Sync remains opt-in. Select Inbox tags, action categories, Action tags, and chat-thread
-behavior in **Sync**, or choose **Sync on all devices** for an individual Inbox
-item regardless of its tags. The Settings catalog shows how many items for each
+behavior in **Sync**, or click the sync icon beside an Inbox item's copy button
+to share it regardless of its tags (lit: synced on every device; dim: this device only). The Settings catalog shows how many items for each
 Inbox tag exist locally and in the cloud, including cloud-only tags available to
 import. Action tags remain separate from Inbox tags, including when both catalogs
 contain the same name. Same-name tags within each catalog are reconciled
@@ -391,8 +459,9 @@ To set up delivery between devices:
 2. Enable Sync and select compatible content on every device. **All tagged
    items** shares tagged Inbox records; ordinary untagged clipboard captures stay
    local. **Only selected tags** narrows sharing. **Everything except** also
-   includes untagged items. An explicit **Keep only on this device** exclusion
-   overrides every tag and per-item sharing choice.
+   includes untagged items. Once synced, an item stays synced even if its tags
+   change; clicking its lit sync icon (**Stop syncing**) unsyncs it everywhere
+   while every device keeps its copy. Items shared from the phone always arrive.
 3. Enable Chat threads and text replacement rules if needed, and choose which
    actions to share. An Inbox tag and an Action tag with the same name remain
    separate. Open the Desktop Chat workspace if its saved thread library has not
@@ -475,3 +544,14 @@ billing remain applicable.
 ## Support
 
 Contact heavensounds@gmail.com and include the platform, Hyperscribe version, and a secret-free diagnostics export when available.
+
+### Fine-tune an action's instructions
+
+Keep the existing Instructions text. Replace Description with the changes you
+want (for example, “Use ISO dates and keep everything else”), then click
+**Optimize Instructions**. The optimizer uses the existing instructions as its
+baseline, applies the requested edits, and replaces Description with a summary
+of the revised action. Populated names and the other action settings stay as
+configured. You can repeat this process for further changes, then save the action.
+If refinement fails or returns incomplete text, both fields stay unchanged so
+you can retry. With no existing instructions, Optimize still drafts a new action.

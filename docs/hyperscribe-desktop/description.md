@@ -5,7 +5,7 @@ workspace for Windows and Linux. Capture clipboard text or audio, organize an
 Inbox, transform content with reusable actions and pipelines, chat with
 configurable AI providers, and read content aloud with local or cloud speech.
 
-Current release: **2.4.4**.
+Current release: **2.4.38**.
 
 ## Features
 

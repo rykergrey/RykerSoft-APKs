@@ -1,5 +1,16 @@
 # Hyperscribe Desktop updates
 
+## v2.4.38 — 2026-11-11
+
+- A new Console look shared with Hyperscribe Mobile, with Roboto and JetBrains Mono built in. Console Light is the light version; earlier themes stay available in Settings > UI.
+- Settings opens on Windows again, and Windows global shortcuts register more reliably. Settings > Shortcuts says when another program already uses a shortcut.
+- Drop files on Hyperscribe to import, transcribe or extract their text. Files already in the Inbox are recognised, and dropping a file on an action runs the action on it.
+- Ask about your screen while recording: capture a region, window or screen, mark it up, and hear the answer without leaving what you are doing.
+- Choose per item which Inbox entries sync to your other devices with the sync icon beside Copy.
+- CSV and spreadsheet rows show as tables and paste as separate cells into Excel and Google Sheets. A new Excel action category sorts and converts rows.
+- The Inbox Viewer gains a Tags tab, on-demand read-aloud with playback controls, and streaming chat replies.
+- Saved views appear as tabs under Actions, and the Inbox, Actions and long chats open faster.
+
 ## v2.4.4 — 2026-10-07
 
 - Make cross-device Sync use acknowledged revisions before device clocks, retain

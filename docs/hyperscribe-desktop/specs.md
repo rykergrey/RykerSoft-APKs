@@ -2,13 +2,13 @@
 
 ## Release
 
-- Version: `2.4.4`
+- Version: `2.4.38`
 - Runtime: Python 3.12 and PySide6, packaged with PyInstaller
 - Architectures: Windows x86-64 and Linux x86-64
 - Package ID used by RykerSoft: `com.rykersoft.hyperscribedesktop`
-- Windows package: `HyperscribeDesktop-v2.4.4.exe`
-- Linux bundle/archive: `HyperscribeDesktop-v2.4.4-linux-x86_64/` and
-  `HyperscribeDesktop-v2.4.4-linux-x86_64.tar.gz`
+- Windows package: `HyperscribeDesktop-v2.4.38.exe`
+- Linux bundle/archive: `HyperscribeDesktop-v2.4.38-linux-x86_64/` and
+  `HyperscribeDesktop-v2.4.38-linux-x86_64.tar.gz`
 - Code signing: the Windows executable is not Authenticode-signed
 
 ## Platform integration
