@@ -1,5 +1,8 @@
 # RykerFM1 Updates
 
+## 0.3.1 · 2026-11-12
+- Opens correctly with an FM-1 already connected over USB, including firmware with long build numbers
+
 ## 0.3.0 · 2026-11-12
 - First RykerSoft release
 - A library of every firmware on The Firmware Hub, as pictures or a dense index

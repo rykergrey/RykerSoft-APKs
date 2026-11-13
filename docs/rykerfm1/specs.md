@@ -3,7 +3,7 @@
 ## Application
 
 - Package: `com.rykersoft.rykerfm1`
-- Release: `0.3.0` (`versionCode 3`)
+- Release: `0.3.1` (`versionCode 4`)
 - Platform: Android 8.0 (API 26) or newer; target API 36
 - UI: Kotlin and Jetpack Compose
 
