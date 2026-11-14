@@ -2,106 +2,56 @@
 
 ## Table of Contents
 
-- [Install and sign in](#install-and-sign-in)
-- [Pick and answer cards](#pick-and-answer-cards)
-- [Coins and timers](#coins-and-timers)
-- [Create and publish a quiz](#create-and-publish-a-quiz)
-- [Style cards and collect stickers](#style-cards-and-collect-stickers)
-- [Read responses and react](#read-responses-and-react)
-- [Profiles and privacy](#profiles-and-privacy)
-- [Notifications](#notifications)
-- [Optional AI and voice typing](#optional-ai-and-voice-typing)
-- [Connection and account help](#connection-and-account-help)
+- [Get started](#get-started)
+- [Play mystery cards](#play-mystery-cards)
+- [Create questions and quizzes](#create-questions-and-quizzes)
+- [Lists and answer updates](#lists-and-answer-updates)
+- [Voice typing and sound](#voice-typing-and-sound)
+- [PRO Features](#pro-features)
+- [Privacy and connection](#privacy-and-connection)
 
-## Install and sign in
+## Get started
 
-Install or update Umm from RykerSoft. Open the app with an internet connection, choose **Continue with Google**, and complete Google's account prompt.
+Install or update Umm through RykerSoft. Continue with Google, then choose a unique username. Your Umm account holds your questions, answers and coins. Use Play, Create, Stickers and You to move through the app.
 
-A new player then chooses a username: 3–20 letters, numbers, or underscores, beginning with a letter. Usernames are unique without regard to case. If a name is taken, choose another and select **Start playing**. A returning Google player who already has a username goes straight to the game.
+## Play mystery cards
 
-The core game is free and needs no RykerSoft Pro subscription. Umm uses its own Google account for game history. The signed release installs separately from the development app.
+Browse with the arrows, shuffle, or choose a filter. Browsing does not start the timer. Tap the card or Play this card to reveal it. Fresh questions made by players appear first; ready-made Umm cards follow once those are answered. The daily edition offers six cards.
 
-Use **Play**, **Create**, **Stickers**, and **You** in the side navigation on larger screens or the bottom navigation on phones.
+Answer before the deadline, or take your time on a card marked No timer. Pausing a timed question costs one coin; resuming is free. Your first submitted answer earns one coin. Skips, expired answers and repeats earn none. A creator's first thumbs-up on your answer can earn a bonus coin. Open answered cards to revisit shared responses.
 
-## Pick and answer cards
+## Create questions and quizzes
 
-Open **Play** and choose **Let’s play** for today's six curated questions, or browse the **Mystery pool**. The daily edition changes at midnight UTC; its tile reads **Again!** after you finish it.
+Create begins with one question. Enter its text, choose a response format, and edit the visible timer or select No timer. Set whether answers can receive additions later or are final. Choose Save question to save it by itself. Saving costs one coin per question.
 
-Use the arrows to browse, shuffle for a different order, or filter by answer time. **All**, **New**, and **Answered** switch which cards are shown. Browsing does not start a timer or reveal the question and answer format.
+Press the plus button to add a second question and turn the draft into a quiz. You can name it, switch between its questions and add up to 20. Save quiz saves the set. Finish answering your own saved question or quiz to publish its cards and unlock sharing. Drafts are saved locally for the selected player.
 
-Choose the separate **Play this card** button for the selected mystery card to lift it into the player, reveal the question, and start its timer. Choose an option or enter text, then submit before the deadline. When a question permits anonymous answers, enable the anonymity option before submitting. Use the pause control if you need a break, or the skip control to move on. The card lift and transitions respect your device's reduced-motion setting.
+Open the card studio to choose colors, text, textures, motion and stickers. Saved custom designs are preserved. Stickers cost the coins shown in the collection.
 
-A quiz advances to its next card after an answer, skip, or timeout. When all its cards are finished, the recap groups the questions and shared responses on one scrollable page. An individual pool card opens its response board after completion. Choose **View answers** for an answered pool card to see its saved response and the current board.
+## Lists and answer updates
 
-## Coins and timers
+For list questions, type an item and press Enter for the next, or use Add item. Drag the grip to reorder. Keyboard users focus a grip, press Space, move with arrows, and press Space to finish; Escape cancels the move.
 
-New players start with 40 coins. Your first submitted answer earns one coin, including an answer to your own question. Repeated answers, skips, and expired answers earn none. A question's creator can award a responder one additional coin with the first thumbs-up on that answer.
+After submitting, Add to your answer keeps the existing text and lets you append more. On lists you can add items and reorder everything, but cannot delete or rewrite original items. Duplicate original items remain protected individually. A final answer cannot be rewritten; anonymity can still be changed when the question permits it. Editing does not earn another answer coin.
 
-Saving a quiz costs one coin per question. Pausing a running timer costs one coin each time you pause; **Resume** is free. Sticker books cost the number shown in **Stickers**. Coins are game rewards, and the app has no real-money coin checkout.
+## Voice typing and sound
 
-Timers belong to the server. Closing a card or the app does not stop or reset a running deadline. Resume a paused card before answering. Skips and timeouts count toward quiz completion, but cannot be converted into answers later.
+On Android 12 or later, tap the microphone beside a field to use on-device recognition. Allow microphone permission. Speak, then tap stop; Android may also finish after a pause. The transcript is inserted at the cursor or replaces selected text. Review it before submitting. Cancel discards it. Leaving the field or hiding the app cancels dictation.
 
-## Create and publish a quiz
+Recognition requires an available on-device speech service and language. If unavailable, check Android speech/language settings, type normally or use your keyboard microphone. Umm does not silently switch to cloud dictation or upload these recordings. Listening stops after one minute. Browser cloud dictation is not configured yet.
 
-1. Choose **Create** and write directly on the card.
-2. Tap its format to choose multiple choice, true/false, fill-in-the-blank, or open text. Multiple choice needs 2–8 distinct choices.
-3. Tap the timer to choose 15 seconds, 30 seconds, 1 minute, or 2 minutes. In **Timer & privacy**, choose whether players may answer anonymously and whether to hide your name as the author.
-4. Add up to 20 questions. The quiz name and introduction are optional; leaving the name blank uses the first question as the title.
-5. Review the cards and select **Save quiz**. Its button shows the coin cost.
-6. Play your own quiz to completion. This publishes its cards into the mystery pool and unlocks the share code shown in the recap and under **Your quizzes** in **You**.
+In You → Settings, turn Meadow sounds off or adjust the volume. Interface sounds pause when the app is hidden.
 
-Workshop changes save automatically as a draft on this device for the current player. Saving the quiz stores it online. A saved quiz remains private until you finish it yourself. Codes can be copied for reference; the current interface offers pool discovery rather than a code-entry screen.
+## PRO Features
 
-Use **Flip** to turn the workshop preview over and **Front** to return to editing the question.
+* AI assist drafts questions from your topic or text.
+* AI remix improves a question from your instruction.
+* AI palette prompts select a named look.
 
-## Style cards and collect stickers
+Open You → Settings → RykerSoft Pro and sign into your RykerSoft account. Pro access is managed for that account through the hub. Refresh access after a grant changes. Your Umm game account is separate; switching or signing out of the hub does not change your game history. AI tools need a connection and confirmed Pro access. Playing, manual creation and on-device dictation remain free.
 
-Tap a card's color or design controls to open the style studio. Start with a light, subtle look, or adjust palettes, fills, textures, motion, touch effects, typography, frames, shadows, and answer tiles. **Randomize** creates a coordinated light design while keeping sticker arrangements, and **Done** returns to direct card editing.
+## Privacy and connection
 
-New cards and quizzes inherit the last edited look. Keep series synchronization on to apply design changes across a quiz, or turn it off to style cards individually. Save a named look to reuse it on this device.
+Anonymous answers hide attribution from other players; the server still retains ownership. Public profiles hide anonymous contributions and unpublished questions. Other players' answers stay locked until you finish the card.
 
-Open **Stickers** to collect books with earned coins. Owned stickers can be reused. In the studio, drag, resize, rotate, fade, flip, duplicate, reorder, or remove sticker layers, and place them above or below text.
-
-Saved sticker arrangements keep their placement. A legacy card's single emoji without a saved design appears as a small, faint lower-corner decoration beneath the question while you answer.
-
-## Read responses and react
-
-After finishing a card, read the shared response board. A whole quiz's response recap opens after you have finished every card. Starter responses marked as examples are illustrative, not live player activity.
-
-Use the question thumbs to vote. **Answer options** exposes choice ratings and tools for editing your submitted response. Edits update the saved answer without awarding more coins or changing completion counts. You can also edit submitted answers from your private profile history.
-
-Creators can give another player's submitted response a thumbs-up or thumbs-down. Tap the same reaction again to remove it, or choose the other one to change it. Everyone with reveal access can see **Creator's reaction**. Only the first thumbs-up grants the one-time bonus; removing or changing a reaction leaves that bonus in place. Editing answer text clears its reaction, while changing anonymity alone preserves it.
-
-## Profiles and privacy
-
-Open **You** for your coins, answers, questions, and stickers. Tap **Coins** to open Play and earn more, **Answers** or **Questions** to jump to the corresponding private history tab, or **Stickers** to open your collection.
-
-**Your quizzes** appears below these totals, with a quiz count and a **Create** button. Open a quiz to play it; a completed quiz also shows its copyable share code. **Your activity** contains your question and answer history. Expand **More stats** for completed quizzes, your day streak, and question and answer-choice ratings.
-
-Your name, username, and Google connection use compact rows above the totals. Use the settings button to change your display name and username independently. Find another player by username in **Your activity**, or open a named responder's profile.
-
-Your private history includes anonymous contributions and skipped cards. Public profiles hide anonymous contributions and unpublished questions. Published question text may appear in public profiles, but another player's answer and choices stay locked until you finish that card. Anonymous answers hide your name from other players while remaining connected to your account privately.
-
-## Notifications
-
-The bell opens persistent in-app notifications. **Your question updates** on the home screen shows answers, edited answers, and rating activity on your questions. Shared quiz completions also appear in the notification list.
-
-For background completion alerts, open the bell and choose **Enable notifications**, then grant Android notification permission. Push delivery depends on connection and device settings. The in-app list remains usable when push is disabled.
-
-## Optional AI and voice typing
-
-These features work only when the hosted service has the relevant provider configured. Players do not supply provider keys.
-
-If available, **AI assist** drafts questions from a topic or source text, and **AI remix** refines a question. Palette prompts can create a shared named preset. Review and edit the results before saving; drafting alone does not spend creation coins. Manual creation remains available when AI is offline.
-
-On fields with a microphone button, tap to record and grant microphone permission if requested. Tap stop to insert the transcript at the cursor or replace the selected text. Check and edit it before submitting. Cancel discards the recording; a failed transcription may offer retry. Recording stops after one minute, and dictation does not pause a question's timer or spend game coins. Audio is sent to the configured transcription provider and is not saved by the app's transcription route.
-
-## Connection and account help
-
-If the app shows **Let's reconnect**, restore internet access and choose **Retry**. The release uses its hosted service automatically; no computer, local server address, or ADB tunnel is needed. Offline mode can display cached pool cards, but gameplay and changes need a connection.
-
-Sign back into the same Google account to retrieve its online history. Workshop drafts and saved looks stay local to the device. Avoid clearing app storage to solve a temporary connection problem if you want to retain those local items.
-
-Connecting a new Google identity can preserve a recovered legacy player's history and wallet. If the chosen Google account already has a player, **Switch to existing account** opens that account without merging histories or coins. **Keep this player** cancels the switch; connect a different Google account to keep that legacy player's progress. Clearing an unlinked legacy identity can lose access to that history.
-
-Google account configuration and automated onboarding checks have been completed. A real interactive Google sign-in on a physical Android device remains to be verified for this release.
+Playing, saving, editing and spending coins require an internet connection. Cached pool browsing can remain available offline. Closing a draft does not delete it. Use the same Google game account to return to saved online history. On-device dictation works without a provider key; it does not make offline submissions possible.

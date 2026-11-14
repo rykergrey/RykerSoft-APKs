@@ -1,5 +1,14 @@
 # Umm updates
 
+## 0.5.1 · 2026-11-14
+- Answer with numbered or bullet lists; press Enter to add items and drag to reorder
+- Create one question, or add another to make a quiz
+- Choose a question timer or turn it off; allow add-only answers or make them final
+- Discover player-made cards first, with ready-made mysteries waiting behind them
+- Enjoy gentler meadow motion and piano sounds with mute and volume controls
+- Dictate on-device on supported Android 12+ phones
+- Use RykerSoft Pro for AI drafting, remixing and card palette prompts
+
 ## 0.4.3 — Meadow menu — October 7, 2026
 
 - Refresh the game menu with original soft landscape artwork, dimensional controls, and a bright palette shared by the workshop, player, sticker collection, profiles, and settings.
