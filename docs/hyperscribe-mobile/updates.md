@@ -1,3 +1,11 @@
+## 2.19.0 · 2026-11-14
+- Pull down at the top of the Inbox to sync and refresh, including an empty Inbox
+- A compact Graphite Console workspace with bottom Inbox tools, live filters and reorganised Settings
+- Explore Inbox items with viewer tabs for text, audio, tags, history and related content
+- Edit reusable actions in a reorganised Action Editor
+- Choose which items and tags sync between devices, with clearer server-confirmed sync status
+- Index 01 now lives in the separate Index Assistant app
+
 # 2.18.0 — Save selected chat threads
 
 - Keep incoming and outgoing Chat messages in their conversation without automatically adding individual copies to Inbox. Explicit note, list, and reminder requests still save their requested items.
