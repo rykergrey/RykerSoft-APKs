@@ -33,7 +33,8 @@ Standard features remain available when you are signed out of RykerSoft, your Pr
 - * Character and world assistance — enhance library entries and generate casts, lore, locations, and items.
 - * Generated artwork — create portraits and story imagery.
 - * Story Party hosting — generate the shared adventure while guests vote.
-- * Cloud voices — use Gemini, GPT, or ElevenLabs narration.
+- * Story Table hosting — the table phone writes and reads each part from everyone's ideas.
+- * Voicehouse voices — narration, voice actors and the voice designer through the included Voicehouse.
 
 `*` items require administrator-granted RykerSoft Pro access followed by sign-in to the same RykerSoft Google account inside the app. Entitled family and friends receive configured provider access automatically and never need to copy or manage RykerSoft API keys.
 
@@ -55,7 +56,32 @@ Applied changes autosave on the device. Unreviewed character drafts recover with
 
 ## World Library
 
-Library stores reusable characters, locations, items, and voice presets. Manual creation and editing are standard features. Buttons marked with `*` use a provider and require available Pro or personal-provider access.
+Library stores reusable voice actors, locations, and items. Voice actors come from your selected Voicehouse roster; local roles, locations and items remain editable. Buttons marked with `*` use a provider and require available Pro or personal-provider access.
+
+### Voice actors and repertoires
+
+The **Voice actors** tab is a company of performers. An actor is a voice: its provider and voice settings, the age it sounds, the character ages it can play, its gender, and delivery notes (range, accent, texture). An actor's own personality never shapes the characters it plays.
+
+Each actor has a **repertoire**: the fictional characters it has played or can play, with each character's identity, appearance, age, and the stories it appeared in. Every mode adds roles automatically. When a Bedtime story casts an actor as Santa Claus, Santa joins that actor's repertoire. A later story that reaches the North Pole is offered the repertoire and brings back the same actor as the same Santa. Star a role to make it a signature role; signature roles are offered first and never trimmed.
+
+- **Add voice actor** opens the Voicehouse directory. Preview, select or remove actors individually, and refresh to find new voices. Cached actors can be selected offline; refresh and previews need a connection.
+- **Create voice actor** uses the Voicehouse voice designer: describe the actor and voice, edit the audition lines and language, generate three options, choose a voice, listen to its cloned audition, then publish with **Add to my roster**. Startup can take a minute or more; Cancel stops waiting. Generate again reuses the actor. If permission is disabled, enable “May create voice actors with the voice designer” for Storytime under Applications in Voicehouse.
+- **Remove from roster** hides an actor while retaining repertoire, tuning and saved casts. Add it back any time. Permanent deletion is in the Voicehouse studio's actor page. Older actors from other engines remain stored for existing stories and playback.
+
+- **Casting assistant** `*` takes plain-language instructions, such as "George sounds about 65 and can play wizards", "Rachel can also play the Tooth Fairy", "give Santa to Bill", or "give every actor without one an age and delivery notes". It shows each proposed edit; nothing changes until you apply.
+- **Casting profile** sets the sounding age, an optional playable age range (derived from the sounding age when left blank), gender, delivery notes, availability for automatic casting, and the default bedtime narrator.
+
+**A repertoire is a record, not a type.** It ties a returning *character* to its actor; it never ties an actor to a kind of character. The actor who played Santa can be the grandfather in one story and the judge in the next, and a role that merely resembles a past one ("Judge" after "Judge Harlow") gives that actor no advantage. Casting also spreads parts around: actors cast in many recent stories yield to equally suitable actors who have had fewer parts, and the writer is told which under-used actors deserve a chance.
+
+**Casting style** sets how often roles go against type, as a library default on the Voice actors tab and per story in Bedtime setup:
+
+- **Classic:** every role goes to the most natural voice.
+- **Balanced** (default): mostly natural fits; about one supporting role in four goes to a surprising but believable actor.
+- **Adventurous:** supporting roles often go against type (a gentle voice as the feared pirate captain). Leads, the narrator, and returning characters always stay natural.
+
+Automatic casting never puts an actor outside its playable age range or against a clearly gendered role when another actor fits; a 57-year-old voice does not play a 14-year-old. Older libraries convert automatically: a saved fixed character keeps its name and voice as an actor, and its personality and appearance become that actor's signature role.
+
+In Adventure setup, **Cast from Library** offers each actor's past characters, or a new role for any actor. Saving a story character from setup adds it to an existing roster actor’s repertoire. Add or create actors in World library first. Starting an Adventure credits its cast to their actors instead of adding loose library entries.
 
 Use the Library import/export controls to move reusable content without starting a story. Deleting a Library record does not delete an already saved story that contains its own copy.
 
@@ -75,13 +101,25 @@ For a road trip, have the phone connected to the car stereo join as a Listener. 
 
 The speaker phone uses its own narration provider, API access, and local voice presets. No API keys or audio files are written to the multiplayer room. Room codes and room data expire according to the online-room policy documented in the app.
 
+### Story Table
+
+Set one phone in the middle of the table and choose **Story Table → Set up the table**. It shows a large room code. Everyone else opens **Join with a code** on their own phone.
+
+Before the story starts, anyone can add ideas: a premise, characters and their names, a setting, a twist. Every idea is combined into the opening. Choose how long each part is, then tap **Start the story**.
+
+The table phone reads each part aloud and shows only the passage being read, over a visualizer. Players' phones show a countdown for the next part's ideas. Until it runs out, players can add as many ideas as they like (up to 12 each per part), and edit or delete their own. When the countdown ends, the ideas lock and the next part is written from every one of them, before the current part finishes playing. Players can also read the whole story, including the part that has not been read aloud yet, on the **Story** tab. People can join while the story is already playing.
+
+On the table phone, **Pause** stops reading (ideas stay open), **End after next part** makes the next part the ending, and **End** closes the story for everyone. The story is saved in Your stories on the table phone with its recordings, and plays back like a Bedtime story. Hosting needs Pro access or a personal writing-provider key; joining does not.
+
 ## Stories and Imports
 
 Saved stories remain on the device and can be opened for reading without a provider. Continuing or regenerating adventure content requires provider access. Export a story before clearing application data or moving to a device that is not connected to your Drive backup.
 
 ## Narration
 
-Device Native TTS, Piper, and local IndexTTS do not require a cloud API key. Gemini Voice, GPT Speech, and ElevenLabs are provider-backed Pro features and appear with `*` in feature guidance.
+All narration goes through Voicehouse. A personal Voicehouse connection needs no cloud API key; the included Voicehouse connection is a Pro feature.
+
+Voicehouse is a speech service and voice-actor library. Pro users receive the included connection automatically after signing in; no connection code is needed. A personal Voicehouse can still be connected under Settings → Narration and takes priority. Both supply the directory for your selected voice-actor roster. See `docs/voicehouse.md`.
 
 Generated audio can consume substantial storage. Settings lets you choose whether all retained audio is included in Drive synchronization.
 
@@ -116,3 +154,15 @@ Do not enter a shared RykerSoft key manually. Remove personal keys before sharin
 App Firebase identity, hub Pro identity, public room name, and Google Drive authorization are separate. Signing out of one does not intentionally publish or merge another identity.
 
 When offline, local work remains available. Pro operations fail closed when entitlement cannot be confirmed or a provider credential is missing. If Google sign-in, account linking, or room recovery reports a conflict, do not create a replacement identity to overwrite data; preserve local exports and resolve the existing account first.
+
+In Bedtime stories and Story Table, the storyteller knows each actor's live deliveries and uses them where the story calls for it. Most paragraphs use the everyday voice. To change one paragraph, open its Voice settings, choose a **Performance**, and narrate that paragraph again. This paragraph's choice takes precedence over its generated delivery.
+
+The same delivery-aware cast is used in interactive Audio Drama, Audiobook, Storyteller and Comic stories, Story Party and its Road Trip speaker. Setup and review casting can take each actor’s recorded range into account. Delivery is independent of the visual emotion or mood; unavailable recordings fall back to the character’s ordinary performance.
+
+### Creating character voices
+
+Voicehouse is the one narration engine; there is nothing to choose. **Settings → Narration** holds its connection, a live line saying whether its speech engine is running, and the default voice. Stories narrated with an older engine keep their recordings.
+
+In Bedtime stories and Story Table the storyteller always makes a permanent roster actor when no unused actor fits a new character. **Design a voice for every character** (when creating a story, or in Story settings) makes a voice for each new character instead of casting from the roster. Enable the voice-designer permission for Storytime under Applications in Voicehouse.
+
+To change a character’s voice, open **Story settings → Cast → the character → Voice** and press the voice actor. The voice page lists every voice with its portrait, details and a recorded preview: choose one, choose **Create one automatically** (Voicehouse designs a voice from the character and casts it), or choose **Create a custom voice** to describe it, hear three options, keep one, hear its audition and use it. Setup’s review page also offers **Create a voice**.

@@ -1,5 +1,50 @@
 # Storytime Updates
 
+## v1.7.0 — Android, Windows and Linux
+
+- Read any saved story in one **reader**: chapters, find, reading settings, and a Your place button that is always one tap away. Adventures, parties, Story Table saves and studio manuscripts open in it with their recordings
+- Play any story in the **cinema**: one paragraph at a time over a night sky, with words lighting as they are spoken
+- A calmer page: each speaker is named like a cue in a script, your place glows on the edge of the page, and the player sits in one deck whose play button shows how far the paragraph has played
+- **Voicehouse** is now the one narration engine: there is nothing to choose
+- Choose a voice from a page of voices with portraits, details and a preview button, instead of a drop-down
+- Give a character a new voice: pick one, let Voicehouse make one, or compare three designed options as they are made
+- Add a **recording effect** to a voice or a single paragraph: Telephone, Radio, Cavern or Small room, kept in exported audio
+- Pick a voice's **delivery**, such as angry or whispering, separately from its effect
+
+## v1.6.0 — Android, Windows and Linux
+
+- Redesign **Settings**: categories in a side rail, each page a set of clear sections, compact engine and model choices, and one-line provider keys
+- Redesign the **World library** for desktop: the voice-actor list fills the page, search and filters share one toolbar, and the casting tools sit in a side column (folded above the list on phones)
+- Rework **Home** on wide screens so new modes and your saved stories are both in view, with tighter mode and multiplayer cards
+- Make Bedtime's story and paragraph menus easier to read, with named groups, and centre the reader and its controls on wide screens
+- Turn a paused Bedtime story into an **audiobook editor**: edit paragraphs in place, give a paragraph its own voice, re-narrate, and export the story as one chaptered **MP3**
+- Plan, draft and review each Bedtime chapter for stronger continuity, and let casting draw on unused ElevenLabs voices
+- Add **Voicehouse** as a narration provider, with optional voice actors supplied from Voicehouse
+- Fix screens whose top padding was lost on some layouts
+
+## v1.5.3 — Android
+
+- Add a unique **match link** for every online room. **Copy link** copies it, and **Invite** opens Android's share sheet so you can send it through any messaging app. Tapping the link opens Storytime straight to that room; friends without the app get a page with the room code and a download link
+- Paste a match link into **Join with a code** to fill in the room code
+
+## v1.5.2 — Android
+
+- Redesign the Story Table reading screen: the visualizer becomes an orb framing the speaker's name, and the passage sits on its own card in larger type, with the sentence being read highlighted and followed automatically
+
+## v1.5.1 — Android
+
+- Fix Story Table screens that could not scroll on the table phone and on players' phones
+- Keep the Story Table room code on one line so it is readable from across the table
+- Always give players at least 20 seconds to send ideas for each part, even when a part is short
+- Clear the idea box as soon as you send, so a quickly typed next idea is never wiped; a refused idea is put back
+- Fix a crash when opening an online Anonymous Author or Pass the Pen game before the room had loaded
+
+## v1.5.0 — Android
+
+- Add **Story Table**, a multiplayer mode for one phone in the middle of the table. It shows a room code, reads each part aloud over a visualizer, and shows only the passage being read. Players join from their own phones (also mid-story), add premise ideas before the start, and send, edit or delete ideas for the next part until a countdown locks them. Every idea shapes the next part, which is written before the current one finishes. Players can read the whole story ahead on the Story tab.
+- Add **Bedtime stories**: an endlessly unfolding audiobook with library performers, saved narration, a generation timer, motion standby and Android background playback
+- Add a voice mixer with per-character volume
+
 ## v1.4.0 — Android
 
 - Separate Solo and Multiplayer on Home, with direct **Write a story** and **Play an adventure** entries and **One device** / **Online** choices for each multiplayer mode
