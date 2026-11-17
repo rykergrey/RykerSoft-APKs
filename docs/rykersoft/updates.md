@@ -1,5 +1,10 @@
 # Release Updates & History
 
+## v1.5.0 (Version Code 28) - November 17th, 2026
+- A redesigned hub: catalog, app page and settings, matching the catalog at rykersoft.rykergrey.com.
+- "Latest release" sorts by release date, and the system filter starts on All.
+- Administration: each account opens to its Pro switches, and each app opens to its provider keys.
+
 ## v1.4.6 (Version Code 27) - September 10th, 2026
 - Hyperscribe Desktop and Mobile now share one provider-key record.
 - Editing keys under either Hyperscribe entry updates the same shared configuration.
