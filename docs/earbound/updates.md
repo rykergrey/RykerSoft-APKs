@@ -1,5 +1,12 @@
 # Earbound Updates
 
+## v0.8.3
+
+- Campaign: after a cleared match, choose your next match right on the Results screen. Each choice shows what it is worth and why, such as "62% · last 3 visits"
+- An exercise you have missed more on recently, or have not tried yet, is worth up to one and a half times the points, and the experience you earn grows by the same amount. The value is set when the match starts and never changes afterwards
+- The sector map shows the same values on each route
+- Windows and Linux are updated to this version, including the lessons, staff and Results improvements from 0.8.1 and 0.8.2
+
 ## v0.8.2
 
 - Recall and reading: unanswered notes on the staff are now faint vertical lines instead of dots on the middle line, so they no longer look like B notes. The next note to enter glows gold
