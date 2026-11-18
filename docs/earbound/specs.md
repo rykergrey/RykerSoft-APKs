@@ -3,7 +3,7 @@
 ## Application
 
 - Package: `com.rykersoft.earbound`
-- Release: `0.10.0` (`versionCode 19`)
+- Release: `0.11.0` (`versionCode 20`)
 - Platform: Android 7.0 (API 24) or newer; target API 36
 - Requires a current Android System WebView
 - UI: React 19, TypeScript and Vite, packaged with Capacitor 8
@@ -11,10 +11,12 @@
 
 ## Data and Privacy
 
-- No analytics. An account is optional and only used for sync
+- No analytics. An account is optional and only used for sync and friends
 - Progress, achievements, cosmetics and settings are stored locally on the device
 - Optional sync: signing in with Google stores a copy of that data in Earbound's Firebase project (Google Cloud Firestore), readable only by the signed-in account. Volume and the on-device restore point are not uploaded
-- Settings → App & data → Delete cloud copy deletes the synced copy and the account
+- Optional friends: after choosing a username, Earbound stores the username, a stats summary and the people you chose to share it with. Others see only the username and, if you added them, the summary; never your email or name
+- Find by email stores a one-way SHA-256 fingerprint of your address, never the address itself, and can be turned off
+- Settings → App & data → Delete cloud copy deletes the synced copy, your username, shared stats and the account
 - Backups are user-exported JSON files
 - Microphone access is used only for optional voice answers
 - Local network access is used only when hosting or joining a party

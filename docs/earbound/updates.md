@@ -1,5 +1,16 @@
 # Earbound Updates
 
+## v0.11.0
+
+- Learn after any answer: tap Learn to see the answer explained, how it looks and sounds, what your choice actually was, and the lesson that teaches the two apart. You can carry on with Next straight from it
+- Score symbols now play: hear soft against loud, getting louder or softer, short against connected, and slowing down
+- Mark a right answer as a guess. It still counts; your records note it
+- Records: Where you stand shows which skills are solid, still developing, in guessing range or struggling, what is worth a look, and your practice and accuracy over weeks and months
+- Records: What you stopped to learn counts the questions you opened Learn on, after a miss or a right answer
+- Friends: sign in, pick a username and share your stats with friends or a teacher. Adding someone lets them see your stats; when they add you back, you see theirs. Your email and name are never shown
+- Everyone sharing with you in one view: who practiced this week, who needs a look, a sortable table of everyone, accuracy by person and area, shared mix-ups, and trends over weeks and months, with a wider layout on computers
+- Private groups to sort the people who share with you, such as a class or a season
+
 ## v0.10.0
 
 - Sync: sign in with Google under Settings → App & data, and your progress, stats, achievements, unlocks and settings follow you to every device signed in to the same account, including Windows, Linux and the web edition

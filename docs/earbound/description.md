@@ -1,12 +1,13 @@
 # Earbound
 
-Earbound is an ear-training game for Android. Learn to recognise notes, intervals, chords, inversions, scales, modes, progressions and the circle of fifths through a campaign across eight sectors of the sky, short hands-on lessons, a customisable practice studio, and local multiplayer. Everything runs on your phone: no subscription, and no internet connection needed for solo play. Sign in with Google if you want your progress on every device you play on.
+Earbound is an ear-training game for Android. Learn to recognise notes, intervals, chords, inversions, scales, modes, progressions and the circle of fifths through a campaign across eight sectors of the sky, short hands-on lessons, a customisable practice studio, and local multiplayer. Everything runs on your phone: no subscription, and no internet connection needed for solo play. Sign in with Google if you want your progress on every device you play on, or to share your stats with friends or a teacher.
 
 ## Features
 
 - A 480-match campaign across eight sectors, from four notes and major/minor chords to seventh-chord inversions and full modal repertoire
 - New-player placement: up to three short matches with an “I don’t know” option place you at the right sector, so experienced listeners don’t start at match one
 - 39 hands-on lessons in ten topics, each ending with three practice matches, and suggestions drawn from your own mix-ups
+- Learn after any answer: the answer explained, how it looks and sounds, what your choice was, and the lesson that teaches the difference
 - Hold anything on screen for a short explanation
 - Practice studio with 22 exercises, 1–10 difficulty levels and saved setups, unlocked as you progress through the campaign
 - Ear training for notes (with or without a reference), intervals (rising, falling and harmonic), chords, inversions, scales and modes, and progressions
@@ -16,7 +17,8 @@ Earbound is an ear-training game for Android. Learn to recognise notes, interval
 - The circle of fifths on a touch wheel: build it, read key signatures, find relative minors and the chords of a key, hear moves and cadences, and work out dominants, tritone swaps and transposing instruments
 - Answer by tapping, on the piano keyboard, or by voice
 - More than 100 achievements, each dated, rewarding real listening skill as well as steady practice
-- Detailed records: first-answer accuracy, response times, replays, confusions between similar sounds, activity calendar and focus suggestions
+- Detailed records: what is solid, developing or struggling, with honest ranges for small samples, trends over weeks and months, first-answer accuracy, response times, replays, confusions between similar sounds and focus suggestions
+- Friends: share your stats with friends or a teacher under a username; a teacher sees everyone in one view with a sortable table, needs-a-look list and trends
 - Unlockable sky effects, colour palettes and instrument sounds
 - Party play for 2–8 players on the same Wi-Fi, hosted by one phone, plus pass-the-phone for 2–8 on a single device with house rules and a final reveal
 - Optional sync: sign in with Google and your progress, achievements, unlocks and settings follow you between your phone, computer and the web edition

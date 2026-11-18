@@ -11,6 +11,7 @@
 - [Practice Studio](#practice-studio)
 - [Records and Achievements](#records-and-achievements)
 - [Customize](#customize)
+- [Friends](#friends)
 - [Party Play](#party-play)
 - [Settings, Backup and Restore](#settings-backup-and-restore)
 - [Tips](#tips)
@@ -51,7 +52,9 @@ Clearing matches unlocks new practice exercises, higher difficulties, sky effect
 
 1. Tap the top of the screen to listen. Tap again to replay; replays are counted but never penalised.
 2. Choose your answer with the buttons, the piano keyboard, or your voice (where offered).
-3. Your first answer is the one that counts. After answering you can hear the sound again or open **Learn** to compare it with other answers.
+3. Your first answer is the one that counts. After answering you can hear the sound again or open **Learn**.
+
+**Learn** explains the question you just answered: the answer named in full, the idea behind it, something to see and hear, what your choice actually was, and the lesson that teaches the two apart. Score symbols play as real sound. On a right answer you can mark **It was a guess**; the answer still counts and your records note it. **Next** is at the bottom of the sheet, so you can carry on without closing it. **How this exercise works**, at the bottom of the first round, explains the exercise as a whole.
 
 Melody recall questions ask you to play the phrase back on the keyboard, including the first note and any repeats, in the same octave.
 
@@ -80,7 +83,11 @@ Practice lets you train any exercise you have unlocked, at any difficulty you ha
 
 ## Records and Achievements
 
-Records shows your first-answer accuracy, practice volume, an activity calendar, accuracy trends, your strongest and weakest sounds, common mix-ups, and timing records for matching conditions.
+**Where you stand** sorts your skills into Solid, Developing, Guessing range, Struggling and Too few answers. A skill is Solid only when even the low end of an honest range for your number of answers is 70% or better, over at least two days; answers you marked as guesses do not count. Below it: what is worth a look (such as a sound you keep missing after studying it), your practice, **Over time** (sets and accuracy by week or month), each area month by month, and every skill.
+
+**What you stopped to learn** counts the questions you opened Learn on, after a miss or a right answer.
+
+Records also shows your first-answer accuracy, practice volume, an activity calendar, accuracy trends, your strongest and weakest sounds, common mix-ups, and timing records for matching conditions.
 
 The Achievements card lists every achievement by category, with the date you earned it and your progress towards the rest. Many achievements reward real skill: a sound becomes **reliable** when you answer 9 of your last 10 correctly without hints.
 
@@ -89,6 +96,16 @@ The Lessons section shows lessons finished, time spent, checks answered, practic
 ## Customize
 
 Choose a sky effect, a colour palette and the instrument sound used for questions. Locked items show what earns them.
+
+## Friends
+
+Friends (from Home) lets you share your stats. It needs a Google sign-in; everything else in Earbound works without one.
+
+1. Sign in and pick a username. Only your username is ever shown; your Google name and email stay private.
+2. Type someone's username or email under **Add someone** and tap **Share my stats**. They can now see your stats. You see theirs when they add you back.
+3. **Find me by email** lets someone who knows your exact address find you. Turn it off at any time.
+
+Everyone sharing with you appears together: who practiced this week, **Needs a look**, **Over time**, **Everyone** (a table you can sort by any column), each person by area, shared mix-ups and each area's strength. Tap a name for that person's Where you stand. Make private **groups**, such as a class, to see one group at a time; only you see your groups. **Stop sharing** ends someone's access at once, and **Hide** removes someone who shares with you from your lists. On a computer the view spreads over two columns.
 
 ## Party Play
 
