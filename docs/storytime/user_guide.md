@@ -159,10 +159,21 @@ In Bedtime stories and Story Table, the storyteller knows each actor's live deli
 
 The same delivery-aware cast is used in interactive Audio Drama, Audiobook, Storyteller and Comic stories, Story Party and its Road Trip speaker. Setup and review casting can take each actor’s recorded range into account. Delivery is independent of the visual emotion or mood; unavailable recordings fall back to the character’s ordinary performance.
 
+**Pauses.** The storyteller can leave a silence after any paragraph: a beat (half a second), short (1 s), long (2 s) or a scene break (3½ s). Every scene ends on a scene break. The reader shows a paragraph's pause under it; while paused, choose another in the paragraph's ⋯ menu under **Pause after**. Changing a pause takes effect at once and never re-narrates. Pauses are kept in exported MP3 audiobooks.
+
+### Ghostwriters
+
+Every Bedtime story has a ghostwriter: the author whose style the whole story is written in. When you set up a story, one who suits it is suggested under **Ghostwriter**. Their card shows who they are, their books, and a short sample. Every ghostwriter's sample describes the same moment (someone finds a letter they were not expecting), so you can compare two writers quickly.
+
+- **Another** suggests a different writer who also suits the story.
+- **Choose or make one** opens the full library of 37 house ghostwriters, from Scriptural and Gothic to Hardboiled, Lullaby and Silver Age comic book.
+- **Roll one for this story** creates a new ghostwriter with habits no other has. **Or one who writes like…** creates one after an author, book, period or mood you name; you get an original writer in that tradition, not an imitation. Both need a writing provider and take a short while. New ghostwriters stay in your library until you remove them.
+- To change a story's writer later, open **Story settings → Ghostwriter**. The change applies from the next chapter.
+
 ### Creating character voices
 
 Voicehouse is the one narration engine; there is nothing to choose. **Settings → Narration** holds its connection, a live line saying whether its speech engine is running, and the default voice. Stories narrated with an older engine keep their recordings.
 
-In Bedtime stories and Story Table the storyteller always makes a permanent roster actor when no unused actor fits a new character. **Design a voice for every character** (when creating a story, or in Story settings) makes a voice for each new character instead of casting from the roster. Enable the voice-designer permission for Storytime under Applications in Voicehouse.
+In Bedtime stories and Story Table the storyteller always makes a permanent roster actor when no unused actor fits a new character. **New voices for everyone** (when creating a story; **Design a voice for every new character** in Story settings) makes a voice for each new character instead of casting from the roster. Enable the voice-designer permission for Storytime under Applications in Voicehouse.
 
 To change a character’s voice, open **Story settings → Cast → the character → Voice** and press the voice actor. The voice page lists every voice with its portrait, details and a recorded preview: choose one, choose **Create one automatically** (Voicehouse designs a voice from the character and casts it), or choose **Create a custom voice** to describe it, hear three options, keep one, hear its audition and use it. Setup’s review page also offers **Create a voice**.

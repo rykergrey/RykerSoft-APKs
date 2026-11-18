@@ -98,21 +98,27 @@ Voicehouse starts its own engine whenever a request needs it: narration is accep
 
 Storytime reads the engine's state from Voicehouse and says it in plain words: Settings → Narration shows a live line (ready, loading, or stopped and started on demand), and when Voicehouse has given up starting the engine the message says so with **Open Voicehouse** beside it. Storytime carries on by itself once the engine is running.
 
-## Vocal effects in Storytime
+## Acoustics in Storytime
 
-Voice controls include Natural, Telephone, Radio, Cavern and Small room. Bedtime's paragraph Voice settings can apply one to just that paragraph or to the character. Preview uses the selected effect. Existing recordings retain their sound until explicitly narrated again.
+Acoustics put a line in a believable sound world: the **space** the listener is in, the speaker's **placement**, a **device** the voice passes through, the speaker's own room when they are on a device, and how the voice was picked up. They replace the old vocal effects. The full reference, including every preset, is [acoustics.md](acoustics.md) (the Voicehouse engine's ACOUSTICS.md, kept unchanged).
 
-Effects are processed locally after Voicehouse generates speech and before Storytime saves the MP3. Saved playback and audiobook exports therefore retain the effect, including the reverberation tail. Reference clips and published actor performances are not modified. This is a recording treatment independent of Qwen's voice-cloning conditioning. The Voicehouse studio itself requires a separate server-side implementation; Storytime's effect choice is not sent as a model parameter.
+- **Voicehouse delivers dry takes only** and refuses a `vocal_effect` field (422). Storytime never sends acoustics to any speech engine, for any provider.
+- **Acoustics are data.** They are stored on a voice's settings and on each paragraph as preset ids with pinned revisions (`{space, placement, channel, sourceSpace, voice}` plus `moves`). A paragraph's blocks override the voice's block by block; an empty block is an explicit "none".
+- **One engine.** `vendor/acoustics` is a verified, unedited copy of the Voicehouse acoustics engine (`npm run verify:acoustics`). `services/acoustics/` is Storytime's side: the catalogue service, merging and migration, live playback and rendering, and the storyteller adapter.
+- **Playback** prepares each dry take with its resolved acoustics and schedules it on one `Mixer` per audio context (Bedtime, the reader and cinema, adventures, Road Trip, studio manuscripts). Lines are spaced by the take's own length, so a room's tail runs under the next line. Lines with no acoustics play exactly as before.
+- **Files.** The audiobook export bounces chapter by chapter with the same lines and starts, mastered to `TARGETS.audiobook` (-19 LUFS, -3 dBTP), then MP3. Every export goes through the engine, with or without acoustics, so all audiobooks share one loudness. If a device cannot render, the export falls back to joining the recordings as saved and the confirmation says so. The voice preview and the Android background player (which takes a file per paragraph) render one line at a time, with the room tail kept to about a second and faded.
+- **Catalogue.** `GET /api/v1/acoustics` with the app's key, cached with its ETag in local storage and refreshed in the background every ten minutes. Without Voicehouse the saved copy is used, then the engine's built-in catalogue; playback never waits for the network.
+- **Changing acoustics never needs new narration**, because takes are dry and their request and cache keys do not include acoustics.
 
-## Choosing a delivery and an effect
+## Choosing a delivery and acoustics
 
 Open a character’s **Voice** controls (or a Bedtime paragraph’s **Voice settings**). Choose the actor, then choose a **Delivery** from that actor’s published deliveries on the selected provider. Neutral is the default. Delivery keys come from the directory; Storytime does not assume every actor can whisper, shout, or sound angry. Provider readiness appears beside the delivery control.
 
-**Vocal effect** is independent: Natural, Telephone, Radio, Cavern, or Small room. Angry + Telephone and Whisper + Cavern are valid combinations. **Preview voice** generates a short line with the same delivery, adjustments and local effect used for narration. The round preview in the actor picker instead plays the existing **neutral source reference** without generation or effects; it demonstrates the actor’s natural voice.
+**Acoustics** are independent of delivery: open the folded **Acoustics** section to choose a **Space**, **Placement** and **Device**, with **Speaker’s space** and **Voice** under More. The lists come from the Voicehouse catalogue, grouped by category, with each preset's "use when" line under the choice; the line under the section says whether the catalogue came from Voicehouse, a saved copy or the built-in one. Angry + Telephone and Whisper + Cave are valid combinations. **Tune in Voicehouse** opens the studio's Acoustics page (`<studio>/#acoustics&job=<id>&scene=<base64url of the acoustics JSON>`) to tune a preset by ear; save it there and Storytime picks it up on the next catalogue fetch. When a preset was retuned since it was chosen, **Use the latest tuning** re-pins it. **Preview voice** generates a short dry line with the same delivery and adjustments, and plays it through the engine with the chosen acoustics. The round preview in the actor picker instead plays the existing **neutral source reference**; it demonstrates the actor’s natural voice.
 
-For Bedtime and Story Table, the story writer can assign effects to individual paragraphs when the scene calls for them. Adventures and Story Party generation also carry line effects, including to the Road Trip speaker. Natural is the default; mentioning a telephone or a cave does not itself justify filtering narration. An explicit paragraph voice override wins over the generated delivery and effect. Use **This paragraph only** to change one line, or the character scope to set a voice for the story. Existing saved audio retains its sound until you explicitly narrate it again.
+For Bedtime and Story Table, adventures and Story Party, the story writer chooses each paragraph's acoustics as preset ids (`storytellerGuide` in its instructions, `storytellerSchema` in its structured output, converted with `fromStoryteller`). It picks one space per scene and repeats it on that scene's paragraphs; narration stays dry; devices are only for speech the story says is transmitted. Story Party snapshots carry `acoustics` to guests and the Road Trip speaker (validated structurally; an older host's `vocalEffect` is converted). An explicit paragraph voice override wins over the generated delivery and acoustics. Use **This paragraph only** to change one line, or the character scope to set a voice for the story.
 
-Studio manuscripts save narrator and screenplay character assignments, delivery/effect settings, revision pins, and reading pace with the manuscript. Their **Voices & reading pace** controls use the same Voicehouse controls. The shared reader plays existing recordings; it does not generate new speech merely by opening a story. Single-take narration uses the chosen settings for that entire take.
+Studio manuscripts save narrator and screenplay character assignments, delivery and acoustics settings, revision pins, and reading pace with the manuscript. Their **Voices & reading pace** controls use the same Voicehouse controls. The shared reader plays existing recordings; it does not generate new speech merely by opening a story. Single-take narration uses the chosen settings for that entire take.
 
 ### Add a missing delivery in Voicehouse
 
@@ -125,17 +131,15 @@ A missing/unpublished delivery remains selected and is labeled unavailable. Voic
 
 ### Keep a particular voice version
 
-**Keep this published revision** pins the selected performance for future narration. Clear it to follow future Voicehouse publications. New recordings retain the actor ID, requested and resolved delivery, published revision, provider/model, resolved settings/seed when returned, job IDs, artifact duration, and local effect revision. Audio and its metadata travel in generated-audio backups; story exports retain the metadata attached to their paragraphs.
+**Keep this published revision** pins the selected performance for future narration. Clear it to follow future Voicehouse publications. New recordings retain the actor ID, requested and resolved delivery, published revision, provider/model, resolved settings/seed when returned, job IDs and artifact duration (narration record version 2: a dry take). Audio and its metadata travel in generated-audio backups; story exports retain the metadata attached to their paragraphs.
 
-A changed delivery, effect, revision or supported override has a different request/cache identity. Saved finished audio remains a snapshot; changing an actor in the library does not silently regenerate it. Old settings without an effect mean Natural. Existing recordings are not reprocessed during upgrade, playback, backup restore, or export.
+A changed delivery, revision or supported override has a different request/cache identity; acoustics do not. Saved finished audio remains a snapshot; changing an actor in the library does not silently regenerate it.
 
-### Processing ownership and service compatibility
+### Older saves
 
-Storytime owns effect DSP (`storytime-vocal-effects-v2`). It requests natural speech, omits the server’s top-level `vocal_effect`, and processes once before saving the MP3. The SDK’s optional `vocalEffect` maps to HTTP `vocal_effect`; neither spelling belongs inside provider overrides. Storytime does not enable server DSP or inherit effects from the actor/application. If an unexpected server response says an effect was already applied, Storytime fails rather than processing it twice.
-
-This deliberately supports the currently running server: a read-only authenticated check on 2026-11-14 found Voicehouse 0.4.0 with WAV/MP3 support and Qwen ready, but its deployed `SpeechInput` schema did **not** include `vocal_effect`. The desktop source SDK/schema does include it. No restart or production configuration change was made. Switching processing to the server later requires a deliberate migration that disables local DSP; it is not automatic.
-
-Telephone and Radio filter/saturate the generated recording. Cavern and Small room add local reverberation; complete tails remain in playback, saved audio and audiobook exports. Duration is measured from the actual output, rather than estimated from text. Local effects are stylistic treatments and need not sound identical to the server’s separate FFmpeg presets.
+- Stored `vocalEffect` values in stories, characters, backups and party state become acoustics on load (`fromLegacy`: telephone → Telephone device, radio → Walkie-talkie, cavern → Cave, small-room → Bedroom). A paragraph's explicit Natural becomes explicit empty space and device blocks.
+- Recordings made before this change by Voicehouse with an effect had that effect baked in. They are recognised by their version 1 narration record (or, without one, marked `audioBaked` on load), keep playing exactly as saved and are never put through the engine, so nothing is applied twice. Narrating such a paragraph again replaces it with a dry take.
+- Every older performance-key format still matches its recording, so no saved narration is lost or regenerated.
 
 ### Troubleshooting
 
@@ -144,11 +148,11 @@ Telephone and Radio filter/saturate the generated recording. Cavern and Small ro
 - **Unsupported adjustments:** reset adjustments and sync to load the active provider’s schema. Settings outside the schema or numeric limits are not sent.
 - **Queued / loading:** cold starts can take time. Storytime waits with bounded timeouts, retries queue/rate congestion, and reuses a stable idempotency key for the same logical request. Stop preview or leave playback preparation to cancel outstanding waits. Cancellation can drain provider compute rather than immediately stop the GPU.
 - **Interrupted, expired or failed job:** keep the story and existing recordings; retry after the engine is ready. A processed take is never replaced silently with raw speech.
-- **Effect/encoding failure:** retry, or deliberately choose Natural and narrate again. Confirm that the device supports Web Audio; server normalization failures require repair in Voicehouse.
+- **Acoustics cannot be prepared** (for example on a device without Web Audio): the line plays dry rather than not at all. Server normalization failures require repair in Voicehouse.
 - **Voice creation:** both actor-creation and designer permissions are checked. Designing/cloning/auditioning progress is shown. Automatic creation has durable keys so reopening a story resumes the same creation. Recordings, extra delivery setup and deletion remain studio tasks.
 
 ## Validation
 
-Run `npm run check` for the project checks and `npm run test:voicehouse-ui` after a build for Chromium interaction/audio tests. The latter uses synthetic audio and mocked application HTTP, verifies each effect, exactly one local DSP render, retained room tails, saved-audio/backup/export consistency, and desktop/mobile reader and voice-control interactions. It never contacts Voicehouse or generates AI content. The harness defaults to `/usr/bin/chromium`; set `CHROMIUM_PATH` to another installed Chromium executable.
+Run `npm run check` for the project checks (it also verifies the vendored engine), `npm run conformance` for the engine's reference renders in Chromium (set `ACOUSTICS_BROWSER` if it is not in a usual place), and `npm run test:voicehouse-ui` after a build for Chromium interaction/audio tests. The latter uses synthetic audio and mocked application HTTP, verifies dry takes (no local render at generation, nothing acoustic sent to the server), the acoustics pickers, saved-audio/backup consistency, an engine-mixed audiobook export, and desktop/mobile reader and voice-control interactions. It never contacts Voicehouse or generates AI content. The harness defaults to `/usr/bin/chromium`; set `CHROMIUM_PATH` to another installed Chromium executable.
 
 Read-only live verification does not prove a real Qwen take or physical-phone playback. Those remain separate acceptance checks; no paid generation, service restart or deployment is part of these checks.

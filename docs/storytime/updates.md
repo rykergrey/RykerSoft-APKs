@@ -1,5 +1,17 @@
 # Storytime Updates
 
+## v1.8.0 — Android, Windows and Linux
+
+- **Room sound** for any voice or paragraph: a cave, a small room, a tunnel or open air, where the speaker stands, and devices such as a telephone or radio. You hear it as the story plays, and it is kept in audiobook exports
+- Every audiobook export is now mixed and mastered the same way
+- **Bedtime story setup**: a short interview builds the story's brief, themes and a foreword before the first chapter
+- **Ghostwriters lead the story**: choosing a writer sets the genre, tone and feel. See how they'd tell your story, let them try their hand on any text, or build your own writer
+- Each paragraph can have a **pause** after it, heard in playback and in exports
+- The reader has edge drawers and a list of each paragraph's recording
+- Writing can use Claude as well
+- The Bedtime sample, Echo Station, is rebuilt to show room sound
+- Bedtime no longer stops with "Audio could not be prepared" when a voice runs on past the end of its line: the recording is made again on its own
+
 ## v1.7.0 — Android, Windows and Linux
 
 - Read any saved story in one **reader**: chapters, find, reading settings, and a Your place button that is always one tap away. Adventures, parties, Story Table saves and studio manuscripts open in it with their recordings

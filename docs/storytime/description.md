@@ -16,7 +16,7 @@ Storytime is a local-first writing studio and social storytelling game for Andro
 - Anonymous Author and Pass the Pen in pass-and-play or online rooms
 - Joining an online Story Party as a voting director or listen-only passenger
 - Road-trip narration with one listener phone acting as the shared car speaker
-- Narration through a personal Voicehouse, with a voice picker, a voice designer and recording effects
+- Narration through a personal Voicehouse, with a voice picker, a voice designer and radio-drama acoustics (spaces, placement and devices)
 - One reader and a full-screen cinema for every saved story
 - Private Google Drive backup and restore
 - User-chosen public room names that remain separate from private Google identity

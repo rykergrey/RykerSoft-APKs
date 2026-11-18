@@ -45,8 +45,9 @@ Firebase UIDs are project-scoped. Storytime never treats app-project and hub-pro
 ## Provider Model
 
 - Model: trusted-family runtime credential delivery
-- Required default field: `gemini`
-- Optional fields: `openai`, `kimi`, `elevenLabs`
+- Fields, in the order the hub's admin screen shows them: `anthropic` (Claude, the default writer), `gemini` (artwork, Gemini Voice and Gemini writing), `openai`, `kimi`, `elevenLabs`, `voicehouseConnection`. The list is `.rykersoft/app-capabilities.json`; publish it to the hub with `node scripts/release-app-capabilities.mjs snapshot`, then `apply`, then `verify`.
+- The client also accepts `anthropicApiKey`, `claude` or `claudeApiKey` for the Claude key (`services/proAccessSession.ts`).
+- A key delivered by Pro is used only while no personal key for that provider is saved on the device; a personal key in Settings wins.
 - Entitled clients perform one exact-document read; list queries and every client provider write are denied.
 - Credentials are cleared before every entitlement refresh, on sign-out, and when entitlement/provider access fails.
 - Revocation prevents future retrieval. If a trusted device is lost, rotate the package-specific provider credentials.
