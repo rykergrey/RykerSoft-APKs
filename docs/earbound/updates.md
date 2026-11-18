@@ -3,7 +3,7 @@
 ## v0.9.0
 
 - The circle of fifths: a new touch wheel you answer by pressing, sweeping to a key and lifting. Each key sounds as you pass it, and lifting in the centre cancels
-- Five new exercises in a new practice group, Keys & the circle: Circle builder, Key signatures, Inside the key, Trace the path and Circle moves. They cover fifths up and down, reading and counting signatures, relative and parallel minors, the six chords of a key, modes, cadences and falling chains you hear, dominants, the tritone swap and transposing instruments
+- Five new exercises in a new practice group, Keys & the circle: Build the circle, Key signatures, Inside a key, Trace the path and Circle moves. They cover fifths up and down, reading and counting signatures, relative and parallel minors, the six chords of a key, modes, cadences and falling chains you hear, dominants, the tritone swap and transposing instruments
 - The circle is part of every campaign sector and gets harder from sector to sector. In sector VIII the wheel is blank: only C is fixed at the top
 - Eleven new lessons on the circle, from Up a fifth to Dominants and far keys, each with a playable wheel
 - 26 glossary terms with playable wheel figures, each linked to its lesson where there is one
