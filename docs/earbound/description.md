@@ -1,18 +1,19 @@
 # Earbound
 
-Earbound is an ear-training game for Android. Learn to recognise notes, intervals, chords, inversions, scales, modes and progressions through a campaign across eight sectors of the sky, short hands-on lessons, a customisable practice studio, and local multiplayer. Everything runs on your phone: no account, no subscription, no internet connection needed for solo play.
+Earbound is an ear-training game for Android. Learn to recognise notes, intervals, chords, inversions, scales, modes, progressions and the circle of fifths through a campaign across eight sectors of the sky, short hands-on lessons, a customisable practice studio, and local multiplayer. Everything runs on your phone: no account, no subscription, no internet connection needed for solo play.
 
 ## Features
 
 - A 480-match campaign across eight sectors, from four notes and major/minor chords to seventh-chord inversions and full modal repertoire
 - New-player placement: up to three short matches with an “I don’t know” option place you at the right sector, so experienced listeners don’t start at match one
-- 28 hands-on lessons in nine topics, each ending with three practice matches, and suggestions drawn from your own mix-ups
+- 39 hands-on lessons in ten topics, each ending with three practice matches, and suggestions drawn from your own mix-ups
 - Hold anything on screen for a short explanation
-- Practice studio with 17 exercises, 1–10 difficulty levels and saved setups, unlocked as you progress through the campaign
+- Practice studio with 22 exercises, 1–10 difficulty levels and saved setups, unlocked as you progress through the campaign
 - Ear training for notes (with or without a reference), intervals (rising, falling and harmonic), chords, inversions, scales and modes, and progressions
 - Musicianship exercises: scale degrees, intervals and modes in context, pitch dictation and rhythm reconstruction
 - Melody recall: hear a phrase and play it back on the on-screen piano
 - Staff reading in treble and bass clef, and score symbols
+- The circle of fifths on a touch wheel: build it, read key signatures, find relative minors and the chords of a key, hear moves and cadences, and work out dominants, tritone swaps and transposing instruments
 - Answer by tapping, on the piano keyboard, or by voice
 - More than 100 achievements, each dated, rewarding real listening skill as well as steady practice
 - Detailed records: first-answer accuracy, response times, replays, confusions between similar sounds, activity calendar and focus suggestions

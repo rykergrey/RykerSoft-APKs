@@ -37,6 +37,14 @@ Placement only moves you forward. Anything you skipped is still available to pra
 
 The campaign has eight sectors of 60 matches. Each match is a short set of questions; clear it with at least 70% correct on your first answers. Every sixth match is a checkpoint. After each match you can choose between up to three activities, and the campaign keeps your activities balanced so no topic is skipped indefinitely. Each choice shows what it is worth: 100 points for every correct first answer, times 1, 1.25 or 1.5. An exercise you have missed more on recently, or have not tried, is worth more, and experience grows by the same amount.
 
+From match 9 the campaign also trains the circle of fifths. Press the wheel, sweep around it (each key sounds as you
+cross it) and lift on your answer; lift in the middle to cancel. Pads and voice work too. From sector IV the wheel gains an inner ring of
+minor keys, and two more exercises join: Inside a key (relative keys, a key's chords, modes) and Trace the path (hear
+chords move, then find them). Sector VII adds Circle moves (dominants, tritone swaps, and the keys B♭, E♭ and F
+instruments read), and sector VIII hides every name on the wheel. All five exercises are in Practice, Pass the
+phone and the networked Party, with eleven lessons under Keys & the circle and a glossary section of the same name.
+When more than one match is open, Continue on Home takes you to the route choice.
+
 Clearing matches unlocks new practice exercises, higher difficulties, sky effects, palettes and instrument sounds.
 
 ## Answering Questions
