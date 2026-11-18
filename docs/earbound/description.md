@@ -1,6 +1,6 @@
 # Earbound
 
-Earbound is an ear-training game for Android. Learn to recognise notes, intervals, chords, inversions, scales, modes, progressions and the circle of fifths through a campaign across eight sectors of the sky, short hands-on lessons, a customisable practice studio, and local multiplayer. Everything runs on your phone: no account, no subscription, no internet connection needed for solo play.
+Earbound is an ear-training game for Android. Learn to recognise notes, intervals, chords, inversions, scales, modes, progressions and the circle of fifths through a campaign across eight sectors of the sky, short hands-on lessons, a customisable practice studio, and local multiplayer. Everything runs on your phone: no subscription, and no internet connection needed for solo play. Sign in with Google if you want your progress on every device you play on.
 
 ## Features
 
@@ -19,4 +19,5 @@ Earbound is an ear-training game for Android. Learn to recognise notes, interval
 - Detailed records: first-answer accuracy, response times, replays, confusions between similar sounds, activity calendar and focus suggestions
 - Unlockable sky effects, colour palettes and instrument sounds
 - Party play for 2–8 players on the same Wi-Fi, hosted by one phone, plus pass-the-phone for 2–8 on a single device with house rules and a final reveal
+- Optional sync: sign in with Google and your progress, achievements, unlocks and settings follow you between your phone, computer and the web edition
 - Complete backup and restore of progress, achievements, cosmetics and settings

@@ -3,7 +3,7 @@
 ## Application
 
 - Package: `com.rykersoft.earbound`
-- Release: `0.9.0` (`versionCode 18`)
+- Release: `0.10.0` (`versionCode 19`)
 - Platform: Android 7.0 (API 24) or newer; target API 36
 - Requires a current Android System WebView
 - UI: React 19, TypeScript and Vite, packaged with Capacitor 8
@@ -11,9 +11,11 @@
 
 ## Data and Privacy
 
-- No account, sign-in or analytics
+- No analytics. An account is optional and only used for sync
 - Progress, achievements, cosmetics and settings are stored locally on the device
-- Backups are user-exported JSON files; nothing is uploaded
+- Optional sync: signing in with Google stores a copy of that data in Earbound's Firebase project (Google Cloud Firestore), readable only by the signed-in account. Volume and the on-device restore point are not uploaded
+- Settings → App & data → Delete cloud copy deletes the synced copy and the account
+- Backups are user-exported JSON files
 - Microphone access is used only for optional voice answers
 - Local network access is used only when hosting or joining a party
 
@@ -33,4 +35,5 @@
 ## Limitations
 
 - Note memory exercises are not an absolute-pitch assessment
-- No cloud sync between devices; use backup and restore to move progress
+- Sync needs a Google account; without one, use backup and restore to move progress
+- Changes from another device load at the next launch, or with Sync now

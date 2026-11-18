@@ -1,5 +1,13 @@
 # Earbound Updates
 
+## v0.10.0
+
+- Sync: sign in with Google under Settings → App & data, and your progress, stats, achievements, unlocks and settings follow you to every device signed in to the same account, including Windows, Linux and the web edition
+- Play on two devices without losing anything: sets from both are combined, and settings you change on one reach the other. Volume stays separate on each device
+- Everything still stays on your device and works offline; sync catches up when you are back online
+- Changes made on another device load the next time Earbound opens, or straight away with Sync now
+- Delete your cloud copy and account at any time from Settings; your progress on the device stays
+
 ## v0.9.0
 
 - The circle of fifths: a new touch wheel you answer by pressing, sweeping to a key and lifting. Each key sounds as you pass it, and lifting in the centre cancels

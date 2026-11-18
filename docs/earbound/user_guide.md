@@ -106,7 +106,13 @@ Settings holds sound, volume, room acoustics, answer feedback and reduced motion
 
 Under **App & data**, **Export backup** saves everything: history, stats, achievements and their dates, unlocks, cosmetics, practice setups, saved sketches, notebook bookmarks and preferences. **Import backup** restores it on this or another device after showing you what it contains. Earbound restarts after a full restore.
 
-Progress is stored only on your device. Export a backup before clearing app data, uninstalling, or changing phones.
+Progress is stored on your device. Export a backup before clearing app data or uninstalling.
+
+### Sync between devices
+
+Under **App & data → Sync**, tap **Sign in with Google**. Your progress, stats, achievements, unlocks and settings are then kept in your account and merged with every other device signed in to it: sets from all of them are combined, and a setting you change on one reaches the others. Volume stays separate on each device. Everything keeps working offline and syncs when you are back online.
+
+Earbound syncs when it opens, after each set and when you switch away. Changes from another device load the next time Earbound opens; **Sync now** loads them straight away and restarts Earbound. With sync on, **Clear progress** clears every synced device. **Sign out** stops syncing on this device and keeps its progress. **Delete cloud copy** deletes the synced copy and your account.
 
 ## Tips
 
