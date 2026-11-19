@@ -203,10 +203,12 @@ Swipe the carousel at the top of Home, or tap a card, to pick a game. Home opens
 - **Whittle**: find the hidden word in six guesses. A filled tile is the right letter in the right spot, a dashed tile is the right letter in the wrong spot, and a dark tile is a miss. The large number shows how many answers are still possible.
 - **Axle**: make words of four letters or more from the seven on the wheel. Every word uses the middle letter. Tap letters, type, or trace a word and release. Words score by length as in Bungle; a word using all seven letters scores 7 extra.
 - **Muddle**: sixteen words hide four groups of four. Pick four and Submit. Some words fit two groups, but only one sorting uses every word. Four wrong guesses end the board.
-- **Tangle**: letters sit on the sides of a ring. Spell words without taking two letters in a row from the same side; each word starts with the last letter of the one before. Cover every letter in as few words as you can.
-- **Noodle**: themed words wind through the grid and fill it. Drag through letters and release, or tap them and press Enter. Other real words you find fill the broth; three buy a hint.
+- **Tangle**: letters sit on the sides of a ring. Spell words without taking two letters in a row from the same side; each word starts with the last letter of the one before. Cover every letter in as few words as you can. Tap the newest letter again to take it back.
+- **Noodle**: themed words wind through the grid and fill it. Drag through letters and release, or tap them and press Enter. Tap a selected letter to unselect it and the letters after it. Other real words you find fill the broth; three buy a hint.
 
-Every puzzle board scores 0 to 100, so a day or a week adds up across boards. Tap **?** in a game for its rules, its points and the modifiers on that board.
+Every puzzle board scores 0 to 100, so a day or a week adds up across boards. When points are equal, the faster time ranks higher.
+
+Tap **?** in a game, or at the top of Home for the selected game, for **How to play**: the goal, a practice board, what every number and button on the screen means, how points work, and the modifiers. Opened during a game, it shows your board's live numbers and stops the clock until you close it.
 
 **Free play** is under **Modes**: choose players, options and modifiers, or load today's Classic or Mix setups. Whittle, Muddle, Tangle and Noodle can be played by two or three people on one device (Pass & Play). Free play scores are not posted.
 

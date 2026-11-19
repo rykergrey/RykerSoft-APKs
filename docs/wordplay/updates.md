@@ -1,5 +1,13 @@
 # Updates
 
+## v1.5.0 — Fresh daily boards and How to play
+
+- Daily boards no longer repeat themselves. A Muddle category rests at least ten days before it returns, Noodle themes at least two weeks, a Tangle ring's letters at least two months, and Whittle answers and Axle wheels weeks longer still.
+- Muddle has nearly twice as many categories, with more groups of words that mean the same thing and more wordplay. Every board is checked so only one sorting works, and every daily board has at least one word that seems to fit two groups.
+- Tap **?** in any game, or at the top of Home, for How to play: the goal, a practice board to try, what every number and button on the screen means, how points work, and the modifiers. The clock stops while it is open.
+- When two players score the same points on a daily board, the faster time ranks higher. Times show beside every score.
+- In Tangle, tap the newest letter again to take it back. In Noodle, tap a selected letter to unselect it and the letters after it.
+
 ## v1.4.1 — Puzzles you can feel
 
 - Tangle's ring draws your chain as it grows. Strands follow your words, knots mark where they cross, and the ring gets livelier the more intricate your chain is.

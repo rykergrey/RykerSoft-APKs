@@ -90,6 +90,71 @@ Daily boards follow the same rules in every game:
   midnight.
 - **Scores after you play.** Today's scores for a board appear once you finish it. Earlier days are open.
 
+## Daily variety
+
+Daily boards come back with new content every day, so nobody can memorise them. Two methods, by how
+much content each game has:
+
+- **Planned schedule (Muddle, Noodle, Tangle).** `npm run build:schedule` plans two years of days and
+  writes `services/puzzles/scheduleData.ts` (about 70 KB, category titles and opening words). Muddle uses
+  20 categories a day from a bank of about 270, so each day's boards are chosen, not drawn: a category
+  rests at least 10 days, the longest-rested come first, the four groups on a board share words to make
+  red herrings, and every planned board is built the way the game builds it, sorts exactly one way and
+  passes the fairness checks in `scripts/lib/muddleRules.ts` (no tile from another group may complete a
+  fill-in-the-blank phrase or fit a "hides a…" rule without being listed). Noodle themes rest 14 days and
+  never repeat a category Muddle shows that day or the day before. Tangle's opening words are chosen so
+  no ring's letters return within 60 days.
+- **Rotation decks (Whittle, Axle).** Answers and letter wheels come from thousands of words, so each is
+  dealt from a shuffled deck in `services/puzzles/rotation.ts`: nothing returns until the deck is dealt,
+  and the start of a new pass never repeats the end of the last. Positions come from the date alone.
+
+Both start on `SCHEDULE_FROM` (2026-11-23). Earlier days are rebuilt from the frozen bank in
+`categoriesLegacy.ts` exactly as first dealt, so a board already played never changes. **The start date
+must be later than the day this ships**, or that day's boards would change after some players have
+played them.
+
+| Measured over a year | Before | Now |
+| --- | --- | --- |
+| Shortest gap before a Muddle category returns | same day | 10 days (13 typical) |
+| Muddle red herrings per board | 1.6 | 2.4, never none |
+| Noodle theme | same day | 20 days |
+| Tangle set of letters | same day | 60 days |
+| Whittle answer | same day | 43 days |
+| Axle wheel | 6 days | 24 days |
+
+### The category bank
+
+`services/puzzles/categories.ts` holds the Muddle and Noodle categories, one per line, in four tiers
+(Muddle's heats). `npm run audit:muddle` checks every category and fails on a broken rule:
+
+1. Eight words or more, so a returning category usually shows different tiles.
+2. Familiar words: each within the first 30,000 of the common-word list.
+3. Ten letters at most per tile.
+4. At least one word shared with a category in another tier, so it can make red herrings.
+5. It lists fill-in-the-blank words that make a familiar compound but are not listed (the schedule keeps
+   those off the same board).
+6. It compares the mix of category types per tier with NYT Connections, measured from 1,900 published
+   groups: easy tiers lean on plain sets and synonym groups, the hardest tier on fill-in-the-blank and
+   wordplay. The bank uses story sets and "things with…" groups where Connections uses pop culture.
+
+After changing the bank: `npm run audit:muddle`, then `npm run build:schedule` (it keeps every day up to
+today and replans the rest), then `npm run verify:puzzles`.
+
+## Ties
+
+Every result stores its play time. On every board, day and week standing, more points rank higher and
+equal points go to the faster time; only equal points and equal time tie. Times show beside each score.
+The clock stops while How to play is open.
+
+## How to play
+
+The **?** in a puzzle's title bar, and the **?** at the top of Home for whichever game is selected, open
+the same guide for all seven games (`components/guides/`). It has five sections: Goal (an example board
+and the rules), Try it (a practice board running the real rules, not scored), The screen (every readout,
+board part and button; opened from a board it shows that board's live values), Points (with a worked
+example) and Modifiers (the board's own first). Readout meanings live beside the readouts themselves, as
+the `hint` of each `ReadoutItem`. Preview any section with `scripts/guide-preview.html?game=tangle&step=screen`.
+
 ## Scores and notices
 
 `beginPuzzleDaily` opens a board (`games/puzzles/attempts`, server-only) and `submitPuzzleDaily` posts
@@ -110,7 +175,9 @@ shared-device game.
 ## Checks
 
 ```sh
-npm run verify:puzzles      # engines, 60 days of lineups, every board solvable with its modifiers
+npm run verify:puzzles      # engines, 60 days of lineups, a year of the schedule and rotation, ties
+npm run audit:muddle        # the category bank's quality rules
+npm run build:schedule      # replan Muddle, Noodle and Tangle from tomorrow on (keeps earlier days)
 npm run verify:home         # carousel, per-game tabs, puzzle daily list and leaderboards
 npm run test:puzzles        # Firestore emulator (puzzle functions and rules); needs Java 21 on PATH
 ```
