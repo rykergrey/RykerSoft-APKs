@@ -1,5 +1,13 @@
 # Updates
 
+## v1.4.0 — Five puzzle games and a game carousel
+
+- Play five new word puzzles: **Whittle** (find a hidden word, with a live count of answers still possible), **Axle** (seven letters around one required letter), **Muddle** (sort sixteen words into four hidden groups), **Tangle** (chain words around a ring) and **Noodle** (trace themed words that fill a grid).
+- Swipe the carousel at the top of Home to pick a game. Home opens on Bungle; Matches, Modes, Leaderboards and Awards follow the selected game.
+- Each puzzle game has five daily boards: two Classic and three Mix boards with modifiers. Free play offers options, modifiers and Pass & Play.
+- Daily boards in every game are played on their own day only, need sign-in, and post your score automatically. Earlier days stay viewable as results.
+- When someone plays a daily board you already played, you hear whether they beat you, tied you, or you are still in the lead, with your rank on the board.
+
 ## v1.3.58 — Rich daily challenges and result alerts
 
 - Five daily Scramble formats: One Perfect Word, Word Rush, Stack Attack, Tile Tactics, and Free Rein.

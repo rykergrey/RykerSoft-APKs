@@ -20,9 +20,9 @@ backward. Word lists retain their existing submission-based access rules.
 
 ## Returning-player result notifications
 
-New Bungle daily submissions and Scramble daily results now notify every earlier participant on the same board. Community submissions use the same score comparison. Ordinary online Scramble and live Bungle finishes include structured wins, losses, and ties; Scramble forfeits respect the winner even when the forfeiting player has more points.
+New Bungle daily submissions, Scramble daily results and puzzle daily results notify every earlier participant on the same board. Each notice says how the new score leaves that player: beaten, tied, still ahead of the newcomer, or still leading the board, with their rank among everyone who had played by then ("You are 2nd of 3") and the board's name. Community submissions use the same score comparison. Ordinary online Scramble and live Bungle finishes include structured wins, losses, and ties; Scramble forfeits respect the winner even when the forfeiting player has more points.
 
-The inbox is durable and does not require push permission. On Home, unread result notices open a prominent reveal with the challenger, both scores, margin, and win/loss/tie styling. Daily copy makes clear that the weekly board remains open: the result compares this opponent against the player's submitted score. **View match** opens the existing result/standings route. Players can step through multiple results or dismiss the whole batch. The reveal waits for other dialogs to close.
+The inbox is durable and does not require push permission. On Home, unread result notices open a prominent reveal with the challenger, both scores, margin, and win/loss/tie styling. Daily copy names the board and the player's standing. Daily boards can be played only on their own day; their standings stay viewable for the week. **View match** opens the existing result/standings route. Players can step through multiple results or dismiss the whole batch. The reveal waits for other dialogs to close.
 
 Home refreshes every 30 seconds while visible and on focus/return. The notification panel also syncs on Home refresh, focus, visibility changes, and its own 60-second interval. Firestore delivers new inbox entries live. Dismissal writes owner-only acknowledgments, shared across devices; pending offline acknowledgments do not block Home. Failed acknowledgments restore the reveal with a retry message. Permanent server receipts prevent trigger retries from recreating dismissed score alerts. The former community-only automatic activity popup no longer competes with the inbox reveal.
 
@@ -32,10 +32,11 @@ Additional checks: `npm run verify:result-notifications` and `npm run test:resul
 
 ## Submission
 
-Daily Boards and community challenges no longer submit automatically. All timed
-competitive results are sealed privately at game over, preserving immutable
-validated evidence before the short verification deadline. The player then chooses
-to submit; sealed evidence may be submitted for up to 24 hours, capped at the
+Daily boards in every game are submitted automatically when they finish. Bungle seals
+the result privately at game over and submits it straight away, retrying when the
+connection returns; Scramble records its result on the server when the board ends;
+puzzle games post through `submitPuzzleDaily`. A sealed Bungle result that could not
+be sent at once sealed evidence may be submitted for up to 24 hours, capped at the
 weekly boundary and the board's expiry. Only submission creates a leaderboard row,
 career totals, a played-match receipt, and a public played-mode entry. Zero-point
 submissions are valid. Attempt reservations still prevent replay if a player leaves

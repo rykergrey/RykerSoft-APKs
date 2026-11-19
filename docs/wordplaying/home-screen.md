@@ -1,10 +1,13 @@
 # Home navigation
 
-The home screen opens with all games together and centers on choosing the next match:
+Home is scoped to one game at a time. A carousel at the top lists every game in a fixed order that
+starts with Bungle: Bungle, Scramble, Whittle, Axle, Muddle, Tangle, Noodle. Swipe it, tap a card, or
+use the arrow keys; the card in the middle is the selected game, and the four tabs below belong to it.
+The app opens on Bungle and keeps the chosen game while it stays open. Puzzle games are covered in
+[Puzzle games](puzzles.md). For Bungle and Scramble:
 
-- **Matches** combines available Bungle challenges and Daily Boards with ongoing
-  Bungle and Scramble multiplayer matches. Cards show a B or S badge, game name,
-  status, match options, and modifiers. The list sorts by latest activity; All,
+- **Matches** lists that game's available challenges and Daily Boards with its ongoing multiplayer
+  matches. Cards show status, match options, and modifiers. The list sorts by latest activity; All,
   Ready, and Ongoing shortcuts and Type and Status filters help narrow it.
   Daily retains all five current boards even before anyone plays them. Scores
   stay hidden until the viewer submits a result for that exact board.

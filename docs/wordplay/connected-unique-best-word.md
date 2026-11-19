@@ -25,8 +25,9 @@ starts a fresh chain; Turf War players continue the shared chain across turns.
 Pointer, touch, and keyboard input use the same rule.
 
 Connected Words is unavailable with Tap Out, Gravity, Reroll, Full Reroll,
-Word Grid, or Bounty Hunt: these consume/change the previous tiles, rearrange
-words, or require a fixed target list that may become unreachable. It is also
+Word Grid, Bounty Hunt, or Letter Lock: these consume/change the previous
+tiles, remove the previous scored path, rearrange words, or require a fixed
+target list that may become unreachable. It is also
 unavailable in One Word Showdown, where each player submits only one word.
 Hide & Seek, letter scoring, rotations, clocks, and strictness remain composable.
 

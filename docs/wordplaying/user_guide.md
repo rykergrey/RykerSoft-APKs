@@ -21,6 +21,9 @@ Choose Bungle to swipe words on a letter grid, or Scramble to place tiles and fo
 - [Scramble modifiers](#scramble-free-placement-clash-strict-and-bungle-finale)
 - [Public weekly waiting lobbies](#public-weekly-waiting-lobbies)
 - [Daily Scramble formats and result notifications](#daily-scramble-formats-and-result-notifications)
+- [15. Choosing a game](#15-choosing-a-game)
+- [16. Puzzle games](#16-puzzle-games)
+- [17. Daily boards in every game](#17-daily-boards-in-every-game)
 
 ## 1. How to play
 
@@ -108,7 +111,7 @@ The current player's color fills the space around the board, colors the turn ban
 
 - Open **Matches** and choose a Daily board. Today’s Bungle and Scramble boards are available to every player before anyone plays them.
 - The board resets at midnight Pacific Time (PST/PDT) every day with a fresh grid and a unique set of compatible modifiers.
-- Earlier daily boards started by anyone stay available to all players through Sunday. Their dated cards open the original board and letters with your own attempt. Future days and previous seasons stay closed; the season ends Monday at midnight Pacific.
+- Daily boards can be played only on their own day. Earlier days you played stay on Home as results; days you missed cannot be played later. Sign in to play daily boards; finished boards post your score automatically.
 - **Daily Scramble**: Press **Start 2-minute challenge** to reveal the pre-filled board and seven letters. Arrange tiles, preview scores, and lock in one valid play before time expires. Leaving or reloading keeps the same deadline. If no move is submitted in time, the result is 0 points. Registered accounts can resume across devices; guest attempts belong to their player session. Copy result shares the score without revealing the word.
 - Other players’ names, ranks, and scores stay hidden until you submit that day’s board, so standings cannot spoil an unplayed Daily.
 - When signed in with an account, competitive Daily leaderboard results and missions are recorded.
@@ -189,4 +192,29 @@ Open Home → Matches to discover Bungle and Scramble lobbies. Inspect their set
 
 Choose one of five daily Scramble boards from Matches. Start to reveal the identical board and letters and begin your timer. One Perfect Word and Stack Attack allow one connected submission; Word Rush allows repeated plays with refills; Tile Tactics gives fourteen tiles over multiple plays; Free Rein allows up to fourteen tiles in separate scoring words or changes in one submission. Accepted points remain saved when time expires.
 
-After finishing, see rivals’ scores and standings, review the board, or copy your result. Played daily boards stay open for other players through Sunday. Home labels current leaders and ties. When an opponent plays a board you submitted, a result reveal compares both scores. Use Got it, Next result, or Dismiss all to acknowledge alerts across devices. Home checks automatically on return and while open; push alerts remain optional. Unread results remain visible after the weekly board closes.
+After finishing, see rivals’ scores and standings, review the board, or copy your result. Daily boards close at midnight Pacific; standings stay viewable for the week. Home labels current leaders and ties. When an opponent plays a board you submitted, a result reveal compares both scores. Use Got it, Next result, or Dismiss all to acknowledge alerts across devices. Home checks automatically on return and while open; push alerts remain optional. Unread results remain visible after the weekly board closes.
+
+## 15. Choosing a game
+
+Swipe the carousel at the top of Home, or tap a card, to pick a game. Home opens on Bungle each time the app starts. The card in the middle is the selected game, and Matches, Modes, Leaderboards and Awards below show only that game. **Create match** opens the selected game's setup.
+
+## 16. Puzzle games
+
+- **Whittle**: find the hidden word in six guesses. A filled tile is the right letter in the right spot, a dashed tile is the right letter in the wrong spot, and a dark tile is a miss. The large number shows how many answers are still possible.
+- **Axle**: make words of four letters or more from the seven on the wheel. Every word uses the middle letter. Tap letters, type, or trace a word and release. Words score by length as in Bungle; a word using all seven letters scores 7 extra.
+- **Muddle**: sixteen words hide four groups of four. Pick four and Submit. Some words fit two groups, but only one sorting uses every word. Four wrong guesses end the board.
+- **Tangle**: letters sit on the sides of a ring. Spell words without taking two letters in a row from the same side; each word starts with the last letter of the one before. Cover every letter in as few words as you can.
+- **Noodle**: themed words wind through the grid and fill it. Drag through letters and release, or tap them and press Enter. Other real words you find fill the broth; three buy a hint.
+
+Every puzzle board scores 0 to 100, so a day or a week adds up across boards. Tap **?** in a game for its rules, its points and the modifiers on that board.
+
+**Free play** is under **Modes**: choose players, options and modifiers, or load today's Classic or Mix setups. Whittle, Muddle, Tangle and Noodle can be played by two or three people on one device (Pass & Play). Free play scores are not posted.
+
+## 17. Daily boards in every game
+
+- Each game has five daily boards, the same for everyone. Puzzle games have two **Classic** boards on standard rules and three **Mix** boards with modifiers.
+- Daily boards can be played only on their own day (midnight to midnight, Pacific). Sign in to play them.
+- A board is played once. Your score posts to the leaderboard automatically when you finish. Leaving a puzzle board early asks first and scores it as it stands.
+- Other players' scores for a board appear after you finish it. **Leaderboards** shows each board, today's total and the week.
+- When someone else finishes a board you played, you get a notice saying whether they beat you, tied you, or you are still in the lead, and where you now rank.
+
