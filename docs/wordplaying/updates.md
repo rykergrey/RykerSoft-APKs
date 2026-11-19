@@ -1,5 +1,12 @@
 # Updates
 
+## v1.4.1 — Puzzles you can feel
+
+- Tangle's ring draws your chain as it grows. Strands follow your words, knots mark where they cross, and the ring gets livelier the more intricate your chain is.
+- Tiles, keys and buttons in Whittle, Axle, Muddle, Tangle and Noodle sink when you touch them and spring back. Numbers roll to their new value, and your finished points count up.
+- Each puzzle has its own moment: Whittle's marks flip in and the solved row hops, Axle traces your word and spins on a full wheel, Muddle merges a correct group into its bar, and Noodle draws each strand and ripples when the board is cleared.
+- Your Appearance motion style (Gentle, Halo or Glint) now applies in all seven games, and Scramble's rack tiles press like the rest.
+
 ## v1.4.0 — Five puzzle games and a game carousel
 
 - Play five new word puzzles: **Whittle** (find a hidden word, with a live count of answers still possible), **Axle** (seven letters around one required letter), **Muddle** (sort sixteen words into four hidden groups), **Tangle** (chain words around a ring) and **Noodle** (trace themed words that fill a grid).

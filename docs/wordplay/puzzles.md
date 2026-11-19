@@ -1,7 +1,7 @@
 # Puzzle games
 
-Five word puzzles sit beside Bungle and Scramble: **Whittle**, **Axle**, **Muddle**, **Tangle** and **Noodle**.
-They are original games. Every puzzle is built on the device from the TWL06 dictionary, a list of common
+WordPlay has seven game types, all equal: Bungle, Scramble, **Whittle**, **Axle**, **Muddle**, **Tangle** and
+**Noodle**. This page covers the last five, which share a puzzle engine and screen kit. They are original games. Every puzzle is built on the device from the TWL06 dictionary, a list of common
 words, and a category bank written for this app.
 
 | Game | What you do | Board points (0 to 100) |
@@ -14,6 +14,44 @@ words, and a category bank written for this app.
 
 Names, rules text, options, modifiers and the daily mix pools live in `services/puzzles/rules.ts`.
 Each game's engine is a pure module in `services/puzzles/`; screens are in `components/puzzles/`.
+
+Tangle's ring doubles as a visualizer (`components/puzzles/TangleArt.tsx`, measured by
+`services/puzzles/tangleIntricacy.ts`). Every mark comes from the
+played chain: strands follow the letters, knots sit where strands really cross, and the effects grow with
+intricacy (hops plus twice the square root of crossings) across tiers at 20, 36, 56 and 84. Tier 2 adds
+glow and comets running along the strands, tier 3 a rotating echo of the chain and pulsing knots, tier 4
+mirrored echoes and knot halos, tier 5 a faster spin. A covered ring blooms and shows at least tier 3. Undo lowers the tier again.
+Colors are appearance roles, by word order (by player in versus), and each word in the chain list above
+the ring takes its strand's color. While dragging, the word's line stretches from its last letter to the finger.
+Reduced motion stops all movement.
+
+## Feel
+
+All seven games give the same kinds of feedback, each in its own way:
+
+- **Touch.** Tiles, keys and buttons sink on touch-down and spring back on release (Bungle's tiles press
+  into their bevel).
+- **Motion style.** The Appearance motion style (Gentle, Halo or Glint) sets how a letter reacts when it
+  is picked: Bungle's selected tiles, Scramble's placed tiles, and the lit letters in the other five.
+- **Scores.** Points count up instead of jumping: Bungle's and Scramble's final score (`ScoreReveal`), Scramble's per-turn count-in, and
+  the other five's readouts and finished points (which glow at 100).
+- **Reduced motion.** When it is on, numbers show their value at once and nothing moves.
+
+Each game has its own signature moments:
+
+| Game | On a play | At the end |
+| --- | --- | --- |
+| Bungle | Letters pop as they join the path; a word's score pops in | Tiles pop off the board, then the score is tallied |
+| Scramble | A placed tile drops into its square; bonus squares and multipliers call out before the score counts in | The final score counts up, as in Bungle |
+| Whittle | Marks flip in letter by letter; the answer count rolls down | The solved row hops |
+| Axle | A line traces the word across the wheel and its keys light; a find sends a ring outward (wider for a full wheel) | The wheel takes one full lap |
+| Muddle | A correct four take their group's heat and rise into the new bar | The bars cheer in turn; missed groups arrive one by one |
+| Tangle | The visualizer above | A covered ring blooms |
+| Noodle | The strand draws itself along the word and its letters settle in trace order | A wave runs corner to corner and every strand glows |
+
+For the five puzzles this is CSS on the appearance roles (`components/puzzles/puzzles.css`) except the
+rolling numbers (`Rolling` in `PuzzleKit.tsx`) and Noodle's strand draw. Bungle and Scramble keep theirs
+in `styles.css`, `components/Tile.tsx` and `components/builder/`.
 
 ## Home
 
