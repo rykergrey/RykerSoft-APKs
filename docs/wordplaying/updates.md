@@ -1,5 +1,11 @@
 # Updates
 
+## v1.5.3 — Every board's scores in one list
+
+- Board scores lists every daily board of the chosen day one after another, so you scroll to read them all instead of picking boards one at a time. Works in Bungle and all five puzzle games.
+- Each board's name stays at the top while you scroll its scores. A board you have not played yet keeps its scores hidden and shows Play.
+- Opening a result notice's leaderboard jumps straight to that board.
+
 ## v1.5.2 — Results notices back on screen
 
 - Fixed: a score notice on Home (who beat you, tied you, or where you rank) could open above the top of the screen, out of sight. It now opens in the middle of the screen with Home dimmed behind it.
