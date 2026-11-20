@@ -1,5 +1,12 @@
 # Storytime Updates
 
+## v1.8.1 — Android
+
+- Bookmark a spot in a Bedtime story and resume at the same point in the recording
+- Find bookmarks, favorite paragraphs, and favorite Bedtime stories together in **Saved items**
+- Open a favorite paragraph to listen from there, edit it, copy it, or duplicate it
+- Pauses start when the last word ends, and room sound can continue through the pause on Android
+
 ## v1.8.0 — Android, Windows and Linux
 
 - **Room sound** for any voice or paragraph: a cave, a small room, a tunnel or open air, where the speaker stands, and devices such as a telephone or radio. You hear it as the story plays, and it is kept in audiobook exports

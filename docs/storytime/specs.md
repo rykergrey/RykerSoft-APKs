@@ -8,7 +8,7 @@
 - Android: Capacitor 8 with native Java bridges
 - Windows: Electron 40, NSIS installer, and portable x86-64 executable
 - Linux: Electron 40 AppImage, x86-64
-- Narration: Voicehouse only; recordings made with earlier engines still play
+- Narration: Story Engine only; recordings made with earlier engines still play
 - Data: localStorage plus IndexedDB; stories and generated media remain local unless the user explicitly syncs
 
 ## Story Studio

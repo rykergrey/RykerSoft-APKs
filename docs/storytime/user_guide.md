@@ -10,6 +10,7 @@
 - [Local Games](#local-games)
 - [Online Rooms](#online-rooms)
 - [Stories and Imports](#stories-and-imports)
+- [Bedtime Bookmarks and Favorites](#bedtime-bookmarks-and-favorites)
 - [Narration](#narration)
 - [Google Drive Sync](#google-drive-sync)
 - [RykerSoft Pro Access](#rykersoft-pro-access)
@@ -34,7 +35,7 @@ Standard features remain available when you are signed out of RykerSoft, your Pr
 - * Generated artwork — create portraits and story imagery.
 - * Story Party hosting — generate the shared adventure while guests vote.
 - * Story Table hosting — the table phone writes and reads each part from everyone's ideas.
-- * Voicehouse voices — narration, voice actors and the voice designer through the included Voicehouse.
+- * Story Engine voices — narration, voice actors and the voice designer through the included Story Engine.
 
 `*` items require administrator-granted RykerSoft Pro access followed by sign-in to the same RykerSoft Google account inside the app. Entitled family and friends receive configured provider access automatically and never need to copy or manage RykerSoft API keys.
 
@@ -56,7 +57,7 @@ Applied changes autosave on the device. Unreviewed character drafts recover with
 
 ## World Library
 
-Library stores reusable voice actors, locations, and items. Voice actors come from your selected Voicehouse roster; local roles, locations and items remain editable. Buttons marked with `*` use a provider and require available Pro or personal-provider access.
+Library stores reusable voice actors, locations, and items. Voice actors come from your selected Story Engine roster; local roles, locations and items remain editable. Buttons marked with `*` use a provider and require available Pro or personal-provider access.
 
 ### Voice actors and repertoires
 
@@ -64,9 +65,9 @@ The **Voice actors** tab is a company of performers. An actor is a voice: its pr
 
 Each actor has a **repertoire**: the fictional characters it has played or can play, with each character's identity, appearance, age, and the stories it appeared in. Every mode adds roles automatically. When a Bedtime story casts an actor as Santa Claus, Santa joins that actor's repertoire. A later story that reaches the North Pole is offered the repertoire and brings back the same actor as the same Santa. Star a role to make it a signature role; signature roles are offered first and never trimmed.
 
-- **Add voice actor** opens the Voicehouse directory. Preview, select or remove actors individually, and refresh to find new voices. Cached actors can be selected offline; refresh and previews need a connection.
-- **Create voice actor** uses the Voicehouse voice designer: describe the actor and voice, edit the audition lines and language, generate three options, choose a voice, listen to its cloned audition, then publish with **Add to my roster**. Startup can take a minute or more; Cancel stops waiting. Generate again reuses the actor. If permission is disabled, enable “May create voice actors with the voice designer” for Storytime under Applications in Voicehouse.
-- **Remove from roster** hides an actor while retaining repertoire, tuning and saved casts. Add it back any time. Permanent deletion is in the Voicehouse studio's actor page. Older actors from other engines remain stored for existing stories and playback.
+- **Add voice actor** opens the Story Engine directory. Preview, select or remove actors individually, and refresh to find new voices. Cached actors can be selected offline; refresh and previews need a connection.
+- **Create voice actor** uses the Story Engine voice designer: describe the actor and voice, edit the audition lines and language, generate three options, choose a voice, listen to its cloned audition, then publish with **Add to my roster**. Startup can take a minute or more; Cancel stops waiting. Generate again reuses the actor. If permission is disabled, enable “May create voice actors with the voice designer” for Storytime under Applications in Story Engine.
+- **Remove from roster** hides an actor while retaining repertoire, tuning and saved casts. Add it back any time. Permanent deletion is in the Story Engine studio's actor page. Older actors from other engines remain stored for existing stories and playback.
 
 - **Casting assistant** `*` takes plain-language instructions, such as "George sounds about 65 and can play wizards", "Rachel can also play the Tooth Fairy", "give Santa to Bill", or "give every actor without one an age and delivery notes". It shows each proposed edit; nothing changes until you apply.
 - **Casting profile** sets the sounding age, an optional playable age range (derived from the sounding age when left blank), gender, delivery notes, availability for automatic casting, and the default bedtime narrator.
@@ -115,11 +116,17 @@ On the table phone, **Pause** stops reading (ideas stay open), **End after next 
 
 Saved stories remain on the device and can be opened for reading without a provider. Continuing or regenerating adventure content requires provider access. Export a story before clearing application data or moving to a device that is not connected to your Drive backup.
 
+## Bedtime Bookmarks and Favorites
+
+Tap **Bookmark** in the cinema or the bookmark button in the reader to save your current spot. The paragraph menu also lets you bookmark the start of a paragraph or add it to favorites. To favorite the whole story, use the story menu.
+
+Open **Saved items** from Home to find your bookmarks and favorites. Select a bookmark, then press **Play** to resume from its saved point. Open a favorite paragraph to read it, listen from there, edit it, copy it, or duplicate it. Use the remove button next to a saved item to take it off the list.
+
 ## Narration
 
-All narration goes through Voicehouse. A personal Voicehouse connection needs no cloud API key; the included Voicehouse connection is a Pro feature.
+All narration goes through Story Engine. A personal Story Engine connection needs no cloud API key; the included Story Engine connection is a Pro feature.
 
-Voicehouse is a speech service and voice-actor library. Pro users receive the included connection automatically after signing in; no connection code is needed. A personal Voicehouse can still be connected under Settings → Narration and takes priority. Both supply the directory for your selected voice-actor roster. See `docs/voicehouse.md`.
+Story Engine is a speech service and voice-actor library. Pro users receive the included connection automatically after signing in; no connection code is needed. A personal Story Engine can still be connected under Settings → Narration and takes priority. Both supply the directory for your selected voice-actor roster. See `docs/voicehouse.md`.
 
 Generated audio can consume substantial storage. Settings lets you choose whether all retained audio is included in Drive synchronization.
 
@@ -172,8 +179,8 @@ Every Bedtime story has a ghostwriter: the author whose style the whole story is
 
 ### Creating character voices
 
-Voicehouse is the one narration engine; there is nothing to choose. **Settings → Narration** holds its connection, a live line saying whether its speech engine is running, and the default voice. Stories narrated with an older engine keep their recordings.
+Story Engine is the one narration engine; there is nothing to choose. **Settings → Narration** holds its connection, a live line saying whether its speech engine is running, and the default voice. Stories narrated with an older engine keep their recordings.
 
-In Bedtime stories and Story Table the storyteller always makes a permanent roster actor when no unused actor fits a new character. **New voices for everyone** (when creating a story; **Design a voice for every new character** in Story settings) makes a voice for each new character instead of casting from the roster. Enable the voice-designer permission for Storytime under Applications in Voicehouse.
+In Bedtime stories and Story Table the storyteller always makes a permanent roster actor when no unused actor fits a new character. **New voices for everyone** (when creating a story; **Design a voice for every new character** in Story settings) makes a voice for each new character instead of casting from the roster. Enable the voice-designer permission for Storytime under Applications in Story Engine.
 
-To change a character’s voice, open **Story settings → Cast → the character → Voice** and press the voice actor. The voice page lists every voice with its portrait, details and a recorded preview: choose one, choose **Create one automatically** (Voicehouse designs a voice from the character and casts it), or choose **Create a custom voice** to describe it, hear three options, keep one, hear its audition and use it. Setup’s review page also offers **Create a voice**.
+To change a character’s voice, open **Story settings → Cast → the character → Voice** and press the voice actor. The voice page lists every voice with its portrait, details and a recorded preview: choose one, choose **Create one automatically** (Story Engine designs a voice from the character and casts it), or choose **Create a custom voice** to describe it, hear three options, keep one, hear its audition and use it. Setup’s review page also offers **Create a voice**.

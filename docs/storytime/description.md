@@ -1,6 +1,6 @@
 # Storytime
 
-Storytime is a local-first writing studio and social storytelling game for Android, Windows and Linux. Build reusable characters, locations, and items; import and revisit saved stories; listen to stories narrated through Voicehouse; and play collaborative writing games without a writing-provider connection.
+Storytime is a local-first writing studio and social storytelling game for Android, Windows and Linux. Build reusable characters, locations, and items; import and revisit saved stories; listen to stories narrated through Story Engine; and play collaborative writing games without a writing-provider connection.
 
 ## Standard Features
 
@@ -16,7 +16,7 @@ Storytime is a local-first writing studio and social storytelling game for Andro
 - Anonymous Author and Pass the Pen in pass-and-play or online rooms
 - Joining an online Story Party as a voting director or listen-only passenger
 - Road-trip narration with one listener phone acting as the shared car speaker
-- Narration through a personal Voicehouse, with a voice picker, a voice designer and radio-drama acoustics (spaces, placement and devices)
+- Narration through a personal Story Engine, with a voice picker, a voice designer and radio-drama acoustics (spaces, placement and devices)
 - One reader and a full-screen cinema for every saved story
 - Private Google Drive backup and restore
 - User-chosen public room names that remain separate from private Google identity
@@ -34,7 +34,7 @@ The standard experience does not require a Gemini, GPT, Kimi, or ElevenLabs API 
 - * Creative revision — rewrite passages and enhance characters or player submissions.
 - * Generated artwork — create portraits, expressions, scenes, and comic-style images.
 - * Story Party hosting — host an shared adventure while directors vote privately and listeners follow along.
-- * Included Voicehouse — published voices and performances connect automatically after Pro sign-in, without entering a connection code. A personal Voicehouse remains available as a standard feature.
+- * Included Story Engine — published voices and performances connect automatically after Pro sign-in, without entering a connection code. A personal Story Engine remains available as a standard feature.
 
 `*` items require administrator-granted RykerSoft Pro access followed by Google sign-in to the same RykerSoft account inside Storytime. For trusted family and friends, Storytime retrieves only its package-scoped provider record at runtime and keeps those credentials in memory; users do not need to create or manage API keys.
 
