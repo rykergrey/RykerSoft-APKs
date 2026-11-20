@@ -28,7 +28,7 @@ Choose Bungle to swipe words on a letter grid, or Scramble to place tiles and fo
 ## 1. How to play
 
 - Select **Bungle** for the letter-grid game described below, or **Scramble** for tile placement (section 13).
-- Home opens with **All games** selected. The Matches, Modes, Leaderboards, and Awards tabs show Bungle and Scramble together. Use the **Show** menu to focus on one game. Match cards carry a small B or S badge and game name, and Matches is ordered by most recent activity. Select **Create match** to open the full-screen options page; **Back** returns to Home.
+- Home shows one game at a time, chosen in the carousel at the top. The Matches, Modes, Leaderboards, and Awards tabs all belong to that game. **Matches** is where you play: today's daily boards first, then matches in play, matches open to play and finished ones. **Modes** is where you set up a custom match and press **Start match**.
 - Drag across adjacent letters (including diagonals) to build a word, then release to submit.
 - Words must be at least 3 letters and in the dictionary. The same word only scores once per round.
 - A **Q** tile counts as **QU**. Longer words score more; some modifiers add boosts or combo multipliers.
@@ -38,13 +38,13 @@ Choose Bungle to swipe words on a letter grid, or Scramble to place tiles and fo
 
 ## 2. Match setup & modifiers
 
-- Select **Create match** to open **Match Options**. Choose **Solo** for one player or **Multiplayer**, then select **Pass & Play**, **Online**, **Vs Raid**, or Bungle’s **Tabletop**. Bungle’s **Showdown** switch adds one-word rounds to Pass & Play or Tabletop.
+- Open the **Modes** tab to set up a custom match. Choose **Solo** for one player or **Multiplayer**, then select **Pass & Play**, **Online**, **Vs Raid**, or Bungle’s **Tabletop**. Bungle’s **Showdown** switch adds one-word rounds to Pass & Play or Tabletop.
 - Tap a setting to open its options, then tap a value to select it. The list opens above or below the button to fit the screen. Swipe over settings to scroll normally. Keyboard users can open a list with Enter, Space, or an arrow key.
 - Signed-in Bungle Solo matches remain eligible for leaderboards; selecting Solo does not add an opponent.
 - Enable modifiers (Letter Lock, Gravity, Blind Mode, Combo Meter, Reroll, First Claim, Color Bonus, and others) or pick a preset such as Classic or Zenith of Chaos. In Letter Lock, reusing a tile in a valid word breaks every older scored word that overlaps it; invalid attempts leave those words intact.
 - **Color Bonus** adds three each of red, yellow, and blue tiles on 4×4 boards, or four each on 5×5 boards. A word using three tiles of one color earns +25% (at least 1 point), while four earns +50% (at least 2); different qualifying colors stack additively.
 - **Word Grid** lets you swap any two tiles and swipe adjacent letters to lock words. Swaps recalculate which words remain valid. Tap the option chip for the complete rules.
-- In either game, expand **Selected rules** above **Start match**, then choose **Save mode** to save your settings privately to your account or device. Bungle account modes can also be organized in named lists. The home screen's **Modes** tab includes the community directory, weekly top-ten charts, Upvoted, Saved, and your lists. The same library is available through **Load a mode**. **Saved → On this device** holds device saves; **Save to account** copies one into your private library with its name and your chosen lists.
+- In either game, expand **Selected rules** above **Start match**, then choose **Save mode** to save your settings privately to your account or device. Bungle account modes can also be organized in named lists. **More modes**, in the Presets row of the **Modes** tab, opens the library: built-in modes, the community directory, weekly top-ten charts, Upvoted, Saved, and your lists. **Saved → On this device** holds device saves; **Save to account** copies one into your private library with its name and your chosen lists.
 - Modifier cards stay in place as you select them. Replacing incompatible options shows what changed and offers **Undo**. **Most used** counts starts on this device. Expand the summary above Start Match to inspect every selected option.
 - Load or share saved modes, import them from an image, or randomize a loadout.
 - Open **About** for rules and modifier descriptions; **Changelog** for release notes.
@@ -64,19 +64,19 @@ Choose Bungle to swipe words on a letter grid, or Scramble to place tiles and fo
 
 ## 4. Local pass & play
 
-- In Bungle **Match Options**, choose **Multiplayer → Pass & Play**. Enable **Showdown** for one secret word per round.
+- In Bungle's **Modes** tab, choose **Multiplayer → Pass & Play**. Enable **Showdown** for one secret word per round.
 - Each player takes a turn on the same board seed; use the swap screen and initials tumbler between turns.
 - Finish the match when everyone has played.
 
 ### Tabletop multiplayer
 
-Choose **Create match → Multiplayer → Tabletop** in Bungle for 2–8 people around one phone. Boggled is enabled by default and can be turned off; a player-colored border repeats whose turn it is on all four sides. A valid word advances immediately. The selected time is divided equally between players, and only the active player's clock runs. Highest score wins after every clock expires. **Fuse** adds one second per word point to the finder's clock. **Hide Scores** and **Hide Words List** are optional and reveal the hidden information in results. See [Tabletop rules and modifier combinations](tabletop.md).
+Choose **Modes → Multiplayer → Tabletop** in Bungle for 2–8 people around one phone. Boggled is enabled by default and can be turned off; a player-colored border repeats whose turn it is on all four sides. A valid word advances immediately. The selected time is divided equally between players, and only the active player's clock runs. Highest score wins after every clock expires. **Fuse** adds one second per word point to the finder's clock. **Hide Scores** and **Hide Words List** are optional and reveal the hidden information in results. See [Tabletop rules and modifier combinations](tabletop.md).
 
 The current player's color fills the space around the board, colors the turn banner and word tray, and appears on all four board edges with the player identity and remaining time. Saved local-player initials are used when available; otherwise the interface falls back to P1, P2, and so on. This makes the active turn visible from every seat without moving the phone.
 
 ## 5. Live multiplayer
 
-- Choose **Multiplayer → Online** in **Match Options**, or join with a code from Matches.
+- Choose **Multiplayer → Online** in **Modes**, or join with a code from Matches.
 - Host creates a short room code; guests enter the code and ready up in the lobby.
 - After countdown, everyone plays the same board; results are reconciled (important for First Claim).
 - Only live-safe modifiers are available in this mode.
@@ -157,7 +157,7 @@ The current player's color fills the space around the board, colors the turn ban
 - Choose **Scramble**, then **Solo** or **Multiplayer**. Multiplayer offers **Pass & Play**, **Online**, and **Vs Raid**. Online play requires sign-in; share the room code or invite players in game. Raid’s built-in opponent works offline.
 - Choose a small **11×11**, standard **15×15**, or large **19×19** board. **Turns per player** is **5**, **10**, or **Unlimited**. The separate **Turn timer** is **30 sec**, **1 min**, **2 min**, or **Unlimited**. A timed-out turn passes automatically. Normal end rules can finish a match before its turn cap.
 - Pass & Play needs no player-count setting. After a turn, review the words and points, enter initials, and pass to a new player or back to Player 1. Each receiving player taps **Continue** before their letters appear. On the first return, choose **I’m Player 1** or **I’m a new player**; Player 1 continuing sets the roster for subsequent rounds. Turn timers pause during handoffs.
-- Expand **Selected rules**, then choose **Save mode** to save your combination. Use **Load a mode** beside Match format to browse saved modes or import an image. Find it from **Home → Modes → Scramble → Saved**, on this device or in your account. Publishing to the community is a separate action.
+- Expand **Selected rules**, then choose **Save mode** to save your combination. Use **More modes** in the Presets row to browse saved modes or import an image. Find it from **Home → Modes → Scramble → Saved**, on this device or in your account. Publishing to the community is a separate action.
 - Place tiles from your rack in one row or column to make connected words of at least two letters. The first play must cross the center square. Existing letters can form extra crossing words, and premium squares affect the score when first covered.
 - Tap a rack tile, then tap a board square, or drag the tile directly onto a square. Dragging uses the board's current zoom and position without changing either. A dashed ghost previews the placement, while its marked letter stays in your tray. Tap that tray letter to recall it. Drag within the tray to arrange the rack, or use Shift + Left/Right with a keyboard; Shuffle includes drafted letters and never moves their board positions. Select a blank's letter when prompted. Undo and Redo preserve both arrangements and draft placements. Exchange, Shuffle, Undo, and Redo share one evenly spaced row. The bottom row has **Back** on the left and the larger **Submit** button on the right; Submit commits your turn. Pass and resign are in the match menu.
 - Optional Builder rules include hidden or randomized bonuses, barriers, stacking, falling tiles, and **Lasting Bonuses**. Lasting Bonuses reapplies DL/TL/DW/TW every time a scored word uses that square; a colored point value marks the covered bonus. Open a modifier chip during play to see its rules.
@@ -174,7 +174,7 @@ The current player's color fills the space around the board, colors the turn ban
 
 ## Scramble: Free Placement, Clash, Strict, and Bungle Finale
 
-Choose these modifiers in Scramble Match Options, or combine them in a saved mode.
+Choose these modifiers in Scramble's Modes tab, or combine them in a saved mode.
 
 - **Free Placement**: Use up to seven tray tiles on any unblocked squares, across several separate words. Single letters can prepare later turns. Combine with Stacking to change distant words together.
 - Waiting online players can **Ping** the current player after five minutes, with ten minutes between pings across the waiting players. Pings never skip or forfeit turns. Scramble defaults to unlimited turns and no timer; select a cap or timer in Game options if desired.
@@ -196,7 +196,9 @@ After finishing, see rivals’ scores and standings, review the board, or copy y
 
 ## 15. Choosing a game
 
-Swipe the carousel at the top of Home, or tap a card, to pick a game. Home opens on Bungle each time the app starts. The card in the middle is the selected game, and Matches, Modes, Leaderboards and Awards below show only that game. **Create match** opens the selected game's setup.
+Swipe the carousel at the top of Home, or tap a card, to pick a game. Home opens on Bungle each time the app starts. The card in the middle is the selected game, and Matches, Modes, Leaderboards and Awards below show only that game. Scroll a list down and the carousel folds away to make room; scroll back up and it returns. Drag the carousel downward (or tap the grid button beside the logo) to open the game library, which shows every game with a large picture and one line on what you do.
+
+Every game works the same way. A **daily match** is one of the five boards offered each day, playable only that day. A **custom match** is any other match. **Matches** lists today's daily boards with a five-part meter of how many you have finished, then matches in play, matches open to play and finished ones; the chips at the top filter the list (All, Your turn, Available, Waiting, Finished), and each card has its own **Play** button. **Modes** sets up a custom match: tap a preset or choose players, options and modifiers yourself, then **Start match**.
 
 ## 16. Puzzle games
 
@@ -210,7 +212,7 @@ Every puzzle board scores 0 to 100, so a day or a week adds up across boards. Wh
 
 Tap **?** in a game, or at the top of Home for the selected game, for **How to play**: the goal, a practice board, what every number and button on the screen means, how points work, and the modifiers. Opened during a game, it shows your board's live numbers and stops the clock until you close it.
 
-**Free play** is under **Modes**: choose players, options and modifiers, or load today's Classic or Mix setups. Whittle, Muddle, Tangle and Noodle can be played by two or three people on one device (Pass & Play). Free play scores are not posted.
+A **custom match** is set up under **Modes**: tap a preset (Classic or one of today's Mix setups) or choose players, options and modifiers, then **Start match**. Whittle, Muddle, Tangle and Noodle can be played by two or three people on one device (Pass & Play). When you finish a solo custom board while signed in, **Post match** on its results puts the same board in everyone's **Matches** under Open to play for the rest of the week; each player who plays it adds one score, and the card then compares them. Custom match scores do not count toward the daily leaderboards.
 
 ## 17. Daily boards in every game
 
@@ -218,6 +220,6 @@ Tap **?** in a game, or at the top of Home for the selected game, for **How to p
 - Daily boards can be played only on their own day (midnight to midnight, Pacific). Sign in to play them.
 - A board is played once. Your score posts to the leaderboard automatically when you finish. Leaving a puzzle board early asks first and scores it as it stands.
 - When a puzzle ends, its results screen shows your score out of 100 and why it scored that, the numbers behind it, where you stand on today's board, and your finished board underneath. **Scores** opens the leaderboard; the other button starts the next board or another puzzle.
-- Other players' scores for a board appear after you finish it. **Leaderboards** shows each board, today's total and the week. **Board scores** lists every board of the chosen day one after another, so scroll to read them all; a board you have not played yet shows **Play** instead of its scores.
+- Other players' scores for a board appear after you finish it. **Leaderboards** shows each board, today's total and the week. **Daily boards** lists every board of the week so far, newest day first, so scroll down to read earlier days; a board you have not played yet shows a lock and **Play** instead of its scores.
 - When someone else finishes a board you played, you get a notice saying whether they beat you, tied you, or you are still in the lead, and where you now rank.
 

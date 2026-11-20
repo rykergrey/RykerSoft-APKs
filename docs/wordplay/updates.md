@@ -1,5 +1,14 @@
 # Updates
 
+## v1.5.4 — A Home that makes room
+
+- Scroll down and the game carousel folds away to give the list more room; scroll up to bring it back.
+- Drag the carousel down for every game at once, with large pictures and what each one is.
+- Matches is one list in every game: today's daily boards with a five-part meter, then matches in play, open to play and finished, with filters.
+- Modes sets up a custom match: tap a preset or pick players, options and modifiers, then Start match.
+- Leaderboards: Daily boards lists the whole week, newest day first, with no day picker.
+- Puzzle games: post a finished custom board so the family can play the same one and compare scores.
+
 ## v1.5.3 — Every board's scores in one list
 
 - Board scores lists every daily board of the chosen day one after another, so you scroll to read them all instead of picking boards one at a time. Works in Bungle and all five puzzle games.

@@ -55,16 +55,15 @@ in `styles.css`, `components/Tile.tsx` and `components/builder/`.
 
 ## Home
 
-Home has a carousel of every game at the top, in a fixed order that starts with Bungle. Swipe it, tap a
-card, or use the arrow keys. The card in the middle is the selected game, and Matches, Modes, Leaderboards
-and Awards below all belong to that game. The app opens on Bungle and keeps the chosen game while it stays
-open. There is no cross-game view.
+Home is described in [Home navigation](home-screen.md): a carousel of every game that folds away while a
+list scrolls, a pull-down game library, and the same four tabs for all seven games. For a puzzle game:
 
-For a puzzle game:
-
-- **Matches** lists today's five boards and a Pass & Play shortcut.
-- **Modes** is the setup: players, options, modifiers, and a Load row with Classic and today's three mixes.
-- **Leaderboards** has Board scores (pick a day and a board), Today (the five boards added up) and This week.
+- **Matches** lists today's five boards under a five-segment meter, then custom matches other players
+  posted (Open to play) and the ones you have played (Finished).
+- **Modes** is the setup for a custom match: Presets (Classic and today's three mixes), players, options,
+  modifiers and Start match.
+- **Leaderboards** has Daily boards (every day of the season, newest first), Today (the five boards added
+  up) and This week.
 - **Awards** counts the daily boards finished on this device.
 
 ## Daily boards
@@ -166,11 +165,20 @@ the play itself. A copy stays on the device (`wp_puzzle_results_v1:<uid>`) for a
 tied, still ahead of the newcomer, or still leading, with their rank ("You are 2nd of 3"). Bungle and
 Scramble daily notices use the same wording. Tapping a notice opens that game's Leaderboards on that board.
 
-## Pass & Play
+## Playing together
 
-Whittle (set a word for each other), Muddle (steal groups), Tangle (one shared chain) and Noodle (claim
-words) can be played by two or three people on one device. These do not post scores. Axle has no
-shared-device game.
+- **Pass & Play.** Whittle (set a word for each other), Muddle (steal groups), Tangle (one shared chain)
+  and Noodle (claim words) can be played by two or three people on one device. These do not post scores.
+  Axle has no shared-device game.
+- **Custom matches (all five games).** A signed-in player who finishes a solo board set up in Modes can
+  press **Post match** on its results. The board (seed, options and modifiers) then appears in everyone's
+  Matches under Open to play until the season ends on Sunday. Whoever plays it gets the same board, and
+  their score is added automatically, once. Scores stay hidden until you have played; after that the
+  card compares them. `services/puzzles/matches.ts` holds this; documents live in
+  `games/puzzles/matches/{id}` and `games/puzzles/matchResults/{matchId}_{uid}`. This is a family game, so
+  the device scores the board and the rules only check that a player writes their own match and their
+  own single result. Nothing is edited or deleted.
+- **Not built:** an online room where players on separate devices take turns on one puzzle board.
 
 ## Checks
 
@@ -187,7 +195,9 @@ npm run test:puzzles        # Firestore emulator (puzzle functions and rules); n
 
 ## Release
 
-Deploy the client together with these functions and the rules. Until then puzzle dailies cannot be opened.
+Deploy the client together with these functions and the rules. Until then puzzle dailies cannot be opened,
+and until the rules are deployed custom puzzle matches cannot be posted or listed (Matches then shows the
+daily boards only).
 
 ```sh
 npx firebase deploy --project wordplaying-5eec3 --only functions:beginPuzzleDaily,functions:submitPuzzleDaily,functions:notifyPuzzleDailyScore,functions:notifyBungleDailyScore,functions:notifyScrambleDailyScore,functions:beginScrambleDailyAttempt,functions:beginCompetitiveAttempt,firestore:rules
