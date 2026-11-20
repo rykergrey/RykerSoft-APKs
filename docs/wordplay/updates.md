@@ -1,5 +1,9 @@
 # Updates
 
+## v1.5.2 — Results notices back on screen
+
+- Fixed: a score notice on Home (who beat you, tied you, or where you rank) could open above the top of the screen, out of sight. It now opens in the middle of the screen with Home dimmed behind it.
+
 ## v1.5.1 — Puzzle results that fit your phone
 
 - Fixed: a finished Tangle chain could push the end screen past the edge of a phone, hiding the ring, the readout and the buttons. Every puzzle screen now stays within the screen width.
