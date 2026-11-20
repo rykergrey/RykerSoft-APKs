@@ -1,5 +1,14 @@
 # Updates
 
+## v1.5.1 — Puzzle results that fit your phone
+
+- Fixed: a finished Tangle chain could push the end screen past the edge of a phone, hiding the ring, the readout and the buttons. Every puzzle screen now stays within the screen width.
+- Every puzzle game ends on a full results screen: your score counts up out of 100, with one line on why it scored that or how to score more.
+- The numbers behind the score for each game: words against par in Tangle, your sharpest guess in Whittle, the hardest group you found in Muddle, your rank and best word in Axle, and your longest find in Noodle.
+- Daily boards show where you stand today, who you have to beat and by how much, with every family score and time.
+- Pass & Play puzzles end on everyone's final score, with a crown for the winner.
+- Your finished board stays underneath as the recap.
+
 ## v1.5.0 — Fresh daily boards and How to play
 
 - Daily boards no longer repeat themselves. A Muddle category rests at least ten days before it returns, Noodle themes at least two weeks, a Tangle ring's letters at least two months, and Whittle answers and Axle wheels weeks longer still.

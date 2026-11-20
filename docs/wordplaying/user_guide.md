@@ -217,6 +217,7 @@ Tap **?** in a game, or at the top of Home for the selected game, for **How to p
 - Each game has five daily boards, the same for everyone. Puzzle games have two **Classic** boards on standard rules and three **Mix** boards with modifiers.
 - Daily boards can be played only on their own day (midnight to midnight, Pacific). Sign in to play them.
 - A board is played once. Your score posts to the leaderboard automatically when you finish. Leaving a puzzle board early asks first and scores it as it stands.
+- When a puzzle ends, its results screen shows your score out of 100 and why it scored that, the numbers behind it, where you stand on today's board, and your finished board underneath. **Scores** opens the leaderboard; the other button starts the next board or another puzzle.
 - Other players' scores for a board appear after you finish it. **Leaderboards** shows each board, today's total and the week.
 - When someone else finishes a board you played, you get a notice saying whether they beat you, tied you, or you are still in the lead, and where you now rank.
 
