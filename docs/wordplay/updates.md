@@ -1,5 +1,9 @@
 # Updates
 
+## v1.5.5 — Taps that count once
+
+- Axle: a tap on a letter types it once. A finger that wobbled at the edge of a key could type the letter again, so two taps sometimes gave three letters. Dragging off a letter and back onto it still repeats it on purpose.
+
 ## v1.5.4 — A Home that makes room
 
 - Scroll down and the game carousel folds away to give the list more room; scroll up to bring it back.
